@@ -82,7 +82,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)vendors\tiff-4.0.3\libtiff;$(ProjectDir)vendors\SiliconSoftware\Runtime5.2.3.1\lib\visualc;$(ProjectDir)vendors\SiliconSoftware\Runtime5.2.3.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(ProjectDir)vendors\tiff-4.0.3\libtiff;$(ProjectDir)vendors\SiliconSoftware\Runtime5.2.3.1\lib\visualc;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libtiff.lib;iolibrt.lib;display_lib.lib;fglib5.lib;gbelib.lib;clsersis.lib;libtiff.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -104,10 +109,13 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)vendors\tiff-4.0.3\libtiff;$(ProjectDir)vendors\SiliconSoftware\Runtime5.2.3.1\lib\visualc;$(ProjectDir)vendors\SiliconSoftware\Runtime5.2.3.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)vendors\tiff-4.0.3\libtiff;$(ProjectDir)vendors\SiliconSoftware\Runtime5.2.3.1\lib\visualc;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libtiff.lib;iolibrt.lib;display_lib.lib;fglib5.lib;gbelib.lib;clsersis.lib;libtiff.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
