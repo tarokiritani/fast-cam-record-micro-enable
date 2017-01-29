@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26127.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fastCamRecord", "fastCamRecord\fastCamRecord.vcxproj", "{A95EE7A5-17D3-4C4C-9565-48DF4FA1619E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "SetupWizard\Setup\Setup.vdproj", "{1DEF782F-B754-4C87-B608-C2765B8B74CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A95EE7A5-17D3-4C4C-9565-48DF4FA1619E}.Release|x64.Build.0 = Release|x64
 		{A95EE7A5-17D3-4C4C-9565-48DF4FA1619E}.Release|x86.ActiveCfg = Release|Win32
 		{A95EE7A5-17D3-4C4C-9565-48DF4FA1619E}.Release|x86.Build.0 = Release|Win32
+		{1DEF782F-B754-4C87-B608-C2765B8B74CE}.Debug|x64.ActiveCfg = Debug
+		{1DEF782F-B754-4C87-B608-C2765B8B74CE}.Debug|x86.ActiveCfg = Debug
+		{1DEF782F-B754-4C87-B608-C2765B8B74CE}.Release|x64.ActiveCfg = Release
+		{1DEF782F-B754-4C87-B608-C2765B8B74CE}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
