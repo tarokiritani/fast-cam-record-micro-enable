@@ -153,7 +153,13 @@ int main(int argc, char* argv[], char* envp[]) {
 		movie.width = width;
 		movie.height = height;
 		movie.nOfPicsToGrab = nOfPicsToGrab;
-		string fileDest = subFolderName + to_string(k);
+		string fileDest;
+		if (iterationNum == 1) {
+			fileDest = subFolderName;
+		} else {
+			fileDest = subFolderName + to_string(k);
+		}
+
 		thread t(saveMovie1, std::ref(lastPicNum), movie, ptrMem, folderName, fileDest);
 		acquireMovie(fg, camPort, nOfPicsToGrab, timeout, dispId0, lastPicNum, width, height);
 		t.join();
