@@ -1,0 +1,471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<meta name="generator" content="Adobe GoLive 6">
+			<title>Silicon Software - Runtime 5 - Trigger System</title>
+				<link href="../../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../../lib/siso.ico" rel="shortcut icon">
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2" align="left" valign="bottom"><img src="../../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td bgcolor="white" width="60"><font color="white">.</font></td>
+							</tr>
+						</table>
+					</td>
+					<td align="left" valign="top" bgcolor="white">
+						<h2><br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white">
+					<div align="left">
+						<h1>The microEnable Trigger System</h1>
+						<h3></h3>
+						<h3>Contents</h3>
+						<p><a href="TriggerSystem.html#_1">1 Introduction and Overview<br>
+							</a></p>
+						<p><a href="TriggerSystem.html#_2">2 Using the Trigger System with Camera Link, LVDS, and CoaXPress&nbsp;Frame Grabbers<br>
+							</a></p>
+						<div align="left">
+							<div align="left">
+								<div align="left">&nbsp;&nbsp;&nbsp;&nbsp;<a href="TriggerSystem.html#_2.1">2.1 Overview</a><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;<a href="TriggerSystem.html#_2.2">2.2 Applet Trigger Function Blocks</a><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;<a href="TriggerSystem.html#_2.3">2.3 Multi-Board Triggering and Synchronization</a><br>
+									<p><a href="TriggerSystem.html#_3">3 Using the Trigger System with GigE VISION&nbsp;Frame Grabbers<br>
+										</a></p>
+								</div>
+							</div>
+						</div>
+						<div align="left">
+							<div align="left">
+								<a href="TriggerSystem.html#_4">4 Trigger Boards (TTL and Opto-Decoupled)<br>
+								</a>
+								<div align="left">
+									<div align="left">
+										<div align="left">
+											<p><a href="TriggerSystem.html#_5">5 Using Trigger I/O as Control Channels - Opportunities with VisualApplets <br>
+													<br>
+													<br>
+												</a></p>
+											<div align="left">
+												<div align="left">
+													<div align="left">
+														<p></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3>Related documents</h3>
+						<p><a href="TriggerModesArea.html">The Trigger Modes for Area Scan Cameras (AcquisitionApplets on Camera Link, LVDS, and CoaXPress Frame Grabbers)<br>
+							</a></p>
+						<p><a href="TriggerModesLine.html">The Trigger Modes for Line Scan Cameras (AcquisitionApplets on microEnable Camera Link, LVDS, and CoaXPress </a><a href="TriggerModesArea.html">Frame Grabbers</a><a href="TriggerModesLine.html">)<br>
+							</a></p>
+						<p><a href="ShaftEncoder.html">Shaft Encoder / Hook Functionality<br>
+							</a></p>
+						<hr>
+
+
+						<p></p>
+						<hr>
+						<h1><a name="_1"></a>1 Introduction and Overview </h1>
+						<p>With the trigger system, you are able to control the image acquisition process of your <i>microEnable IV or microEnable 5</i> frame grabber with respect to external events. Thus, you can, for example, acquire an image at a particular moment, define when to accept an image delivered by the camera, or specify how many lines should be acquired.</p>
+						<p>Silicon Software frame grabbers are equipped with a powerful and flexible trigger function block.</p>
+						<p>You can choose between different physical I/O options (e.g., TTL signals, opto-coupled, ...).&nbsp;For each option, an according trigger board is available.</p>
+						<div align="left">
+							
+						</div>
+						<p></p>
+						<hr>
+						<h1><a name="_2"></a>2 Using the Trigger System with Camera Link, LVDS, and CoaXPress Frame Grabbers</h1>
+						<h1></h1>
+						<h1><a name="_2.1"></a>2.1 Overview</h1>
+						<div align="left">
+							<p>Figure 1 gives an overview over the signals involved. There are 10 different input signals available to the trigger system (trigger input 0-7 and software trigger A+B). The external trigger inputs are connected to the frame grabber via trigger board. There are different types of trigger boards available: <a href="../Trigger_opto_mE4.html">Opto Trigger Boards</a> and <a href="../Trigger_ttl_mE4.html">TTL Trigger Boards</a>.</p>
+							<p><i>The </i>frame grabber generates the desired trigger outputs and control signals from input events. Furthermore, the <i>GrabberControlled</i> mode offers an on-board generated trigger signal. The camera control signals, e.g., Exsync, are routed to the camera via Camera Link's &quot;CC signal&quot;.</p>
+							<p>Additionally, the generated trigger outputs are also available at the trigger board for flash lights, synchronizing, or debugging.</p>
+							<p><b>LVDS</b>: Please note that all trigger board functions are available for LVDS frame grabbers as well. However, LVDS frame grabbers only use one camera control signal (CC1)  per camera.</p>
+						</div>
+						<div align="left">
+							<h1><img src="../../../images/trigger_system/trigger_mE4.jpg" alt="" height="428" width="953" border="0"></h1>
+							<p>Figure 1: Overview of the microEnable trigger system<br>
+							</p>
+							<p></p>
+							<p></p>
+							<h1></h1>
+							<div align="left">
+								<h1><a name="_2.2"></a>2.2 Applet Trigger Function Blocks</h1>
+								<p>This chapter describes the trigger functionality of the AquisitionApplets available for all Camera Link, LVDS, and CoaXPress&nbsp;frame grabbers.</p>
+								<p>AcquisitionApplets and Advanced AcquisitionApplets contain standardized trigger function blocks. Detailled information on trigger function blocks in AcquisitionApplets can be found directly in this section.</p>
+								<p>Details on the functionality of the trigger function block in Advanced AcquisitionApplets can be found in the according <a href="../../ind_acquisition.html">Applet documentation for Advanced AcquisitionApplets</a>.</p>
+								<p>Custom trigger functions can be programmed with VisualApplets. For details, refer to the <a href="http://www.siliconsoftware.de/download/live_docu/VA2/en/start.html">VisualApplets documentation</a>.</p>
+								<p>The specific trigger implementation in SmartApplets covers an application-specific functionality, i.e., an application specific trigger function block. Please refer to the according SmartApplets documentation. If SmartApplets are installed on your system, you find the according documenation <a href="../../smartapplets/index.html">here</a>. </p>
+								<p></p>
+								<h2>Input Signals</h2>
+							</div>
+						</div>
+						<p>The trigger system can be connected to external trigger input signals through a trigger board. Additionally, two software-generated signals, <i>Software Trigger A and B</i>, are available. The input signals are used by the trigger system to generate the trigger output.</p>
+						<p>The interpretation of the external input signal depends on the used trigger system (<a href="TriggerModesArea.html">area</a> or <a href="TriggerModesLine.html">line scan</a>) and its configuration. A typical setup for area scan systems is to use one single trigger input to trigger the acquisition of frames by the camera. A typical setup for line scan systems is to use one trigger input to trigger the acquisition of lines by the camera, and to use a second trigger input to define the grouping of these lines into images. For dual camera mode, the usage of trigger input signals is doubled, therefore a dual line applet may need independend trigger input signals which are supported by the Silicon Software frame grabber's trigger system.</p>
+						<div align="left"></div>
+						<p>By default, the trigger input signals are high-active. Using the same trigger input signal for both ports in case of a dual camera applet guarantees a synchronized operation of both cameras. The following chart describes the default signal assignment:</p>
+						<table border="0" cellspacing="2" cellpadding="2" align="center">
+							<tr>
+								<td rowspan="2" bgcolor="gray">
+									<div align="center">
+										Default pinning</div>
+								</td>
+								<td colspan="2" bgcolor="gray">
+									<div align="center">
+										Area Trigger</div>
+								</td>
+								<td colspan="2" bgcolor="gray">
+									<div align="center">
+										Line Trigger</div>
+								</td>
+							</tr>
+							<tr>
+								<td bgcolor="gray">
+									<div align="center">
+										Single Camera Applet</div>
+								</td>
+								<td bgcolor="gray">
+									<div align="center">
+										Dual Camera Applet</div>
+								</td>
+								<td bgcolor="gray">
+									<div align="center">
+										Single Camera Applet</div>
+								</td>
+								<td bgcolor="gray">
+									<div align="center">
+										Dual Camera Applet</div>
+								</td>
+							</tr>
+							<tr>
+								<td bgcolor="gray">
+									<div align="center">
+										Image trigger 0</div>
+								</td>
+								<td bgcolor="#c4c4c4">Trigger Input 0</td>
+								<td bgcolor="#c4c4c4">Trigger Input 0</td>
+								<td bgcolor="#c4c4c4">Trigger Input 0</td>
+								<td bgcolor="#c4c4c4">Trigger Input 0</td>
+							</tr>
+							<tr>
+								<td bgcolor="gray">
+									<div align="center">
+										Image trigger 1</div>
+								</td>
+								<td bgcolor="#c4c4c4">na</td>
+								<td bgcolor="#c4c4c4">Trigger Input 0</td>
+								<td bgcolor="#c4c4c4">na</td>
+								<td bgcolor="#c4c4c4">Trigger Input 0</td>
+							</tr>
+							<tr>
+								<td bgcolor="gray">
+									<div align="center">
+										Line trigger 0</div>
+								</td>
+								<td bgcolor="#c4c4c4">na</td>
+								<td bgcolor="#c4c4c4">na</td>
+								<td bgcolor="#c4c4c4">Trigger Input 1</td>
+								<td bgcolor="#c4c4c4">Trigger Input 1</td>
+							</tr>
+							<tr>
+								<td bgcolor="gray">
+									<div align="center">
+										Line trigger 1</div>
+								</td>
+								<td bgcolor="#c4c4c4">na</td>
+								<td bgcolor="#c4c4c4">na</td>
+								<td bgcolor="#c4c4c4">na</td>
+								<td bgcolor="#c4c4c4">Trigger Input 1</td>
+							</tr>
+							<tr>
+								<td colspan="5">
+									<div align="center">
+										Table 1: Default assignment of the trigger input signals</div>
+								</td>
+							</tr>
+						</table>
+						<h2>Input Hysteresis</h2>
+						<div align="left">
+							<p>In practice, an ideal trigger input signal can't be guaranteed in many cases. Transfer over long cables and operation in badly sheltered surroundings can influence the signal quality. Typical problems are strong flattening of the signal flanks, occurring interferences during toggling, and inducing of short jamming pulses (spikes).</p>
+							<h3></h3>
+						</div>
+						<table width="64" border="0" cellspacing="0" cellpadding="0" align="center">
+							<tr>
+								<td><img src="../../../images/trigger_system/trg_hysteresis.gif" alt="" height="192" width="528" border="0"></td>
+							</tr>
+							<tr>
+								<td align="center" valign="top">Figure 2: Trigger input signal reconstruction</td>
+							</tr>
+						</table>
+						<p>The AcquisitionApplets for the <i>microEnable IV </i>and <i>microEnable 5 </i>frame grabbers have safeguards to work highly reliable also in problematic signal environments. The applets work with an integrated hysteresis which accepts a signal edge until it is constant for a term (approx. 117ns). Hereby, the trigger input of the frame grabber is insensitive to jamming pulses which are usually short-lived. Multiple triggering (which may occur with slow signal transfers, circuit disturbances and bouncing) is also effectively disabled.</p>
+						<p></p>
+						<h2>Output Signals</h2>
+						<p>The AcquisitionApplet generates the trigger output signals Exsync and Flash. The Exsync is the camera control signal and synchronizes the camera to an external trigger input. In case of area scan cameras, the camera responses to an Exsync by recording a whole frame. In case of line scan cameras, the response is one line. The Flash output signal can be used to start an external flash light or synchonize other devices (e.g., another frame grabber) to the image acquisition process.<br>
+							<br>
+						</p>
+						<p>The area scan feature supports the output of HD-Sync -- the time base of the trigger subsystem. The line scan feature supports a second, delayable Exsync, the Exsync2 output signal.<br>
+							<br>
+						</p>
+						<p>By default, all output signals are low-active.<br>
+							<br>
+						</p>
+						<p>Exsync and Flash can be delayed seperately with respect to the according trigger input signal. Therefore, it is possible to adjust the signal generation to the individual latencies of the connected devices.<br>
+							<br>
+						</p>
+						<p>Many cameras allow the definition of the exposure time by the Exsync signal, e.g., for a low-active Exsync the falling edge of the Exsync opens the shutter and the rising edge closes the shutter and starts the transfer of the image data. The Silicon Software frame grabber's Exsync generator supports this feature in all trigger modes (except free-run).</p>
+						<p></p>
+						<h2>Pinning of Camera Link CC Signals</h2>
+						<p>The Camera Link standard specifies four camera control signals (CC signals) per port which can be used by the frame grabber for controlling the camera.<br>
+							<br>
+						</p>
+						<p>Each CC signal can be attached to any signal from the following list:</p>
+						<p></p>
+						<table width="90%" border="0" cellspacing="2" cellpadding="2" align="center">
+								<tr>
+									<td bgcolor="gray" width="50%">
+										<div align="center">
+										<font color="white">
+											Area Applets</font></div>
+									</td>
+									<td bgcolor="gray" width="50%">
+										<div align="center">
+										<font color="white">
+											Line Applets</font></div>
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#c4c4c4" width="50%">ExSync (Image Trigger)</td>
+									<td bgcolor="#c4c4c4" width="50%">ExSync (Line Trigger, undelayed)</td>
+								</tr>
+							<tr>
+									<td bgcolor="#c4c4c4" width="50%">HD-Sync</td>
+									<td bgcolor="#c4c4c4" width="50%">ExSync2 (Line Trigger, delayed)</td>
+								</tr>
+							<tr>
+									<td bgcolor="#c4c4c4" width="50%">Flash</td>
+									<td bgcolor="#c4c4c4" width="50%">Flash</td>
+								</tr>
+							<tr>
+									<td bgcolor="#c4c4c4" width="50%">Clk </td>
+									<td bgcolor="#c4c4c4" width="50%">Clk</td>
+								</tr>
+							<tr>
+									<td bgcolor="#c4c4c4" width="50%">Vcc</td>
+									<td bgcolor="#c4c4c4" width="50%">Vcc</td>
+								</tr>
+								<tr>
+									<td bgcolor="#c4c4c4" width="50%">Gnd</td>
+									<td bgcolor="#c4c4c4" width="50%">Gnd</td>
+								</tr>
+								<tr>
+									<td colspan="2" bgcolor="white">
+										<div align="center">
+										Table: Assignment options for the CC signals. All signals can be inverted to meet the camera's specification of low-active or high-active control signals.</div>
+									</td>
+								</tr>
+							</table>
+						<p></p>
+						<table width="90%" border="0" cellspacing="2" cellpadding="2" align="center">
+								<tr>
+									<td bgcolor="gray">
+										<div align="center"></div>
+									</td>
+									<td bgcolor="gray">
+										<div align="center">
+										<font color="white">Port A</font></div>
+									</td>
+									<td bgcolor="gray">
+										<div align="center">
+										<font color="white">
+											Port B</font></div>
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="gray">
+										<div align="center">
+										<font color="white">
+											CC1</font></div>
+									</td>
+									<td bgcolor="#c4c4c4">ExSync</td>
+									<td bgcolor="#c4c4c4">ExSync</td>
+								</tr>
+								<tr>
+									<td bgcolor="gray">
+										<div align="center">
+										<font color="white">
+											CC2</font></div>
+									</td>
+									<td bgcolor="#c4c4c4">Vcc</td>
+									<td bgcolor="#c4c4c4">Vcc</td>
+								</tr>
+								<tr>
+									<td bgcolor="gray">
+										<div align="center">
+										<font color="white">
+											CC3</font></div>
+									</td>
+									<td bgcolor="#c4c4c4">Vcc</td>
+									<td bgcolor="#c4c4c4">Vcc</td>
+								</tr>
+								<tr>
+									<td bgcolor="gray">
+										<div align="center">
+										<font color="white">
+											CC4</font></div>
+									</td>
+									<td bgcolor="#c4c4c4">Vcc</td>
+									<td bgcolor="#c4c4c4">Vcc</td>
+								</tr>
+								<tr>
+									<td colspan="3">
+										<div align="center">Table: Default pinning of CC signals</div>
+									</td>
+								</tr>
+							</table>
+						
+						
+						<h2></h2>
+						<h2>Digital I/O</h2>
+						<p>The trigger input signals, as well as two of the trigger output signals of the AcquisitionApplets, are available at the trigger board as so-called <b>digital I/Os</b>.<br>
+							<br>
+						</p>
+						<p>The two output signals Digital-Out Bit 0 and Digital-Out Bit 1 are freely programmable by the user. They are available at the trigger board's connectors and allow to control external devices by software.<br>
+							<br>
+						</p>
+						<p>The Digital-In signals are the trigger input signals. The digital form allows to monitor the trigger input signals by software.</p>
+						<p></p>
+						<p></p>
+						<h1><a name="_2.3"></a>2.3 Multi-Board Triggering and Synchronization</h1>
+						<p>This chapter describes how to synchronize multiple frame grabbers (residing in the same or in different PCs) to the same trigger signal.</p>
+						<p>If the frame grabbers are residing in the same PC, the frame grabbers can be connected by a special flat cable which is offered by Silicon Software. Please refer to the section &quot;Multi board usage/Connection to frame grabber &quot; within the <a href="../Trigger_opto_mE4.html#_3.5">Opto Trigger</a> / <a href="../Trigger_ttl_mE4.html#_3.6">TTL Trigger</a> documentation. </p>
+						<p></p>
+						<h2>Synchronizing the Trigger for Area Scan Setup</h2>
+						<p>The easiest way to synchronization is to connect the inputs of the frame grabbers to the same trigger source and to set the mode to  &#x201C;External Trigger&#x201D; <br>
+						</p>
+						<p>For synchronising two Camera Link Base cameras connected to port A and port B of a grabber using a Dual Applet, the same trigger input can be used.</p>
+						<p></p>
+						<h1><img src="../../../images/trigger_system/trg_area_sync_simple.jpg" alt="" height="266" width="425" border="0"></h1>
+						<h1></h1>
+						<h1></h1>
+						<p>An alternative is to define the first frame grabber as master frame grabber and to use the Flash out signal (which can, e.g., be derived from an external trigger signal) to trigger all other frame grabbers. To compensate the signal delay between the master CC1 and the CC1 of the slaves, an ExSync delay parameter at the master is used to delay the CC1 of the master only.</p>
+						<p>This configuration can also be used with a software trigger source, or, in grabber-controlled mode at the master, for synchronizing the slaves.</p>
+						<div align="left">
+							<div align="left">
+								<p></p>
+							</div>
+						</div>
+						<h1><img src="../../../images/trigger_system/trg_area_sync_alternative.jpg" alt="" height="266" width="505" border="0"></h1>
+						<h1></h1>
+						<h1></h1>
+						<h1></h1>
+						<h2>Synchronizing the Line Trigger for a Line Scan Setup</h2>
+						<div align="left">
+							<p>The easiest way to synchronization is to connect the inputs of the frame grabbers to the same encoder source and to set the mode to &#x201C;External Trigger&#x201D;<br>
+							</p>
+							<p>For synchronising two Camera Link Base cameras connected to port A and port B of a grabber using a Dual Applet, the same input can be used.</p>
+						</div>
+						<p><img src="../../../images/trigger_system/trg_line_sync_simple.jpg" alt="" height="266" width="425" border="0"></p>
+						<h2></h2>
+						<h2></h2>
+						<p>An alternative is to define the first frame grabber as master frame grabber and to use the ExSync out signal to trigger all other frame grabbers as slaves. To compensate the signal delay between the master CC1 and the CC1 of the slaves, an delayed ExSync2 signal is mapped to CC1 of the master.</p>
+						<div align="left">
+							<p>This configuration can also be used in grabber-controlled mode at the master for syncronising the slaves.</p>
+							<p></p>
+						</div>
+						<h2><img src="../../../images/trigger_system/trg_line_sync_alternative.jpg" alt="" height="266" width="494" border="0"></h2>
+						<h2></h2>
+						<h2>Synchronizing the Image Trigger for a Line Scan Setup</h2>
+						<div align="left">
+							<div align="left">
+								<p>The easiest way to synchronization is to connect the inputs of the frame grabbers to the same light bulb source and to set the mode to &#x201C;Trigger&#x201D;<br>
+								</p>
+								<p>For synchronising two Camera Link Base cameras connected to port A and port B of a grabber using a Dual Applet, the same input can be used.</p>
+							</div>
+						</div>
+						<p></p>
+						<p><img src="../../../images/trigger_system/trg_line_img_sync_simple.jpg" alt="" height="266" width="319" border="0"></p>
+						<p></p>
+						<p></p>
+						<p></p>
+						<div align="left">
+							<div align="left">
+								<p>An alternative is to define the first frame grabber as master frame grabber and to use the Flash out signal to trigger all other frame grabbers as slaves. To compensate the signal delay between the master CC1 and the CC1 of the slaves, an delayed ExSync2 signal is mapped to the CC1 of the master.</p>
+								<p>Remark: This configuration works only with image trigger mode &quot;Triggered&quot; and if  there is no Flash required.</p>
+								<p></p>
+							</div>
+						</div>
+						<p><img src="../../../images/trigger_system/trg_line_img_sync_alt.jpg" alt="" height="266" width="469" border="0"></p>
+						<p></p>
+						<hr>
+						<h1><a name="_3"></a>3 Using the Trigger System with GigE VISION&nbsp;Frame Grabbers</h1>
+						<p>The GigE Vision AquisitionApplets provide pure digital I/O as trigger I/O which can be used by the SDK only. The SDK parameters for get/set the status is defined as FG_DIGIO_INPUT and FG_DIGIO_OUTPUT and can be used by the SDK function Fg_getParameter() or Fg_setParameter.</p>
+						<p>In VisualApplets, the trigger I/O can be programmed with great flexibility, using the operators of the <i>Signal</i> library.<br>
+							<br>
+						</p>
+						<div align="left">
+							<hr>
+							<h1><a name="_4"></a>4 Trigger Boards (TTL and Opto-Decoupled)</h1>
+							<p>All microEnable frame grabber boards are equiped with a 34 pin flat cable connector. This is the physical trigger interface where the I/O TTL board or the I/O Opto board is connected. The I/O TTL board provides an adaption to the TTL signal level, while the IO-Opto board provides a galvanic isolation and adaption to the industrial signal level (typically 5 V - 24 V).</p>
+							<p>For details, refer to the according documentation: <a href="../Trigger_opto_mE4.html">Opto Trigger Boards</a> and <a href="../Trigger_ttl_mE4.html">TTL Trigger Boards</a>.<br>
+								<br>
+							</p>
+						</div>
+						<hr>
+						<h1><a name="_5"></a>5 Using Trigger I/O as Control Channels - Opportunities with VisualApplets </h1>
+						<p>The trigger input signals and the trigger output signals that are available at the trigger board are called <b>digital I/Os</b>.</p>
+						<p>The two output signals Digital-Out Bit 0 and Digital-Out Bit 1 are freely programmable by the user. They are available at the trigger board connectors and allow to control external devices by software.</p>
+						<p>The eight Digital-In signals are the four trigger inputs. They allow to monitor the trigger input signals by software.</p>
+						<p>With the parameters FG_DIGIO_INPUT/FG_DIGIO_OUTPUT you get/set a bitmask for the input/output pins by Fg_getParameter()/Fg_setParameter().</p>
+						<p>For the input you get a value between 0 and 255 for the 8 input pins (8Bit^2).<br>
+						</p>
+						<p>For the output you set a value between 0 and 3 for the 2 output pins (2Bit^2).<br>
+						</p>
+						<p> In VisualApplets, the trigger I/O can be programmed with great flexibility, using the operators of the <i>Signal</i> library. This even allows to implement data tranfer protocols.<br>
+						</p>
+						<p>
+						</p>
+					</div>
+					</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" height="20">
+						<table>
+							<tr>
+								<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+								<div align="center">
+									<a title="Index" href="../../index.html">Back to Documentation Index <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+							</td>
+								<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				<tr>
+					<td colspan="2" align="left" valign="top"><img src="../../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+		</body>
+</html>
+
+
+

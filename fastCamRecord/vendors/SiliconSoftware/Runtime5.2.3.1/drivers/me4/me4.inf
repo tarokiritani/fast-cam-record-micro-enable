@@ -1,0 +1,117 @@
+;/*++
+;
+;Copyright (c) Silicon Software GmbH.  All rights reserved.
+;
+;--*/
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Multifunction
+ClassGUID={4d36e971-e325-11ce-bfc1-08002be10318}
+Provider=%OrganizationName%
+CatalogFile=me4.cat
+DriverPackageDisplayName=%pkgdesc%
+DriverVer=01/24/2013,4.1.0.15
+
+[DestinationDirs]
+DefaultDestDir = 12
+me4_Inst_CoInstaller_CopyFiles = 11
+
+; ================= Class section =====================
+
+[ClassInstall32]
+Addreg=SampleClassReg
+
+[SampleClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-5
+HKR,,DeviceCharacteristics,0x10001,0x100     ;Use same security checks on relative opens
+HKR,,Security,,"D:P(A;;GA;;;SY)(A;;GA;;;BA)" ;Allow generic all access to system and built-in Admin.
+
+
+; ================= Device Install section =====================
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%Siso%=Siso,NTAMD64
+
+[SourceDisksFiles]
+me4.sys=1
+
+[SourceDisksNames]
+1=%DISK_NAME%,
+
+[Siso.NTAMD64]
+%me4ad1clDesc%=me4_Inst,PCI\VEN_1ae8&DEV_0a40
+%me4vd1clDesc%=me4_Inst,PCI\VEN_1ae8&DEV_0a41
+%me4ad4clDesc%=me4_Inst,PCI\VEN_1ae8&DEV_0a42
+%me4vd4clDesc%=me4_Inst,PCI\VEN_1ae8&DEV_0a44
+%me4as1clDesc%=me4_Inst,PCI\VEN_1ae8&DEV_0a45
+%me4aq4geDesc%=me4_Inst,PCI\VEN_1ae8&DEV_0e42
+%me4vq4geDesc%=me4_Inst,PCI\VEN_1ae8&DEV_0e44
+
+[me4_Inst.NT]
+CopyFiles=me4.CopyFiles
+
+[me4.CopyFiles]
+me4.sys
+
+[me4_Inst.NT.Services]
+AddService=me4,0x00000002,me4_Service,me4_Eventlog_Inst
+
+[me4_Service]
+DisplayName    = %me4.SVCDESC%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\me4.sys
+AddReg         = me4_Parameters_AddReg
+
+[me4_EventLog_Inst]
+AddReg = me4_EventLog_Inst.AddReg
+
+[me4_EventLog_Inst.AddReg]
+HKR,,EventMessageFile,%REG_EXPAND_SZ%,"%%SystemRoot%%\System32\IoLogMsg.dll;%%SystemRoot%%\System32\Drivers\me4.sys"
+HKR,,TypesSupported,%REG_DWORD%,7
+
+[me4_Parameters_AddReg]
+HKR, Parameters\Wdf, VerboseOn,       0x00010001, 1
+HKR, Parameters\Wdf, VerifierOn,      0x00010001, 1
+HKR, Parameters\Wdf, DbgBreakOnError, 0x00010001, 1
+
+
+;-------------- Coinstaller installation
+[me4_Inst.NT.CoInstallers]
+AddReg=me4_Inst_CoInstaller_AddReg
+CopyFiles=me4_Inst_CoInstaller_CopyFiles
+
+[me4_Inst_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller01009.dll,WdfCoInstaller"
+
+[me4_Inst_CoInstaller_CopyFiles]
+WdfCoInstaller01009.dll
+
+[SourceDisksFiles]
+WdfCoInstaller01009.dll=1 ; make sure the number matches with SourceDisksNames
+
+[me4_Inst.NT.Wdf]
+KmdfService = me4, me4_wdfsect
+
+[me4_wdfsect]
+KmdfLibraryVersion = 1.9
+
+[Strings]
+Siso = "Silicon Software GmbH"
+OrganizationName = "Silicon Software GmbH"
+me4.SVCDESC = "microEnable4 Device Driver" ; Don't changes this! May result in failure to update older drivers!
+me4ad1clDesc= "Silicon Software microEnable IV AD1-CL"
+me4ad4clDesc= "Silicon Software microEnable IV AD4-CL"
+me4vd1clDesc= "Silicon Software microEnable IV VD1-CL"
+me4vd4clDesc= "Silicon Software microEnable IV VD4-CL"
+me4as1clDesc= "Silicon Software microEnable IV AS1-CL"
+me4aq4geDesc= "Silicon Software microEnable IV AQ4-GE"
+me4vq4geDesc= "Silicon Software microEnable IV VQ4-GE"
+DISK_NAME = "microEnable IV Driver Install Disk"
+pkgdesc = "microEnable IV Driver"

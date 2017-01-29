@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<!-- #BeginTemplate "../../../Runtime5.2.data/Musterseiten/MS_blank_TOC.html" -->
+
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<meta name="generator" content="Adobe GoLive 6">
+			<title>Silicon Software - Runtime 5 CameraLink</title>
+			<!-- #BeginHeadLocked "" -->
+				<link href="../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../lib/siso.ico" rel="shortcut icon">
+			<!-- #EndHeadLocked -->
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="4" align="left" valign="bottom" width="740"><img src="../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"><img src="../../images/pixel.png" alt="" height="20" width="60" border="0"></td>
+					<td align="left" valign="top" bgcolor="white" width="200" height="24"><img src="../../images/pixel.png" alt="" height="20" width="200" border="0"></td>
+					<td width="20" height="24"><img src="../../images/pixel.png" alt="" height="20" width="20" border="0"></td>
+					<td width="460" height="24"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="200"><!-- #BeginEditable "Bereich" -->
+							<table border="0" cellspacing="2" cellpadding="0" bgcolor="#e4e4e4">
+								<tr>
+									<td colspan="2">
+										<div align="center">
+											<h3><a name="_top"></a>Table of Content</h3>
+										</div>
+									</td>
+								</tr>
+								<tr height="20">
+									<td width="40" height="20">
+										<h5>
+											
+										</h5>
+									</td>
+									<td height="20">
+										<h5>
+											
+										</h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><b>1</b></h5>
+									</td>
+									<td>
+										<h5><b><a href="#_1">Introduction</a></b></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><b>2</b></h5>
+									</td>
+									<td>
+										<h5><b><a href="#_2">Camera Link Serial Interface API</a></b></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><b>3</b></h5>
+									</td>
+									<td>
+										<h5><b><a href="#_3">Using Virtual COM Ports</a></b></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>4</h5>
+									</td>
+									<td>
+										<h5><a href="#_4"><b>clShell</b></a></h5>
+									</td>
+								</tr>
+							</table>
+						<!-- #EndEditable --></td>
+					<td align="left" valign="top" bgcolor="white" width="20"><img src="../../images/pixel.png" alt="" height="20" width="20" border="0"></td>
+					<td align="left" valign="top" bgcolor="white" width="460"><!-- #BeginEditable "Bereich3" -->
+							<div class=Section1>
+								<h1>Camera Link Camera Configuration <br>
+								</h1>
+								<p></p>
+							</div>
+							<div class=Section2>
+								<h1 align=left style="text-align:left"><a id="_1" name="_1"></a>1 Introduction</h1>Camera configuration within Camera Link is based on a simple asynchronous serial reading and writing of configuration data. Within the Camera Link standard specification, a serial communication interface is defined. This standardized serial interface is available on the frame grabber. It enables the interaction of a vendor specific camera configuration tool and the frame grabber specific implementation of the serial communication functionality.							<p>In simple words: Any Camera Link compliant camera configuration software runs in combination with any Silicon Software Camera Link frame grabber. </p>
+								<p>Furthermore, even any COM-based camera configuration software can be used with Silicon Software framegrabbers, since the framegrabber runtime also offers the standard serial interface of the PC (COM) for communication with the camera by setting up virtual COM ports automatically. </p>
+								<p>Silicon Software also provides a terminal application &quot;clShell&quot; that allows to send and receive simple commands to and from a connected camera.<a href="#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+									<br>
+									<br>
+								</p>
+							</div>
+							<div class=Section2 align="left">Thus, the interface consists of the following components:</div>
+							<ul>
+								<div class=Section2>
+									<li>&#149;<b>clsersis.dll</b><br>
+										An implementation of the clser-API as defined in the Camera Link specifiaction<br>
+										<br>
+									
+								</div>
+							</ul>
+							<div class=Section2>
+								<ul>
+									<li><b>COM adapter (ClSer COMWrapper)</b><br>
+										A tool that allows communication by using the standard serial interface of the PC (COM) via virtual COM ports (instead of directly using the clser API)<br>
+										<br>
+									<li><b>clShell</b><br>
+										A terminal application that allows to send simple commands to a connected camera.<br>
+										<br>
+									
+								</ul>
+								<p></p>
+								<p><img src="../../images/CLSpec10/CLSerIF01.jpg" alt="" height="575" width="668" border="0"></p>
+								<p><a href="#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+									<br>
+									<br>
+								</p>
+								<h1><a id="_2" name="_2"></a>2 clser<b>sis.dll: An implementation of the </b>Camera Link Serial Interface API</h1>
+								<p>The <i><b>clsersis</b></i> is the Silicon Software implementation of the Camera Link serial interface API. It is fully compliant to the Camera Link standard. It is available in all Silicon Software Runtime installation packages and will be installed at the directory structure as defined by Camera Link.</p>
+								<p>Basically this implementation is an DLL, that communicates with the framegrabber and passes camera commands through the framegrabber to the connected camera device in both directions. It covers all Silicon Software framegrabber types, which are designed to use Camera Link.</p>
+								<p>Camera vendor&#146;s configuration tools, which support the clser interface, can be linked directly to this comonent, either by using the clallserial component or by direct function calls to the <b><i>clsersis</i></b>.</p>
+								<p><b>Remarks: &#149;</b></p>
+								<ul>
+									<li>The installation directory is in general C:\CameraLink, but the installation is done as defined by Camera Link according to the corresponding registry key. &#149;
+									<li>The default operation baudrate towards the camera is 9600 Bd. No parity. Baudrate range: [ 9600..921600].
+									<li>The functions have been implemented formerly in the clserme4.dll.<br>
+									
+								</ul>
+								<p><br>
+								</p>
+								<h3>2.1 clser &#150; API</h3>
+								<p>The API is defined as described in the Camera Link standard specification and has functionalities for establishing a connection to a camera as well as writing and reading data. The API functions can be seen in the table below.<br>
+									<br>
+								</p>
+								<table border=0 cellspacing=2 cellpadding=2>
+									<tr>
+										<td align="center" nowrap bgcolor="#2e368f" width=200 valign=middle>
+											<div align="left">
+												<p><b><font size="-2" color="white">Name </font></b></p>
+											</div>
+										</td>
+										<td align="center" nowrap bgcolor="#2e368f" width=400 valign=middle>
+											<div align="left">
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" nowrap bgcolor="white" width=200 valign=middle>
+											<div align="left">
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">clSerialInit() </font></p>
+											</div>
+										</td>
+										<td align="center" nowrap bgcolor="white" width=400 valign=middle>
+											<div align="left">
+												<p><font size="-2" color="black">Initializing serial interface.</font></p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" nowrap bgcolor="#dfdfdf" width=200 valign=middle>
+											<div align="left">
+												<p><font size="-2">clSerialRead()</font></p>
+											</div>
+										</td>
+										<td align="center" nowrap bgcolor="#dfdfdf" width=400 valign=middle>
+											<div align="left">
+												<p><font size="-2" color="black">Reading data from an open serial interface. </font></p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" nowrap bgcolor="white" width=200 valign=middle>
+											<div align="left">
+												<p><font size="-2">clGetNumSerialPorts()</font></p>
+											</div>
+										</td>
+										<td align="center" nowrap bgcolor="white" width=400 valign=middle>
+											<div align="left">
+												<p><font size="-2" color="black">Gives the number of serial ports.<br>
+														I</font><font size="-2">ndependent from connected or not connected cameras.<br>
+													</font></p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" nowrap bgcolor="#dfdfdf" width=200 valign=middle>
+											<div align="left">
+												<p><font size="-2">clGetNumBytesAvail()</font></p>
+											</div>
+										</td>
+										<td align="center" nowrap bgcolor="#dfdfdf" width=400 valign=middle>
+											<div align="left">
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Gives the available number serial ports.</font></p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" nowrap bgcolor="white" width=200 valign=middle>
+											<div align="left">
+												<p><font size="-2">clGetSerialPortIdentifier()</font></p>
+											</div>
+										</td>
+										<td align="center" nowrap bgcolor="white" width=400 valign=middle>
+											<div align="left">
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Returns an ID for a serial port.</font></p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" nowrap bgcolor="#dfdfdf" width=200 valign=middle>
+											<div align="left">
+												<p><font size="-2">clGetManufacturerInfo()</font></p>
+											</div>
+										</td>
+										<td align="center" nowrap bgcolor="#dfdfdf" width=400 valign=middle>
+											<div align="left">
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Returns data concerning camera manufacturer in form of an integer.</font></p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" nowrap bgcolor="white" width=200 valign=middle>
+											<div align="left">
+												<p><font size="-2">clGetSupportedBaudRates()</font></p>
+											</div>
+										</td>
+										<td align="center" nowrap bgcolor="white" width=400 valign=middle>
+											<div align="left">
+												<p><font size="-2" color="black">Returns all supported Baud rates.</font></p>
+											</div>
+										</td>
+									</tr>
+									<tr align="left">
+										<td align="center" nowrap bgcolor="#dfdfdf" width=200 valign=middle>
+											<div align="left">
+												<font size="-2">clSetBaudRate()</font></div>
+										</td>
+										<td align="center" nowrap bgcolor="#dfdfdf" width=400 valign=middle>
+											<div align="left">
+												<font size="-2">Sets the Baud rate for a serial port.</font></div>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" nowrap bgcolor="white" width=200 valign=middle>
+											<div align="left">
+												<p><font size="-2">clSetParity()</font></p>
+											</div>
+										</td>
+										<td align="center" nowrap bgcolor="white" width=400 valign=middle>
+											<div align="left">
+												<p><font size="-2" color="black">Sets the parity bit which is needed by some cameras.</font></p>
+											</div>
+										</td>
+									</tr>
+									<tr align="left">
+										<td align="center" nowrap bgcolor="#dfdfdf" width=200 valign=middle>
+											<div align="left">
+												<font size="-2">clSerialWrite()</font></div>
+										</td>
+										<td align="center" nowrap bgcolor="#dfdfdf" width=400 valign=middle>
+											<div align="left">
+												<font size="-2">Writing on serial interface.</font></div>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" nowrap bgcolor="white" width=200 valign=middle>
+											<div align="left">
+												<p><font size="-2">clGetErrorText()</font></p>
+											</div>
+										</td>
+										<td align="center" nowrap bgcolor="white" width=400 valign=middle>
+											<div align="left">
+												<p><font size="-2" color="black">Returns the corresponding error text concerning a special error code.</font></p>
+											</div>
+										</td>
+									</tr>
+									<tr align="left">
+										<td align="center" nowrap bgcolor="#dfdfdf" width=200 valign=middle>
+											<div align="left">
+												<font size="-2">clFlushPort()</font></div>
+										</td>
+										<td align="center" nowrap bgcolor="#dfdfdf" width=400 valign=middle>
+											<div align="left">
+												<font size="-2">Cleaning the buffer from data that hasn't been sent over serial interface, yet.</font></div>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" nowrap bgcolor="white" width=200 valign=middle>
+											<div align="left">
+												<p><font size="-2">clSerialClose()</font></p>
+											</div>
+										</td>
+										<td align="center" nowrap bgcolor="white" width=400 valign=middle>
+											<div align="left">
+												<p><font size="-2" color="black">Releasing serial interface. </font></p>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div class=Section2 align="center">
+								<p><i>Table 1: clser API overview</i></p>
+							</div>
+							<div class=Section2>
+								Please note: A detailled description of all functions can be found at the <a href="SDK/functions/clser_8h.html"><b><i>clsersis</i></b> function reference</a>.
+
+								<p><a href="#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<div class=Section2>
+									<h3>2.2 Adressing Cameras by Using the <b><i>clsersis</i></b></h3>
+									<p>Camera ports are identified by an numerical value, called serial index starting with a 0 for the first port of the framegrabber. By using the <i><font face="Courier New,Courier,Monaco">clGetSerialPortIdentifier()</font></i> function, the names can be retrieved for each port.<br>
+										<br>
+									</p>
+									<h3>2.3 Adressing Cameras in Multi-Grabber Systems</h3>
+									<p>When having multiple frame grabbers in one system, the serial indices are incremented according to the ordering of the boards. See also the correspondig section in the SDK manual.</p>
+									<p><b>Example:</b></p>
+									<p>System configuration:</p>
+									<p>Board 1: 2 Camera link ports index 0..1<br>
+										Board 2: 1 Camera link port index 2<br>
+										Board 3: 2 Camera link ports index 4..5<br>
+										<br>
+									</p>
+									<p>Within this example: the number of resulting indices is 5. The indices are created as shown above. The indices can be seen at the port identifiers, see the <i><font face="Courier New,Courier,Monaco">clGetSerialPortIdentifier()</font></i> function for further details. <br>
+									</p>
+								<p><a href="#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+									<br>
+									<br>
+								</p>
+								</div>
+								<h1><a id="_3" name="_3"></a>3 Using Virtual COM Ports</h1>
+								<p>Many software developers prefer to use a traditional COM interface to communicate with the camera. For this purpose, the Silicon Software runtime offers a module that functions as an adapter between the software and the standard Camera Link serial interface (Clser) of the frame grabber. This module provides virtual COM ports and is called <b>ClSerCOM Wrapper</b>. </p>
+								<p>For a quick information on how the virtual COM ports are set up automatically at system start, check the <a href="CameraLink/QuickStartVirtCOM.pdf">Quick Start Guide</a> document. </p>
+								<p>For detailed information on the ClSerCOM Wrapper and how to use it, refer to the User Guide <a href="CameraLink/ClSerComWrapper2-EN.pdf">Using Virtual COM Ports</a>.</p>
+								<p><a href="#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+									<br>
+									<br>
+								</p>
+								<div class=Section2>
+									<h1><a id="_4" name="_4"></a>4 clShell</h1>
+								</div>
+								
+								clShell is a terminal program for an ASCII based communication between Silicon Software frame grabber and a camera. It allows sending commands to a connected camera and displays the recamera&#x2019;s response. Note that this tool sends ASCII based commands only, so it might be helpful in that case. If the camera communication is based on binary data a tool from the manufacturer is needed instead. Please refer to the manual of the camera manufacturer to obtain the command set of camera configuration commands. 
+								<p><b>Notes:</b></p>
+								<ul>
+									<li><b>Cameras with binary communication protocol are only supported by camera software of manufacturers.<br>
+											<br>
+										</b>
+									<li>Some DALSA line and area scan cameras expects a carriage return. Therefore, please use the string &quot;clshell -i -a&quot;. In case of doubt please check the camera user manual.<br>
+										<br>
+									
+									
+									<li>Some JAI area scan cameras expects a carriage return and line feed. Please use the string &quot;clshell -i -n&quot;. In case of doubt please check the camera user manual.<br>
+										<br>
+									
+									
+								</ul>
+								<p><b>Usage of clshell:</b></p>
+								<p><font face="Courier New,Courier,Monaco">clshell [-p port][-f file][-i][-a]<br>
+										-p port : set port<br>
+										-f file : read from file<br>
+										-i : ignore line feed<br>
+										-a : add carriage return<br>
+										-n : add carriage return and line feed<br>
+									</font></p>
+								<p><b>Example:</b></p>
+								<p><font face="Courier New,Courier,Monaco">clshell -p 0 </font>: Camera communicates with frame grabber board 0 over Port A<br>
+									<font face="Courier New,Courier,Monaco">clshell -p 1 </font>: Camera communicates with frame grabber board 0 over Port B<br>
+									<font face="Courier New,Courier,Monaco">clshell -p 2</font> : Camera communicates with frame grabber board 1 over Port A<br>
+									<font face="Courier New,Courier,Monaco">clshell -p 3</font> : Camera communicates with frame grabber board 1 over Port B<br>
+								</p>
+								<p><a href="#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+									<br>
+									<br>
+								</p>
+								<p></p>
+								<p></p>
+								<p><br>
+								</p>
+								<b></b></div>
+						<!-- #EndEditable --></td>
+				</tr>
+				<tr height="40">
+					<td bgcolor="white" width="60" height="40"></td>
+					<td colspan="3" align="left" valign="top" bgcolor="white" width="680" height="40">
+						<table>
+							<tr height="20">
+								<td align="left" valign="middle" bgcolor="white" width="200" height="20"><a href="javascript:history.back()"><img src="../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250" height="20">
+									<div align="right">
+										<a title="Index" href="../index.html">Back to Documentation Index <img src="../../images/top.gif" alt="" width="22" height="23" align="absbottom" border="0"></a></div>
+								</td>
+								<td align="right" valign="middle" bgcolor="white" width="200" height="20"><a href="javascript:history.forward()">Forward <img src="../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4" align="left" valign="top" width="740"><img src="../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+		</body>
+
+	<!-- #EndTemplate -->
+
+</html>
+
+
+

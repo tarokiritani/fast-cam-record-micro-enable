@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="406.03125"
+   height="209.43802"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 "
+   sodipodi:docname="processing-invert.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="447.46785"
+     inkscape:cy="38.001808"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1138"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(145.62546,-445.32195)">
+    <g
+       id="1"
+       transform="translate(-145.62546,445.32195)">
+      <path
+         d="M 0,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="2"
+         inkscape:connector-curvature="0" />
+      <text
+         style="font-size:14.96077347px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Times New Roman"
+         y="13.339548"
+         x="0"
+         xml:space="preserve"
+         id="3"> </text>
+      <path
+         d="m 68.501636,180.9832 263.066484,0 c 0.33661,0 0.61713,0.28103 0.61713,0.61826 0,0.35598 -0.28052,0.61827 -0.61713,0.61827 l -263.066484,0 c -0.336617,0 -0.617132,-0.26229 -0.617132,-0.61827 0,-0.33723 0.280515,-0.61826 0.617132,-0.61826 z m 261.813514,-3.1288 7.48039,3.74706 -7.48039,3.74707 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.14960772px;stroke-linecap:butt;stroke-linejoin:bevel;stroke-opacity:1;stroke-dasharray:none"
+         id="4"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 79.095733,192.84266 0,-184.8614133 c 0,-0.3372358 0.280515,-0.6182656 0.626482,-0.6182656 0.345968,0 0.617132,0.2810298 0.617132,0.6182656 l 0,184.8614133 c 0,0.3466 -0.271164,0.61826 -0.617132,0.61826 -0.345967,0 -0.626482,-0.27166 -0.626482,-0.61826 z M 75.982022,9.2365131 79.722215,1.7423848 83.462408,9.2365131 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.14960772px;stroke-linecap:butt;stroke-linejoin:bevel;stroke-opacity:1;stroke-dasharray:none"
+         id="5"
+         inkscape:connector-curvature="0" />
+      <path
+         d="M 79.722215,181.60146 315.41048,22.482385"
+         style="fill:none;stroke:#ff0000;stroke-width:1.87009656px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         id="6"
+         inkscape:connector-curvature="0" />
+      <text
+         style="font-size:14.96077347px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Times New Roman"
+         y="206.2384"
+         x="74.803864"
+         xml:space="preserve"
+         id="7">0</text>
+      <text
+         style="font-size:14.96077347px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Times New Roman"
+         y="206.2384"
+         x="82.284248"
+         xml:space="preserve"
+         id="8"> </text>
+      <text
+         style="font-size:14.96077347px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Times New Roman"
+         y="206.2384"
+         x="291.28625"
+         xml:space="preserve"
+         id="9">(2^</text>
+      <text
+         style="font-size:14.96077347px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Times New Roman"
+         y="206.2384"
+         x="310.73523"
+         xml:space="preserve"
+         id="10">m</text>
+      <text
+         style="font-size:14.96077347px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Times New Roman"
+         y="206.2384"
+         x="322.40463"
+         xml:space="preserve"
+         id="11">)</text>
+      <text
+         style="font-size:14.96077347px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Times New Roman"
+         y="206.2384"
+         x="327.34171"
+         xml:space="preserve"
+         id="12">-</text>
+      <text
+         style="font-size:14.96077347px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Times New Roman"
+         y="206.2384"
+         x="332.27875"
+         xml:space="preserve"
+         id="13">1</text>
+      <text
+         style="font-size:14.96077347px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Times New Roman"
+         y="206.2384"
+         x="339.75912"
+         xml:space="preserve"
+         id="14"> </text>
+      <path
+         d="m 315.41048,169.42351 0,22.61353"
+         style="fill:none;stroke:#000000;stroke-width:0.93504828px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         id="15"
+         inkscape:connector-curvature="0" />
+      <text
+         style="font-size:14.96077347px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Times New Roman"
+         y="183.60614"
+         x="59.84309"
+         xml:space="preserve"
+         id="16">0</text>
+      <text
+         style="font-size:14.96077347px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Times New Roman"
+         y="183.60614"
+         x="67.323479"
+         xml:space="preserve"
+         id="17"> </text>
+      <text
+         style="font-size:14.96077347px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Times New Roman"
+         y="25.330154"
+         x="23.039589"
+         xml:space="preserve"
+         id="18">(2^</text>
+      <text
+         style="font-size:14.96077347px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Times New Roman"
+         y="25.330154"
+         x="42.488594"
+         xml:space="preserve"
+         id="19">n</text>
+      <text
+         style="font-size:14.96077347px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Times New Roman"
+         y="25.330154"
+         x="49.968979"
+         xml:space="preserve"
+         id="20">)</text>
+      <text
+         style="font-size:14.96077347px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Times New Roman"
+         y="25.330154"
+         x="54.906033"
+         xml:space="preserve"
+         id="21">-</text>
+      <text
+         style="font-size:14.96077347px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Times New Roman"
+         y="25.330154"
+         x="59.84309"
+         xml:space="preserve"
+         id="22">1</text>
+      <text
+         style="font-size:14.96077347px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Times New Roman"
+         y="25.330154"
+         x="67.323479"
+         xml:space="preserve"
+         id="23"> </text>
+      <path
+         d="m 89.755283,22.473017 -22.562714,0"
+         style="fill:none;stroke:#000000;stroke-width:0.93504828px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-dasharray:none"
+         id="24"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 281.93575,101.60164 0,45.20833 123.61339,0 0,-45.20833 -123.61339,0 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="25"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 281.93575,101.60164 0,45.20833 123.61339,0 0,-45.20833 z"
+         style="fill:none;stroke:#000000;stroke-width:0.93504828px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="26"
+         inkscape:connector-curvature="0" />
+      <text
+         style="font-size:12.41744137px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Times New Roman"
+         y="117.95758"
+         x="291.58545"
+         xml:space="preserve"
+         id="27">m = input bit depth</text>
+      <text
+         style="font-size:12.41744137px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Times New Roman"
+         y="117.95758"
+         x="387.78323"
+         xml:space="preserve"
+         id="28"> </text>
+      <text
+         style="font-size:12.41744137px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Times New Roman"
+         y="132.49619"
+         x="291.58545"
+         xml:space="preserve"
+         id="29">n = output bit depth</text>
+      <text
+         style="font-size:12.41744137px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;font-family:Times New Roman"
+         y="132.49619"
+         x="390.62576"
+         xml:space="preserve"
+         id="30"> </text>
+    </g>
+  </g>
+</svg>

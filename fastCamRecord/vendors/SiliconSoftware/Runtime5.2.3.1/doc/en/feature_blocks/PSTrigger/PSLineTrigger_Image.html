@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<title>Silicon Software - microEnable IV - Runtime 5 - Line Trigger Image</title>
+				<link href="../../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../../lib/siso.ico" rel="shortcut icon">
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2" align="left" valign="bottom" width="740"><img src="../../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="center">
+								<h2>Image Trigger for Line-Scan Cameras</h2>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="right">
+								<div align="center">
+									<div align="center">
+										<p>Parameter Set</p>
+									</div>
+								</div>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2>
+							
+						Description<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">..</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p>For a general description of the Line Trigger system refer to the documents <a href="../../documents/TriggerSystem/TriggerSystem.html">The <i>microEnable IV</i> Trigger System</a> and <a href="../../documents/TriggerSystem/TriggerModesLine.html">Trigger Modes for Line Scan Cameras</a>.</p>
+							<p></p>
+							<p>The Image Trigger for line-scan cameras is in charge to generate an internal signal called Image Gate. Lines sent by the camera are only accepted if this Image Gate is active. Therefore, with help of the Image Gate we are able to define frames by grouping all lines that belong to the same Image Gate into one frame.</p>
+							<p>There are four distinct operation modes of the Image Trigger:</p>
+							<ul>
+								<li>Free Run<br>
+									
+									
+									
+									
+									For the Free Run Mode the Image Gate basically stays valid all the time. Therefore, all lines sent by the camera are recorded. However, it temporarily goes down every N lines, which defines an <a href="../PSWindow/PSWindow.html">image height</a> of N lines. 
+								<li>Trigger<br>
+									
+									
+									
+									
+									
+									For the external Trigger Mode of the Image Trigger, the Image Gate is inactive until an external trigger signal activates the Image Gate for N lines. Therefore, at each external trigger, the frame grabber records a frame of <a href="../PSWindow/PSWindow.html">image height</a> N.
+
+								<li>Gated Singleframe<br>
+									
+									
+									
+									
+									For the external Gated Mode of the Image Trigger, the Image Gate is active as long as the external trigger source is active, but is becoming inactive when N lines have been recorded. Therefore, during an external trigger the frame grabber records a frame with a height depending on the duration of the external trigger signal, but is not exeeding an <a href="../PSWindow/PSWindow.html">image height</a> of N lines.	
+								<li>Gated Multiframe<br>
+									
+									
+									
+									
+									For the external Gated Multiframe Mode of the Image Trigger, the Image Gate remains active as long as the external trigger signal is active. However, it temporarily goes down every N lines, which defines an <a href="../PSWindow/PSWindow.html">image height</a> of max. N lines. By breaking up the image into 'Sub-Frames' a possible memory violation at unexpected long frames is prevented. With the Image Tag the user is able to identify the last last sub-frame, where the external signal became inactive.
+
+							</ul>
+							<p>Please read the according chapter of the manual of your camera, which output format is used.</p>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							Parameters<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<h3><u>Main Section</u></h3>
+							<h3><a name="FG_IMGTRIGGERMODE"></a>Mode</h3>
+							<p>You are able to choose the operation mode of your frame grabber. But please make sure that the operation mode of frame grabber and camera is the same.</p>
+							<h3><a name="FG_IMGTRIGGERON"></a>Image Trigger Enable</h3>
+							<p>The generation of image triggers can be switched on or off. When Image Trigger Enable is set to OFF, the image aquisition is terminated. When Image Trigger Enable is set to ON, the image aquisition will start immediately.</p>
+							<h3><a name="FG_FLASHON"></a>Flash Enable</h3>
+							<p>A flashing signal can be enabled with this parameter.</p>
+							<p></p>
+							<h3><u>Section Image Trigger Input</u></h3>
+							<h3><a name="FG_IMGTRIGGERINSRC"></a>Source</h3>
+							<p>In external trigger mode you are able to choose the input source.</p>
+							<p></p>
+							<h3><a name="FG_IMGTRIGGERGATEDELAY"></a>Gate Delay</h3>
+							<p>The sub entry gate delay below the image trigger directory can't be entered within the free run.</p>
+							<h3></h3>
+							<h3><a name="FG_IMGTRIGGERINPOLARITY"></a>Polarity</h3>
+							<p>In external trigger mode the polarity for the input can be set.</p>
+							<p></p>
+							<h3><u>Section Flash</u></h3>
+							<h3><a name="FG_STROBEPULSEDELAY"></a>Flash Delay -&gt; ExSync</h3>
+							<p>For enabling the flash delay enter this parameter.</p>
+							<p></p>
+							<h3><a name="FG_FLASH_POLARITY"></a>Flash Polarity</h3>
+							<p>With this parameter it is able to set the flash polarity.</p>
+							<p></p>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							References<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+					<p><a href="../../documents/TriggerSystem/TriggerSystem.html">Trigger System in General</a></p>
+					<p><a href="../../documents/TriggerSystem/TriggerModesLine.html" target="_blank">Trigger Modes for Line Scan Cameras</a></p>
+					<p><a href="../../documents/TriggerSystem/ShaftEncoder.html">Shaft Encoder</a></p>
+					<p><a href="../../documents/SDK/SDK.html">SDK Documentation</a></p>
+				</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+ 						<table>
+							<tr><br><br>
+								<td align="left" valign="middle" bgcolor="white" width="200"></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../index.html">Back to Documentation Index <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								<td align="right" valign="middle" bgcolor="white"></td>
+							</tr>
+							<tr>
+								<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../overviews/applet_feature_overview.html">Back to Feature Overview <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								</td>
+								<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				<tr>
+					<td colspan="2" align="left" valign="top" width="740"><img src="../../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+			<p></p>
+		</body>
+</html>
+
+
+

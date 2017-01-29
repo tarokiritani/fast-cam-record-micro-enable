@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<title>Silicon Software - Runtime 5 - Trigger Modes for Line Scan Cameras in General</title>
+			<!-- #BeginHeadLocked "" -->
+				<link href="../../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../../lib/siso.ico" rel="shortcut icon">
+			<!-- #EndHeadLocked -->
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2" align="left" valign="bottom" width="740"><img src="../../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td bgcolor="white" width="60"><font color="white">.</font></td>
+							</tr>
+						</table>
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.if </font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<div align="center">
+								<div align="center">
+									<h1>The Trigger Modes for Line Scan Cameras (AcquisitionApplets)</h1>
+								</div>
+								<div align="left">
+									<div align="left">
+										<h3>Contents</h3>
+										<p><a href="#Overview">1 Overview</a></p>
+										<p><a href="#Line Generation">2 Line Generation</a></p>
+									</div>
+									<blockquote>
+										<p><font size="-1"><a href="#Line Trigger Modes">2.1 Line Trigger Modes</a></font></p>
+										<blockquote>
+											<p><font size="-1"><a href="#Grabber Controlled">2.1.1 Grabber Controlled</a></font></p>
+											<p><font size="-1"><a href="#External Trigger">2.1.2 External Trigger</a></font></p>
+											<p><font size="-1"><a href="#Gated Line Trigger">2.1.3 Gated Line Trigger</a></font></p>
+										</blockquote>
+										<p><font size="-1"><a href="#Anchor-2.2-33738">2.2 Delay and Additional Deadtime</a></font></p>
+										<p><font size="-1"><a href="#Anchor-2.2 Downsc-64642">2.3 Downscaling</a></font></p>
+										<blockquote>
+											<p><a href="#Anchor-2.3.1 Down-32268"><font size="-1">2.3.1 Downscaling the Periodic Exsync</font></a></p>
+											<p><a href="#Anchor-2.3.2 Down-41424"><font size="-1">2.3.2 Downscaling the Gated Exsync</font></a></p>
+										</blockquote>
+									</blockquote>
+									<div align="left">
+										<p><a href="#Anchor-3 Im-49360">3 Image Generation</a></p>
+										<blockquote>
+											<p><font size="-1"><a href="#Anchor-3.1-42875">3.1 Image Trigger Modes</a></font></p>
+											<blockquote>
+												<p><font size="-1"><a href="#Anchor-3.1-50687">3.1.1 Free-Run</a></font></p>
+												<p><font size="-1"><a href="#Anchor-3.1.2 E-62047">3.1.2 External Image Trigger</a></font></p>
+												<p><font size="-1"><a href="#Anchor-3.1-19714">3.1.3 Gated Multibuffer</a></font></p>
+												<p><font size="-1"><a href="#Anchor-3.1-32589">3.1.4 Gated Singlebuffer</a></font></p>
+											</blockquote>
+											<p><font size="-1"><a href="#Anchor-4 De-50988">3.2 Delay</a></font></p>
+											<p><a href="#Anchor-4 Fl-55423"><font size="-1">3.3 Flash</font></a></p>
+										</blockquote>
+										<h3>Related Documents</h3>
+										<div align="left">
+									<p><a href="TriggerSystem.html">The <i>microEnable </i>Trigger System</a></p>
+								</div>
+										<hr>
+										<div align="left">
+											<div align="left">
+												<h1>1 <a name="Overview"></a>Overview</h1>
+												<table width="64" border="0" cellspacing="0" cellpadding="0" align="center">
+													<tr>
+														<td><img src="../../../images/trigger_system/trg_line_imggate.gif" alt="" height="269" width="603" border="0"></td>
+													</tr>
+													<tr>
+														<td align="center" valign="top">Figure 1: Overview over typical line trigger signals</td>
+													</tr>
+												</table>
+												<p>The Trigger System for line scan cameras falls into two separate subsystems, the<i> Line Trigger</i> and the <i>Image Trigger</i>. While the<i> Line Trigger</i> subsystem is responsible for controlling the acquisition of lines by the camera, the <i>Image Trigger</i> subsystem controls the way how these lines form images.</p>
+												<p>Since the <i>Line Trigger</i> subsystem might be in charge of controlling the camera, it is able to generate camera control signals, like  <i>Exsync</i>, which are available to the the camera via the Camera Link CC signals.</p>
+												<p>The <i>Image Trigger</i> subsystem generates only one internal signal, the <i>Image Gate </i>signal, which groups the lines transferred from the camera into images.</p>
+												<p>Figure 1 shows the typical setup for a line triggered image acquisition. The falling edge of the <i>Exsync</i> opens the shutter of the line scan camera. With the rising edge of <i>Exsync</i>, the exposure time is up and the camera transfers the recorded line. The<i> Image Trigger</i> subsystem is synchronized to the line generation to ensure the acquisition of complete lines. All lines from the camera are accepted as long as the<i> Image Gate</i> is active at the beginning of a transferred line. The last line of an image is the line during the transfer of which the <i>Image Gate</i> becomes inactive.</p>
+												<hr>
+												<h1>2 <a name="Line Generation"></a>Line Trigger</h1>
+												<p>The line trigger controls the signal <i>Exsync </i>which is sent to the camera and is responsible for the acquisition of image lines. The signal is generated as a periodic signal by the frame grabber (grabber-controlled mode) or by an external trigger input signal (external trigger input).</p>
+												<p>The <i>Line Trigger</i> subsystem generates the signals <i>Exsync</i> and <i>Exsync2.</i> <i>Exsync2</i> is the <i>Exsync</i> signal with a user defined delay. Therefore, in the following only the <i>Exsync</i> signal is described.</p>
+											</div>
+											<h2><a name="Line Trigger Modes"></a><font size="3">2.1 Line Trigger Modes</font></h2>
+											<h3><a name="Grabber Controlled"></a><font size="2">2.1.1 Grabber-Controlled</font></h3>
+											<table width="64" border="0" cellspacing="0" cellpadding="0" align="center">
+												<tr>
+													<td><img src="../../../images/trigger_system/trg_line_line_gc.gif" alt="" height="168" width="617" border="0"></td>
+												</tr>
+												<tr>
+													<td align="center" valign="top">Figure 2: Grabber Controlled line trigger mode.</td>
+												</tr>
+											</table>
+											<p>IThe <i>Line Trigger</i> mode <i>&quot;Grabber-Controlled&quot;</i> is used to feed the line camera with a periodic <i>Exsync</i> signal. By default, the <i>Exsync</i> signal is configured to low-active, period 20&micro;s and an exposure time of 19&micro;s. These values can be modified via software, even while the grabbing is in progress. However, at all times, L&lt;P has to be respected. You can guarantee this by setting P before L when increasing Period and Exposure, or setting L before P when decreasing them.</p>
+											<h3><a name="External Trigger"></a><font size="2">2.1.2 External Trigger</font></h3>
+											<table width="64" border="0" cellspacing="0" cellpadding="0" align="center">
+												<tr>
+													<td><img src="../../../images/trigger_system/trg_line_line_extern.gif" alt="" height="215" width="619" border="0"></td>
+												</tr>
+												<tr>
+													<td align="center" valign="top">Figure 2: External Line Trigger</td>
+												</tr>
+											</table>
+											<p>In the <i>&quot;External Trigger&quot;</i> mode, the image acquisition is controlled by an external signal that is received at the the trigger input. A rising edge of the signal (can be switched to the falling edge via software) executes the generation of the camera trigger Line trigger. The time of exposure and the polarity of the signal are configurable via software. The configuration of the period is irrelevant. During the exposure phase, no new trigger is accepted.</p>
+											<h3><a name="Gated Line Trigger"></a><font size="2">2.1.3 Gated Line Trigger</font></h3>
+											<table width="64" border="0" cellspacing="0" cellpadding="0" align="center">
+												<tr>
+													<td><img src="../../../images/trigger_system/trg_line_line_gated.gif" alt="" height="264" width="618" border="0"></td>
+												</tr>
+												<tr>
+													<td align="center" valign="top">Figure 3: Exsync generation which is gated by the Image Gate</td>
+												</tr>
+											</table>
+											<p>So far the <i>Line Trigger</i> generation was completely independant from the<i> Image Trigger</i> subsystem. However, it is possible to supress the <i>Exsync</i> generation while no lines are accepted by the Image Trigger, i.e., the Image Gate is low.</p>
+											<p>The <i>Gated Line Trigger</i> variant is applicable for both <i>Line Trigger</i> modes, thus, there are four <i>Line Trigger</i> modes available in total. The <i>&quot;Grabber-Controlled&quot;</i> mode becomes the <i>&quot;Gated Grabber-Controlled&quot;</i> mode, and the <i>&quot;External Trigger&quot;</i> mode becomes the <i>&quot;Gated External Trigger&quot;</i> mode.</p>
+											<h2><font size="3">2.2 <a name="Anchor-2.2-33738"></a>Delay and Additional Deadtime</font></h2>
+											<table width="64" border="0" cellspacing="0" cellpadding="0" align="center">
+												<tr>
+													<td><img src="../../../images/trigger_system/trg_line_line_extern_delay.gif" alt="" height="209" width="619" border="0"></td>
+												</tr>
+												<tr>
+													<td align="center" valign="top">Figure 4: Delay and additional deadtime</td>
+												</tr>
+											</table>
+											<p>With the <i>Line Trigger Delay</i> it is possible to delay the <i>Exsyc</i> generation with respect to the incoming external trigger input signal.</p>
+											<h2><font size="3">2.3 <a name="Anchor-2.2 Downsc-64642"></a>Downscaling</font></h2>
+											<p>With downscaling it is possible to suppress the external trigger input signals. By accepting only every 2nd, 3rd, ... trigger input to gernerate an <i>Exsync</i>, the line frequency of the camera is reduced (i.e., the vertical image resolution is reduced) without the need to change the hardware setup (e.g., exchanging the used encoder).</p>
+											<h3><font size="2">2.3.1 <a name="Anchor-2.3.1 Down-32268"></a>Downscaling the Periodic Exsync</font></h3>
+											<table width="64" border="0" cellspacing="0" cellpadding="0" align="center">
+												<tr>
+													<td><img src="../../../images/trigger_system/trg_downscale.gif" alt="" height="162" width="619" border="0"></td>
+												</tr>
+												<tr>
+													<td align="center" valign="top">Figure 5: Downscaling</td>
+												</tr>
+											</table>
+											<p>Downscaling can only be done in the <i>&quot;External Trigger&quot;</i> modes. For the simple <i>&quot;</i><a href="#External Trigger"><i>External Trigger&quot;</i></a> mode the <i>Exsync</i> is derived from the trigger input and more ore less periodical. There is no beginning or ending with respect to the image. Thus, the only available parameter is the downscale factor itself.</p>
+											<h3><font size="2">2.3.2 <a name="Anchor-2.3.2 Down-41424"></a>Downscaling the Gated Exsync</font></h3>
+											<table width="64" border="0" cellspacing="0" cellpadding="0" align="center">
+												<tr>
+													<td><img src="../../../images/trigger_system/trg_downscaleGated.gif" alt="" height="216" width="619" border="0"></td>
+												</tr>
+												<tr>
+													<td align="center" valign="top">Figure 6: Downscale Init and Downscale</td>
+												</tr>
+											</table>
+											<p>Downscaling can only be done in the <i>&quot;External Trigger&quot;</i> modes. For the <i>&quot;<a href="#Gated Line Trigger">Gated External Trigger&quot;</a> </i>mode the <i>Exsync</i> is derived from the trigger input but only available during the <i>Image Gate</i>. Therfore, the<i> Image Gate</i> defines the beginng and the end of the <i>Exsync</i> generation. It is possible to set different downscale factors for the first <i>Exsync</i> (the first line) and the remaining image (all following lines until the end of the<i> Image Gate</i>). Thus, the available parameters are the <i>Downscale Init</i> and the <i>Downscale Factor</i>.</p>
+											<div align="left">
+												<hr>
+												<h1>3 <a name="Anchor-3 Im-49360"></a>Image Generation</h1>
+												<p>The<i> Image Trigger</i> system of a line camera applet enables three modes for generating images out of a continuous stream of image lines from a line camera.</p>
+												<h2><font size="3">3.1 <a name="Anchor-3.1-42875"></a>Image Trigger Modes</font></h2>
+												<h3><font size="2">3.1.1 <a name="Anchor-3.1-50687"></a>Free-Run</font></h3>
+												<table width="64" border="0" cellspacing="0" cellpadding="0" align="center">
+													<tr>
+														<td><img src="../../../images/trigger_system/trg_line_img_freerun.gif" alt="" height="210" width="615" border="0"></td>
+													</tr>
+													<tr>
+														<td align="center" valign="top">Figure 7: Overview over the <i>microEnable </i>trigger system</td>
+													</tr>
+												</table>
+												<p>The default <i>Image Trigger</i> mode is <i>&quot;Free-Run&quot;</i>. <i>&quot;Free-Run&quot;</i> accepts all lines sent by the camera and groups them into images of Height lines. If parameter yOffset is greater than Zero, a number of yOffset lines between two sequential images won't be acquired.</p>
+												<h3><font size="2">3.1.2 <a name="Anchor-3.1.2 E-62047"></a>External Image Trigger</font></h3>
+												<table width="64" border="0" cellspacing="0" cellpadding="0" align="center">
+													<tr>
+														<td><img src="../../../images/trigger_system/trg_line_img_extern.gif" alt="" height="392" width="630" border="0"></td>
+													</tr>
+													<tr>
+														<td align="center" valign="top">Figure 8:<i> External Image Trigger</i> mode with <i>Grabber-Controlled Line Trigger</i>. A Delay of 2 lines for the <i>Image Gate</i> and an yOffset of 2 lines for the image is displayed.</td>
+													</tr>
+												</table>
+												<p>With the <i>Image Trigger</i> mode <i>&quot;External Trigger&quot;</i> it is possible to synchronize the image acquisition to an external trigger pulse, e.g., to one of the four trigger input sources or to a software trigger pulse.</p>
+												<p>The rising edge of a signal executes the acquisition of Height image lines.</p>
+												<p>With the parameter <i>Delay</i>, you can configure a delay by lines for the activation of the <i>Image Gate</i>. This delays the start of the image acquisition. The Parameter yOffset (as in <i>&quot;Free-Run&quot;</i>) rejects the first lines from the camera. Delay and yOffset seem to have the same effect -  however, the difference is that yOffset doesn't affect the <i>Image Gate</i>, which is relevant when using the <a href="#Gated Line Trigger"><i>Gated Line Trigger</i></a> mode.</p>
+												<p>For details about the generated signal <i>Flash</i>, refer to section <a href="#Anchor-4 Fl-55423">Flash</a>.</p>
+												<h3><font size="2">3.1.3 <a name="Anchor-3.1-19714"></a>Gated Multibuffer</font></h3>
+												<table width="64" border="0" cellspacing="0" cellpadding="0" align="center">
+													<tr>
+														<td><img src="../../../images/trigger_system/trg_line_img_gatemulti.gif" alt="" height="362" width="630" border="0"></td>
+													</tr>
+													<tr>
+														<td align="center" valign="top">Figure 9: Image Trigger mode &quot;Gated Multibuffer&quot; interprets the external Trigger Input as a gate for the image acquisition.</td>
+													</tr>
+												</table>
+												<p>The <i>Image Trigger</i> mode <i>&quot;Gated Multibuffer&quot;</i> is very similar to the <a href="#Anchor-3.1.2 E-62047"><i>External Trigger</i></a> mode. With the rising edge of the image trigger input it is possible to start the acquisition. Again, a <i>Delay</i> can be specified (as in<i> External Trigger</i> mode). However, the trigger input is interpreted as a gate and the image terminates with the (delayed) falling edge. The parameter <i>Height</i> defines the maximum height of an image, thus, the image spans across several buffers if the trigger input exceeds Height lines. The information whether the <i>Image Gate</i> was still active at the end of the frame, or if the image was terminated by a falling<i> Image Gate</i>, is available by bit 31 of the<i> Image Tag</i> (Bit 31 of the <i>Image Tag</i> is 1 if the image is the last image of the acquisition process, Bit 31 is 0 if another image belonging to the same <i>Image Gate</i> follows).</p>
+												<p></p>
+												<h3><font size="2">3.1.4 <a name="Anchor-3.1-32589"></a>Gated Singlebuffer</font></h3>
+												<table width="64" border="0" cellspacing="0" cellpadding="0" align="center">
+													<tr>
+														<td><img src="../../../images/trigger_system/trg_line_img_gatesingle.gif" alt="" height="362" width="630" border="0"></td>
+													</tr>
+													<tr>
+														<td align="center" valign="top">Figure 10: Gated Singlebuffer</td>
+													</tr>
+												</table>
+												<p>The Image Trigger mode<i> &quot;Gated Singlebuffer&quot;</i> is almost identical to the <i><a href="#Anchor-3.1-19714">&quot;Gated Multibuffer&quot;</a></i> mode. However, only a single image of maximum Height lines is acquired.</p>
+										<div align="left">
+											<div align="left">
+												<div align="left">
+													<div align="left">
+														<h2><font size="3">3.2 <a name="Anchor-4 De-50988"></a>Delay</font></h2>
+														<p>The <i>Delay</i> for the <i>Image Gate</i> and the <i>Flash</i> of the <i>Image Trigger</i> is set via software in &quot;line ticks&quot;. The time for a line tick is either defined by the <i>Period</i> of the frame grabbers line signal generator (see section <a href="#Grabber Controlled"><i>Grabber-Controlled</i></a> mode), or the external trigger input (see section <a href="#External Trigger"><i>External Trigger</i></a> mode for the line trigger).</p>
+														<p>If you use your camera in <i>&quot;Free-Run&quot;</i> mode but still want to define a <i>Delay</i> for the <i>Image Trigger</i>, it is possible to configure the <i>&quot;Grabber-Controlled&quot;</i> mode and to disable the <i>Exsync</i> output (Exsync Off). Only the output is disabled and the configured <i>Period</i> time is available for the <i>Image Gate</i>.</p>
+														<p>If you use the <i>External Line Trigger</i> mode, a line tick is defined by the external trigger input. Therefore, if you use downscaling for the <i>Exsync</i> generation, the <i>Delay</i> is defined on a sub-line scale.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<h2><font size="3">3.3 <a name="Anchor-4 Fl-55423"></a>Flash</font></h2>
+										<p>The <i>Flash</i> signal generated by the applet is similar to the <i>Flash</i> signal for area scan cameras. The <i>Flash</i> is triggered by the external trigger input like the <i>Image Gate.</i> However, the <i>Flash</i> has its own <i>Delay</i> (again in line ticks).</p>
+										<p>The <i>Flash</i> signal lasts for one line tick and might be most useful when synchonizing a 2nd frame grabber.</p>
+												<h1></h1>
+											</div>
+										</div>
+										<h1></h1>
+									</div>
+								</div>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+						<table>
+							<tr>
+								<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+								<div align="center">
+									<a title="Index" href="../../index.html">Back to Documentation Index <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+							</td>
+								<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="left" valign="top" width="740"><img src="../../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+		</body>
+</html>
+
+
+

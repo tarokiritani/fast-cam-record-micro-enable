@@ -1,0 +1,841 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<title>Silicon Software - Advanced AcquisitionApplets 1.1 - Overview</title>
+					<link href="../../lib/siso.css" rel="stylesheet" media="screen">
+					<link href="../../lib/siso.ico" rel="shortcut icon">
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+				<td colspan="3" align="left" valign="bottom" width="784"><img src="../../images/head.jpg" alt="" width="740" height="120"></td>
+			</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td bgcolor="white" width="274" height="20"></td>
+				<td align="left" valign="top" bgcolor="white" width="450" height="20"></td>
+			</tr>
+			<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+				<td colspan="2" bgcolor="white" width="724" height="20">
+					<h2></h2>
+				</td>
+			</tr>
+			</table>
+
+<table border="0" cellspacing="0" cellpadding="0" width="784">
+		<tr height="65">
+			<td bgcolor="white" width="60" height="65"></td>
+			<td bgcolor="white" width="65" height="65"><img src="../../images/index/AppletsFeatures_64x64.png" alt="" width="64" height="64"></td>
+			<td bgcolor="white" width="5" height="65" valign="middle"></td>
+			<td bgcolor="white" width="654" height="65" valign="middle"><h3>Advanced AcquisitionApplets for microEnable&nbsp;IV GigE Vision frame Grabbers <b><u>microEnable AQ4-GE/-GPoE</u> and <u>microEnable VQ4-GE/-GPoE</u></b></h3></td>
+			</tr>
+</table>
+		<table border="0" cellspacing="0" cellpadding="0" width="960">
+
+
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td colspan="2" bgcolor="white" width="724">
+					<hr>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td colspan="2" bgcolor="white" width="724">
+					<p>The following <b>Advanced AcquisitionApplets</b> set supports GigE Vision cameras in combination with certain image processing features.</p>
+					<p>The following tables list all applets available for the mentioned grabbers. A general introduction into the applet world you find under <a href="../documents/Applets.html">Getting Started with Applets</a>.</p>
+					<p>Advanced AcquisitionApplets cover a certain selection and combination of the following image processing features:</p>
+					<ul>
+						<li>Trigger:<br>
+							
+							A multi-functional area trigger is included to control the camera or external devices using grabber generated, external, or software generated trigger pulses.<br>
+						<li>ROI Selection<br>
+							A ROI can be selected for further processing. The stepsize of the ROI width is 4 pixel. The stepsize of the ROI height is 1 lines.<br>
+						<li>Bayer Pattern de-mosaicing and White Balancing<br>
+							The high-quality Bayer pattern de-mosaicing is based on a 5x5 kernel size. A white balancing module for individual gain of each color component enhances image quality.<br>
+						<li>Lookup Table<br>The full resolution lookup table can either be configured by using a user defined table, or by using a processor. The processor gives the opportunity to use pre-defined functions such as offset, gain, and gamma to enhance the image quality. Color components are basically processed individually.<br>
+							<br>
+							<br>
+						
+							
+						
+						
+					</ul>
+					<h3><b>Specific feature overview of all available Advanced AcquisitionApplets<br>
+							for <u>microEnable AQ4-GE/-GPoE</u> </b></h3>
+					<h3><br>
+					</h3>
+					<p>The following tables list the applets for area cameras with their features. </p>
+					<p>A detailed documentation of each feature in the context of its usage can be found in the specific applet documention. At the end of each table line, you find a link to the corresponding applet documention in HTML and PDF format.<br>
+					</p>
+					<p>To configure your system for use with link aggregation cameras, refer to our <a href="../documents/GigE/QuickStartLAG.pdf">Getting Started with LAG Applets</a> Guide.</p>
+					<div align="left">
+						<div align="left">
+							
+						</div>
+						<table border="0" cellspacing="1" cellpadding="1">
+							<tr>
+								<td rowspan="3" colspan="2">
+									<div align="center">
+										<font size="1"><b>Area Scan Applets</b></font>
+										<p><font size="1"><b>(Applet Name)</b></font></p>
+									</div>
+								</td>
+								<td bgcolor="gray">
+									<div align="center">
+										<font size="1">Img. Size</font></div>
+								</td>
+								<td colspan="2" bgcolor="gray">
+									<div align="center">
+										<font size="1"><b>CamPort</b></font></div>
+								</td>
+								<td bgcolor="gray">
+									<div align="center">
+										<font size="1">Mode</font></div>
+								</td>
+								<td colspan="2" bgcolor="gray">
+									<div align="center">
+										<font size="1">Bitdepth</font></div>
+								</td>
+								<td colspan="7" bgcolor="gray">
+									<div align="center">
+										<font size="1">Image Pre-Processing</font></div>
+								</td>
+								<td colspan="2" bgcolor="gray">
+									<div align="center">
+										<font size="1">Bandwidth</font></div>
+								</td>
+								<td colspan="2" bgcolor="gray">
+									<div align="center">
+										<font size="1">Links</font></div>
+								</td>
+							</tr>
+							<tr>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">Max.</font></div>
+								</td>
+								<td colspan="2" bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">GigE Vision</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">  </td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">Proc.</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">Output</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">Image Select.</font></div>
+								</td>
+								<td bgcolor="#c4c4c4" >
+									<div align="center">
+										<font size="1">Noise Filter</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">Shading Corr.</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">Dead Pixel Interpol.</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">Bayer Color Recon.</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">White Balance</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">LUT</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">per CAM</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">total DMA</font></div>
+								</td>
+								<td rowspan="2" bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">HTML</font></div>
+								</td>
+								<td rowspan="2" bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">PDF</font></div>
+								</td>
+							</tr>
+							<tr>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">[Px]</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1"># CAMs</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">Type</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">  </td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">[bit]</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">[bit]</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1" color="#c4c4c4">..</font></div>
+								</td>
+								<td bgcolor="#c4c4c4" width="30">
+									<div align="center">
+										<font size="1" color="#c4c4c4">.</font><font size="1">Median</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">Offset+ Gain</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1" color="#c4c4c4">..</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">HQ</font><font size="1" color="#c4c4c4">.</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1" color="#c4c4c4">..</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1" color="#c4c4c4">..</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">[MP/s]</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">[MB/s]</font></div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="19" bgcolor="#003399">
+									<div align="center">
+										<font size="1" color="white">Area Scan Camera Support</font></div>
+								</td>
+							</tr>
+							<tr bgcolor="#ddccff">
+								<td colspan="2"><font size="1">Acq_DualGEx2AreaGray12</font></td>
+								<td>
+									<div align="center">
+										<font size="1">4k*4k</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">2</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">LAGx2</font></div>
+								</td>
+								<td><font size="1">Grayscale</font></td>
+								<td>
+									<div align="center">
+										<font size="1">  12</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">8/16  </font></div>
+								</td>
+								<td bgcolor="#FFCCCC">
+									<div align="center">
+										<font size="1">  no</font></div>
+									<div align="center">
+										<font size="1">  </font></div>
+								</td>
+								<td bgcolor="#FFCCCC" width="30">
+									<div align="center">
+										<font size="1">  no</font></div>
+									<div align="center">
+										<font size="1">  </font></div>
+								</td>
+								<td bgcolor="#FFCCCC">
+									<div align="center">
+										<font size="1">  no</font></div>
+									<div align="center">
+										<font size="1">  </font></div>
+								</td>
+								<td bgcolor="#FFCCCC" width="30">
+									<div align="center">
+										<font size="1">  no</font></div>
+									<div align="center">
+										<font size="1">  </font></div>
+								</td>
+								<td bgcolor="#FFCCCC">
+									<div align="center">
+										<font size="1">  no</font></div>
+									<div align="center">
+										<font size="1">  </font></div>
+								</td>
+								<td bgcolor="#FFCCCC">
+									<div align="center">
+										<font size="1">no</font></div>
+								</td>
+								<td bgcolor="#99ff00">
+									<div align="center">
+										<font size="1">Full Res </font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">240</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">800</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1"><a href="mE4AQ4-GE/html/Acq_DualGEx2AreaGray12.html"><img src="../../images/html.png" alt="HTML" height="16" width="16" border="0"></a></font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1"><a href="mE4AQ4-GE/pdf/Acq_DualGEx2AreaGray12.pdf"><img src="../../images/pdf.png" alt="HTML" height="16" width="16" border="0"></a></font></div>
+								</td>
+							</tr>
+							<tr bgcolor="#ddccff">
+								<td colspan="2"><font size="1">Acq_DualGEx2AreaBayer8</font></td>
+								<td>
+									<div align="center">
+										<font size="1">4k*4k</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">2 </font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">LAGx2</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">Bayer</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1"> 8</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1"> 24</font></div>
+								</td>
+								<td bgcolor="#FFCCCC">
+									<div align="center">
+										<font size="1">  no</font></div>
+									<div align="center">
+										<font size="1"> </font></div>
+								</td>
+								<td bgcolor="#FFCCCC" width="30">
+									<div align="center">
+										<font size="1">  no</font></div>
+									<div align="center">
+										<font size="1"> </font></div>
+								</td>
+								<td bgcolor="#FFCCCC">
+									<div align="center">
+										<font size="1">  no</font></div>
+									<div align="center">
+										<font size="1"> </font></div>
+								</td>
+								<td bgcolor="#FFCCCC" width="30">
+									<div align="center">
+										<font size="1">  no</font></div>
+									<div align="center">
+										<font size="1"> </font></div>
+								</td>
+								<td bgcolor="#99ff00">
+									<div align="center">
+										<font size="1"> 5*5</font></div>
+								</td>
+								<td bgcolor="#99ff00">
+									<div align="center">
+										<font size="1"> yes</font></div>
+								</td>
+								<td bgcolor="#99ff00">
+									<div align="center">
+										<font size="1">Full Res</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">240</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">800</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1"><a href="mE4AQ4-GE/html/Acq_DualGEx2AreaBayer8.html"><img src="../../images/html.png" alt="HTML" height="16" width="16" border="0"></a></font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1"><a href="mE4AQ4-GE/pdf/Acq_DualGEx2AreaBayer8.pdf"><img src="../../images/pdf.png" alt="HTML" height="16" width="16" border="0"></a></font></div>
+								</td>
+							</tr>
+						</table>
+						<div align="right">
+							<p></p>
+						</div>
+						<p><b>Important note:</b><br>
+						</p>
+					</div>
+					
+					
+					- The actual DMA bandwidth depends on the specific mainboard and chip set.<br>
+					<p><b>- </b>&quot;Dual&quot; applets enable the usage of up to two individual cameras in parallel (asynchronously and synchronously). All features of this type of applets are available for both cameras. </p>
+					<p>- The applets and their features are fully supported by the viewer software microDisplay and by the Silicon Software runtime environment including the powerful Software Development Kit (SDK).</p>
+					<p>- The GigE Vision standard 2.0 introduced &#150; apart from other improvements &#150; Link Aggregation (LAG). At present, Silicon Software supports a specific protocol implementation for the packet distribution over two physical links. With Silicon Software frame grabbers, you can use all GigE Vision cameras that offer two links for streaming and work with the same GigE Vision LAG protocol implementation as the frame grabbers. Please contact the Silicon Software Sales or Silicon Software Support departments to get to know which cameras are compatible.</p>
+					<p><b><a href="../documents/SDKExampleList.html">SDK examples overview</a></b></p>
+					<p><b><br>
+							<br>
+						</b></p>
+					<h3><b><b>Specific feature overview over all available Advanced AcquisitionApplets<br>
+								
+								
+							for </b><u>microEnable VQ4-GE/-GPoE</u><b><br>
+								<br>
+							</b></b></h3>The following tables list the applets for area cameras with their features. A detailed documentation of each feature in the context of its usage can be found in the specific applet documention. At the end of each table line, you find a link to the corresponding applet documention in HTML and PDF format.<br>
+					<p>To configure your system for use with link aggregation cameras, refer to our <a href="../documents/GigE/QuickStartLAG.pdf">Getting Started with LAG Applets</a> Guide.</p>
+					<p></p>
+					<div align="left">
+						<table border="0" cellspacing="1" cellpadding="1">
+							<tr>
+								<td rowspan="3" colspan="2">
+									<div align="center">
+										<font size="1"><b>Area Scan Applets</b></font>
+										<p><font size="1"><b>(Applet Name)</b></font></p>
+									</div>
+								</td>
+								<td bgcolor="gray">
+									<div align="center">
+										<font size="1">Img. Size</font></div>
+								</td>
+								<td colspan="2" bgcolor="gray">
+									<div align="center">
+										<font size="1"><b>CamPort</b></font></div>
+								</td>
+								<td bgcolor="gray">
+									<div align="center">
+										<font size="1">Mode</font></div>
+								</td>
+								<td colspan="2" bgcolor="gray">
+									<div align="center">
+										<font size="1">Bitdepth</font></div>
+								</td>
+								<td colspan="7" bgcolor="gray">
+									<div align="center">
+										<font size="1">Image Pre-Processing</font></div>
+								</td>
+								<td colspan="2" bgcolor="gray">
+									<div align="center">
+										<font size="1">Bandwidth</font></div>
+								</td>
+								<td colspan="2" bgcolor="gray">
+									<div align="center">
+										<font size="1">Links</font></div>
+								</td>
+							</tr>
+							<tr>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">Max.</font></div>
+								</td>
+								<td colspan="2" bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">GigE Vision</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">  </td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">Proc.</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">Output</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">Image Select.</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">Noise Filter</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">Shading Corr.</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">Dead Pixel Interpol.</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">Bayer Color Recon.</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">White Balance</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">LUT</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">per CAM</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">total DMA</font></div>
+								</td>
+								<td rowspan="2" bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">HTML</font></div>
+								</td>
+								<td rowspan="2" bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">PDF</font></div>
+								</td>
+							</tr>
+							<tr>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">[Px]</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1"># CAMs</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">Type</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">  </td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">[bit]</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">[bit]</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1" color="#c4c4c4">..</font></div>
+								</td>
+								<td bgcolor="#c4c4c4" width="30">
+									<div align="center">
+										<font size="1" color="#c4c4c4">.</font><font size="1">Median</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">Offset+ Gain</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1" color="#c4c4c4">..</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">HQ</font><font size="1" color="#c4c4c4">.</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1" color="#c4c4c4">..</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1" color="#c4c4c4">..</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">[MP/s]</font></div>
+								</td>
+								<td bgcolor="#c4c4c4">
+									<div align="center">
+										<font size="1">[MB/s]</font></div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="19" bgcolor="#003399">
+									<div align="center">
+										<font size="1" color="white">Area Scan Camera Support</font></div>
+								</td>
+							</tr>
+							<tr bgcolor="#ddccff">
+								<td colspan="2"><font size="1">Acq_DualGEx2AreaGray12</font></td>
+								<td>
+									<div align="center">
+										<font size="1">4k*4k</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">2</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">LAGx2</font></div>
+								</td>
+								<td><font size="1">Grayscale</font></td>
+								<td>
+									<div align="center">
+										<font size="1">12</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">8/16 </font></div>
+								</td>
+								<td bgcolor="#FFCCCC">
+									<div align="center">
+										<font size="1">no</font></div>
+									<div align="center">
+										<font size="1"></font></div>
+								</td>
+								<td bgcolor="#FFCCCC" width="30">
+									<div align="center">
+										<font size="1">no</font></div>
+									<div align="center">
+										<font size="1"></font></div>
+								</td>
+								<td bgcolor="#FFCCCC">
+									<div align="center">
+										<font size="1">no</font></div>
+									<div align="center">
+										<font size="1"></font></div>
+								</td>
+								<td bgcolor="#FFCCCC" width="30">
+									<div align="center">
+										<font size="1">no</font></div>
+									<div align="center">
+										<font size="1"></font></div>
+								</td>
+								<td bgcolor="#FFCCCC">
+									<div align="center">
+										<font size="1">no</font></div>
+									<div align="center">
+										<font size="1"></font></div>
+								</td>
+								<td bgcolor="#FFCCCC">
+									<div align="center">
+										<font size="1">no</font></div>
+								</td>
+								<td bgcolor="#99ff00">
+									<div align="center">
+										<font size="1">Full Res </font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">240</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">800</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1"><a href="mE4AQ4-GE/html/Acq_DualGEx2AreaGray12.html"><img src="../../images/html.png" alt="HTML" height="16" width="16" border="0"></a></font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1"><a href="mE4AQ4-GE/pdf/Acq_DualGEx2AreaGray12.pdf"><img src="../../images/pdf.png" alt="HTML" height="16" width="16" border="0"></a></font></div>
+								</td>
+							</tr>
+							<tr bgcolor="#ddccff">
+								<td colspan="2"><font size="1">Acq_DualGEx2AreaBayer8</font></td>
+								<td>
+									<div align="center">
+										<font size="1">4k*4k</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">2 </font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">LAGx2</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">Bayer</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">8</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">24</font></div>
+								</td>
+								<td bgcolor="#FFCCCC">
+									<div align="center">
+										<font size="1">no</font></div>
+									<div align="center">
+										<font size="1"></font></div>
+								</td>
+								<td bgcolor="#FFCCCC" width="30">
+									<div align="center">
+										<font size="1">no</font></div>
+									<div align="center">
+										<font size="1"></font></div>
+								</td>
+								<td bgcolor="#FFCCCC">
+									<div align="center">
+										<font size="1">no</font></div>
+									<div align="center">
+										<font size="1"></font></div>
+								</td>
+								<td bgcolor="#FFCCCC" width="30">
+									<div align="center">
+										<font size="1">no</font></div>
+									<div align="center">
+										<font size="1"></font></div>
+								</td>
+								<td bgcolor="#99ff00">
+									<div align="center">
+										<font size="1">5*5</font></div>
+								</td>
+								<td bgcolor="#99ff00">
+									<div align="center">
+										<font size="1">yes</font></div>
+								</td>
+								<td bgcolor="#99ff00">
+									<div align="center">
+										<font size="1">Full Res</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">240</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1">800</font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1"><a href="mE4AQ4-GE/html/Acq_DualGEx2AreaBayer8.html"><img src="../../images/html.png" alt="HTML" height="16" width="16" border="0"></a></font></div>
+								</td>
+								<td>
+									<div align="center">
+										<font size="1"><a href="mE4AQ4-GE/pdf/Acq_DualGEx2AreaBayer8.pdf"><img src="../../images/pdf.png" alt="HTML" height="16" width="16" border="0"></a></font></div>
+								</td>
+							</tr>
+						</table>
+						<div align="right">
+							<p></p>
+						</div>
+					</div>
+					<p><b>Important note:</b><br></p>
+					
+					
+									- The actual DMA bandwidth depends on the specific mainboard and chip set.<br>
+								
+					<p><b>- </b>&quot;Dual&quot; applets enable the usage of up to two individual cameras in parallel (asynchronously and synchronously). All features of this type of applets are available for both cameras. </p>
+					<p>- The applets and their features are fully supported by the viewer software microDisplay and by the Silicon Software runtime environment including the powerful Software Development Kit (SDK).</p>
+					<p>- The GigE Vision standard 2.0 introduced &#150; apart from other improvements &#150; Link Aggregation (LAG). At present, Silicon Software supports a specific protocol implementation for the packet distribution over two physical links. With Silicon Software frame grabbers, you can use all GigE Vision cameras that offer two links for streaming and work with the same GigE Vision LAG protocol implementation as the frame grabbers. Please contact the Silicon Software Sales or Silicon Software Support departments to get to know which cameras are compatible.</p>
+					<p><a href="../documents/SDKExampleList.html"><b>SDK examples overview</b></a></p>
+					<p><br>
+					<br>
+					<br>
+					<br>
+					<p><b>General Notes</b></p>
+					<p>Click on the applet name or the corresponding <img src="../../images/html.png" alt="" height="16" width="16" border="0"> button to open a certain applet documentation in HTML format.<br>
+					</p>
+					<p>Click on the corresponding <img src="../../images/pdf.png" alt="" height="16" width="16" border="0"> button to open a certain applet documentation in PDF format.</p>
+					<p><b><b><b><b><a href="../documents/SDKExampleList.html"><br>
+											<br>
+										</a><br>
+									</b></b></b></b></p>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td colspan="2" bgcolor="white" width="724">
+					<p></p>
+				</td>
+			</tr>
+		</table>
+		<table border="0" cellspacing="0" cellpadding="0">
+
+
+			<tr>
+				<td bgcolor="white" height="20" width="60"></td>
+				<td colspan="2" bgcolor="white" width="724"><hr></td>
+			</tr>
+
+
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td colspan="2" bgcolor="white" width="724">
+					<table>
+						<tr>
+							<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+							<td align="center" valign="middle" bgcolor="white" width="250">
+							<div align="right"><a title="Index" href="../../index.html">Back to Documentation Index <img src="../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+							</td>
+							<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+
+
+
+
+			<tr>
+				<td bgcolor="white" height="20" width="60"></td>
+				<td colspan="2" bgcolor="white" width="724"><hr></td>
+			</tr>
+
+
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td bgcolor="white" width="274"></td>
+				<td align="left" valign="top" bgcolor="white" width="450">
+					<div align="right">
+						<i><font size="-1">Last modified in October 2014</font></i></div>
+				</td>
+			</tr>
+			<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td bgcolor="white" width="274" height="20"></td>
+				<td align="left" valign="top" bgcolor="white" width="450" height="20"></td>
+
+
+				<tr>
+				<td colspan="3" align="left" valign="top" width="784"><img src="../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+			</tr>
+			</table>
+		<p></p>
+		</body>
+</html>
+
+

@@ -1,0 +1,4536 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="398.11249"
+   height="182.73943"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 "
+   sodipodi:docname="cl-dual-base-setup.svg">
+  <defs
+     id="defs4">
+    <clipPath
+       id="clipPath3990"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3992"
+         clip-rule="evenodd"
+         d="m 2449,3599.92 63,-22 1,18 58,-34 3,18 92,-35 -88,81 -2,-21 -55,50 -4,-26 -58,53 -10,-82 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3976"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3978"
+         clip-rule="evenodd"
+         d="m 2491,2884.92 0,270 331,0 0,-135 0,-135 -331,0 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3962"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3964"
+         clip-rule="evenodd"
+         d="m 2579,3693.92 0,47 142,0 0,-24 0,-23 -142,0 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3948"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3950"
+         clip-rule="evenodd"
+         d="m 2802,3693.92 0,68 61,0 0,-34 0,-34 -61,0 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3924"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3926"
+         clip-rule="evenodd"
+         d="m 2411,3153.92 0,540 485,0 0,-270 0,-270 -485,0 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3910"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3912"
+         clip-rule="evenodd"
+         d="m 1891,3592.92 63,-21 1,17 59,-33 2,18 92,-35 -87,81 -2,-22 -55,50 -5,-25 -58,53 -10,-83 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3896"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3898"
+         clip-rule="evenodd"
+         d="m 1937,2883.92 0,270 331,0 0,-135 0,-135 -331,0 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3882"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3884"
+         clip-rule="evenodd"
+         d="m 2025,3692.92 0,47 142,0 0,-24 0,-23 -142,0 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3868"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3870"
+         clip-rule="evenodd"
+         d="m 2248,3692.92 0,68 61,0 0,-34 0,-34 -61,0 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3844"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3846"
+         clip-rule="evenodd"
+         d="m 1856,3152.92 0,540 486,0 0,-270 0,-270 -486,0 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3772"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3774"
+         clip-rule="evenodd"
+         d="m 2424,4868.92 0,304 306,0 0,-152 0,-152 -306,0 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3712"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3714"
+         clip-rule="evenodd"
+         d="m 2598,5286.92 0,189 94,0 0,-95 0,-94 -94,0 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3692"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3694"
+         clip-rule="evenodd"
+         d="m 2456,5286.92 0,189 95,0 0,-95 0,-94 -95,0 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3678"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3680"
+         clip-rule="evenodd"
+         d="m 2257,4775.92 0,236 47,0 0,-118 0,-118 -47,0 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3664"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3666"
+         clip-rule="evenodd"
+         d="m 2611,4585.92 0,47 143,0 0,-24 0,-23 -143,0 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3650"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3652"
+         clip-rule="evenodd"
+         d="m 2376,4585.92 0,47 142,0 0,-24 0,-23 -142,0 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3628"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3630"
+         clip-rule="evenodd"
+         d="m 2849,4916.92 0,237 47,0 0,-119 0,-118 -47,0 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3614"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3616"
+         clip-rule="evenodd"
+         d="m 2849,4821.92 0,48 47,0 0,-24 0,-24 -47,0 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3600"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3602"
+         clip-rule="evenodd"
+         d="m 2282,4680.92 0,851 567,0 0,-426 0,-425 -567,0 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath3578"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path3580"
+         clip-rule="evenodd"
+         d="m 229,507.922 0,5999.998 4500,0 0,-5999.998 -4500,0 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath5228"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path5230"
+         clip-rule="evenodd"
+         d="M 1.212e-6,540 720,540 720,1.2207e-4 l -719.999995775,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient5216"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="247.63"
+       x2="364.42999"
+       y1="276.44"
+       x1="379.51999">
+      <stop
+         id="stop5218"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffc000" />
+      <stop
+         id="stop5220"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <clipPath
+       id="clipPath5212"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path5214"
+         clip-rule="evenodd"
+         d="M 1.212e-6,540 720,540 720,1.2207e-4 l -719.999995775,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient5198"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="228.89"
+       x2="301.35999"
+       y1="308.39001"
+       x1="301.35999">
+      <stop
+         id="stop5200"
+         offset="0"
+         style="stop-opacity:1;stop-color:#0b0b0b" />
+      <stop
+         id="stop5202"
+         offset="1"
+         style="stop-opacity:1;stop-color:#0b0b0b" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5186"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="247.84"
+       x2="390.17999"
+       y1="254.55"
+       x1="369.89999">
+      <stop
+         id="stop5188"
+         offset="0"
+         style="stop-opacity:1;stop-color:#eeece1" />
+      <stop
+         id="stop5190"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5174"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="223.60001"
+       x2="389.95999"
+       y1="239.75"
+       x1="375.54999">
+      <stop
+         id="stop5176"
+         offset="0"
+         style="stop-opacity:1;stop-color:#eeece1" />
+      <stop
+         id="stop5178"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5142"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="216.89"
+       x2="378.82001"
+       y1="345.89001"
+       x1="262.98999">
+      <stop
+         id="stop5144"
+         offset="0"
+         style="stop-opacity:1;stop-color:#eeece1" />
+      <stop
+         id="stop5146"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <clipPath
+       id="clipPath5134"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path5136"
+         clip-rule="evenodd"
+         d="M 1.129e-6,540 720,540 720,1.2207e-4 l -719.99999803,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient5122"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="314.54001"
+       x2="363.69"
+       y1="343.35001"
+       x1="378.78">
+      <stop
+         id="stop5124"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffc000" />
+      <stop
+         id="stop5126"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <clipPath
+       id="clipPath5118"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path5120"
+         clip-rule="evenodd"
+         d="M 1.129e-6,540 720,540 720,1.2207e-4 l -719.99999803,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient5104"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="295.39001"
+       x2="301.23001"
+       y1="374.89001"
+       x1="301.23001">
+      <stop
+         id="stop5106"
+         offset="0"
+         style="stop-opacity:1;stop-color:#0b0b0b" />
+      <stop
+         id="stop5108"
+         offset="1"
+         style="stop-opacity:1;stop-color:#0b0b0b" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5092"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="314.34"
+       x2="390.04999"
+       y1="321.04999"
+       x1="369.76999">
+      <stop
+         id="stop5094"
+         offset="0"
+         style="stop-opacity:1;stop-color:#eeece1" />
+      <stop
+         id="stop5096"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5080"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="290.10001"
+       x2="389.84"
+       y1="306.25"
+       x1="375.42999">
+      <stop
+         id="stop5082"
+         offset="0"
+         style="stop-opacity:1;stop-color:#eeece1" />
+      <stop
+         id="stop5084"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5048"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="283.39001"
+       x2="378.69"
+       y1="412.39001"
+       x1="262.85999">
+      <stop
+         id="stop5050"
+         offset="0"
+         style="stop-opacity:1;stop-color:#eeece1" />
+      <stop
+         id="stop5052"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <clipPath
+       id="clipPath5020"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path5022"
+         clip-rule="evenodd"
+         d="M 5.326e-6,540 720,540 720,1.2207e-4 l -719.999998611,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath5010"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path5012"
+         clip-rule="evenodd"
+         d="M 5.326e-6,540 720,540 720,1.2207e-4 l -719.999998611,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath5000"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path5002"
+         clip-rule="evenodd"
+         d="M 3.158e-6,540 720,540 720,1.2207e-4 -7.79e-7,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4990"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4992"
+         clip-rule="evenodd"
+         d="M 3.158e-6,540 720,540 720,1.2207e-4 -7.79e-7,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4980"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4982"
+         clip-rule="evenodd"
+         d="M 5.634e-6,540 720,540 720,1.2207e-4 1.697e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4970"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4972"
+         clip-rule="evenodd"
+         d="M 5.634e-6,540 720,540 720,1.2207e-4 1.697e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4960"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4962"
+         clip-rule="evenodd"
+         d="M 3.467e-6,540 720,540 720,1.2207e-4 -4.7e-7,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4950"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4952"
+         clip-rule="evenodd"
+         d="M 3.467e-6,540 720,540 720,1.2207e-4 -4.7e-7,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4932"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4934"
+         clip-rule="evenodd"
+         d="M 3.158e-6,540 720,540 720,1.2207e-4 -7.79e-7,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4922"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4924"
+         clip-rule="evenodd"
+         d="M 3.158e-6,540 720,540 720,1.2207e-4 -7.79e-7,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4912"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4914"
+         clip-rule="evenodd"
+         d="M 3.465e-6,540 720,540 720,1.2207e-4 -4.72e-7,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4902"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4904"
+         clip-rule="evenodd"
+         d="M 3.465e-6,540 720,540 720,1.2207e-4 -4.72e-7,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient4884"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="240.07001"
+       x2="559.91998"
+       y1="313.07001"
+       x1="486.42001">
+      <stop
+         id="stop4886"
+         offset="0"
+         style="stop-opacity:1;stop-color:#8eb4e3" />
+      <stop
+         id="stop4888"
+         offset="1"
+         style="stop-opacity:1;stop-color:#8eb4e3" />
+    </linearGradient>
+    <clipPath
+       id="clipPath4876"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4878"
+         clip-rule="evenodd"
+         d="M 5.326e-6,540 720,540 720,1.2207e-4 l -719.999998611,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4866"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4868"
+         clip-rule="evenodd"
+         d="M 5.326e-6,540 720,540 720,1.2207e-4 l -719.999998611,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4856"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4858"
+         clip-rule="evenodd"
+         d="M 5.326e-6,540 720,540 720,1.2207e-4 l -719.999998611,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4846"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4848"
+         clip-rule="evenodd"
+         d="M 5.326e-6,540 720,540 720,1.2207e-4 l -719.999998611,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4836"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4838"
+         clip-rule="evenodd"
+         d="M 5.326e-6,540 720,540 720,1.2207e-4 l -719.999998611,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4826"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4828"
+         clip-rule="evenodd"
+         d="M -4.73e-7,540 720,540 720,1.2207e-4 -4.41e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4816"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4818"
+         clip-rule="evenodd"
+         d="M -4.73e-7,540 720,540 720,1.2207e-4 -4.41e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4806"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4808"
+         clip-rule="evenodd"
+         d="M -4.73e-7,540 720,540 720,1.2207e-4 -4.41e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4796"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4798"
+         clip-rule="evenodd"
+         d="M -4.73e-7,540 720,540 720,1.2207e-4 -4.41e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath4786"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4788"
+         clip-rule="evenodd"
+         d="M -4.73e-7,540 720,540 720,1.2207e-4 -4.41e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient4748"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="241.05"
+       x2="589.29999"
+       y1="277.37"
+       x1="571.03998">
+      <stop
+         id="stop4750"
+         offset="0"
+         style="stop-opacity:1;stop-color:#99ccff" />
+      <stop
+         id="stop4752"
+         offset="1"
+         style="stop-opacity:1;stop-color:#99ccff" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4732"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="258.04999"
+       x2="589.29999"
+       y1="294.37"
+       x1="571.03998">
+      <stop
+         id="stop4734"
+         offset="0"
+         style="stop-opacity:1;stop-color:#99ccff" />
+      <stop
+         id="stop4736"
+         offset="1"
+         style="stop-opacity:1;stop-color:#99ccff" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4720"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="288.47"
+       x2="527.31"
+       y1="310.12"
+       x1="523.02002">
+      <stop
+         id="stop4722"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffff00" />
+      <stop
+         id="stop4724"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4708"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="243.97"
+       x2="497.19"
+       y1="250.64"
+       x1="476.88">
+      <stop
+         id="stop4710"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffff00" />
+      <stop
+         id="stop4712"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4696"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="272.22"
+       x2="497.19"
+       y1="278.89001"
+       x1="476.88">
+      <stop
+         id="stop4698"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffff00" />
+      <stop
+         id="stop4700"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4676"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="217.47"
+       x2="544.31"
+       y1="239.12"
+       x1="540.02002">
+      <stop
+         id="stop4678"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffff00" />
+      <stop
+         id="stop4680"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4664"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="220.00999"
+       x2="523.35999"
+       y1="231.50999"
+       x1="512.10999">
+      <stop
+         id="stop4666"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffff00" />
+      <stop
+         id="stop4668"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4652"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="212.58"
+       x2="583.09998"
+       y1="401.03"
+       x1="457.63">
+      <stop
+         id="stop4654"
+         offset="0"
+         style="stop-opacity:1;stop-color:#339966" />
+      <stop
+         id="stop4656"
+         offset="1"
+         style="stop-opacity:1;stop-color:#339966" />
+    </linearGradient>
+    <clipPath
+       id="clipPath4608"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path4610"
+         clip-rule="evenodd"
+         d="m 0,1.2207e-4 720,0 0,539.99999793 -720,0 L 0,1.2207e-4 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6718"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6720"
+         clip-rule="evenodd"
+         d="M -2.583e-6,540 720,540 720,1.8311e-4 -3.53e-7,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient6706"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="247.63"
+       x2="364.42999"
+       y1="276.44"
+       x1="379.51999">
+      <stop
+         id="stop6708"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffc000" />
+      <stop
+         id="stop6710"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <clipPath
+       id="clipPath6702"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6704"
+         clip-rule="evenodd"
+         d="M -2.583e-6,540 720,540 720,1.8311e-4 -3.53e-7,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient6688"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="228.89"
+       x2="301.35999"
+       y1="308.39001"
+       x1="301.35999">
+      <stop
+         id="stop6690"
+         offset="0"
+         style="stop-opacity:1;stop-color:#0b0b0b" />
+      <stop
+         id="stop6692"
+         offset="1"
+         style="stop-opacity:1;stop-color:#0b0b0b" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6676"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="247.84"
+       x2="390.17999"
+       y1="254.55"
+       x1="369.89999">
+      <stop
+         id="stop6678"
+         offset="0"
+         style="stop-opacity:1;stop-color:#eeece1" />
+      <stop
+         id="stop6680"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6664"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="223.60001"
+       x2="389.95999"
+       y1="239.75"
+       x1="375.54999">
+      <stop
+         id="stop6666"
+         offset="0"
+         style="stop-opacity:1;stop-color:#eeece1" />
+      <stop
+         id="stop6668"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6632"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="216.89"
+       x2="378.82001"
+       y1="345.89001"
+       x1="262.98999">
+      <stop
+         id="stop6634"
+         offset="0"
+         style="stop-opacity:1;stop-color:#eeece1" />
+      <stop
+         id="stop6636"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <clipPath
+       id="clipPath6624"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6626"
+         clip-rule="evenodd"
+         d="M -1.669e-6,540 720,540 720,1.8311e-4 -1.611e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient6612"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="314.54001"
+       x2="363.69"
+       y1="343.35001"
+       x1="378.78">
+      <stop
+         id="stop6614"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffc000" />
+      <stop
+         id="stop6616"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <clipPath
+       id="clipPath6608"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6610"
+         clip-rule="evenodd"
+         d="M -1.669e-6,540 720,540 720,1.8311e-4 -1.611e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient6594"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="295.39001"
+       x2="301.23001"
+       y1="374.89001"
+       x1="301.23001">
+      <stop
+         id="stop6596"
+         offset="0"
+         style="stop-opacity:1;stop-color:#0b0b0b" />
+      <stop
+         id="stop6598"
+         offset="1"
+         style="stop-opacity:1;stop-color:#0b0b0b" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6582"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="314.34"
+       x2="390.04999"
+       y1="321.04999"
+       x1="369.76999">
+      <stop
+         id="stop6584"
+         offset="0"
+         style="stop-opacity:1;stop-color:#eeece1" />
+      <stop
+         id="stop6586"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6570"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="290.10001"
+       x2="389.84"
+       y1="306.25"
+       x1="375.42999">
+      <stop
+         id="stop6572"
+         offset="0"
+         style="stop-opacity:1;stop-color:#eeece1" />
+      <stop
+         id="stop6574"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6538"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="283.39001"
+       x2="378.69"
+       y1="412.39001"
+       x1="262.85999">
+      <stop
+         id="stop6540"
+         offset="0"
+         style="stop-opacity:1;stop-color:#eeece1" />
+      <stop
+         id="stop6542"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <clipPath
+       id="clipPath6510"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6512"
+         clip-rule="evenodd"
+         d="M -7.78e-7,540 720,540 720,1.2207e-4 l -720.000004715,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6500"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6502"
+         clip-rule="evenodd"
+         d="M -7.78e-7,540 720,540 720,1.2207e-4 l -720.000004715,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6490"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6492"
+         clip-rule="evenodd"
+         d="M -2.945e-6,540 720,540 720,1.2207e-4 -6.882e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6480"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6482"
+         clip-rule="evenodd"
+         d="M -2.945e-6,540 720,540 720,1.2207e-4 -6.882e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6470"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6472"
+         clip-rule="evenodd"
+         d="M -4.69e-7,540 720,540 720,1.2207e-4 l -720.000004406,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6460"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6462"
+         clip-rule="evenodd"
+         d="M -4.69e-7,540 720,540 720,1.2207e-4 l -720.000004406,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6450"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6452"
+         clip-rule="evenodd"
+         d="M -2.637e-6,540 720,540 720,1.2207e-4 l -720.000006574,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6440"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6442"
+         clip-rule="evenodd"
+         d="M -2.637e-6,540 720,540 720,1.2207e-4 l -720.000006574,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6422"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6424"
+         clip-rule="evenodd"
+         d="M -2.945e-6,540 720,540 720,1.2207e-4 -6.882e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6412"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6414"
+         clip-rule="evenodd"
+         d="M -2.945e-6,540 720,540 720,1.2207e-4 -6.882e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6402"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6404"
+         clip-rule="evenodd"
+         d="M -4.72e-7,540 720,540 720,1.2207e-4 -4.409e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6392"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6394"
+         clip-rule="evenodd"
+         d="M -4.72e-7,540 720,540 720,1.2207e-4 -4.409e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient6374"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="240.07001"
+       x2="559.91998"
+       y1="313.07001"
+       x1="486.42001">
+      <stop
+         id="stop6376"
+         offset="0"
+         style="stop-opacity:1;stop-color:#8eb4e3" />
+      <stop
+         id="stop6378"
+         offset="1"
+         style="stop-opacity:1;stop-color:#8eb4e3" />
+    </linearGradient>
+    <clipPath
+       id="clipPath6366"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6368"
+         clip-rule="evenodd"
+         d="M -7.78e-7,540 720,540 720,1.2207e-4 l -720.000004715,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6356"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6358"
+         clip-rule="evenodd"
+         d="M -7.78e-7,540 720,540 720,1.2207e-4 l -720.000004715,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6346"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6348"
+         clip-rule="evenodd"
+         d="M -7.78e-7,540 720,540 720,1.2207e-4 l -720.000004715,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6336"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6338"
+         clip-rule="evenodd"
+         d="M -7.78e-7,540 720,540 720,1.2207e-4 l -720.000004715,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6326"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6328"
+         clip-rule="evenodd"
+         d="M -7.78e-7,540 720,540 720,1.2207e-4 l -720.000004715,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6316"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6318"
+         clip-rule="evenodd"
+         d="M -4.41e-6,540 720,540 720,1.2207e-4 -8.347e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6306"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6308"
+         clip-rule="evenodd"
+         d="M -4.41e-6,540 720,540 720,1.2207e-4 -8.347e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6296"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6298"
+         clip-rule="evenodd"
+         d="M -4.41e-6,540 720,540 720,1.2207e-4 -8.347e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6286"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6288"
+         clip-rule="evenodd"
+         d="M -4.41e-6,540 720,540 720,1.2207e-4 -8.347e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath6276"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6278"
+         clip-rule="evenodd"
+         d="M -4.41e-6,540 720,540 720,1.2207e-4 -8.347e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient6238"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="241.05"
+       x2="589.29999"
+       y1="277.37"
+       x1="571.03998">
+      <stop
+         id="stop6240"
+         offset="0"
+         style="stop-opacity:1;stop-color:#99ccff" />
+      <stop
+         id="stop6242"
+         offset="1"
+         style="stop-opacity:1;stop-color:#99ccff" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6222"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="258.04999"
+       x2="589.29999"
+       y1="294.37"
+       x1="571.03998">
+      <stop
+         id="stop6224"
+         offset="0"
+         style="stop-opacity:1;stop-color:#99ccff" />
+      <stop
+         id="stop6226"
+         offset="1"
+         style="stop-opacity:1;stop-color:#99ccff" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6210"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="288.47"
+       x2="527.31"
+       y1="310.12"
+       x1="523.02002">
+      <stop
+         id="stop6212"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffff00" />
+      <stop
+         id="stop6214"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6198"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="243.97"
+       x2="497.19"
+       y1="250.64"
+       x1="476.88">
+      <stop
+         id="stop6200"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffff00" />
+      <stop
+         id="stop6202"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6186"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="272.22"
+       x2="497.19"
+       y1="278.89001"
+       x1="476.88">
+      <stop
+         id="stop6188"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffff00" />
+      <stop
+         id="stop6190"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6166"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="217.47"
+       x2="544.31"
+       y1="239.12"
+       x1="540.02002">
+      <stop
+         id="stop6168"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffff00" />
+      <stop
+         id="stop6170"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6154"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="220.00999"
+       x2="523.35999"
+       y1="231.50999"
+       x1="512.10999">
+      <stop
+         id="stop6156"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffff00" />
+      <stop
+         id="stop6158"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6142"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="212.58"
+       x2="583.09998"
+       y1="401.03"
+       x1="457.63">
+      <stop
+         id="stop6144"
+         offset="0"
+         style="stop-opacity:1;stop-color:#339966" />
+      <stop
+         id="stop6146"
+         offset="1"
+         style="stop-opacity:1;stop-color:#339966" />
+    </linearGradient>
+    <clipPath
+       id="clipPath6098"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path6100"
+         clip-rule="evenodd"
+         d="m 0,1.2207e-4 720,0 0,539.99999793 -720,0 L 0,1.2207e-4 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient8336"
+       spreadMethod="pad"
+       gradientTransform="matrix(-0.9544983,-0.2982025,0.2982025,-0.9544983,99.691727,-100.62027)"
+       gradientUnits="userSpaceOnUse"
+       y2="-264.96201"
+       x2="-345.03601"
+       y1="-287.96201"
+       x1="-368.03601">
+      <stop
+         id="stop8338"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffc000" />
+      <stop
+         id="stop8340"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <clipPath
+       id="clipPath8332"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path8334"
+         d="m -379.599,-276.4 23.125,0 0,22.875 -23.125,0 0,-22.875 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath8322"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path8324"
+         clip-rule="evenodd"
+         d="m 370.941,273.695 -2.564,-7.547 2.076,-0.147 -4.002,-7.031 2.124,-0.301 -4.228,-10.999 9.731,10.457 -2.552,0.232 6.006,6.627 -3.055,0.514 6.35,6.968 -9.886,1.227 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient8308"
+       spreadMethod="pad"
+       gradientTransform="matrix(1,0,0,-1,570.34424,0)"
+       gradientUnits="userSpaceOnUse"
+       y2="-228.89"
+       x2="-249.11"
+       y1="-268.64001"
+       x1="-249.11">
+      <stop
+         id="stop8310"
+         offset="0"
+         style="stop-opacity:1;stop-color:#0d0d0d" />
+      <stop
+         id="stop8312"
+         offset="1"
+         style="stop-opacity:1;stop-color:#0d0d0d" />
+    </linearGradient>
+    <clipPath
+       id="clipPath8304"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path8306"
+         d="m -285.172,-268.64 32.375,0 0,39.75 -32.375,0 0,-39.75 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath8294"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path8296"
+         clip-rule="evenodd"
+         d="m 285.172,268.64 32.375,0 0,-39.75 -32.375,0 0,39.75 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient8280"
+       spreadMethod="pad"
+       gradientTransform="matrix(1,0,0,-1,764.59418,0)"
+       gradientUnits="userSpaceOnUse"
+       y2="-250.862"
+       x2="-373.414"
+       y1="-254.217"
+       x1="-383.55399">
+      <stop
+         id="stop8282"
+         offset="0"
+         style="stop-opacity:1;stop-color:#6e6d68" />
+      <stop
+         id="stop8284"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <clipPath
+       id="clipPath8276"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path8278"
+         d="m -382.297,-258.015 5.625,0 0,17 -5.625,0 0,-17 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath8266"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path8268"
+         clip-rule="evenodd"
+         d="m 382.297,258.015 5.625,0 0,-17 -5.625,0 0,17 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient8252"
+       spreadMethod="pad"
+       gradientTransform="matrix(1,0,0,-1,764.59418,0)"
+       gradientUnits="userSpaceOnUse"
+       y2="-227.18201"
+       x2="-370.62299"
+       y1="-235.255"
+       x1="-377.82599">
+      <stop
+         id="stop8254"
+         offset="0"
+         style="stop-opacity:1;stop-color:#6e6d68" />
+      <stop
+         id="stop8256"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <clipPath
+       id="clipPath8248"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path8250"
+         d="m -382.297,-231.265 8.125,0 0,7.25 -8.125,0 0,-7.25 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath8238"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path8240"
+         clip-rule="evenodd"
+         d="m 382.297,231.265 8.125,0 0,-7.25 -8.125,0 0,7.25 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient8216"
+       spreadMethod="pad"
+       gradientTransform="matrix(1,0,0,-1,634.84424,0)"
+       gradientUnits="userSpaceOnUse"
+       y2="-245.67999"
+       x2="-223.964"
+       y1="-310.17999"
+       x1="-281.87701">
+      <stop
+         id="stop8218"
+         offset="0"
+         style="stop-opacity:1;stop-color:#6e6d68" />
+      <stop
+         id="stop8220"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <clipPath
+       id="clipPath8212"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path8214"
+         d="m -317.422,-278.265 64.875,0 0,58.25 -64.875,0 0,-58.25 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath8202"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path8204"
+         clip-rule="evenodd"
+         d="m 317.422,278.265 64.875,0 0,-58.25 -64.875,0 0,58.25 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient8186"
+       spreadMethod="pad"
+       gradientTransform="matrix(-0.9544983,-0.2982025,0.2982025,-0.9544983,119.61009,-97.356033)"
+       gradientUnits="userSpaceOnUse"
+       y2="-331.871"
+       x2="-344.298"
+       y1="-354.871"
+       x1="-367.298">
+      <stop
+         id="stop8188"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffc000" />
+      <stop
+         id="stop8190"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <clipPath
+       id="clipPath8182"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path8184"
+         d="m -378.86,-343.308 23.125,0 0,22.875 -23.125,0 0,-22.875 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath8172"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path8174"
+         clip-rule="evenodd"
+         d="m 370.203,340.604 -2.564,-7.547 2.076,-0.147 -4.003,-7.031 2.125,-0.302 -4.228,-10.999 9.73,10.457 -2.551,0.233 6.005,6.627 -3.054,0.514 6.35,6.967 -9.886,1.228 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient8158"
+       spreadMethod="pad"
+       gradientTransform="matrix(1,0,0,-1,570.09418,0)"
+       gradientUnits="userSpaceOnUse"
+       y2="-295.39001"
+       x2="-248.985"
+       y1="-335.14001"
+       x1="-248.985">
+      <stop
+         id="stop8160"
+         offset="0"
+         style="stop-opacity:1;stop-color:#0d0d0d" />
+      <stop
+         id="stop8162"
+         offset="1"
+         style="stop-opacity:1;stop-color:#0d0d0d" />
+    </linearGradient>
+    <clipPath
+       id="clipPath8154"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path8156"
+         d="m -285.047,-335.14 32.375,0 0,39.75 -32.375,0 0,-39.75 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath8144"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path8146"
+         clip-rule="evenodd"
+         d="m 285.047,335.14 32.375,0 0,-39.75 -32.375,0 0,39.75 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient8130"
+       spreadMethod="pad"
+       gradientTransform="matrix(1,0,0,-1,764.34424,0)"
+       gradientUnits="userSpaceOnUse"
+       y2="-317.362"
+       x2="-373.289"
+       y1="-320.71701"
+       x1="-383.42899">
+      <stop
+         id="stop8132"
+         offset="0"
+         style="stop-opacity:1;stop-color:#6e6d68" />
+      <stop
+         id="stop8134"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <clipPath
+       id="clipPath8126"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path8128"
+         d="m -382.172,-324.515 5.625,0 0,17 -5.625,0 0,-17 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath8116"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path8118"
+         clip-rule="evenodd"
+         d="m 382.172,324.515 5.625,0 0,-17 -5.625,0 0,17 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient8102"
+       spreadMethod="pad"
+       gradientTransform="matrix(1,0,0,-1,764.34424,0)"
+       gradientUnits="userSpaceOnUse"
+       y2="-293.68301"
+       x2="-370.49799"
+       y1="-301.755"
+       x1="-377.70099">
+      <stop
+         id="stop8104"
+         offset="0"
+         style="stop-opacity:1;stop-color:#6e6d68" />
+      <stop
+         id="stop8106"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <clipPath
+       id="clipPath8098"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path8100"
+         d="m -382.172,-297.765 8.125,0 0,7.25 -8.125,0 0,-7.25 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath8088"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path8090"
+         clip-rule="evenodd"
+         d="m 382.172,297.765 8.125,0 0,-7.25 -8.125,0 0,7.25 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient8066"
+       spreadMethod="pad"
+       gradientTransform="matrix(1,0,0,-1,634.59412,0)"
+       gradientUnits="userSpaceOnUse"
+       y2="-312.17999"
+       x2="-223.839"
+       y1="-376.67999"
+       x1="-281.75201">
+      <stop
+         id="stop8068"
+         offset="0"
+         style="stop-opacity:1;stop-color:#6e6d68" />
+      <stop
+         id="stop8070"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <clipPath
+       id="clipPath8062"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path8064"
+         d="m -317.297,-344.765 64.875,0 0,58.25 -64.875,0 0,-58.25 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath8052"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path8054"
+         clip-rule="evenodd"
+         d="m 317.297,344.765 64.875,0 0,-58.25 -64.875,0 0,58.25 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient7922"
+       spreadMethod="pad"
+       gradientTransform="matrix(1,0,0,-1,1046.5941,0)"
+       gradientUnits="userSpaceOnUse"
+       y2="-258.44501"
+       x2="-468.423"
+       y1="-294.944"
+       x1="-505.172">
+      <stop
+         id="stop7924"
+         offset="0"
+         style="stop-opacity:1;stop-color:#17375e" />
+      <stop
+         id="stop7926"
+         offset="1"
+         style="stop-opacity:1;stop-color:#8eb4e3" />
+    </linearGradient>
+    <clipPath
+       id="clipPath7918"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path7920"
+         d="m -523.297,-276.695 36.5,0 0,36.75 -36.5,0 0,-36.75 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath7908"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path7910"
+         clip-rule="evenodd"
+         d="m 523.297,276.695 36.5,0 0,-36.75 -36.5,0 0,36.75 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient7810"
+       spreadMethod="pad"
+       gradientTransform="matrix(1,0,0,-1,1146.8442,0)"
+       gradientUnits="userSpaceOnUse"
+       y2="-244.717"
+       x2="-550.25702"
+       y1="-262.87701"
+       x1="-559.38702">
+      <stop
+         id="stop7812"
+         offset="0"
+         style="stop-opacity:1;stop-color:#475e76" />
+      <stop
+         id="stop7814"
+         offset="1"
+         style="stop-opacity:1;stop-color:#99ccff" />
+    </linearGradient>
+    <clipPath
+       id="clipPath7806"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path7808"
+         d="m -573.422,-255.82 22.625,0 0,11.375 -22.625,0 0,-11.375 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath7796"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path7798"
+         clip-rule="evenodd"
+         d="m 573.422,255.82 22.625,0 0,-11.375 -22.625,0 0,11.375 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient7778"
+       spreadMethod="pad"
+       gradientTransform="matrix(1,0,0,-1,1146.8442,0)"
+       gradientUnits="userSpaceOnUse"
+       y2="-261.71701"
+       x2="-550.25702"
+       y1="-279.87701"
+       x1="-559.38702">
+      <stop
+         id="stop7780"
+         offset="0"
+         style="stop-opacity:1;stop-color:#475e76" />
+      <stop
+         id="stop7782"
+         offset="1"
+         style="stop-opacity:1;stop-color:#99ccff" />
+    </linearGradient>
+    <clipPath
+       id="clipPath7774"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path7776"
+         d="m -573.422,-272.82 22.625,0 0,11.375 -22.625,0 0,-11.375 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath7764"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path7766"
+         clip-rule="evenodd"
+         d="m 573.422,272.82 22.625,0 0,-11.375 -22.625,0 0,11.375 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient7750"
+       spreadMethod="pad"
+       gradientTransform="matrix(1,0,0,-1,1024.0941,0)"
+       gradientUnits="userSpaceOnUse"
+       y2="-288.88"
+       x2="-494.72198"
+       y1="-299.70401"
+       x1="-496.86801">
+      <stop
+         id="stop7752"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffcc00" />
+      <stop
+         id="stop7754"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <clipPath
+       id="clipPath7746"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path7748"
+         d="m -512.047,-296.695 28.375,0 0,5.625 -28.375,0 0,-5.625 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath7736"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path7738"
+         clip-rule="evenodd"
+         d="m 512.047,296.695 28.375,0 0,-5.625 -28.375,0 0,5.625 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient7722"
+       spreadMethod="pad"
+       gradientTransform="matrix(1,0,0,-1,978.59418,0)"
+       gradientUnits="userSpaceOnUse"
+       y2="-246.976"
+       x2="-480.41901"
+       y1="-250.311"
+       x1="-490.573">
+      <stop
+         id="stop7724"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffcc00" />
+      <stop
+         id="stop7726"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <clipPath
+       id="clipPath7718"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path7720"
+         d="m -489.297,-254.195 5.625,0 0,17.125 -5.625,0 0,-17.125 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath7708"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path7710"
+         clip-rule="evenodd"
+         d="m 489.297,254.195 5.625,0 0,-17.125 -5.625,0 0,17.125 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient7694"
+       spreadMethod="pad"
+       gradientTransform="matrix(1,0,0,-1,978.59418,0)"
+       gradientUnits="userSpaceOnUse"
+       y2="-275.22601"
+       x2="-480.41901"
+       y1="-278.561"
+       x1="-490.573">
+      <stop
+         id="stop7696"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffcc00" />
+      <stop
+         id="stop7698"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <clipPath
+       id="clipPath7690"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path7692"
+         d="m -489.297,-282.445 5.625,0 0,17.125 -5.625,0 0,-17.125 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath7680"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path7682"
+         clip-rule="evenodd"
+         d="m 489.297,282.445 5.625,0 0,-17.125 -5.625,0 0,17.125 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient7662"
+       spreadMethod="pad"
+       gradientTransform="matrix(1,0,0,-1,1058.0941,0)"
+       gradientUnits="userSpaceOnUse"
+       y2="-217.88"
+       x2="-511.72198"
+       y1="-228.70399"
+       x1="-513.86798">
+      <stop
+         id="stop7664"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffcc00" />
+      <stop
+         id="stop7666"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <clipPath
+       id="clipPath7658"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path7660"
+         d="m -529.047,-225.695 28.375,0 0,5.625 -28.375,0 0,-5.625 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath7648"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path7650"
+         clip-rule="evenodd"
+         d="m 529.047,225.695 28.375,0 0,-5.625 -28.375,0 0,5.625 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient7634"
+       spreadMethod="pad"
+       gradientTransform="matrix(1,0,0,-1,1035.3442,0)"
+       gradientUnits="userSpaceOnUse"
+       y2="-222.819"
+       x2="-509.112"
+       y1="-228.56799"
+       x1="-514.73499">
+      <stop
+         id="stop7636"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffcc00" />
+      <stop
+         id="stop7638"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <clipPath
+       id="clipPath7630"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path7632"
+         d="m -517.672,-225.695 5.75,0 0,5.625 -5.75,0 0,-5.625 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath7620"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path7622"
+         clip-rule="evenodd"
+         d="m 517.672,225.695 5.75,0 0,-5.625 -5.75,0 0,5.625 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient7100"
+       spreadMethod="pad"
+       gradientTransform="matrix(1,0,0,-1,1001.3442,0)"
+       gradientUnits="userSpaceOnUse"
+       y2="-241.526"
+       x2="-374.772"
+       y1="-335.75101"
+       x1="-437.51199">
+      <stop
+         id="stop7102"
+         offset="0"
+         style="stop-opacity:1;stop-color:#006600" />
+      <stop
+         id="stop7104"
+         offset="0.00392151"
+         style="stop-opacity:1;stop-color:#026604" />
+      <stop
+         id="stop7106"
+         offset="0.00784302"
+         style="stop-opacity:1;stop-color:#036606" />
+      <stop
+         id="stop7108"
+         offset="0.0117645"
+         style="stop-opacity:1;stop-color:#046607" />
+      <stop
+         id="stop7110"
+         offset="0.015686"
+         style="stop-opacity:1;stop-color:#046608" />
+      <stop
+         id="stop7112"
+         offset="0.0196075"
+         style="stop-opacity:1;stop-color:#046609" />
+      <stop
+         id="stop7114"
+         offset="0.0235291"
+         style="stop-opacity:1;stop-color:#05660a" />
+      <stop
+         id="stop7116"
+         offset="0.0274506"
+         style="stop-opacity:1;stop-color:#05660b" />
+      <stop
+         id="stop7118"
+         offset="0.0313721"
+         style="stop-opacity:1;stop-color:#06670b" />
+      <stop
+         id="stop7120"
+         offset="0.0352936"
+         style="stop-opacity:1;stop-color:#06670c" />
+      <stop
+         id="stop7122"
+         offset="0.0392151"
+         style="stop-opacity:1;stop-color:#06670d" />
+      <stop
+         id="stop7124"
+         offset="0.0431366"
+         style="stop-opacity:1;stop-color:#07670d" />
+      <stop
+         id="stop7126"
+         offset="0.0470581"
+         style="stop-opacity:1;stop-color:#07670e" />
+      <stop
+         id="stop7128"
+         offset="0.0509796"
+         style="stop-opacity:1;stop-color:#07670f" />
+      <stop
+         id="stop7130"
+         offset="0.0549011"
+         style="stop-opacity:1;stop-color:#08670f" />
+      <stop
+         id="stop7132"
+         offset="0.0588226"
+         style="stop-opacity:1;stop-color:#086710" />
+      <stop
+         id="stop7134"
+         offset="0.0627441"
+         style="stop-opacity:1;stop-color:#086711" />
+      <stop
+         id="stop7136"
+         offset="0.0666656"
+         style="stop-opacity:1;stop-color:#096711" />
+      <stop
+         id="stop7138"
+         offset="0.0705872"
+         style="stop-opacity:1;stop-color:#096712" />
+      <stop
+         id="stop7140"
+         offset="0.0745087"
+         style="stop-opacity:1;stop-color:#096812" />
+      <stop
+         id="stop7142"
+         offset="0.0784302"
+         style="stop-opacity:1;stop-color:#096813" />
+      <stop
+         id="stop7144"
+         offset="0.0823517"
+         style="stop-opacity:1;stop-color:#0a6813" />
+      <stop
+         id="stop7146"
+         offset="0.0862732"
+         style="stop-opacity:1;stop-color:#0a6814" />
+      <stop
+         id="stop7148"
+         offset="0.0941162"
+         style="stop-opacity:1;stop-color:#0a6815" />
+      <stop
+         id="stop7150"
+         offset="0.0941162"
+         style="stop-opacity:1;stop-color:#0a6815" />
+      <stop
+         id="stop7152"
+         offset="0.0980377"
+         style="stop-opacity:1;stop-color:#0b6816" />
+      <stop
+         id="stop7154"
+         offset="0.105881"
+         style="stop-opacity:1;stop-color:#0b6817" />
+      <stop
+         id="stop7156"
+         offset="0.105881"
+         style="stop-opacity:1;stop-color:#0b6817" />
+      <stop
+         id="stop7158"
+         offset="0.109802"
+         style="stop-opacity:1;stop-color:#0c6917" />
+      <stop
+         id="stop7160"
+         offset="0.113724"
+         style="stop-opacity:1;stop-color:#0c6918" />
+      <stop
+         id="stop7162"
+         offset="0.121567"
+         style="stop-opacity:1;stop-color:#0c6919" />
+      <stop
+         id="stop7164"
+         offset="0.121567"
+         style="stop-opacity:1;stop-color:#0c6919" />
+      <stop
+         id="stop7166"
+         offset="0.125488"
+         style="stop-opacity:1;stop-color:#0d6919" />
+      <stop
+         id="stop7168"
+         offset="0.12941"
+         style="stop-opacity:1;stop-color:#0d691a" />
+      <stop
+         id="stop7170"
+         offset="0.137253"
+         style="stop-opacity:1;stop-color:#0d691b" />
+      <stop
+         id="stop7172"
+         offset="0.137253"
+         style="stop-opacity:1;stop-color:#0d691b" />
+      <stop
+         id="stop7174"
+         offset="0.141174"
+         style="stop-opacity:1;stop-color:#0e6a1b" />
+      <stop
+         id="stop7176"
+         offset="0.145096"
+         style="stop-opacity:1;stop-color:#0e6a1c" />
+      <stop
+         id="stop7178"
+         offset="0.152939"
+         style="stop-opacity:1;stop-color:#0e6a1d" />
+      <stop
+         id="stop7180"
+         offset="0.152939"
+         style="stop-opacity:1;stop-color:#0e6a1d" />
+      <stop
+         id="stop7182"
+         offset="0.15686"
+         style="stop-opacity:1;stop-color:#0f6a1d" />
+      <stop
+         id="stop7184"
+         offset="0.160782"
+         style="stop-opacity:1;stop-color:#0f6a1e" />
+      <stop
+         id="stop7186"
+         offset="0.164703"
+         style="stop-opacity:1;stop-color:#0f6b1f" />
+      <stop
+         id="stop7188"
+         offset="0.172546"
+         style="stop-opacity:1;stop-color:#0f6b20" />
+      <stop
+         id="stop7190"
+         offset="0.172546"
+         style="stop-opacity:1;stop-color:#0f6b20" />
+      <stop
+         id="stop7192"
+         offset="0.180389"
+         style="stop-opacity:1;stop-color:#0f6b21" />
+      <stop
+         id="stop7194"
+         offset="0.180389"
+         style="stop-opacity:1;stop-color:#0f6b21" />
+      <stop
+         id="stop7196"
+         offset="0.184311"
+         style="stop-opacity:1;stop-color:#106b21" />
+      <stop
+         id="stop7198"
+         offset="0.188232"
+         style="stop-opacity:1;stop-color:#106c22" />
+      <stop
+         id="stop7200"
+         offset="0.196075"
+         style="stop-opacity:1;stop-color:#106c23" />
+      <stop
+         id="stop7202"
+         offset="0.196075"
+         style="stop-opacity:1;stop-color:#106c23" />
+      <stop
+         id="stop7204"
+         offset="0.199997"
+         style="stop-opacity:1;stop-color:#116c23" />
+      <stop
+         id="stop7206"
+         offset="0.203918"
+         style="stop-opacity:1;stop-color:#116c24" />
+      <stop
+         id="stop7208"
+         offset="0.20784"
+         style="stop-opacity:1;stop-color:#116d24" />
+      <stop
+         id="stop7210"
+         offset="0.211761"
+         style="stop-opacity:1;stop-color:#116d25" />
+      <stop
+         id="stop7212"
+         offset="0.215683"
+         style="stop-opacity:1;stop-color:#136d25" />
+      <stop
+         id="stop7214"
+         offset="0.219604"
+         style="stop-opacity:1;stop-color:#136d26" />
+      <stop
+         id="stop7216"
+         offset="0.227448"
+         style="stop-opacity:1;stop-color:#136e27" />
+      <stop
+         id="stop7218"
+         offset="0.227448"
+         style="stop-opacity:1;stop-color:#136e27" />
+      <stop
+         id="stop7220"
+         offset="0.231369"
+         style="stop-opacity:1;stop-color:#146e28" />
+      <stop
+         id="stop7222"
+         offset="0.239212"
+         style="stop-opacity:1;stop-color:#146e29" />
+      <stop
+         id="stop7224"
+         offset="0.239212"
+         style="stop-opacity:1;stop-color:#146e29" />
+      <stop
+         id="stop7226"
+         offset="0.243134"
+         style="stop-opacity:1;stop-color:#156f29" />
+      <stop
+         id="stop7228"
+         offset="0.247055"
+         style="stop-opacity:1;stop-color:#156f2a" />
+      <stop
+         id="stop7230"
+         offset="0.254898"
+         style="stop-opacity:1;stop-color:#156f2b" />
+      <stop
+         id="stop7232"
+         offset="0.254898"
+         style="stop-opacity:1;stop-color:#156f2b" />
+      <stop
+         id="stop7234"
+         offset="0.25882"
+         style="stop-opacity:1;stop-color:#16702b" />
+      <stop
+         id="stop7236"
+         offset="0.262741"
+         style="stop-opacity:1;stop-color:#16702c" />
+      <stop
+         id="stop7238"
+         offset="0.270584"
+         style="stop-opacity:1;stop-color:#16702d" />
+      <stop
+         id="stop7240"
+         offset="0.270584"
+         style="stop-opacity:1;stop-color:#16702d" />
+      <stop
+         id="stop7242"
+         offset="0.274506"
+         style="stop-opacity:1;stop-color:#17712d" />
+      <stop
+         id="stop7244"
+         offset="0.278427"
+         style="stop-opacity:1;stop-color:#17712e" />
+      <stop
+         id="stop7246"
+         offset="0.28627"
+         style="stop-opacity:1;stop-color:#17712f" />
+      <stop
+         id="stop7248"
+         offset="0.28627"
+         style="stop-opacity:1;stop-color:#17712f" />
+      <stop
+         id="stop7250"
+         offset="0.290192"
+         style="stop-opacity:1;stop-color:#187230" />
+      <stop
+         id="stop7252"
+         offset="0.298035"
+         style="stop-opacity:1;stop-color:#187231" />
+      <stop
+         id="stop7254"
+         offset="0.298035"
+         style="stop-opacity:1;stop-color:#187231" />
+      <stop
+         id="stop7256"
+         offset="0.301956"
+         style="stop-opacity:1;stop-color:#197231" />
+      <stop
+         id="stop7258"
+         offset="0.305878"
+         style="stop-opacity:1;stop-color:#197332" />
+      <stop
+         id="stop7260"
+         offset="0.313721"
+         style="stop-opacity:1;stop-color:#197333" />
+      <stop
+         id="stop7262"
+         offset="0.313721"
+         style="stop-opacity:1;stop-color:#197333" />
+      <stop
+         id="stop7264"
+         offset="0.317642"
+         style="stop-opacity:1;stop-color:#1a7433" />
+      <stop
+         id="stop7266"
+         offset="0.321564"
+         style="stop-opacity:1;stop-color:#1a7434" />
+      <stop
+         id="stop7268"
+         offset="0.329407"
+         style="stop-opacity:1;stop-color:#1a7435" />
+      <stop
+         id="stop7270"
+         offset="0.329407"
+         style="stop-opacity:1;stop-color:#1a7435" />
+      <stop
+         id="stop7272"
+         offset="0.333328"
+         style="stop-opacity:1;stop-color:#1b7535" />
+      <stop
+         id="stop7274"
+         offset="0.33725"
+         style="stop-opacity:1;stop-color:#1b7536" />
+      <stop
+         id="stop7276"
+         offset="0.345093"
+         style="stop-opacity:1;stop-color:#1b7637" />
+      <stop
+         id="stop7278"
+         offset="0.345093"
+         style="stop-opacity:1;stop-color:#1b7637" />
+      <stop
+         id="stop7280"
+         offset="0.349014"
+         style="stop-opacity:1;stop-color:#1c7637" />
+      <stop
+         id="stop7282"
+         offset="0.352936"
+         style="stop-opacity:1;stop-color:#1c7638" />
+      <stop
+         id="stop7284"
+         offset="0.356857"
+         style="stop-opacity:1;stop-color:#1c7739" />
+      <stop
+         id="stop7286"
+         offset="0.360779"
+         style="stop-opacity:1;stop-color:#1d7739" />
+      <stop
+         id="stop7288"
+         offset="0.3647"
+         style="stop-opacity:1;stop-color:#1d773a" />
+      <stop
+         id="stop7290"
+         offset="0.368622"
+         style="stop-opacity:1;stop-color:#1d783a" />
+      <stop
+         id="stop7292"
+         offset="0.372543"
+         style="stop-opacity:1;stop-color:#1d783b" />
+      <stop
+         id="stop7294"
+         offset="0.376465"
+         style="stop-opacity:1;stop-color:#1e783b" />
+      <stop
+         id="stop7296"
+         offset="0.380386"
+         style="stop-opacity:1;stop-color:#1e783c" />
+      <stop
+         id="stop7298"
+         offset="0.384308"
+         style="stop-opacity:1;stop-color:#1e793c" />
+      <stop
+         id="stop7300"
+         offset="0.388229"
+         style="stop-opacity:1;stop-color:#1e793d" />
+      <stop
+         id="stop7302"
+         offset="0.392151"
+         style="stop-opacity:1;stop-color:#1f793d" />
+      <stop
+         id="stop7304"
+         offset="0.396072"
+         style="stop-opacity:1;stop-color:#1f7a3e" />
+      <stop
+         id="stop7306"
+         offset="0.403915"
+         style="stop-opacity:1;stop-color:#1f7a3f" />
+      <stop
+         id="stop7308"
+         offset="0.403915"
+         style="stop-opacity:1;stop-color:#1f7a3f" />
+      <stop
+         id="stop7310"
+         offset="0.407837"
+         style="stop-opacity:1;stop-color:#207b3f" />
+      <stop
+         id="stop7312"
+         offset="0.411758"
+         style="stop-opacity:1;stop-color:#207b40" />
+      <stop
+         id="stop7314"
+         offset="0.419601"
+         style="stop-opacity:1;stop-color:#207c41" />
+      <stop
+         id="stop7316"
+         offset="0.419601"
+         style="stop-opacity:1;stop-color:#207c41" />
+      <stop
+         id="stop7318"
+         offset="0.423523"
+         style="stop-opacity:1;stop-color:#217c41" />
+      <stop
+         id="stop7320"
+         offset="0.427444"
+         style="stop-opacity:1;stop-color:#217c42" />
+      <stop
+         id="stop7322"
+         offset="0.431366"
+         style="stop-opacity:1;stop-color:#217d42" />
+      <stop
+         id="stop7324"
+         offset="0.435287"
+         style="stop-opacity:1;stop-color:#217d43" />
+      <stop
+         id="stop7326"
+         offset="0.439209"
+         style="stop-opacity:1;stop-color:#227d43" />
+      <stop
+         id="stop7328"
+         offset="0.44313"
+         style="stop-opacity:1;stop-color:#227e44" />
+      <stop
+         id="stop7330"
+         offset="0.450974"
+         style="stop-opacity:1;stop-color:#227e45" />
+      <stop
+         id="stop7332"
+         offset="0.450974"
+         style="stop-opacity:1;stop-color:#227e45" />
+      <stop
+         id="stop7334"
+         offset="0.454895"
+         style="stop-opacity:1;stop-color:#237f45" />
+      <stop
+         id="stop7336"
+         offset="0.458817"
+         style="stop-opacity:1;stop-color:#237f46" />
+      <stop
+         id="stop7338"
+         offset="0.46666"
+         style="stop-opacity:1;stop-color:#238047" />
+      <stop
+         id="stop7340"
+         offset="0.46666"
+         style="stop-opacity:1;stop-color:#238047" />
+      <stop
+         id="stop7342"
+         offset="0.470581"
+         style="stop-opacity:1;stop-color:#248047" />
+      <stop
+         id="stop7344"
+         offset="0.478424"
+         style="stop-opacity:1;stop-color:#248148" />
+      <stop
+         id="stop7346"
+         offset="0.478424"
+         style="stop-opacity:1;stop-color:#248148" />
+      <stop
+         id="stop7348"
+         offset="0.486267"
+         style="stop-opacity:1;stop-color:#248149" />
+      <stop
+         id="stop7350"
+         offset="0.486267"
+         style="stop-opacity:1;stop-color:#248149" />
+      <stop
+         id="stop7352"
+         offset="0.490189"
+         style="stop-opacity:1;stop-color:#258249" />
+      <stop
+         id="stop7354"
+         offset="0.49411"
+         style="stop-opacity:1;stop-color:#25824a" />
+      <stop
+         id="stop7356"
+         offset="0.501968"
+         style="stop-opacity:1;stop-color:#25834b" />
+      <stop
+         id="stop7358"
+         offset="0.501968"
+         style="stop-opacity:1;stop-color:#25834b" />
+      <stop
+         id="stop7360"
+         offset="0.50589"
+         style="stop-opacity:1;stop-color:#26834b" />
+      <stop
+         id="stop7362"
+         offset="0.509811"
+         style="stop-opacity:1;stop-color:#26834c" />
+      <stop
+         id="stop7364"
+         offset="0.513733"
+         style="stop-opacity:1;stop-color:#26844c" />
+      <stop
+         id="stop7366"
+         offset="0.521576"
+         style="stop-opacity:1;stop-color:#26844d" />
+      <stop
+         id="stop7368"
+         offset="0.521576"
+         style="stop-opacity:1;stop-color:#26844d" />
+      <stop
+         id="stop7370"
+         offset="0.525497"
+         style="stop-opacity:1;stop-color:#27854d" />
+      <stop
+         id="stop7372"
+         offset="0.529419"
+         style="stop-opacity:1;stop-color:#27854e" />
+      <stop
+         id="stop7374"
+         offset="0.537262"
+         style="stop-opacity:1;stop-color:#27864e" />
+      <stop
+         id="stop7376"
+         offset="0.537262"
+         style="stop-opacity:1;stop-color:#27864e" />
+      <stop
+         id="stop7378"
+         offset="0.541183"
+         style="stop-opacity:1;stop-color:#27864f" />
+      <stop
+         id="stop7380"
+         offset="0.545105"
+         style="stop-opacity:1;stop-color:#28864f" />
+      <stop
+         id="stop7382"
+         offset="0.549026"
+         style="stop-opacity:1;stop-color:#288650" />
+      <stop
+         id="stop7384"
+         offset="0.552948"
+         style="stop-opacity:1;stop-color:#288750" />
+      <stop
+         id="stop7386"
+         offset="0.55687"
+         style="stop-opacity:1;stop-color:#288751" />
+      <stop
+         id="stop7388"
+         offset="0.564713"
+         style="stop-opacity:1;stop-color:#298851" />
+      <stop
+         id="stop7390"
+         offset="0.564713"
+         style="stop-opacity:1;stop-color:#298851" />
+      <stop
+         id="stop7392"
+         offset="0.568634"
+         style="stop-opacity:1;stop-color:#298852" />
+      <stop
+         id="stop7394"
+         offset="0.576477"
+         style="stop-opacity:1;stop-color:#298952" />
+      <stop
+         id="stop7396"
+         offset="0.576477"
+         style="stop-opacity:1;stop-color:#298952" />
+      <stop
+         id="stop7398"
+         offset="0.580399"
+         style="stop-opacity:1;stop-color:#298953" />
+      <stop
+         id="stop7400"
+         offset="0.58432"
+         style="stop-opacity:1;stop-color:#2a8953" />
+      <stop
+         id="stop7402"
+         offset="0.588242"
+         style="stop-opacity:1;stop-color:#2a8954" />
+      <stop
+         id="stop7404"
+         offset="0.592163"
+         style="stop-opacity:1;stop-color:#2a8a54" />
+      <stop
+         id="stop7406"
+         offset="0.600006"
+         style="stop-opacity:1;stop-color:#2a8a55" />
+      <stop
+         id="stop7408"
+         offset="0.600006"
+         style="stop-opacity:1;stop-color:#2a8a55" />
+      <stop
+         id="stop7410"
+         offset="0.603928"
+         style="stop-opacity:1;stop-color:#2a8b55" />
+      <stop
+         id="stop7412"
+         offset="0.607849"
+         style="stop-opacity:1;stop-color:#2b8b55" />
+      <stop
+         id="stop7414"
+         offset="0.611771"
+         style="stop-opacity:1;stop-color:#2b8b56" />
+      <stop
+         id="stop7416"
+         offset="0.619614"
+         style="stop-opacity:1;stop-color:#2b8c56" />
+      <stop
+         id="stop7418"
+         offset="0.619614"
+         style="stop-opacity:1;stop-color:#2b8c56" />
+      <stop
+         id="stop7420"
+         offset="0.623535"
+         style="stop-opacity:1;stop-color:#2b8c57" />
+      <stop
+         id="stop7422"
+         offset="0.631378"
+         style="stop-opacity:1;stop-color:#2c8c57" />
+      <stop
+         id="stop7424"
+         offset="0.631378"
+         style="stop-opacity:1;stop-color:#2c8c57" />
+      <stop
+         id="stop7426"
+         offset="0.6353"
+         style="stop-opacity:1;stop-color:#2c8d58" />
+      <stop
+         id="stop7428"
+         offset="0.643143"
+         style="stop-opacity:1;stop-color:#2c8d58" />
+      <stop
+         id="stop7430"
+         offset="0.647064"
+         style="stop-opacity:1;stop-color:#2c8d59" />
+      <stop
+         id="stop7432"
+         offset="0.647064"
+         style="stop-opacity:1;stop-color:#2c8d59" />
+      <stop
+         id="stop7434"
+         offset="0.650986"
+         style="stop-opacity:1;stop-color:#2c8e59" />
+      <stop
+         id="stop7436"
+         offset="0.654907"
+         style="stop-opacity:1;stop-color:#2d8e59" />
+      <stop
+         id="stop7438"
+         offset="0.66275"
+         style="stop-opacity:1;stop-color:#2d8e5a" />
+      <stop
+         id="stop7440"
+         offset="0.66275"
+         style="stop-opacity:1;stop-color:#2d8e5a" />
+      <stop
+         id="stop7442"
+         offset="0.666672"
+         style="stop-opacity:1;stop-color:#2d8f5a" />
+      <stop
+         id="stop7444"
+         offset="0.674515"
+         style="stop-opacity:1;stop-color:#2d8f5b" />
+      <stop
+         id="stop7446"
+         offset="0.674515"
+         style="stop-opacity:1;stop-color:#2d8f5b" />
+      <stop
+         id="stop7448"
+         offset="0.682358"
+         style="stop-opacity:1;stop-color:#2e905b" />
+      <stop
+         id="stop7450"
+         offset="0.682358"
+         style="stop-opacity:1;stop-color:#2e905b" />
+      <stop
+         id="stop7452"
+         offset="0.690201"
+         style="stop-opacity:1;stop-color:#2e905c" />
+      <stop
+         id="stop7454"
+         offset="0.690201"
+         style="stop-opacity:1;stop-color:#2e905c" />
+      <stop
+         id="stop7456"
+         offset="0.698044"
+         style="stop-opacity:1;stop-color:#2e905c" />
+      <stop
+         id="stop7458"
+         offset="0.701965"
+         style="stop-opacity:1;stop-color:#2e915c" />
+      <stop
+         id="stop7460"
+         offset="0.701965"
+         style="stop-opacity:1;stop-color:#2e915c" />
+      <stop
+         id="stop7462"
+         offset="0.705887"
+         style="stop-opacity:1;stop-color:#2e915d" />
+      <stop
+         id="stop7464"
+         offset="0.71373"
+         style="stop-opacity:1;stop-color:#2f915d" />
+      <stop
+         id="stop7466"
+         offset="0.71373"
+         style="stop-opacity:1;stop-color:#2f915d" />
+      <stop
+         id="stop7468"
+         offset="0.721573"
+         style="stop-opacity:1;stop-color:#2f925e" />
+      <stop
+         id="stop7470"
+         offset="0.721573"
+         style="stop-opacity:1;stop-color:#2f925e" />
+      <stop
+         id="stop7472"
+         offset="0.729416"
+         style="stop-opacity:1;stop-color:#2f925e" />
+      <stop
+         id="stop7474"
+         offset="0.733337"
+         style="stop-opacity:1;stop-color:#2f925e" />
+      <stop
+         id="stop7476"
+         offset="0.737259"
+         style="stop-opacity:1;stop-color:#2f925e" />
+      <stop
+         id="stop7478"
+         offset="0.74118"
+         style="stop-opacity:1;stop-color:#2f935f" />
+      <stop
+         id="stop7480"
+         offset="0.74118"
+         style="stop-opacity:1;stop-color:#2f935f" />
+      <stop
+         id="stop7482"
+         offset="0.749023"
+         style="stop-opacity:1;stop-color:#30935f" />
+      <stop
+         id="stop7484"
+         offset="0.749023"
+         style="stop-opacity:1;stop-color:#30935f" />
+      <stop
+         id="stop7486"
+         offset="0.756866"
+         style="stop-opacity:1;stop-color:#30935f" />
+      <stop
+         id="stop7488"
+         offset="0.760788"
+         style="stop-opacity:1;stop-color:#309360" />
+      <stop
+         id="stop7490"
+         offset="0.760788"
+         style="stop-opacity:1;stop-color:#309360" />
+      <stop
+         id="stop7492"
+         offset="0.764709"
+         style="stop-opacity:1;stop-color:#309460" />
+      <stop
+         id="stop7494"
+         offset="0.772552"
+         style="stop-opacity:1;stop-color:#309460" />
+      <stop
+         id="stop7496"
+         offset="0.776474"
+         style="stop-opacity:1;stop-color:#309460" />
+      <stop
+         id="stop7498"
+         offset="0.780396"
+         style="stop-opacity:1;stop-color:#309461" />
+      <stop
+         id="stop7500"
+         offset="0.780396"
+         style="stop-opacity:1;stop-color:#309461" />
+      <stop
+         id="stop7502"
+         offset="0.788239"
+         style="stop-opacity:1;stop-color:#309561" />
+      <stop
+         id="stop7504"
+         offset="0.788239"
+         style="stop-opacity:1;stop-color:#309561" />
+      <stop
+         id="stop7506"
+         offset="0.79216"
+         style="stop-opacity:1;stop-color:#319561" />
+      <stop
+         id="stop7508"
+         offset="0.800003"
+         style="stop-opacity:1;stop-color:#319561" />
+      <stop
+         id="stop7510"
+         offset="0.803925"
+         style="stop-opacity:1;stop-color:#319562" />
+      <stop
+         id="stop7512"
+         offset="0.803925"
+         style="stop-opacity:1;stop-color:#319562" />
+      <stop
+         id="stop7514"
+         offset="0.811768"
+         style="stop-opacity:1;stop-color:#319562" />
+      <stop
+         id="stop7516"
+         offset="0.815689"
+         style="stop-opacity:1;stop-color:#319562" />
+      <stop
+         id="stop7518"
+         offset="0.819611"
+         style="stop-opacity:1;stop-color:#319662" />
+      <stop
+         id="stop7520"
+         offset="0.819611"
+         style="stop-opacity:1;stop-color:#319662" />
+      <stop
+         id="stop7522"
+         offset="0.827454"
+         style="stop-opacity:1;stop-color:#319662" />
+      <stop
+         id="stop7524"
+         offset="0.831375"
+         style="stop-opacity:1;stop-color:#319663" />
+      <stop
+         id="stop7526"
+         offset="0.831375"
+         style="stop-opacity:1;stop-color:#319663" />
+      <stop
+         id="stop7528"
+         offset="0.839218"
+         style="stop-opacity:1;stop-color:#319663" />
+      <stop
+         id="stop7530"
+         offset="0.84314"
+         style="stop-opacity:1;stop-color:#319663" />
+      <stop
+         id="stop7532"
+         offset="0.847061"
+         style="stop-opacity:1;stop-color:#329663" />
+      <stop
+         id="stop7534"
+         offset="0.847061"
+         style="stop-opacity:1;stop-color:#329663" />
+      <stop
+         id="stop7536"
+         offset="0.850983"
+         style="stop-opacity:1;stop-color:#329763" />
+      <stop
+         id="stop7538"
+         offset="0.858826"
+         style="stop-opacity:1;stop-color:#329763" />
+      <stop
+         id="stop7540"
+         offset="0.862747"
+         style="stop-opacity:1;stop-color:#329764" />
+      <stop
+         id="stop7542"
+         offset="0.862747"
+         style="stop-opacity:1;stop-color:#329764" />
+      <stop
+         id="stop7544"
+         offset="0.87059"
+         style="stop-opacity:1;stop-color:#329764" />
+      <stop
+         id="stop7546"
+         offset="0.874512"
+         style="stop-opacity:1;stop-color:#329764" />
+      <stop
+         id="stop7548"
+         offset="0.878433"
+         style="stop-opacity:1;stop-color:#329764" />
+      <stop
+         id="stop7550"
+         offset="0.882355"
+         style="stop-opacity:1;stop-color:#329764" />
+      <stop
+         id="stop7552"
+         offset="0.886276"
+         style="stop-opacity:1;stop-color:#329764" />
+      <stop
+         id="stop7554"
+         offset="0.890198"
+         style="stop-opacity:1;stop-color:#329764" />
+      <stop
+         id="stop7556"
+         offset="0.894119"
+         style="stop-opacity:1;stop-color:#329764" />
+      <stop
+         id="stop7558"
+         offset="0.898041"
+         style="stop-opacity:1;stop-color:#329864" />
+      <stop
+         id="stop7560"
+         offset="0.898041"
+         style="stop-opacity:1;stop-color:#329864" />
+      <stop
+         id="stop7562"
+         offset="0.905884"
+         style="stop-opacity:1;stop-color:#329865" />
+      <stop
+         id="stop7564"
+         offset="0.905884"
+         style="stop-opacity:1;stop-color:#329865" />
+      <stop
+         id="stop7566"
+         offset="0.913727"
+         style="stop-opacity:1;stop-color:#329865" />
+      <stop
+         id="stop7568"
+         offset="0.917648"
+         style="stop-opacity:1;stop-color:#329865" />
+      <stop
+         id="stop7570"
+         offset="0.92157"
+         style="stop-opacity:1;stop-color:#329865" />
+      <stop
+         id="stop7572"
+         offset="0.925491"
+         style="stop-opacity:1;stop-color:#329865" />
+      <stop
+         id="stop7574"
+         offset="0.929413"
+         style="stop-opacity:1;stop-color:#339865" />
+      <stop
+         id="stop7576"
+         offset="0.929413"
+         style="stop-opacity:1;stop-color:#339865" />
+      <stop
+         id="stop7578"
+         offset="0.937256"
+         style="stop-opacity:1;stop-color:#339865" />
+      <stop
+         id="stop7580"
+         offset="0.941177"
+         style="stop-opacity:1;stop-color:#339865" />
+      <stop
+         id="stop7582"
+         offset="0.945099"
+         style="stop-opacity:1;stop-color:#339865" />
+      <stop
+         id="stop7584"
+         offset="0.94902"
+         style="stop-opacity:1;stop-color:#339865" />
+      <stop
+         id="stop7586"
+         offset="0.952942"
+         style="stop-opacity:1;stop-color:#339865" />
+      <stop
+         id="stop7588"
+         offset="0.956863"
+         style="stop-opacity:1;stop-color:#339965" />
+      <stop
+         id="stop7590"
+         offset="0.956863"
+         style="stop-opacity:1;stop-color:#339965" />
+      <stop
+         id="stop7592"
+         offset="0.960785"
+         style="stop-opacity:1;stop-color:#339966" />
+      <stop
+         id="stop7594"
+         offset="0.968628"
+         style="stop-opacity:1;stop-color:#339966" />
+      <stop
+         id="stop7596"
+         offset="0.972549"
+         style="stop-opacity:1;stop-color:#339966" />
+      <stop
+         id="stop7598"
+         offset="0.976471"
+         style="stop-opacity:1;stop-color:#339966" />
+      <stop
+         id="stop7600"
+         offset="0.980392"
+         style="stop-opacity:1;stop-color:#339966" />
+      <stop
+         id="stop7602"
+         offset="0.984314"
+         style="stop-opacity:1;stop-color:#339966" />
+      <stop
+         id="stop7604"
+         offset="0.988235"
+         style="stop-opacity:1;stop-color:#339966" />
+      <stop
+         id="stop7606"
+         offset="0.992157"
+         style="stop-opacity:1;stop-color:#339966" />
+      <stop
+         id="stop7608"
+         offset="0.996078"
+         style="stop-opacity:1;stop-color:#339966" />
+      <stop
+         id="stop7610"
+         offset="1"
+         style="stop-opacity:1;stop-color:#339966" />
+    </linearGradient>
+    <clipPath
+       id="clipPath7096"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path7098"
+         d="m -500.672,-293.695 102.125,0 0,68 -102.125,0 0,-68 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath7086"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path7088"
+         clip-rule="evenodd"
+         d="m 500.672,293.695 102.125,0 0,-68 -102.125,0 0,68 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9635"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9637"
+         clip-rule="evenodd"
+         d="M -2.583e-6,540 720,540 720,1.8311e-4 -3.53e-7,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient9623"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="247.63"
+       x2="364.42999"
+       y1="276.44"
+       x1="379.51999">
+      <stop
+         id="stop9625"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffc000" />
+      <stop
+         id="stop9627"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <clipPath
+       id="clipPath9619"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9621"
+         clip-rule="evenodd"
+         d="M -2.583e-6,540 720,540 720,1.8311e-4 -3.53e-7,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient9605"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="228.89"
+       x2="301.35999"
+       y1="308.39001"
+       x1="301.35999">
+      <stop
+         id="stop9607"
+         offset="0"
+         style="stop-opacity:1;stop-color:#0b0b0b" />
+      <stop
+         id="stop9609"
+         offset="1"
+         style="stop-opacity:1;stop-color:#0b0b0b" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9593"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="247.84"
+       x2="390.17999"
+       y1="254.55"
+       x1="369.89999">
+      <stop
+         id="stop9595"
+         offset="0"
+         style="stop-opacity:1;stop-color:#eeece1" />
+      <stop
+         id="stop9597"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9581"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="223.60001"
+       x2="389.95999"
+       y1="239.75"
+       x1="375.54999">
+      <stop
+         id="stop9583"
+         offset="0"
+         style="stop-opacity:1;stop-color:#eeece1" />
+      <stop
+         id="stop9585"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9549"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="216.89"
+       x2="378.82001"
+       y1="345.89001"
+       x1="262.98999">
+      <stop
+         id="stop9551"
+         offset="0"
+         style="stop-opacity:1;stop-color:#eeece1" />
+      <stop
+         id="stop9553"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <clipPath
+       id="clipPath9541"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9543"
+         clip-rule="evenodd"
+         d="M -1.669e-6,540 720,540 720,1.8311e-4 -1.611e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient9529"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="314.54001"
+       x2="363.69"
+       y1="343.35001"
+       x1="378.78">
+      <stop
+         id="stop9531"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffc000" />
+      <stop
+         id="stop9533"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <clipPath
+       id="clipPath9525"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9527"
+         clip-rule="evenodd"
+         d="M -1.669e-6,540 720,540 720,1.8311e-4 -1.611e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient9511"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="295.39001"
+       x2="301.23001"
+       y1="374.89001"
+       x1="301.23001">
+      <stop
+         id="stop9513"
+         offset="0"
+         style="stop-opacity:1;stop-color:#0b0b0b" />
+      <stop
+         id="stop9515"
+         offset="1"
+         style="stop-opacity:1;stop-color:#0b0b0b" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9499"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="314.34"
+       x2="390.04999"
+       y1="321.04999"
+       x1="369.76999">
+      <stop
+         id="stop9501"
+         offset="0"
+         style="stop-opacity:1;stop-color:#eeece1" />
+      <stop
+         id="stop9503"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9487"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="290.10001"
+       x2="389.84"
+       y1="306.25"
+       x1="375.42999">
+      <stop
+         id="stop9489"
+         offset="0"
+         style="stop-opacity:1;stop-color:#eeece1" />
+      <stop
+         id="stop9491"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9455"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="283.39001"
+       x2="378.69"
+       y1="412.39001"
+       x1="262.85999">
+      <stop
+         id="stop9457"
+         offset="0"
+         style="stop-opacity:1;stop-color:#eeece1" />
+      <stop
+         id="stop9459"
+         offset="1"
+         style="stop-opacity:1;stop-color:#eeece1" />
+    </linearGradient>
+    <clipPath
+       id="clipPath9427"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9429"
+         clip-rule="evenodd"
+         d="M -7.78e-7,540 720,540 720,1.2207e-4 l -720.000004715,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9417"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9419"
+         clip-rule="evenodd"
+         d="M -7.78e-7,540 720,540 720,1.2207e-4 l -720.000004715,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9407"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9409"
+         clip-rule="evenodd"
+         d="M -2.945e-6,540 720,540 720,1.2207e-4 -6.882e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9397"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9399"
+         clip-rule="evenodd"
+         d="M -2.945e-6,540 720,540 720,1.2207e-4 -6.882e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9387"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9389"
+         clip-rule="evenodd"
+         d="M -4.69e-7,540 720,540 720,1.2207e-4 l -720.000004406,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9377"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9379"
+         clip-rule="evenodd"
+         d="M -4.69e-7,540 720,540 720,1.2207e-4 l -720.000004406,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9367"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9369"
+         clip-rule="evenodd"
+         d="M -2.637e-6,540 720,540 720,1.2207e-4 l -720.000006574,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9357"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9359"
+         clip-rule="evenodd"
+         d="M -2.637e-6,540 720,540 720,1.2207e-4 l -720.000006574,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9339"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9341"
+         clip-rule="evenodd"
+         d="M -2.945e-6,540 720,540 720,1.2207e-4 -6.882e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9329"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9331"
+         clip-rule="evenodd"
+         d="M -2.945e-6,540 720,540 720,1.2207e-4 -6.882e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9319"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9321"
+         clip-rule="evenodd"
+         d="M -4.72e-7,540 720,540 720,1.2207e-4 -4.409e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9309"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9311"
+         clip-rule="evenodd"
+         d="M -4.72e-7,540 720,540 720,1.2207e-4 -4.409e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient9291"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="240.07001"
+       x2="559.91998"
+       y1="313.07001"
+       x1="486.42001">
+      <stop
+         id="stop9293"
+         offset="0"
+         style="stop-opacity:1;stop-color:#8eb4e3" />
+      <stop
+         id="stop9295"
+         offset="1"
+         style="stop-opacity:1;stop-color:#8eb4e3" />
+    </linearGradient>
+    <clipPath
+       id="clipPath9283"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9285"
+         clip-rule="evenodd"
+         d="M -7.78e-7,540 720,540 720,1.2207e-4 l -720.000004715,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9273"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9275"
+         clip-rule="evenodd"
+         d="M -7.78e-7,540 720,540 720,1.2207e-4 l -720.000004715,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9263"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9265"
+         clip-rule="evenodd"
+         d="M -7.78e-7,540 720,540 720,1.2207e-4 l -720.000004715,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9253"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9255"
+         clip-rule="evenodd"
+         d="M -7.78e-7,540 720,540 720,1.2207e-4 l -720.000004715,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9243"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9245"
+         clip-rule="evenodd"
+         d="M -7.78e-7,540 720,540 720,1.2207e-4 l -720.000004715,0"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9233"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9235"
+         clip-rule="evenodd"
+         d="M -4.41e-6,540 720,540 720,1.2207e-4 -8.347e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9223"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9225"
+         clip-rule="evenodd"
+         d="M -4.41e-6,540 720,540 720,1.2207e-4 -8.347e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9213"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9215"
+         clip-rule="evenodd"
+         d="M -4.41e-6,540 720,540 720,1.2207e-4 -8.347e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9203"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9205"
+         clip-rule="evenodd"
+         d="M -4.41e-6,540 720,540 720,1.2207e-4 -8.347e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clipPath9193"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9195"
+         clip-rule="evenodd"
+         d="M -4.41e-6,540 720,540 720,1.2207e-4 -8.347e-6,1.2207e-4"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       id="linearGradient9155"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="241.05"
+       x2="589.29999"
+       y1="277.37"
+       x1="571.03998">
+      <stop
+         id="stop9157"
+         offset="0"
+         style="stop-opacity:1;stop-color:#99ccff" />
+      <stop
+         id="stop9159"
+         offset="1"
+         style="stop-opacity:1;stop-color:#99ccff" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9139"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="258.04999"
+       x2="589.29999"
+       y1="294.37"
+       x1="571.03998">
+      <stop
+         id="stop9141"
+         offset="0"
+         style="stop-opacity:1;stop-color:#99ccff" />
+      <stop
+         id="stop9143"
+         offset="1"
+         style="stop-opacity:1;stop-color:#99ccff" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9127"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="288.47"
+       x2="527.31"
+       y1="310.12"
+       x1="523.02002">
+      <stop
+         id="stop9129"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffff00" />
+      <stop
+         id="stop9131"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9115"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="243.97"
+       x2="497.19"
+       y1="250.64"
+       x1="476.88">
+      <stop
+         id="stop9117"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffff00" />
+      <stop
+         id="stop9119"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9103"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="272.22"
+       x2="497.19"
+       y1="278.89001"
+       x1="476.88">
+      <stop
+         id="stop9105"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffff00" />
+      <stop
+         id="stop9107"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9083"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="217.47"
+       x2="544.31"
+       y1="239.12"
+       x1="540.02002">
+      <stop
+         id="stop9085"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffff00" />
+      <stop
+         id="stop9087"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9071"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="220.00999"
+       x2="523.35999"
+       y1="231.50999"
+       x1="512.10999">
+      <stop
+         id="stop9073"
+         offset="0"
+         style="stop-opacity:1;stop-color:#ffff00" />
+      <stop
+         id="stop9075"
+         offset="1"
+         style="stop-opacity:1;stop-color:#ffff00" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient9059"
+       spreadMethod="pad"
+       gradientUnits="userSpaceOnUse"
+       y2="212.58"
+       x2="583.09998"
+       y1="401.03"
+       x1="457.63">
+      <stop
+         id="stop9061"
+         offset="0"
+         style="stop-opacity:1;stop-color:#339966" />
+      <stop
+         id="stop9063"
+         offset="1"
+         style="stop-opacity:1;stop-color:#339966" />
+    </linearGradient>
+    <clipPath
+       id="clipPath9015"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path9017"
+         clip-rule="evenodd"
+         d="m 0,1.2207e-4 720,0 0,539.99999793 -720,0 L 0,1.2207e-4 z"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="419.17796"
+     inkscape:cy="-91.661037"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1138"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(1187.006,-780.37529)">
+    <g
+       id="g9057"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 500.67,225.7 102.12,0 0,68 -102.12,0 0,-68 z"
+         style="fill:url(#linearGradient9059);fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path9065" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       d="m -917.0122,944.7367 127.65,0 0,-85 -127.65,0 0,85 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+       id="path9067" />
+    <g
+       id="g9069"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 517.67,220.07 5.75,0 0,5.625 -5.75,0 0,-5.625 z"
+         style="fill:url(#linearGradient9071);fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path9077" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       d="m -895.7622,951.7742 7.1875,0 0,-7.03125 -7.1875,0 0,7.03125 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+       id="path9079" />
+    <g
+       id="g9081"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 529.05,220.07 28.375,0 0,5.625 -28.375,0 0,-5.625 z"
+         style="fill:url(#linearGradient9083);fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path9089" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       d="m -881.5372,951.7742 35.46875,0 0,-7.03125 -35.46875,0 0,7.03125 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+       id="path9091" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -924.0372,951.7742 3.59375,0 0,-99.21875 -3.59375,0 0,99.21875 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="path9093" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -924.0372,951.7742 3.59375,0 0,-99.21875 -3.59375,0 0,99.21875 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+       id="path9095" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -938.2622,856.1492 14.21875,0 0,-3.59375 -14.21875,0 0,3.59375 z"
+       style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="path9097" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -938.2622,856.1492 14.21875,0 0,-3.59375 -14.21875,0 0,3.59375 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+       id="path9099" />
+    <g
+       id="g9101"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 489.3,265.32 5.625,0 0,17.125 -5.625,0 0,-17.125 z"
+         style="fill:url(#linearGradient9103);fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path9109" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       d="m -931.2247,895.2117 7.03125,0 0,-21.40625 -7.03125,0 0,21.40625 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+       id="path9111" />
+    <g
+       id="g9113"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 489.3,237.07 5.625,0 0,17.125 -5.625,0 0,-17.125 z"
+         style="fill:url(#linearGradient9115);fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path9121" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       d="m -931.2247,930.5242 7.03125,0 0,-21.40625 -7.03125,0 0,21.40625 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+       id="path9123" />
+    <g
+       id="g9125"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 512.05,291.07 28.375,0 0,5.625 -28.375,0 0,-5.625 z"
+         style="fill:url(#linearGradient9127);fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path9133" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       d="m -902.7872,863.0242 35.46875,0 0,-7.03125 -35.46875,0 0,7.03125 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+       id="path9135" />
+    <g
+       id="g9137"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 573.42,261.45 22.625,0 0,11.375 -22.625,0 0,-11.375 z"
+         style="fill:url(#linearGradient9139);fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path9145" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       d="m -826.0747,900.0492 28.28125,0 0,-14.21875 -28.28125,0 0,14.21875 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+       id="path9147" />
+    <text
+       id="text9149"
+       x="-820.38721"
+       y="896.02417"
+       style="font-size:15px">
+      <tspan
+         style="font-size:8.69999981px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         x="-820.38721 -815.59351 -810.50403"
+         y="896.02417"
+         sodipodi:role="line"
+         id="tspan9151">RAM</tspan>
+    </text>
+    <g
+       id="g9153"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 573.42,244.45 22.625,0 0,11.375 -22.625,0 0,-11.375 z"
+         style="fill:url(#linearGradient9155);fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path9161" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       d="m -826.0747,921.2992 28.28125,0 0,-14.21875 -28.28125,0 0,14.21875 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+       id="path9163" />
+    <text
+       id="text9165"
+       x="-820.38721"
+       y="917.28668"
+       style="font-size:15px">
+      <tspan
+         style="font-size:8.69999981px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         x="-820.38721 -815.59351 -810.50403"
+         y="917.28668"
+         sodipodi:role="line"
+         id="tspan9167">RAM</tspan>
+    </text>
+    <path
+       inkscape:connector-curvature="0"
+       d="m -878.2622,880.9867 0,-3.5875"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+       id="path9169" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -874.1997,880.9867 0,-3.5875"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+       id="path9171" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -869.9747,880.9867 0,-3.5875"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+       id="path9173" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -865.9122,880.9867 0,-3.5875"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+       id="path9175" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -862.3247,880.9867 0,-3.5875"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+       id="path9177" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -861.5372,930.5242 0,-3.6"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+       id="path9179" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -857.4747,930.5242 0,-3.6"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+       id="path9181" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -853.2622,930.5242 0,-3.6"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+       id="path9183" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -849.1997,930.5242 0,-3.6"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+       id="path9185" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -845.5997,930.5242 0,-3.6"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+       id="path9187" />
+    <g
+       id="g9189"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9191"
+         clip-path="url(#clipPath9193)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 559.73,255.01 2.88,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path9197" />
+      </g>
+    </g>
+    <g
+       id="g9199"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9201"
+         clip-path="url(#clipPath9203)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 559.73,251.76 2.88,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path9207" />
+      </g>
+    </g>
+    <g
+       id="g9209"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9211"
+         clip-path="url(#clipPath9213)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 559.73,248.38 2.88,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path9217" />
+      </g>
+    </g>
+    <g
+       id="g9219"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9221"
+         clip-path="url(#clipPath9223)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 559.73,245.13 2.88,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path9227" />
+      </g>
+    </g>
+    <g
+       id="g9229"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9231"
+         clip-path="url(#clipPath9233)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 559.73,242.26 2.88,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path9237" />
+      </g>
+    </g>
+    <g
+       id="g9239"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9241"
+         clip-path="url(#clipPath9243)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 520.48,268.01 2.88,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path9247" />
+      </g>
+    </g>
+    <g
+       id="g9249"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9251"
+         clip-path="url(#clipPath9253)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 520.48,264.76 2.88,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path9257" />
+      </g>
+    </g>
+    <g
+       id="g9259"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9261"
+         clip-path="url(#clipPath9263)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 520.48,261.38 2.88,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path9267" />
+      </g>
+    </g>
+    <g
+       id="g9269"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9271"
+         clip-path="url(#clipPath9273)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 520.48,258.13 2.88,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path9277" />
+      </g>
+    </g>
+    <g
+       id="g9279"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9281"
+         clip-path="url(#clipPath9283)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 520.48,255.26 2.88,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path9287" />
+      </g>
+    </g>
+    <g
+       id="g9289"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 523.3,239.95 36.5,0 0,36.75 -36.5,0 0,-36.75 z"
+         style="fill:url(#linearGradient9291);fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path9297" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       d="m -888.7247,926.9242 45.625,0 0,-45.9375 -45.625,0 0,45.9375 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       id="path9299" />
+    <text
+       id="text9301"
+       x="-875.64972"
+       y="907.06171"
+       style="font-size:15px">
+      <tspan
+         style="font-size:8.69999981px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri Bold"
+         x="-875.64972 -871.60419 -866.97583 -861.4165"
+         y="907.06171"
+         sodipodi:role="line"
+         id="tspan9303">FPGA</tspan>
+    </text>
+    <g
+       id="g9305"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9307"
+         clip-path="url(#clipPath9309)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 559.86,261.51 2.87,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+           id="path9313" />
+      </g>
+    </g>
+    <g
+       id="g9315"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9317"
+         clip-path="url(#clipPath9319)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 559.86,258.26 2.87,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+           id="path9323" />
+      </g>
+    </g>
+    <g
+       id="g9325"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9327"
+         clip-path="url(#clipPath9329)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 520.36,274.51 2.87,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+           id="path9333" />
+      </g>
+    </g>
+    <g
+       id="g9335"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9337"
+         clip-path="url(#clipPath9339)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 520.36,271.26 2.87,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+           id="path9343" />
+      </g>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       d="m -886.0747,880.9867 0,-3.5875"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       id="path9345" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -882.0122,880.9867 0,-3.5875"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       id="path9347" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -869.6622,930.5242 0,-3.6"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       id="path9349" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -865.5997,930.5242 0,-3.6"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       id="path9351" />
+    <g
+       id="g9353"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9355"
+         clip-path="url(#clipPath9357)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 560.11,268.01 2.87,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+           id="path9361" />
+      </g>
+    </g>
+    <g
+       id="g9363"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9365"
+         clip-path="url(#clipPath9367)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 560.11,264.76 2.87,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+           id="path9371" />
+      </g>
+    </g>
+    <g
+       id="g9373"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9375"
+         clip-path="url(#clipPath9377)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 560.23,274.51 2.88,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+           id="path9381" />
+      </g>
+    </g>
+    <g
+       id="g9383"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9385"
+         clip-path="url(#clipPath9387)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 560.23,271.26 2.88,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+           id="path9391" />
+      </g>
+    </g>
+    <g
+       id="g9393"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9395"
+         clip-path="url(#clipPath9397)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 520.36,245.76 2.87,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+           id="path9401" />
+      </g>
+    </g>
+    <g
+       id="g9403"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9405"
+         clip-path="url(#clipPath9407)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 520.36,242.51 2.87,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+           id="path9411" />
+      </g>
+    </g>
+    <g
+       id="g9413"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9415"
+         clip-path="url(#clipPath9417)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 520.48,252.26 2.88,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+           id="path9421" />
+      </g>
+    </g>
+    <g
+       id="g9423"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9425"
+         clip-path="url(#clipPath9427)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 520.48,249.01 2.88,0"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+           id="path9431" />
+      </g>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       d="m -877.7872,930.5242 0,-3.6"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       id="path9433" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -873.7247,930.5242 0,-3.6"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       id="path9435" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -885.9122,930.5242 0,-3.6"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       id="path9437" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -881.8497,930.5242 0,-3.6"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       id="path9439" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -850.1372,880.9867 0,-3.5875"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       id="path9441" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -846.0747,880.9867 0,-3.5875"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       id="path9443" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -858.2622,880.9867 0,-3.5875"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       id="path9445" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -854.1997,880.9867 0,-3.5875"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       id="path9447" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -1054.9747,857.6242 63.4375,0 0,26.8875 -1.5625,-1.5625 54.0625,0 0,3.125 -55.625,0 0,-26.8875 1.5625,1.5625 -61.875,0 0,-3.125 z m 114.375,22.2 9.375,4.6875 -9.375,4.6875 0,-9.375 z"
+       style="fill:#000080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path9449" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m -1054.8247,943.8742 63.3625,0 0,-24.05 -1.5625,1.5625 53.9875,0 0,-3.125 -55.55,0 0,24.05 1.5625,-1.5625 -61.8,0 0,3.125 z m 114.225,-19.3625 9.375,-4.6875 -9.375,-4.6875 0,9.375 z"
+       style="fill:#000080;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path9451" />
+    <g
+       id="g9453"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 317.3,286.52 64.875,0 0,58.25 -64.875,0 0,-58.25 z"
+         style="fill:url(#linearGradient9455);fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path9461" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       d="m -1146.2247,868.7117 81.0937,0 0,-72.8125 -81.0937,0 0,72.8125 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       id="path9463" />
+    <text
+       id="text9465"
+       x="-1139.0747"
+       y="829.68671"
+       style="font-size:15px">
+      <tspan
+         style="font-size:10.05000019px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         x="-1139.0747 -1133.8386 -1128.5925 -1123.2058"
+         y="829.68671"
+         sodipodi:role="line"
+         id="tspan9467">PoCL</tspan>
+    </text>
+    <text
+       id="text9469"
+       x="-1116.8748"
+       y="829.68671"
+       style="font-size:15px">
+      <tspan
+         style="font-size:10.05000019px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         x="-1116.8748 -1111.6248"
+         y="829.68671"
+         sodipodi:role="line"
+         id="tspan9471">or</tspan>
+    </text>
+    <text
+       id="text9473"
+       x="-1139.0747"
+       y="841.68671"
+       style="font-size:15px">
+      <tspan
+         style="font-size:10.05000019px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         x="-1139.0747 -1133.6879 -1128.8739 -1120.7937 -1115.8391 -1112.392 -1107.578 -1105.4875 -1101.2666 -1099.0355 -1093.7593"
+         y="841.68671"
+         sodipodi:role="line"
+         id="tspan9475">Camera Link</tspan>
+    </text>
+    <text
+       id="text9477"
+       x="-1139.0747"
+       y="853.68671"
+       style="font-size:15px">
+      <tspan
+         style="font-size:10.05000019px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         x="-1139.0747 -1133.6779 -1127.8387 -1123.1957 -1118.2511"
+         y="853.68671"
+         sodipodi:role="line"
+         id="tspan9479">BASE</tspan>
+    </text>
+    <text
+       id="text9481"
+       x="-1116.2747"
+       y="853.68671"
+       style="font-size:15px">
+      <tspan
+         style="font-size:10.05000019px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         x="-1116.2747 -1110.8879 -1105.6418 -1100.3656 -1097.3907 -1095.1395"
+         y="853.68671"
+         sodipodi:role="line"
+         id="tspan9483">Config</tspan>
+    </text>
+    <g
+       id="g9485"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 382.17,290.52 8.125,0 0,7.25 -8.125,0 0,-7.25 z"
+         style="fill:url(#linearGradient9487);fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path9493" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       d="m -1065.1372,863.7117 10.1563,0 0,-9.0625 -10.1563,0 0,9.0625 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       id="path9495" />
+    <g
+       id="g9497"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 382.17,307.52 5.625,0 0,17 -5.625,0 0,-17 z"
+         style="fill:url(#linearGradient9499);fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path9505" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       d="m -1065.1372,842.4617 7.0313,0 0,-21.25 -7.0313,0 0,21.25 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       id="path9507" />
+    <g
+       id="g9509"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 285.05,295.39 32.375,0 0,39.75 -32.375,0 0,-39.75 z"
+         style="fill:url(#linearGradient9511);fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path9517" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       d="m -1186.5372,857.6242 40.4687,0 0,-49.6875 -40.4687,0 0,49.6875 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       id="path9519" />
+    <g
+       id="g9521"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9523"
+         clip-path="url(#clipPath9525)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 370.2,340.6 -2.56,-7.54 2.07,-0.15 -4,-7.03 2.13,-0.3 -4.23,-11 9.73,10.46 -2.55,0.23 6,6.62 -3.05,0.52 6.35,6.97 -9.89,1.22 z"
+           style="fill:url(#linearGradient9529);fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path9535" />
+      </g>
+    </g>
+    <g
+       id="g9537"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9539"
+         clip-path="url(#clipPath9541)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 370.2,340.6 -2.56,-7.54 2.07,-0.15 -4,-7.03 2.13,-0.3 -4.23,-11 9.73,10.46 -2.55,0.23 6,6.62 -3.05,0.52 6.35,6.97 -9.89,1.22 z"
+           style="fill:none;stroke:#ff9933;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+           id="path9545" />
+      </g>
+    </g>
+    <g
+       id="g9547"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 317.42,220.02 64.875,0 0,58.25 -64.875,0 0,-58.25 z"
+         style="fill:url(#linearGradient9549);fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path9555" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       d="m -1146.0747,951.8367 81.0938,0 0,-72.8125 -81.0938,0 0,72.8125 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       id="path9557" />
+    <text
+       id="text9559"
+       x="-1138.8997"
+       y="912.82422"
+       style="font-size:15px">
+      <tspan
+         style="font-size:10.05000019px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         x="-1138.8997 -1133.6637 -1128.4176 -1123.0308"
+         y="912.82422"
+         sodipodi:role="line"
+         id="tspan9561">PoCL</tspan>
+    </text>
+    <text
+       id="text9563"
+       x="-1116.6997"
+       y="912.82422"
+       style="font-size:15px">
+      <tspan
+         style="font-size:10.05000019px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         x="-1116.6997 -1111.4497"
+         y="912.82422"
+         sodipodi:role="line"
+         id="tspan9565">or</tspan>
+    </text>
+    <text
+       id="text9567"
+       x="-1138.8997"
+       y="924.82422"
+       style="font-size:15px">
+      <tspan
+         style="font-size:10.05000019px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         x="-1138.8997 -1133.5129 -1128.699 -1120.6188 -1115.6641 -1112.2169 -1107.403 -1105.3126 -1101.0916 -1098.8605 -1093.5842"
+         y="924.82422"
+         sodipodi:role="line"
+         id="tspan9569">Camera Link</tspan>
+    </text>
+    <text
+       id="text9571"
+       x="-1138.8997"
+       y="936.82422"
+       style="font-size:15px">
+      <tspan
+         style="font-size:10.05000019px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         x="-1138.8997 -1133.5028 -1127.6638 -1123.0208 -1118.076"
+         y="936.82422"
+         sodipodi:role="line"
+         id="tspan9573">BASE</tspan>
+    </text>
+    <text
+       id="text9575"
+       x="-1116.0997"
+       y="936.82422"
+       style="font-size:15px">
+      <tspan
+         style="font-size:10.05000019px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         x="-1116.0997 -1110.7129 -1105.4668 -1100.1906 -1097.2157 -1094.9646"
+         y="936.82422"
+         sodipodi:role="line"
+         id="tspan9577">Config</tspan>
+    </text>
+    <g
+       id="g9579"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 382.3,224.02 8.125,0 0,7.25 -8.125,0 0,-7.25 z"
+         style="fill:url(#linearGradient9581);fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path9587" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       d="m -1064.9747,946.8367 10.1562,0 0,-9.0625 -10.1562,0 0,9.0625 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       id="path9589" />
+    <g
+       id="g9591"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 382.3,241.02 5.625,0 0,17 -5.625,0 0,-17 z"
+         style="fill:url(#linearGradient9593);fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path9599" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       d="m -1064.9747,925.5867 7.0312,0 0,-21.25 -7.0312,0 0,21.25 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       id="path9601" />
+    <g
+       id="g9603"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 285.17,228.89 32.375,0 0,39.75 -32.375,0 0,-39.75 z"
+         style="fill:url(#linearGradient9605);fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path9611" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       d="m -1186.3872,940.7492 40.4688,0 0,-49.6875 -40.4688,0 0,49.6875 z"
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+       id="path9613" />
+    <g
+       id="g9615"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9617"
+         clip-path="url(#clipPath9619)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 370.94,273.7 -2.56,-7.55 2.07,-0.15 -4,-7.03 2.13,-0.3 -4.23,-11 9.73,10.46 -2.55,0.23 6,6.63 -3.05,0.51 6.35,6.97 -9.89,1.23 z"
+           style="fill:url(#linearGradient9623);fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path9629" />
+      </g>
+    </g>
+    <g
+       id="g9631"
+       transform="matrix(1.25,0,0,-1.25,-1542.8497,1226.8617)">
+      <g
+         id="g9633"
+         clip-path="url(#clipPath9635)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 370.94,273.7 -2.56,-7.55 2.07,-0.15 -4,-7.03 2.13,-0.3 -4.23,-11 9.73,10.46 -2.55,0.23 6,6.63 -3.05,0.51 6.35,6.97 -9.89,1.23 z"
+           style="fill:none;stroke:#ff9933;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:8;stroke-opacity:1;stroke-dasharray:none"
+           id="path9639" />
+      </g>
+    </g>
+    <text
+       id="text9641"
+       x="-969.82471"
+       y="874.08667"
+       style="font-size:15px">
+      <tspan
+         style="font-size:13.80000019px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         x="-969.82471 -962.63489 -955.29327 -950.47711 -945.85413 -943.14929"
+         y="874.08667"
+         sodipodi:role="line"
+         id="tspan9643">Port A</tspan>
+    </text>
+    <text
+       id="text9645"
+       x="-969.37469"
+       y="938.62421"
+       style="font-size:15px">
+      <tspan
+         style="font-size:13.80000019px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         x="-969.37469 -962.18488 -954.84332 -950.0271 -945.40411 -942.69928"
+         y="938.62421"
+         sodipodi:role="line"
+         id="tspan9647">Port B</tspan>
+    </text>
+    <text
+       id="text9649"
+       x="-1055.7997"
+       y="789.76172"
+       style="font-size:15px">
+      <tspan
+         style="font-size:13.80000019px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         x="-1055.7997 -1048.4443 -1041.8341 -1034.6443 -1031.4703 -1024.5979 -1021.5895 -1014.0823 -1006.1335 -999.79932"
+         y="789.76172"
+         sodipodi:role="line"
+         id="tspan9651">Cable BASE</tspan>
+    </text>
+    <text
+       id="text9653"
+       x="-1056.2498"
+       y="962.98669"
+       style="font-size:15px">
+      <tspan
+         style="font-size:13.80000019px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         x="-1056.2498 -1048.8943 -1042.2841 -1035.0944 -1031.9203 -1025.0479 -1022.0395 -1014.5323 -1006.5835 -1000.2493"
+         y="962.98669"
+         sodipodi:role="line"
+         id="tspan9655">Cable BASE</tspan>
+    </text>
+  </g>
+</svg>

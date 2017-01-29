@@ -1,0 +1,897 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<!-- #BeginTemplate "../../../../Runtime5.2_mE5-CL.data/Musterseiten/MS_blank_SDK.html" -->
+
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<meta name="generator" content="Adobe GoLive 6">
+			<title>Silicon Software - Runtime 5 SDK CoaXPress Extension</title>
+			<!-- #BeginHeadLocked "" -->
+				<link href="../../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../../lib/siso.ico" rel="shortcut icon">
+			<!-- #EndHeadLocked -->
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="4" align="left" valign="bottom" width="740"><img src="../../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"><img src="../../../images/pixel.png" alt="" height="20" width="60" border="0"></td>
+					<td align="left" valign="top" bgcolor="white" width="200" height="24"><img src="../../../images/pixel.png" alt="" height="20" width="200" border="0"></td>
+					<td width="20" height="24"><img src="../../../images/pixel.png" alt="" height="20" width="20" border="0"></td>
+					<td width="460" height="24"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="200"><!-- #BeginEditable "Bereich" -->
+							<table border="0" cellspacing="2" cellpadding="0" bgcolor="#e4e4e4">
+								<tr>
+									<td colspan="2" bgcolor="#e4e4e4">
+										<div align="center">
+											<h3><a id="_top" name="_top"></a>Table of Content</h3>
+										</div>
+									</td>
+								</tr>
+								<tr height="20">
+									<td width="40" height="20">
+										<h5>
+											
+										</h5>
+									</td>
+									<td height="20">
+										<h5>
+											
+										</h5>
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#e4e4e4" width="40">
+										<h5></h5>
+									</td>
+									<td bgcolor="#e4e4e4">
+										<h4><a href="#_0">Introduction</a></h4>
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#e4e4e4" width="40">
+										<h4>1</h4>
+									</td>
+									<td bgcolor="#e4e4e4">
+										<h4><a href="#_1">General usage </a></h4>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>1.1</h5>
+									</td>
+									<td>
+										<h5><a href="#_1.1">Classes and hierachy</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>1.2</h5>
+									</td>
+									<td>
+										<h5><a href="#_1.2">API</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h4>2</h4>
+									</td>
+									<td>
+										<h4><a href="#_2">Initialization</a></h4>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>2.1</h5>
+									</td>
+									<td>
+										<h5><a href="#_2.1">Create a board handle</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>2.2</h5>
+									</td>
+									<td>
+										<h5><a href="#_2.2">Power-over-CoaXPress</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h4>3</h4>
+									</td>
+									<td>
+										<h4><a href="#_3">Creating camera connections</a></h4>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>3.1</h5>
+									</td>
+									<td>
+										<h5><a href="#_3.1">Discovery</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>3.2</h5>
+									</td>
+									<td>
+										<h5><a href="#_3.2">Manual link configuration</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>3.3</h5>
+									</td>
+									<td>
+										<h5><a href="#_3.3">Using a frame grabber configuration file</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>3.4</h5>
+									</td>
+									<td>
+										<h5><a href="#_3.4">Assigning links to image processing</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>3.5</h5>
+									</td>
+									<td>
+										<h5><a href="#_3.5">Query information about the camera</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h4>4</h4>
+									</td>
+									<td>
+										<h4><a href="#_4">Camera Access and Control</a></h4>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h4>5</h4>
+									</td>
+									<td>
+										<h4><a href="#_5">Image Acquisition</a></h4>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h4>6</h4>
+									</td>
+									<td>
+										<h4><a href="#_6">Releasing resources</a></h4>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h4>7</h4>
+									</td>
+									<td>
+										<h4><a href="#_7">Error handling</a></h4>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h4>8</h4>
+									</td>
+									<td>
+										<h4><a href="#_8">Event notification</a></h4>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h4>X</h4>
+									</td>
+									<td>
+										<h4><a href="#_x">Appendix</a></h4>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>X.1</h5>
+									</td>
+									<td>
+										<h5><a href="#_x.1">Compiler and Linker Settings</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>X.2</h5>
+									</td>
+									<td>
+										<h5><a href="#_x.2">Dependencies</a></h5>
+									</td>
+								</tr>
+							</table>
+						<!-- #EndEditable --></td>
+					<td align="left" valign="top" bgcolor="white" width="20"><img src="../../../images/pixel.png" alt="" height="20" width="20" border="0"></td>
+					<td align="left" valign="top" bgcolor="white" width="460"><!-- #BeginEditable "Bereich3" -->
+							<h1>Software&nbsp;Development Kit (SDK) - CoaXPress Extension</h1>
+							<p><br>
+								<br>
+							</p>
+							<h2>Runtime 5</h2>
+							<div class=Section1>
+								<div class=Section1>
+									<div class=Section1>
+										<div class=Section1>
+											<div class=Section1>
+												<div class=Section1>
+													<div class=Section1>
+														<div class=Section1>
+															<div class=Section1>
+																<div class=Section1>
+																	<div class=Section1>
+																		<div class=Section1>
+																			<div class=Section1>
+																				<div class=Section1>
+																					<div class=Section1>
+																						<div class=Section1>
+																							<div class=Section1>
+																								<div class=Section1>
+																									<div class=Section1>
+																										<div class=Section1>
+																											<div class=Section1>
+																												<div class=Section1>
+																													<div class=Section1>
+																														<div class=Section1>
+																															<div class=Section1>
+																																<div class=Section1>
+																																	<div class=Section1>
+																																		<div class=Section1>
+																																			<h2>microEnable 5 CoaXPress</h2>
+																																		</div>
+																																	</div>
+																																</div>
+																															</div>
+																														</div>
+																													</div>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<h3>September 2012</h3>
+							<p><br>
+								<br>
+							</p>
+							<h3><br>
+							</h3>
+							<h1><a id="_0" name="_0"></a> Introduction</h1>
+							
+							This document provides specific information on how to operate your microEnable 5 CoaXPress frame grabber with the Software Development Kit. 
+							<p>For basic functions that can be used for all frame grabber families please refer to our global <a href="SDK.html">SDK Manual</a>.</p>
+							<p>The purpose of the CoaxPress Extension mainly refers to the detection and control of cameras supplied having a CoaxPress interface. Therefore Silicon Software provides a specific API<a href="#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a>, that has to be used in combination with the standard frame grabber library. The control of the camera is primarily based on the GenICam interface, which CoaxPress cameras should provide. Furthermore a direct access to camera registers is available as well.<br>
+							</p>
+							<p><br>
+								The following aspects are coverd within this doccument:</p>
+							<ul>
+								<li>Activating a power supply over CoaxPress
+								<li>Automatic detection of cameras connected to the frame grabber
+								<li>Manual setup of cameras connected to the frame grabber
+
+								<li>Parametrizing and controlling of cameras by using the GenICam interface
+							</ul>
+							<p></p>
+							<h1><a id="_1" name="_1"></a>1 General usage<br>
+								<br>
+							</h1>
+							<h2><a id="_1.1" name="_1.1"></a>1.1 Classes and hierachy<br>
+								<br>
+							</h2>
+							<p>The major concept of this library tries to follow the users point of view and represents a hierachical structure, which can be understood easily: A frame grabber (board) - represented by a board handle - supports up to 4 cameras - each represented by an according camera handle. Each camera administrates 1 up to 4 camera links, dependend on the topology of the system (type of connected cameras, link aggregation).<br>
+							</p>
+							<p>  1 board (board handle)   : n cameras (camera handle)<br>
+							</p>
+							<p>  1 camera (camera handle) : n links (camera properties)<br>
+							</p>
+							<p> <br>
+							</p>
+							<p>These objects are created by according functions within the library and have to be used for further access at each level.<br>
+								<br>
+							</p>
+							<h2><a id="_1.2" name="_1.2"></a>1.2 API<br>
+							</h2>
+							<p>The library works in combination with the standard Silicon Software SDK (FgLibX) <a href="SDK.html">SDK Manual</a>. <br>
+							</p>
+							<p>The scheme of using  could look like this:<br>
+							</p>
+							<ol>
+								<li>Create a frame grabber handle (FGLib-SDK) by addressing the framegrabber and the applet<br>
+								<li>Create an board handle (SiSo-Genicam-SDK)<br>
+								<li>Create the camera handle(s), either by automatic detection or by predefining the used cameras (SiSo-Genicam-SDK) and connect to cameras.<br>
+								<li>Activate GenICam connection<br>
+								<li>Parametrize the camera (image dimensions, camera triggering, etc.) (SiSo-Genicam-SDK)<br>
+								<li>Parametrize the applet according to application needs (FGLib-SDK)<br>
+								<li>Start Acquisition at the applet (FGLib-SDK)<br>
+								<li>Start Acquisition at the camera (SiSo-Genicam-SDK)<br>
+								<li>Grab images (FGLib-SDK)<br>
+								<li>Release resources (SiSo-Genicam-SDK)<br>
+								<li>Release resources (FGLib-SDK) <br>
+									<br>
+									<br>
+									<br>
+								
+								
+								
+							</ol>
+							<h1><a id="_2" name="_2"></a>2. Initialization<br>
+								<br>
+							</h1>
+							<h2><a id="_2.1" name="_2.1"></a>2.1 Create a board handle<br>
+							</h2>
+							<p>As mentioned above, the library requires an access to the frame grabber. Therefore a board handle obtained by a previous call of <b><i>Fg_Init( &lt;AppletName&gt;, &lt;BoardIndex&gt;)</i></b> is required. For further details please refer to the <a href="SDK.html">SDK documentation</a>. First step for using the SiSo-genicam library itself is creating a SiSo-Genicam board handle by using the function<br>
+								<br>
+							</p>
+							<p><b><i>Sgc_InitBoard()</i></b>.<br>
+								<br>
+							</p>
+							<p>This function creates resources for a board object, controlling various cameras. A Fg-Lib board handle has to be given and a SiSo-Genicam board handle will be returned. This board handle will be used for further access to cameras.<br>
+							</p>
+							<p>Note, that these two board handle have to be distinguished.<br>
+								<br>
+							</p>
+							<h2><a id="_2.2" name="_2.2"></a>2.2 Power-Over-CoaXPress<br>
+							</h2>
+							<p>The microEnable 5 CoaXPress Series frame grabber support &quot;Power-over- CoaxPress&quot; as specified in the CoaXPress standards A specific function is available with which the power supply at the frame grabber's CXP connectors can be activated. The functions is named<br>
+								<br>
+							</p>
+							<p><b><i>Sgc_PowerSwitch()</i></b><br>
+								<br>
+							</p>
+							<p>This function switches the power off for a certain period of time and reactivates the power supply again.<br>
+							</p>
+							<p><b>Important note:</b><br>
+							</p>
+							<p>Due to varying bootup times for different camera types, the caller of this function needs to wait until the camera has boot up. The period of time, until the camera is ready to communicate over CoaxPress, needs to be figured out from camera documentation. Please refer to the camera manufacturer to get according information. The <b><i>Sgc_PowerSwitch()</i></b> function does not handle this aspect at all.<br>
+								<br>
+								<br>
+							</p>
+							<h1><a id="_3" name="_3"></a>3. Creating camera connections<br>
+								<br>
+							</h1>
+							<p>Before a camera can be controlled, a connection to the according camera needs to be established. The SiSo-Genicam SDK offers different ways to get  access to a CoaXPress camera. During this phase, also the system topology (the fact how many cameras,how many links at each camera, which link is connected to which frame grabber port) and the link speed (CXP-1 up to CXP-6) needs to be known:<br>
+							</p>
+							<p>a) Automatic detection (camera discovery according to the CoaxPress specification)<br>
+							</p>
+							<p>b) Predefine the camera connection (either manually or by using stored connection)<br>
+							</p>
+							<p>c) Load previously saved camera configurations<br>
+								<br>
+							</p>
+							<p>After one of these steps has been done, camera and link information can be queried. A set of functions refer to this aspect as listed below:<br>
+							</p>
+							<p> <br>
+							</p>
+							<p><b><i>Sgc_scanPorts()</i></b> : Automatic camera detection (discovery)<br>
+							</p>
+							<p><b><i>Sgc_getCamera()</i></b> : Create or retrieve a camera handle<br>
+							</p>
+							<p><b><i>Sgc_getCameraPropertyWithType()</i></b> : Retrieve camera information<br>
+							</p>
+							<p><b><i>Sgc_setCameraPropertyWithType()</i></b> : Set camera and link configuration<br>
+							</p>
+							<p><b><i>Sgc_CxpConnect()</i></b> : Establish a camera connection based on camera configuration<br>
+							</p>
+							<p><b><i>Sgc_getCameraCount()</i></b> : Retrieve the number of present cameras<br>
+							</p>
+							<p><b><i>Sgc_getCameraByIndex()</i></b> : Retrieve an existing camera handle<br>
+								<br>
+								<br>
+							</p>
+							<h2><a id="_3.1" name="_3.1"></a>3.1 Discovery<br>
+								<br>
+							</h2>
+							<p>The camera detection is based on the defintion of the CoaXPress standard and tries to detect the connected cameras, connected camera links and the optimal operational bit rate. Therefore all frame grabber camera ports are scanned and the detected link at a certain port will be scanned for optimal speed. As a result, camera handles are created automatically inside the library and can be retrieved for further access (<b><i>Sgc_getCameraCount()</i></b>, <b><i>Sgc_getCameraByIndex(),Sgc_getCameraPropertyWithType()</i></b>).<br>
+							</p>
+							<p>Camera connection data might be saved to an configuration file for later reconnects. The function that performs the discovery is named:<br>
+								<br>
+							</p>
+							<p><b><i>Sgc_scanPorts()</i></b><br>
+								<br>
+							</p>
+							<p>This function performs an automatic connection using the prior detected, optimal parameters. A call to <b><i>Sgc_CxpConnect()</i></b> is not necessary when using this function.<br>
+								<br>
+							</p>
+							<p>Please note, that cameras might run in a certain default configuration mode, having a reduced speed and number of camera links (Please refer to the camera documemtation accordingly). In such a case an addition manual setting can be done by using the functions for manual configuration.<br>
+								<br>
+							</p>
+							<p><b>Example in pseudo-code:</b><br>
+								<br>
+							</p>
+							<p><i>  // Discovery<br>
+								</i></p>
+							<p><i>  Sgc_scanPorts();<br>
+								</i></p>
+							<p><i><br>
+								</i></p>
+							<p><i>  // Display camera information <br>
+								</i></p>
+							<p><i>  CameraCount = Sgc_getCameraCount();<br>
+								</i></p>
+							<p><i>  for (i = 0 to CameraCount-1)<br>
+								</i></p>
+							<p><i>    CameraHandle = Sgc_getCameraByIndex(i);<br>
+								</i></p>
+							<p><i> ShowCameraInfo(CameraHandle);<br>
+									<b><br>
+									</b></i></p>
+							<p>The procedure of discovery assigns the camera links to the image processing according to a fixed scheme. For more details please refer to section 3.4 &quot;Assigning links for image processing&quot;.<br>
+								<br>
+								<br>
+							</p>
+							<h2><a id="_3.2" name="_3.2"></a>3.2 Manual link configuration<br>
+								<br>
+							</h2>
+							<p>As an alternative, the SiSo-Genicam SDK offers possibilities for manual link configuration.<br>
+							</p>
+							<p>Camera and link properties can be given from the application in order to establish a connection based on such a configuration. This could be an option to increase the speed for system boot up time, since the process of link and speed detection is skipped and a connection is done immediately.</p>
+							<p>On the other side, this way might cause errors, if a link configuration does not match the phyical connection.<br>
+								<br>
+							</p>
+							<p>Functions needed for manual link configuration are:<br>
+							</p>
+							<p><b><i>  Sgc_getCamera()</i></b><br>
+							</p>
+							<p><b><i>  Sgc_setCameraPropertyWithType()</i></b><br>
+							</p>
+							<p><b><i>  Sgc_CxpConnect()</i></b><br>
+							</p>
+							<p>  <br>
+							</p>
+							<p><b>Example in pseudo-code:</b><br>
+								<br>
+							</p>
+							<p><i>  // create a handle for the grabber port A<br>
+								</i></p>
+							<p><i>  CameraHandle1 = Sgc_getCamera(FragemGrabberPort_A);<br>
+								</i></p>
+							<p><i>  Sgc_setCameraProperty(CameraHandle1, &quot;Linkspeed&quot;, SPEED_1250);<br>
+								</i></p>
+							<p><i>  Sgc_setCameraProperty(CameraHandle1, &quot;MasterId&quot;, 1001);<br>
+								</i></p>
+							<p><i>  // create a handle for the grabber port B<br>
+								</i></p>
+							<p><i>  CameraHandle2 = Sgc_getCamera(FragemGrabberPort_B);<br>
+								</i></p>
+							<p><i>  Sgc_setCameraProperty(CameraHandle1, &quot;Linkspeed&quot;, SPEED_1250);<br>
+								</i></p>
+							<p><i>  Sgc_setCameraProperty(CameraHandle1, &quot;MasterId&quot;, 1002);<br>
+								</i></p>
+							<p><i><br>
+								</i></p>
+							<p><i>  // try to connect based on the configuration<br>
+								</i></p>
+							<p><i>  Sgc_CxpConnect();<br>
+									<br>
+								</i></p>
+							<p><i>  // Display camera information <br>
+								</i></p>
+							<p><i>  CameraCount = Sgc_getCameraCount();<br>
+								</i></p>
+							<p><i>  for (i = 0 to CameraCount-1)<br>
+								</i></p>
+							<p><i>    CameraHandle = Sgc_getCameraByIndex(i);<br>
+								</i></p>
+							<p><i> ShowCameraInfo(CameraHandle);<br>
+								</i></p>
+							<p><br>
+							</p>
+							<p>In addition the camera links need to be connected to certain applet ports for performing the image processing. For more details please refer to section &quot;3.4 Assigning links for image processing&quot;<br>
+								<br>
+							</p>
+							<h2><a id="_3.3" name="_3.3"></a>3.3 Using a frame grabber configuration file<br>
+							</h2>
+							<p>Connections can be created by using predefined configuration files. Such files contain information about connected cameras, enabled camera links per camera, speed rate of the CoaXPress link (CXP-1, CXP-2, CXP-3, CXP-5 or CXP-6) and connected frame grabber link ports and other additional information. The file format is based an XML and can be easily read and written by an application. <br>
+							</p>
+							<p><b><i>  Sgc_LoadLinkConfiguration()</i></b><br>
+							</p>
+							<p><b><i>  Sgc_SaveLinkConfiguration()</i></b><br>
+								<br>
+							</p>
+							<p>This functions can act as a bridge between discovery and a manual configuration in that way, that after a successfull and satifying discovery data is saved and connections are furtherly created based on frame grabber configuration files<br>
+								<br>
+							</p>
+							<p><b>Example in pseudo-code:</b><br>
+							</p>
+							<p>  <br>
+							</p>
+							<p><i>// Connection based on frame grabber configuration file,<br>
+								</i></p>
+							<p><i>//  in case of an error do a rescan and save a new configuration file<br>
+								</i></p>
+							<p><i>  bool error = Sgc_LoadLinkConfiguration();<br>
+								</i></p>
+							<p><i>  if (error)<br>
+								</i></p>
+							<p><i>    // Rescan and save new configuration<br>
+								</i></p>
+							<p><i> Sgc_scanPorts();<br>
+								</i></p>
+							<p><i> Sgc_SaveLinkConfiguration();<br>
+								</i></p>
+							<p><i><br>
+								</i></p>
+							<p><i>// Further camera interaction<br>
+								</i></p>
+							<p><i>// Display camera information<br>
+								</i></p>
+							<p><i>  CameraCount = Sgc_getCameraCount();<br>
+								</i></p>
+							<p><i>  for (i = 0 to CameraCount-1)<br>
+								</i></p>
+							<p><i>    CameraHandle = Sgc_getCameraByIndex(i);<br>
+								</i></p>
+							<p><i> ShowCameraInfo(CameraHandle);<br>
+								</i></p>
+							<p>   <br>
+							</p>
+							<h2><a id="_3.4" name="_3.4"></a>3.4 Assigning links to image processing<br>
+								<br>
+							</h2>
+							<p>The CoaXPress standard covers definitions for link aggregation (LAG). In order to support the feature of link aggregation, it is necessary to define the relationship between the used links of the frame grabber camera interface and the interface to the image processing chain of a certain the applet. In case of automatic detection (discovery), this job is done automatically according to some rules. The application does not need  to take care of this.<br>
+							</p>
+							<p>The discovery procedure assigns the links to the applet following a well defined ordering scheme:<br>
+							</p>
+							<p>1. camera having the most number of links<br>
+							</p>
+							<p>2. within one camera according to the DeviceLinkId defined at the bootstrap registers for each camera link.<br>
+								<br>
+							</p>
+							<p>When doing a manual configuration, this assignment has to be done by calls to the <b><i>Sgc_SetCameraProperty() function</i></b> by using the property CAM_PROP_APPLETPORT_S for the applet port and CAM_PROP_FGPORT_S for the frame grabber port. It is strongly recommended to comply with the schema for discovery.<br>
+								<br>
+							</p>
+							<p><b>Example: using a camera having a LAG x2 interface:</b><br>
+							</p>
+							<p>Precondition: <br>
+							</p>
+							<p>- 2 camera links are connected to the frame grabber<br>
+							</p>
+							<p>- The master link is connected to the frame grabber port A (CXP1)<br>
+							</p>
+							<p>- 1st. extension link is connected to frame grabber port B (CXP2)<br>
+							</p>
+							<p>Remarks: Frame grabber port A (CXP1) is that one, which is next to the PCI-slot (see <a href="../mE5-Series.html">Hardware description</a> for further details).<br>
+							</p>
+							<p>Applet is processing in LAG mode using 4 links:<br>
+								<br>
+							</p>
+							<p>Property definition for this topology:<br>
+								<br>
+							</p>
+							<p><i>// set Port A (CXP1) as Master<br>
+								</i></p>
+							<p><i>  int link2Define = 0; // define 1st link<br>
+								</i></p>
+							<p><i>  Sgc_setCameraPropertyWithType(cameraHandle, CAM_PROP_MASTERLINK_S, &amp;link2Define, SGC_PROPERTY_TYPE_UINT, NULL);<br>
+									<br>
+								</i></p>
+							<p><i>int frameGrabberPort = 0; // Port A, CXP1<br>
+								</i></p>
+							<p><i>  int appletPort = 0; // 1st applet port<br>
+								</i></p>
+							<p><i>  // Assign 1st frame grabber port to 1st Applet port<br>
+								</i></p>
+							<p><i>  link2Define = 0; // define 1st link<br>
+								</i></p>
+							<p><i>frameGrabberPort = 0; // Port A, CXP1<br>
+								</i></p>
+							<p><i>  appletPort = 0; // 1st applet port<br>
+								</i></p>
+							<p><i>// set first link to frame grabber port A,&nbsp;CXP1<br>
+								</i></p>
+							<p><i>  Sgc_setCameraPropertyWithType(cameraHandle, CAM_PROP_FGPORT_S, &amp;frameGrabberPort, SGC_PROPERTY_TYPE_UINT, &amp;link2Define);<br>
+								</i></p>
+							<p><i>  // assign this link to 1st applet applet port(= 0)<br>
+								</i></p>
+							<p><i>  Sgc_setCameraPropertyWithType(cameraHandle, CAM_PROP_APPLETPORT_S, &amp;appletPort, SGC_PROPERTY_TYPE_UINT, &amp;link2Define);<br>
+									<br>
+								</i></p>
+							<p><i>  // Assign 2nd frame grabber port to 2nd Applet port<br>
+								</i></p>
+							<p><i>  link2Define = 1; // define 1st link<br>
+								</i></p>
+							<p><i>frameGrabberPort = 1; // Port B, CXP2<br>
+								</i></p>
+							<p><i>  appletPort = 1; // 2nd Applet port<br>
+								</i></p>
+							<p><i>  // set second link to frame grabber port <br>
+								</i></p>
+							<p><i>  Sgc_setCameraPropertyWithType(cameraHandle, CAM_PROP_FGPORT_S, &amp;frameGrabberPort, SGC_PROPERTY_TYPE_UINT, &amp;link2Define);<br>
+								</i></p>
+							<p><i>  // assign this link to 1st applet applet port(= 0)<br>
+								</i></p>
+							<p><i>  Sgc_setCameraPropertyWithType(cameraHandle, CAM_PROP_APPLETPORT_S, &amp;appletPort, SGC_PROPERTY_TYPE_UINT, &amp;link2Define);<br>
+									<br>
+								</i></p>
+							<p><i>  &lt;EndOfExample&gt;</i><br>
+								<br>
+							</p>
+							<h2><br>
+								<a id="_3.5" name="_3.5"></a>3.5 Query information about the camera<br>
+								<br>
+							</h2>
+							<p>IRetrieving information about the camera, independendly whether the camera connection is done automatically or manually can be done by using the following functions:<br>
+								<br>
+							</p>
+							<p><b><i>Sgc_getCameraCount()</i></b> : retrieve the number of present cameras<br>
+							</p>
+							<p><b><i>Sgc_getCameraByIndex()</i></b> : retrieve an existing camera handle<br>
+							</p>
+							<p><b><i>Sgc_getCameraPropertyWithType()</i></b> : retrieve a certain information from a camera handle or link<br>
+								<br>
+							</p>
+							<p>Example:<br>
+								<br>
+							</p>
+							<p><i>  // Display camera information <br>
+								</i></p>
+							<p><i>  CameraCount = Sgc_getCameraCount();<br>
+								</i></p>
+							<p><i>  for (i = 0 to CameraCount-1)<br>
+								</i></p>
+							<p><i>    CameraHandle = Sgc_getCameraByIndex(i);<br>
+								</i></p>
+							<p><i> int result = 0;<br>
+								</i></p>
+							<p><i> Sgc_setCameraPropertyWithType(cameraHandle, CAM_PROP_XXX_S, &amp;result);<br>
+								</i></p>
+							<p><i> Sgc_setCameraPropertyWithType(cameraHandle, CAM_PROP_YYY_S, &amp;result);<br>
+								</i><br>
+							</p>
+							<p>The available camera properties are defined at the CAM_PROP_XXX constants at the file SISO_GENICAM.H.<br>
+								<br>
+								<br>
+							</p>
+							<h1><a id="_4" name="_4"></a>4 Camera Access and Control<br>
+								<br>
+							</h1>
+							<p>This chapter describes the concepts of camera control and camera parametrization by using the SISO_GENICAM library. Be aware, that this control goes hand in hand with the basic parametrization of the image processing functions of the applets. For details please refer to the Silicon Software frame grabber <a href="SDK.html">SDK manua</a>l. In the following the focus is set to the SISO_GENICAM  library only.<br>
+								<br>
+							</p>
+							<p>Basically the camera access is done by reading or writing camera registers, which have to be known and can be obtained from the camera manufacturer.<br>
+								<br>
+							</p>
+							<p>The camera parametization and camera control is possible by using two different concepts:<br>
+							</p>
+							<p>a) access by using the GenICam interface defintion<br>
+							</p>
+							<p>b) access by reading or writing the camera registers directly<br>
+								<br>
+							</p>
+							<p>Both ways do not exclude each other and might be used in combination. Using the GenICam interface is more convenient and should be preferred.  SISO_GENICAM library offers here basic support. It provides methods for reading and writing control data to the camera in different data types (integers, enumerations, strings, etc.), which are defined within the GenICam standard.<br>
+							</p>
+							<p><b>Function overview:</b><br>
+								<br>
+							</p>
+							<p><b><i>Sgc_setIntegerValue()</i></b> : write an integer value for a certain camera feature<br>
+							</p>
+							<p><b><i>Sgc_getIntegerValue()</i></b> : read an integer value for a certain camera feature<br>
+							</p>
+							<p><b><i>Sgc_setEnumerationValue()</i></b> : write an enumeration value for a certain camera feature<br>
+							</p>
+							<p><b><i>Sgc_getEnumerationValue()</i></b> : read an enumeration value for a certain camera feature<br>
+							</p>
+							<p><b><i>Sgc_setStringValue()</i></b> : write an enumeration value for a certain camera feature<br>
+							</p>
+							<p><b><i>Sgc_getStringValue()</i></b> : read an enumeration value for a certain camera feature<br>
+							</p>
+							<p><b><i>Sgc_setBooleanValue()</i></b> : write a boolean value for a certain camera feature<br>
+							</p>
+							<p><b><i>Sgc_getBooleanValue()</i></b> : read a boolean value for a certain camera feature<br>
+							</p>
+							<p><b><i>Sgc_setFloatValue()</i></b> : write a floating point value for a certain camera feature<br>
+							</p>
+							<p><b><i>Sgc_getFloatValue()</i></b> : read a floating point for a certain camera feature<br>
+							</p>
+							<p><b><i>Sgc_executeCommand()</i></b> : Executes a command defined by camera's GenICam<br>
+							</p>
+							<p> 
+							</p>
+							<p>For details please refer to the SISO_GENICAM <a href="functions/siso__genicam_8h.html">function reference documentation</a></p>
+							<p><br>
+							</p>
+							<p>Before any access can be performed, a connection to the camera based on a valid camera GenICam XML has to be established in addition to the underlying CoaXPress connection (as described above). It is possible, either<br>
+							</p>
+							<p>- to use a GenICam stored at the camera, or<br>
+							</p>
+							<p>- to use a GenICam file present at the hard disk.<br>
+								<br>
+							</p>
+							<p>Relevant functions are:<br>
+							</p>
+							<p><b><i>Sgc_connectCamera()</i></b> : reads the GenICam information from the camera<br>
+							</p>
+							<p><b><i>Sgc_connectCameraWithExternalXml()</i></b> : reads the GenICam information from the hard disk<br>
+							</p>
+							<p><b><i>Sgc_getGenICamXML()</i></b> : allows to get a copy of the currently used GenICam XML<br>
+							</p>
+							<p><b><i>Sgc_setGenICamXML()</i></b> : allows to set the currently GenICam XML<br>
+								<br>
+							</p>
+							<p>Please note, that currently not all cameras supply a GenICam XML inside the camera. So occasionally for a communication based on GenICam an external XML is mandatorily required.<br>
+							</p>
+							<p>Alternatively to GenICam communication, direct camera register access is possible.<br>
+							</p>
+							<p><b>Function overview</b>:<br>
+							</p>
+							<p><b><i>Sgc_DirectRegisterRead()</i></b> : read a camera register value from a camera connected to a certain grabber port<br>
+							</p>
+							<p><b><i>Sgc_DirectRegisterWrite()</i></b> : write a camera register value to a camera connected to a certain grabber port<br>
+							</p>
+							<p>The adresses and valid values for each register is camera specific and needs to be known.<br>
+								<br>
+								<br>
+							</p>
+							<h1><a id="_5" name="_5"></a>5. Image&nbsp;Acquisition<br>
+								<br>
+							</h1>
+							<p>To start and stop the camera's image acquisition, the following functions are provided:<br>
+							</p>
+							<p><b><i>Sgc_startAcquisition()</i></b> : starting the acquisition based on the GenICAm command &quot;&quot;<br>
+							</p>
+							<p><b><i>Sgc_stopAcquisition()</i></b> : stoppping the acquisition based on the GenICAm command &quot;&quot;<br>
+								<br>
+							</p>
+							<p>Again this functions are used in combination with functions of the standard frame grabber SDK. In this case it is related to the following functions<br>
+							</p>
+							<p><b><i>Fg_StartAcquire()</i></b><br>
+							</p>
+							<p><b><i>Fg_StopAcquire()</i></b><br>
+							</p>
+							<p>which start and stop the image processing and the data transfer.<br>
+								<br>
+							</p>
+							<p>The <b>recommended sequence</b> is<br>
+							</p>
+							<p>1. Start Acquisition (<b><i>Fg_StartAcquire()</i></b>)<br>
+							</p>
+							<p>This starts the processing at the applet and data transfer to PC memory<br>
+							</p>
+							<p>2. Start Acquisition at the camera (<b><i>Sgc_startAcquisition()</i></b>)<br>
+							</p>
+							<p>This starts the image acquisition at the camera and the transfer of images from the camera to the frame grabber.<br>
+							</p>
+							<p>  3. grab images ....<br>
+							</p>
+							<p>4. Stop Acquisition at the camera (<b><i>Sgc_stopAcquisition()</i></b>)<br>
+							</p>
+							<p>This stops the image acquisition at the camera and the transfer of frames from the camera to the frame grabber.</p>
+							<p>5. Stop Acquisition (<b><i>Fg_StopAcquire()</i></b>)</p>
+							<p>This stops image processing at the frame grabber and data transfer to the PC memory<br>
+								<br>
+							</p>
+							<p>This sequences ensures, that no images are lost or corrupted (within the limitations of a certain applet, which is in use). To make sure, that a timeout occurs between step 1) and 2) doesn't occur, enlarge the timeout accordingly by using the FG_TIMEOUT parameter of the applet. This is especially of interest, when an external triggering of the camera is used.<br>
+							</p>
+							<p> <br>
+							</p>
+							<p> <br>
+							</p>
+							<h1><a id="_6" name="_6"></a>6. Releasing resources<br>
+								<br>
+							</h1>
+							<p>All resources created should be released by calling  <br>
+							</p>
+							<p><b><i>Sgc_freeBoard()</i></b>.<br>
+							</p>
+							<p>This function releases all resources, which are currently administered from a board handle.<br>
+								<br>
+								<br>
+							</p>
+							<h1><a id="_7" name="_7"></a>7. Error handling<br>
+								<br>
+							</h1>
+							<p>In general, the functions return the state of success to the caller by giving an according return value (integer value). A return value of 0 indicates success. If the return value is &lt; 0 , an error occurred. The return value in this case represents an error code. This value can be translated to a text message by using<br>
+							</p>
+							<p><i><b>  Sgc_getErrorDescription()</b></i><br>
+							</p>
+							<p>which returns a NULL-terminated string.<br>
+								<br>
+							</p>
+							<h1><a id="_8" name="_8"></a>8. Event notification<br>
+								<br>
+							</h1>
+							<p>To allow event notification from frame grabber to an application, it is possible to register a callback handler for event notifications. The function therefor is named<br>
+							</p>
+							<p><i><b>  Sgc_registerEventCallback()</b></i><br>
+								<br>
+							</p>
+							<p>Currently no events are defined.<br>
+								<br>
+								<br>
+							</p>
+							<h1><a id="_x" name="_x"></a>x Appendix<br>
+								<br>
+							</h1>
+							<h2><a id="_x.1" name="_x.1"></a>x.1 Compiler and linker settings:<br>
+							</h2>
+							<p><br>
+							</p>
+							<p>An application, that wants to use the Silicon-Software genicam library has to be linked against the SISO_GENICAM.LIB at the directory &lt;SISO-INSTALL-DIR&gt;\lib. <br>
+								<br>
+							</p>
+							<p>Function prototypes, structures and definitions can be found in the header file SISO_GENICAM.h (directory: &lt;SISO-INSTALL-DIR&gt;\include). </p>
+							<p>The implementation can be found in the file SISO_GENICAM.DLL (directory : &lt;SISO-INSTALL-DIR&gt;\bin).<br>
+								<br>
+								<br>
+							</p>
+							<h2><a id="_x.2" name="_x.2"></a>x.2 Dependencies:<br>
+							</h2>
+							<p><br>
+							</p>
+							<p>Using this library requires the GenAPI-library (Genicam standard). Generally, this package will be installed by the Silicon-Software Runtime installation. It might be updated, if necessary. Please refer to the GenICam web site for further details.<br>
+							</p>
+							<p><br>
+							</p>
+							<p><a href="#_top"><img src="../../../images/up.jpg" alt="" height="18" width="16" align="right" border="0"></a><br>
+							</p>
+						<!-- #EndEditable --></td>
+				</tr>
+				<tr height="40">
+					<td bgcolor="white" width="60" height="40"></td>
+					<td colspan="3" align="left" valign="top" bgcolor="white" width="680" height="40">
+						<table>
+							<tr height="20">
+								<td align="left" valign="middle" bgcolor="white" width="200" height="20">
+
+									</td>
+								<td align="center" valign="middle" bgcolor="white" width="250" height="20">
+									<div align="right">
+										<a title="Index" href="../../index.html">Back to Documentation Index <img src="../../../images/top.gif" alt="" width="22" height="23" align="absbottom" border="0"></a></div>
+								<td align="right" valign="middle" bgcolor="white" width="200" height="20">
+									</td>
+							</tr>
+							<tr height="20">
+								<td align="left" valign="middle" bgcolor="white" width="200" height="20"><a href="javascript:history.back()"><img src="../../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250" height="20">
+									<div align="right">
+										<a title="Feature Overview" href="../../overviews/applet_feature_overview.html">Back to Feature Overview <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								</td>
+								<td align="right" valign="middle" bgcolor="white" width="200" height="20"><a href="javascript:history.forward()">Forward <img src="../../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4" align="left" valign="top" width="740"><img src="../../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+		</body>
+
+	<!-- #EndTemplate -->
+
+</html>
+
+
+

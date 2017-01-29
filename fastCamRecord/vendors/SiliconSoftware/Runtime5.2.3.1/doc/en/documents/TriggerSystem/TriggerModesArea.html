@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<meta name="generator" content="Adobe GoLive 6">
+			<title>Silicon Software - Runtime 5 - Trigger Modes for Area Scan Cameras in General</title>
+			<!-- #BeginHeadLocked "" -->
+				<link href="../../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../../lib/siso.ico" rel="shortcut icon">
+			<!-- #EndHeadLocked -->
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2" align="left" valign="bottom" width="740"><img src="../../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td bgcolor="white" width="60"><font color="white">.</font></td>
+							</tr>
+						</table>
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+					<div align="center">
+								<h1>The Trigger Modes For Area Scan Cameras (AcquisitionApplets) </h1>
+							</div>
+					<div align="left">
+						<h3>Contents</h3>
+						<p><a href="#Anchor-Overvie-2836">1 Overview</a></p>
+						<p><a href="#Anchor-19023">2 Area Trigger Modes</a></p>
+						<blockquote>
+							<p><a href="#Anchor-1.-26597"><font size="-1">2.1 Free-Run</font></a></p>
+							<p><a href="#Anchor-1.-33357"><font size="-1">2.2 Grabber-Controlled Trigger</font></a></p>
+							<p><a href="#Anchor-1.-8760"><font size="-1">2.3 External Trigger</font></a></p>
+							<p><a href="#Anchor-1.-21823"><font size="-1">2.4 Software Trigger</font></a></p>
+						</blockquote>
+						<h3>Related documents</h3>
+						<p><a href="TriggerSystem.html">The <i>microEnable</i> Trigger System</a></p>
+						<hr>
+						<h1><a name="Anchor-Overvie-2836"></a>1 Overview</h1>
+						<p>For an optimum adaptation to an industrial environment, the hardware applets of the frame grabbers <i>microEnable IV</i> and <i>microEnable 5</i> support four trigger modes: <i>Free-Run</i> mode, <i>Grabber-Controlled</i> mode, <i>External Trigger </i>mode and <i>Software Trigger</i> mode. A fifth mode is supported by dual camera applets: <i>Master Sync</i> mode.</p>
+						<hr>
+						<h1><a name="Anchor-19023"></a>2 Area Trigger Modes</h1>
+						<h2><a name="Anchor-1.-26597"></a><font size="3">1.1 Free-Run</font></h2>
+						<p>The default mode of the area scan trigger sytem is <i>Free-Run</i>. No signals are sent to the camera.<br>
+							<br>
+						</p>
+						<h2><a name="Anchor-1.-33357"></a><font size="3">1.2 Grabber-Controlled</font></h2>
+						<table width="64" border="0" cellspacing="0" cellpadding="0" align="center">
+							<tr>
+								<td><img src="../../../images/trigger_system/trg_area_gc.gif" alt="" height="240" width="570" border="0"></td>
+							</tr>
+							<tr>
+								<td align="center" valign="top">Figure 1: Image trigger mode &quot;Grabber-Controlled&quot;</td>
+							</tr>
+						</table>
+						<p>In this operation mode, the frame grabber controls the image acquisition of the camera by the <i>Exsync</i> signal which is sent to the camera. The signal is generated in accordance with the software settings for period P and exposure L. A related second signal, <i>Flash</i>, is generated with a software-configurable delay D, which is used for controlling a strobe light or other synchronization tasks. There is an additional sub-mode <i>GrabberControlled Synchron</i> which takes care of  sychronizing camera port A and camera port B in case of <i>dual applets</i> operation.<br>
+							<br>
+						</p>
+						<h2><a name="Anchor-1.-8760"></a><font size="3">1.3 External Trigger</font></h2>
+						<table width="64" border="0" cellspacing="0" cellpadding="0" align="center">
+							<tr>
+								<td><img src="../../../images/trigger_system/trg_area_extern.gif" alt="" height="240" width="615" border="0"></td>
+							</tr>
+							<tr>
+								<td align="center" valign="top">Figure 2: Image trigger mode &quot;External Trigger&quot;</td>
+							</tr>
+						</table>
+						<p>In this operation mode, the image acquisition is controlled by an external signal which is accessible at a trigger input. A rising edge (can be switched to falling edge via software) executes the generation of a camera trigger image trigger. The time of exposure and the polarity of the signal can be configured via software. The setting of the period has no relevance. During the duration of the exposure phase, no new trigger is accepted.<br>
+							<br>
+						</p>
+						<h2><a name="Anchor-1.-21823"></a><font size="3">1.4 Software Trigger</font></h2>
+						<table width="64" border="0" cellspacing="0" cellpadding="0" align="center">
+							<tr>
+								<td><img src="../../../images/trigger_system/trg_area_software.gif" alt="" height="249" width="648" border="0"></td>
+							</tr>
+							<tr>
+								<td align="center" valign="top">Figure 3: Image trigger mode &quot;Software Trigger&quot;</td>
+							</tr>
+						</table>
+						<p>The operation mode of the software trigger  is similar to the one of the hardware trigger. The trigger pulses, however, are not executed by an external hardware signal, but by the call of a software function. Analogous to the method of the hardware trigger, the software trigger doesn't generate a new image trigger as long as an initiated exposure phase is active. During these out-times (dead times), a signal BUSY is active. This signal can be queried by software. With the returned value of the executed software it can be definitely stated if an image trigger is executed or not. The software trigger distinguishes between 2 modes:</p>
+						<ul>
+							<li>Software Trigger
+							<li>Software Trigger Queued
+						</ul>
+						<p>In <i>SoftwareTrigger Queued</i> mode it is possible to add several triggers to the internal trigger queue even if there is still another trigger in progress. In case of an active trigger, the returned value is PENDING. Triggers in the queue will be processed as soon as possible.<br>
+							<br>
+							<br>
+						</p>
+						<p></p>
+					</div>
+				</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20">
+					
+				</td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+						<table>
+							<tr>
+								<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+								<div align="center">
+									<a title="Index" href="../../index.html">Back to Documentation Index <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+							</td>
+								<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="left" valign="top" width="740"><img src="../../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+		</body>
+</html>
+
+
+

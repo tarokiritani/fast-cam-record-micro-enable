@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<title>Silicon Software - microEnable IV - Runtime 5 - Area Trigger</title>
+				<link href="../../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../../lib/siso.ico" rel="shortcut icon">
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2" align="left" valign="bottom" width="740"><img src="../../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="center">
+								<h2>Trigger System for Area-Scan Cameras</h2>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="right">
+								<div align="center">
+									<div align="center">
+										<p>Parameter Set</p>
+									</div>
+								</div>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2>
+							
+						Description<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">..</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p>For a detailed description of the Area Trigger system refer to the documents <a href="../../documents/TriggerSystem/TriggerSystem.html">The <i>microEnable IV</i> Trigger System</a> and <a href="../../documents/TriggerSystem/TriggerModesArea.html">Trigger Modes for Area Scan Cameras</a>.</p>
+							<p>The general trigger feature enables the setup of the operation mode of the frame grabber. Please ensure that the operation modes of frame grabber and camera fit together. The camera has to be set in triggered mode before you select the triggered mode of <i>microEnable</i>. For an optimum adaptation to an industrial environment, the hardware applet supports four trigger modes and a special synchronization mode.<br>
+								<br>
+								
+								
+								
+								
+								
+								
+									
+									
+									
+									In free running mode the camera continuously sends images. There is no triggering by the frame grabber. The speed of the image acquisition is determined by the speed of the camera.<br>
+								<br>
+								
+								
+								
+								
+								
+								
+									
+									
+									
+									
+			In grabber controlled mode the frame grabber sends a configurable trigger signal to the camera. The camera answers on each signal with a new image. Period and exposure time of the signal will be parameterized by the exposure control. Hereby the image acquisition will be controlled by the frame grabber. In this mode the parameterized trigger signal of port A can also be sent to port B by activating the synchronization. Cameras connected to port A and port B receive an exactly synchronized trigger signal and will acquire an image at the very same time. Please pay attention to the settings for port B which will be ignored in this mode. That neither is for nor time of exposure neither frame rate are configurable for port B in this mode.<br>
+								<br>
+								
+								
+								
+								
+								
+								
+									
+									
+									
+									
+			In operation mode external trigger the image acquisition is executed by a trigger signal from <i>microEnable</i> to the camera. Different to the grabber controlled mode the execution of the trigger signal to the camera doesn&#x2019;t occur automatically, but on an external signal. A trigger signal for the camera will be executed with the rising edge of the external signal and the image acquisition starts. This mode enables the synchronization of the image acquisition with external devices (e. g. light barriers). You can select one of the four input signals supported by the <i>microEnable</i>.<br>
+								<br>
+								
+								
+								
+								
+								
+								
+									
+									
+									
+									
+			The software trigger: The trigger pulses won&#x2019;t be executed by an external hardware signal but by a call of a software function. The software trigger doesn&#x2019;t generate a new image trigger as long as an initiated exposure phase is active. During those dead time a signal BUSY is active. This signal is queryable by software. With the returned value of the executed software it can be definitely stated, if an image trigger is executed.<br>
+								<br>
+								
+								
+								
+								
+								
+								
+									
+									
+									
+									
+			
+			Additionally, <i>microEnable</i> provides the signal strobe pulse, which could be used to control flash lights or to synchronize additional cameras. The strobe pulse is only available when using the grabber controlled or external trigger controlled modes. The strobe pulse can be delayed (with respect to the ExSync signal) and its polarity can be configured by activating flash low active or flash high active. The signal is sent to the strobe pulse output of the IO module. This signal enables the syncronization of both ports in a kind of master-slave mode. Port A is set to the master. Both cameras working synchronously with accuracy in a range of nanoseconds.<br>
+								<br>
+								
+								
+								
+								
+								Please read the according chapter of the manual of your camera, which output format is used.</p>
+							<p></p>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							Parameters<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<h3><u>Main Section</u></h3>
+							<h3><a name="FG_TRIGGERMODE"></a>Mode</h3>
+							<p>You are able to choose the operation mode of your frame grabber. But please make sure that the operation mode of frame grabber and camera is the same.</p>
+							<p></p>
+							<h3><a name="FG_EXSYNCON"></a>ExSync Enable</h3>
+							<p>The ExSync can be set to on (1) or off (0). This parameter lets an ExSync signal be sent.</p>
+							<p>Please note that you firstly start the acquisition before you set the ExSyncOn parameter to On (1). The signal will be sent as soon as the ExSync has been started. Please make sure that you set the ExSync parameter during the time that is set to the <a href="../PSMisc/FB_Miscellaneous.html">timeout</a> parameter.</p>
+							<p></p>
+							<h3><a name="FG_FLASHON"></a>Flash Enable</h3>
+							<p>A flashing signal can be enabled with this parameter.</p>
+							<p></p>
+							<h3><a name="FG_SENDSOFTWARETRIGGER"></a>Software Trigger Pulse</h3>
+							<p>A software trigger pulse can be sent, if the software trigger mode has been chosen.</p>
+							<p></p>
+							<h3><u>Section Trigger Input</u></h3>
+							<h3><a name="FG_TRIGGERINSOURCE"></a>Source</h3>
+							<p>In external trigger mode you are able to choose the input source.</p>
+							<p></p>
+							<h3><a name="FG_TRIGGERINPOLARITY"></a>Polarity</h3>
+							<p>In external trigger mode the polarity for the input can be set.</p>
+							<p></p>
+							<h3><u>Section ExSync Output</u></h3>
+							<h3><a name="FG_FRAMESPERSEC"></a>Frames / Sec.</h3>
+							<p>It is possible to set the frame rate if GrabberControlled has been chosen as operation mode. Please note that this value is depending on exposure time.</p>
+							<p></p>
+							<h3><a name="FG_EXPOSURE"></a>Exposure</h3>
+							<p>The exposure time in microseconds can be set. This value changes the range of values for the setting frames per second.</p>
+							<p></p>
+							<h3><a name="FG_EXSYNCDELAY"></a>ExSync Delay</h3>
+							<p>You are able to set the delay for the output ExSync signal. The parameter is settable in each trigger mode.</p>
+							<p></p>
+							<h3><a name="FG_EXSYNCPOLARITY"></a>Polarity</h3>
+							<p>The output polarity is able to set as high (1) or low (0).</p>
+							<p></p>
+							<h3><u>Section Flash</u></h3>
+							<h3><a name="FG_STROBEPULSEDELAY"></a>Delay</h3>
+							<p>For enabling the flash delay enter this parameter.</p>
+							<p></p>
+							<h3><a name="FG_FLASH_POLARITY"></a>Polarity</h3>
+							<p>With this parameter it is able to set the flash polarity.</p>
+							<h3></h3>
+							<h3><u>Section Accuracy</u></h3>
+							<h3><a name="FG_PRESCALER"></a>Time Base</h3>
+							<p>The time base defines the internal clock for the trigger system. The internal clock tick affects the Image Trigger since the Exsyc is synchonized to it and it affect the valid range for delays. Increasing the time base enables larger delays, however it also will increase the jitter for the Exsync signal with respect to the external trigger signal.</p>
+							<p></p>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							References<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+					<p><a href="../../documents/TriggerSystem/TriggerSystem.html">Trigger System in General</a></p>
+					<p><a href="../../documents/TriggerSystem/TriggerModesArea.html">Trigger Modes for Area Scan Cameras</a></p>
+					<p><a href="../../documents/SDK/SDK.html">SDK Documentation</a></p>
+				</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+ 						<table>
+							<tr><br><br>
+								<td align="left" valign="middle" bgcolor="white" width="200"></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../index.html">Back to Documentation Index <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								<td align="right" valign="middle" bgcolor="white"></td>
+							</tr>
+							<tr>
+								<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../overviews/applet_feature_overview.html">Back to Feature Overview <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								</td>
+								<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				<tr>
+					<td colspan="2" align="left" valign="top" width="740"><img src="../../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+			<p></p>
+		</body>
+</html>
+
+
+

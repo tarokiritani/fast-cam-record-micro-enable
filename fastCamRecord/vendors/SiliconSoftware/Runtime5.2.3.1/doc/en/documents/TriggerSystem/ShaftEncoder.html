@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<meta name="generator" content="Adobe GoLive 6">
+			<title>Silicon Software - Runtime 5 - Shaft Encoder in General</title>
+				<link href="../../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../../lib/siso.ico" rel="shortcut icon">
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2" align="left" valign="bottom"><img src="../../../images/head.jpg" alt="" height="120"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" height="20">
+							<div align="center">
+								<h2>Shaft Encoder</h2>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" height="20">
+							<div align="center">
+								<p>Overwiew</p>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" height="20"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td bgcolor="white" width="60"><font color="white">.</font></td>
+							</tr>
+						</table>
+					</td>
+					<td align="left" valign="top" bgcolor="white">
+						<h2><br>
+							
+						Description<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white">
+							<div align="left">
+								<p>A <i>Shaft Encoder </i>or <i>Rotary Encoder</i> is used to produce trigger input signals for the <i>Line Trigger</i>. A relative rotary encoder in its simplest form can only measure the speed of the movement and trigger the line camera accordingly to sample the object in equidistant lines. The figure below illustrates a setup where the line camera could, e.g., be triggered on the rising edge of the encoder signal.</p>
+						<p></p>
+					</div>
+							<div align="left">
+								<p><img src="../../../images/trigger_system/trg_shaftencoder_simple.jpg" alt="" width="400"  border="0"></p>
+							</div>
+							<div align="left">
+								<p></p>
+							</div>
+							<p>If not only the speed of the object can vary, but also the direction of the transport belt (forwards or backwards), one single signal is not sufficent to record continous strips. A shaft encoder that allows to detect if the transport belt is moving forwards or backwards has a second encoder signal (Signal B), that follows the first signal (Signal A) by a fixed angle. The following figure shows an A/B shaft encoder where the line camera could, e.g., be triggered on the edge of the encoder Signal A. If the encoder is rotating forwards, then the Signal B is low at the very moment of the rising signal A, since by definition B follows A.</p>
+							<p>Is the encoder rotating in the wrong direction (i.e., backwards), the Signal A follows B, since the whole process is reverted. In this case, the signal B is high at a rising signal A, and no trigger signal should be generated.</p>
+							<p></p>
+							<div align="left">
+								<p><img src="../../../images/trigger_system/trg_shaftencoder_ab.jpg" alt="" width="400"  border="0"></p>
+							</div>
+							<p></p>
+							<p>In order to acquire a continous strip, it is not only nescessary to ignore encoder signals that arise from a reverted rotation, but also to compensate this 'displacement' when moving forward again.</p>
+							<div align="left">
+								<p><img src="../../../images/trigger_system/trg_shaftencoder_ab_wav.gif" alt="" width="600" height="267" border="0"></p>
+							</div>
+							<div align="left">
+								<p></p>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" height="20">
+						<table>
+							<tr>
+								<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+								<div align="center">
+									<a title="Index" href="../../index.html">Back to Documentation Index <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+							</td>
+								<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="left" valign="top"><img src="../../../images/bottom.jpg" alt="" height="21" border="0"></td>
+				</tr>
+			</table>
+			<p></p>
+		</body>
+</html>
+
+
+

@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<title>Silicon Software - microEnable IV - Runtime 5 - CameraLinke Color-Scale (RGB48) Base Configuration</title>
+				<link href="../../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../../lib/siso.ico" rel="shortcut icon">
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2" align="left" valign="bottom" width="740"><img src="../../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="center">
+								<h2>CameraLink for Color Cameras in Base Configuration</h2>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="right">
+								<div align="center">
+									<div align="center">
+										<p>Parameter Set</p>
+									</div>
+								</div>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2>
+							
+						Description<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">..</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p></p>
+					<p>The feature CameraLink enables the adaptation of the hardware applet to the data format delivered by your camera.<br>
+						<br>
+						To receive correct image data from your camera it is crucial, that the camera output format matches the selected framegrabber input format. Most cameras support different opperation modes. Please, consult the manual of your camera to obtain the nescesary information, how to configure the camera to the desired data format. Basically a non-matching camera configuration results in a time-out.</p>
+					<p></p>
+				</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							Parameters<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p></p>
+							<h3><a name="FG_CAMERA_LINK_CAMTYP"></a>Input Format (Camera Link standard)</h3>
+							<p>Since the choice of the Applet already determines whether the medium camera format is gray or color, the Input Format parameter gives only options for the amount of bits per pixel.</p>
+							<p>For color cameras the CameraLink standard defines a single input mode:</p>
+							<table border="1" cellspacing="0" cellpadding="2">
+								<tr bgcolor="#0008a3">
+									<td align="center" bgcolor="#2e368f"><b><font color="white">Input Format<br>
+											</font></b><b><font color="white">(Camera Format)</font></b></td>
+									<td align="center" bgcolor="#2e368f"><b><font color="white">Valid Bits / Pixel<br>
+												
+												(internally)</font></b></td>
+									<td align="center" bgcolor="#2e368f"><b><font color="white">Output Format</font></b></td>
+								</tr>
+								<tr bgcolor="#8d9dff">
+									<td align="center" bgcolor="#7689c4"><font size="-1">&nbsp;</font></td>
+									<td align="center" bgcolor="#7689c4"><font size="-1">[Bit/Component]</font></td>
+									<td align="center" bgcolor="#7689c4"> </td>
+								</tr>
+								<tr>
+									<td align="center" bgcolor="white"><font size="-1">RGB 1x24 (8bit/component)</font></td>
+									<td align="center" bgcolor="white">24</td>
+									<td align="center" bgcolor="white">RGB24 (or RGB48)</td>
+								</tr>
+							</table>
+							<p><br>
+								
+					<h3><a name="FG_CAMERA_LINK_SERIALRGB"></a>Non-Standard Input Formats<a href="#FG_CAMERA_LINK_SERIALRGB"> </a></h3>
+					Some color cameras can be configured to output more than 8bits/component based on Camera Link base configuration by violating the Camera Link standard. Supported are the following non-standard modes:
+					<table border="1" cellspacing="0" cellpadding="2">
+						<tr bgcolor="#0008a3">
+							<td align="center" bgcolor="#2e368f"><b><font color="white">Input Format<br>
+									</font></b><b><font color="white">(Camera Format)</font></b></td>
+							<td align="center" bgcolor="#2e368f"><b><font color="white">Valid Bits / Pixel<br>
+										(internally)</font></b></td>
+							<td align="center" bgcolor="#2e368f"><b><font color="white">Output Format</font></b></td>
+						</tr>
+						<tr bgcolor="#8d9dff">
+							<td align="center" bgcolor="#7689c4"><font size="-1">&nbsp;</font></td>
+							<td align="center" bgcolor="#7689c4"><font size="-1">[Bit/Component]</font></td>
+							<td align="center" bgcolor="#7689c4"></td>
+						</tr>
+						<tr>
+							<td align="center" bgcolor="white">RGB 3x8 (Serial Rgb, 8 bit/component, Single Tap)</td>
+							<td align="center" bgcolor="white">24</td>
+							<td align="center" bgcolor="white">RGB24 (or RGB48)</td>
+						</tr>
+						<tr>
+							<td align="center" bgcolor="#dfdfdf">RGB 3x10 (Serial Rgb, 10 bit/component, Single Tap)</td>
+							<td align="center" bgcolor="#dfdfdf">30</td>
+							<td align="center" bgcolor="#dfdfdf">RGB24 or RGB48</td>
+						</tr>
+						<tr>
+							<td align="center" bgcolor="white">RGB 3x12 (Serial Rgb, 12 bit/component, Single Tap)</td>
+							<td align="center" bgcolor="white">36</td>
+							<td align="center" bgcolor="white">RGB24 or RGB48</td>
+						</tr>
+						<tr>
+							<td align="center" bgcolor="#dfdfdf">RGB 3x14 (Serial Rgb, 14 bit/component, Single Tap)</td>
+							<td align="center" bgcolor="#dfdfdf">42</td>
+							<td align="center" bgcolor="#dfdfdf">RGB24 or RGB48</td>
+						</tr>
+						<tr>
+							<td align="center" bgcolor="white">RGB 3x16 (Serial Rgb, 16 bit/component, Single Tap)</td>
+							<td align="center" bgcolor="white">48</td>
+							<td align="center" bgcolor="white">RGB24 or RGB48</td>
+						</tr>
+						<tr>
+							<td align="center" bgcolor="#dfdfdf">RGB 2x16 (Serial Rgb, 8 bit/component, Dual Tap)</td>
+							<td align="center" bgcolor="#dfdfdf">24</td>
+							<td align="center" bgcolor="#dfdfdf">RGB24 or RGB48</td>
+						</tr>
+						<tr>
+							<td align="center" bgcolor="white">RGB 2x20 (Serial Rgb, 10 bit/component, Dual Tap)</td>
+							<td align="center" bgcolor="white">30</td>
+							<td align="center" bgcolor="white">RGB24 or RGB48</td>
+						</tr>
+						<tr>
+							<td align="center" bgcolor="#dfdfdf">RGB 2x24 (Serial Rgb, 12 bit/component, Dual Tap)</td>
+							<td align="center" bgcolor="#dfdfdf">36</td>
+							<td align="center" bgcolor="#dfdfdf">RGB24 or RGB48</td>
+						</tr>
+					</table>
+					<p>The Serial RGB mode transfers the color components sequentially. Therefore the resulting bandwith is only 1/3 for serial RGB single tap, and 1/2 for serial RGB dual tap.</p>
+					<p>While choosing a Serial RGB mode, it is possible to change the order of the three color components using the parameter field <i>Serial RGB Mapping</i>. For example the order can be changed from RGB to BGR. Following you find a summary of all possible permutations illustrated (for single tap and for dual tap separated):</p>
+					<p></p>
+					<p><img src="../../../images/CameraLink/SerialRGB_single_tap.jpg" alt="" height="349" width="600" border="0"></p>
+					<p></p>
+					<p></p>
+					<p><img src="../../../images/CameraLink/SerialRGB_dual_tap.jpg" alt="" height="385" width="600" border="0"></p>
+					<p></p>
+					<p>The <a href="PSCameraLink_Gray16.html#FG_FORMAT">output format</a> of your frame grabber can be selected indepently from the input format.</p>
+					<p></p>
+					<h3><a name="FG_FORMAT"></a>Output Format</h3>
+							<p>For color cameras there are two options for the output format. Either RGB 24 (8 bit per color component), or RGB 48 (16 bit per color component) are transefered through the PCI bus into the frame buffer of your PC. The output format of your frame grabber can be selected indepently from the input format from the camera.</p>
+							<p>To safe bandwidth at the PCI bus it might be desirable to use a 24 bit / pixel output mode, even in conjuction with a camera delivering more than 24 bits / pixel. The <a href="../PSKneeLut/PSKneeLut1024.html">Knee Lookup Table</a> could make this a satisfying option, since it is possible to map a 10 bit / component input non-linearily to a 8 bit / component output -- map only desired information to 24 bit / pixel.</p>
+							<p></p>
+							<h3><a name="FG_USEDVAL"></a>Use DVAL</h3>
+							<p>By default this parameter is set to &quot;Yes&quot; and shouldn't be changed.</p>
+							<p>Some rare cameras do not comply to the CameraLink standard and keep the &quot;DVAL&quot;-signal constantly low, even while transmitting valid data. In this case you could try to set the parameter to &quot;NO&quot;.</p>
+							<p></p>
+							<h3><a name="FG_PIXELDEPTH"></a>Pixel Depth</h3>
+							<p>The pixel depth delivers the information of the number of valid bits / pixel. E. g. when using a 10 bit / pixel camera and a 16 bit / pixel <a href="PSCameraLink_Gray16.html#FG_FORMAT">output format</a> with right-alignment, then Pixel Depth = 10 to indicate that the lower 10 bit of the 16 bit value cover the pixel.</p>
+							<p>The pixel depth parameter can't be changed manually.</p>
+							<p></p>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							References<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p></p>
+					<p><a href="../../documents/SDK/SDK.html">SDK Documentation</a></p>
+				</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+ 						<table>
+							<tr><br><br>
+								<td align="left" valign="middle" bgcolor="white" width="200"></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../index.html">Back to Documentation Index <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								<td align="right" valign="middle" bgcolor="white"></td>
+							</tr>
+							<tr>
+								<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../overviews/applet_feature_overview.html">Back to Feature Overview <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								</td>
+								<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				<tr>
+					<td colspan="2" align="left" valign="top" width="740"><img src="../../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+			<p></p>
+		</body>
+</html>
+
+
+

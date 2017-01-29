@@ -1,0 +1,51 @@
+PROJECT(MemoryManagement)
+
+CMAKE_MINIMUM_REQUIRED(VERSION 2.4)
+
+#where to find local cmake modules
+FILE(TO_CMAKE_PATH "$ENV{SISODIR5}" SISODIR5)
+SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_INSTALL_PREFIX}/cmake/modules" "${SISODIR5}/cmake/modules")
+
+INCLUDE(SisoPlatform)
+FIND_PACKAGE(FgLib5 REQUIRED)
+FIND_PACKAGE(SisoDisplayLib REQUIRED)
+
+if(COMMAND cmake_policy)
+	cmake_policy(SET CMP0003 NEW)
+endif(COMMAND cmake_policy)
+
+INCLUDE_DIRECTORIES(
+	${FgLib5_INCLUDE_DIR}
+	${SISODISPLAYLIB_INCLUDE_DIR}
+	${CMAKE_CURRENT_SOURCE_DIR}/../../include
+)
+
+ADD_EXECUTABLE(AllocMem
+	AllocMem.cpp)
+TARGET_LINK_LIBRARIES(AllocMem
+	${FgLib5_LIBRARIES}
+	${SISODISPLAYLIB_LIBRARIES}
+)
+SET_TARGET_PROPERTIES(AllocMem PROPERTIES FOLDER "Examples/Functionality/MemoryManagement")
+
+ADD_EXECUTABLE(AllocMemEx
+	AllocMemEx.cpp)
+TARGET_LINK_LIBRARIES(AllocMemEx
+	${FgLib5_LIBRARIES}
+	${SISODISPLAYLIB_LIBRARIES}
+)
+SET_TARGET_PROPERTIES(AllocMemEx PROPERTIES FOLDER "Examples/Functionality/MemoryManagement")
+
+ADD_EXECUTABLE(AllocUserMem
+	AllocUserMem.cpp)
+TARGET_LINK_LIBRARIES(AllocUserMem
+	${FgLib5_LIBRARIES}
+	${SISODISPLAYLIB_LIBRARIES}
+)
+SET_TARGET_PROPERTIES(AllocUserMem PROPERTIES FOLDER "Examples/Functionality/MemoryManagement")
+
+INSTALL(TARGETS
+	AllocMem
+	AllocMemEx
+	AllocUserMem
+	DESTINATION bin/examples)

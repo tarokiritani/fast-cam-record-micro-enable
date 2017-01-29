@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<title>Silicon Software - Runtime 5 - Getting Started with Applets</title>
+					<link href="../../lib/siso.css" rel="stylesheet" media="screen">
+					<link href="../../lib/siso.ico" rel="shortcut icon">
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+				<td colspan="3" align="left" valign="bottom" width="784"><img src="../../images/head.jpg" alt="" width="740" height="120"></td>
+			</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td bgcolor="white" width="274" height="20"></td>
+				<td align="left" valign="top" bgcolor="white" width="450" height="20"></td>
+			</tr>
+			<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+				<td colspan="2" bgcolor="white" width="724" height="20">
+					<h2></h2>
+				</td>
+			</tr>
+			</table>
+			
+<table border="0" cellspacing="0" cellpadding="0" width="784">
+		<tr height="65">
+			<td bgcolor="white" width="60" height="65"></td>
+			<td bgcolor="white" width="65" height="65"><img src="../../images/index/AppletsFeatures_64x64.png" alt="" width="64" height="64"></td>
+			<td bgcolor="white" width="5" height="65" valign="middle"></td>
+			<td bgcolor="white" width="654" height="65" valign="middle"><h3>Getting started with Applets</h3></td>
+			</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="0" width="785">
+			
+			
+			<tr>
+				<td bgcolor="white" width="61"></td>
+				<td colspan="2" bgcolor="white" width="724">
+					<hr>
+					<p></p>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="61"></td>
+				<td colspan="2" bgcolor="white" width="724">
+					<hr>
+					<p><b><font size="3">Introduction</font></b></p>
+					<p>An Applet or Hardware Applet is a software code which can be loaded and executed on FPGA processors of Silicon Software frame grabbers. An Applet offers on-board image acquisition and processing functions which are running in real-time without any load of the host CPU. Each applet covers functions which are necessary for certain operations. For example, the functionality of a line camera trigger differs from the one of an area camera trigger. To operate the frame grabber, it is necessary to initialize it with one applet.</p>
+					<p>An applet represents a certain, predefinded set of acquisition and image processing functions. For example, an applet may incorporate a Camera Link Full interface in combination with noise filter, Bayer decoding, flat field correction, a lookup table (LUT), and a trigger module. Applets can be parameterized.</p>
+					<p>An Applet has to be loaded onto the frame grabber for using its functionality as defined part of a certain image acquisition system. After loading the Applet, the specific image processing and image acquisition functions are immediately available.</p>
+					<p>You can load, unload, and reload applets unlimited times, on some frame grabber models (mE4) even during power-on phase by overwriting the currently installed applet. </p>
+					<p>Silicon Software offers two different frame grabber series, comprising about 20 different models: A-Series and V-Series. Both series support various camera interfaces at the moment: Camera Link, GigE Vision, LVDS, and CoaXPress.</p>
+					<p>There are four different Applet types available - AcquisitionApplets, Advanced AcquisitionApplets, SmartApplets and VA (VisualApplets) Applets.<br>
+						<br>
+					</p>
+					<p><b>AcquisitionApplets</b> cover a basic set of acquisition and real-time image processing functions. AcquisitionApplets are available for all frame grabber models - microEnable IV and microEnable 5, A-Series and V-Series, Camera Link, GigE Vision, LVDS, and CoaxPress based.<br>
+						<br>
+					</p>
+					<p><b>Advanced AcquisitionApplets</b> are a set of enhanced acquisition applets for specific microEnable IV frame grabbers. For the following frame grabber models, <b>Advanced AcquisitionApplets</b> are available:</p>
+					<ul>
+						<li>microEnable IV AD4-CL
+						<li>microEnable IV AD4-PoCL
+						<li>microEnable IV VD4-CL
+						<li>microEnable IV VD4-PoCL
+
+						<li>microEnable IV AD4-LVDS
+
+						<li>microEnable IV AQ4-GE
+						<li>microEnable IV AQ4-GPoE
+						<li>microEnable IV VQ4-GE
+						<li>microEnable IV VQ4-GPoE
+					</ul>
+					<p><br>
+						<b>SmartApplets </b>are application-related image processing libraries. The available Smart Applets are bundled in SmartApplets families. Each family contains various SmartApplets that relate to the same thematic area and address a certain industry, application, or technology. SmartApplets are continuously enhanced. SmartApplets are available for V-Series frame grabbers.</p>
+					<p><br>
+					</p>
+					<p><b>VA Applets</b> are individually created applets with a custom functionality, programmed with the graphical programming tool VisualApplets. VA Applets are available for V-Series frame grabber.<br>
+						<br>
+						<br>
+						<br>
+						<font size="3"><b>Applets and Frame Grabber Models<br>
+								<br>
+							</b></font></p>
+					<p><b>A-Series Frame Grabbers<br>
+							<br>
+						</b></p>
+					<p>All Silicon Software <b>A-Series frame grabbers</b> support AcquisitionApplets. Some microEnable<b> IV</b> A-Series frame grabbers also support Advanced AcquisitionApplets. In the following table, all currently available A-Series frame grabber models and their specific applet support are listed:</p>
+					<p></p>
+					<table width="520" border="1" cellspacing="2" cellpadding="0">
+						<tr>
+							<td align="left" bgcolor="#111111" width="170"><font color="white">Frame Grabber Model</font></td>
+							<td align="center" bgcolor="#111111" width="110"><font color="white">Camera Interface</font></td>
+							<td align="center" bgcolor="#111111" width="120"><font color="white"> AcquisitionApplets</font></td>
+							<td align="center" bgcolor="#111111" width="120"><font color="white">Advanced<br>
+									AcquisitionApplets</font></td>
+						</tr>
+						<tr>
+							<td align="left" bgcolor="#bbbbbb" width="170"><font color="black">microEnable IV AS1-PoCL  </font></td>
+							<td align="center" bgcolor="#bbbbbb" width="110"><font color="black">Camera Link</font></td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#dddddd" width="120">-</td>
+						</tr>
+						<tr>
+							<td align="left" bgcolor="#bbbbbb" width="170"><font color="black">microEnable IV AD1-CL  </font></td>
+							<td align="center" bgcolor="#bbbbbb" width="110"><font color="black">Camera Link</font></td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#dddddd" width="120">-</td>
+						</tr>
+						<tr>
+							<td align="left" bgcolor="#bbbbbb" width="170"><font color="black">microEnable IV AD1-PoCL  </font></td>
+							<td align="center" bgcolor="#bbbbbb" width="110"><font color="black">Camera Link</font></td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#dddddd" width="120">-</td>
+						</tr>
+						<tr>
+							<td align="left" bgcolor="#bbbbbb" width="170"><font color="black">microEnable IV AD1-mPoCL  </font></td>
+							<td align="center" bgcolor="#bbbbbb" width="110"><font color="black">Camera Link</font></td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#dddddd" width="120">-</td>
+						</tr>
+						<tr>
+							<td align="left" bgcolor="#bbbbbb" width="170"><font color="black">microEnable IV AD4-CL  </font></td>
+							<td align="center" bgcolor="#bbbbbb" width="110"><font color="black">Camera Link</font></td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+						</tr>
+						<tr>
+							<td align="left" bgcolor="#bbbbbb" width="170"><font color="black">microEnable IV AD4-PoCL</font></td>
+							<td align="center" bgcolor="#bbbbbb" width="110"><font color="black">Camera Link</font></td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+						</tr>
+						<tr>
+							<td align="left" bgcolor="#bbbbbb" width="170"><font color="black">microEnable IV AD4-LVDS</font></td>
+							<td align="center" bgcolor="#bbbbbb" width="110"><font color="black">LVDS</font></td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+						</tr>
+						
+						
+												
+						<tr>
+							<td align="left" bgcolor="#bbbbbb" width="170"><font color="black">microEnable IV AQ4-GE</font></td>
+							<td align="center" bgcolor="#bbbbbb" width="110"><font color="black">GigE&nbsp;Vision</font></td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+						</tr>
+						<tr>
+							<td align="left" bgcolor="#bbbbbb" width="170"><font color="black">microEnable IV AQ4-GPoE</font></td>
+							<td align="center" bgcolor="#bbbbbb" width="110"><font color="black">GigE Vision</font></td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+						</tr>
+						<tr>
+							<td align="left" bgcolor="#bbbbbb" width="170"><font color="black"> microEnable 5 AQ8-CXP6B</font></td>
+							<td align="center" bgcolor="#bbbbbb" width="110"><font color="black">CoaXPress</font></td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#dddddd" width="120">-</td>
+						</tr>	
+						<tr>
+							<td align="left" bgcolor="#bbbbbb" width="170"><font color="black">microEnable 5 AQ8-CXP6D</font></td>
+							<td align="center" bgcolor="#bbbbbb" width="110"><font color="black">CoaXPress</font></td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#dddddd" width="120">-</td>
+						</tr>
+						<tr>
+							<td align="left" bgcolor="#bbbbbb" width="170"><font color="black">microEnable 5 AD8-PoCL</font></td>
+							<td align="center" bgcolor="#bbbbbb" width="110"><font color="black">Camera Link</font></td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#dddddd" width="120">-</td>
+						</tr>																							
+					</table>
+					<p>Note: A detailled overview over all available applets and functions can be found in the section <a href="../ind_acquisition.html">Applets</a>.<br>
+						<br>
+						<br>
+					</p>
+					<p></p>
+					<p><b>V-Series Frame Grabbers<br>
+							<br>
+						</b></p>
+					<p>All Silicon Software<b> V-Series frame grabbers</b> support AcquisitionApplets, VA Applets and model-dependent SmartApplets. Some microEnable <b>IV</b> V-Series frame grabbers also support Advanced AcquisitionApplets. In the following table, all currently available V-Series grabber models and their specific applet support are listed:</p>
+					<table width="690" border="1" cellspacing="2" cellpadding="0">
+						<tr>
+							<td align="left" bgcolor="#111111" width="170"><font color="white">Frame Grabber Model</font></td>
+							<td align="center" bgcolor="#111111" width="110"><font color="white">Camera Interface</font></td>
+							<td align="center" bgcolor="#111111" width="120"><font color="white">AcquisitionApplets</font></td>
+							<td align="center" bgcolor="#111111" width="120"><font color="white">Advanced<br>
+									AcquisitionApplets</font></td>
+							<td align="center" bgcolor="#111111" width="90"><font color="white">SmartApplets</font></td>
+							<td align="center" bgcolor="#111111" width="80"><font color="white">VA Applets</font></td>
+						</tr>
+						<tr>
+							<td align="left" bgcolor="#bbbbbb" width="170"><font color="black">microEnable IV VD1-CL </font></td>
+							<td align="center" bgcolor="#bbbbbb" width="110"><font color="black">Camera Link</font></td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#dddddd" width="120">-</td>
+							<td align="center" bgcolor="#99ff66" width="90">yes</td>
+							<td align="center" bgcolor="#99ff66" width="80">yes</td>
+						</tr>
+						<tr>
+							<td align="left" bgcolor="#bbbbbb" width="170"><font color="black">microEnable IV VD4-CL </font></td>
+							<td align="center" bgcolor="#bbbbbb" width="110"><font color="black">Camera Link</font></td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#99ff66" width="90">yes</td>
+							<td align="center" bgcolor="#99ff66" width="80">yes</td>
+						</tr>
+						<tr>
+							<td align="left" bgcolor="#bbbbbb" width="170"><font color="black">microEnable IV VD4-PoCL </font></td>
+							<td align="center" bgcolor="#bbbbbb" width="110"><font color="black">Camera Link</font></td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#99ff66" width="90">yes</td>
+							<td align="center" bgcolor="#99ff66" width="80">yes</td>
+						</tr>
+						<tr>
+							<td align="left" bgcolor="#bbbbbb" width="170"><font color="black">microEnable IV VQ4-GE</font></td>
+							<td align="center" bgcolor="#bbbbbb" width="110"><font color="black">GigE&nbsp;Vision</font></td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#99ff66" width="90">yes</td>
+							<td align="center" bgcolor="#99ff66" width="80">yes</td>
+						</tr>
+						<tr>
+							<td align="left" bgcolor="#bbbbbb" width="170"><font color="black">microEnable IV VQ4-GPoE</font></td>
+							<td align="center" bgcolor="#bbbbbb" width="110"><font color="black">GigE Vision</font></td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#99ff66" width="90">yes</td>
+							<td align="center" bgcolor="#99ff66" width="80">yes</td>
+						</tr>
+						<tr>
+							<td align="left" bgcolor="#bbbbbb" width="170"><font color="black">microEnable 5 VQ8-CXP6B</font></td>
+							<td align="center" bgcolor="#bbbbbb" width="110"><font color="black">CoaXPress</font></td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#dddddd" width="120">-</td>
+							<td align="center" bgcolor="#99ff66">yes</td>
+							<td align="center" bgcolor="#99ff66">yes</td>
+						</tr>
+						<tr>
+							<td align="left" bgcolor="#bbbbbb" width="170"><font color="black">microEnable 5 VQ8-CXP6D</font></td>
+							<td align="center" bgcolor="#bbbbbb" width="110"><font color="black">CoaXPress</font></td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#dddddd" width="120">-</td>
+							<td align="center" bgcolor="#99ff66">yes</td>
+							<td align="center" bgcolor="#99ff66">yes</td>
+						</tr>
+						<tr>
+							<td align="left" bgcolor="#bbbbbb" width="170"><font color="black">microEnable 5 VD8-PoCL</font></td>
+							<td align="center" bgcolor="#bbbbbb" width="110"><font color="black">Camera Link</font></td>
+							<td align="center" bgcolor="#99ff66" width="120">yes</td>
+							<td align="center" bgcolor="#dddddd" width="120">-</td>
+							<td align="center" bgcolor="#99ff66">yes</td>
+							<td align="center" bgcolor="#99ff66">yes</td>
+						</tr>																		
+					</table>
+					<p>Note: A detailled overview over all available applets and functions can be found in the section <a href="../ind_acquisition.html">Applets</a>.<br>
+						<br>
+						<br>
+					</p>
+					<p></p>
+					<p><b>Importants Remarks<br>
+							<br>
+						</b></p>
+					<ul>
+						<li>Handling and usage are basically the same for all applet types:<br>- You can load applets and control (start, stop, configuration) a certain acquisition setup using the viewer software microDisplay. OR<br>- You can load applets and control (start, stop, configuration) a certain acquisition setup using functions of the Silicon Software API, the powerful Software Development Kit (SDK).<br>
+						
+							
+						
+						
+						<li>AcquisitionApplets and Advanced AcquisitionApplets require <b>no runtime license</b>.
+
+						<li>Some SmartApplets families require a runtime licence , e.g., the &quot;Segmentation and Object Classification&quot; SmartApplets family.						<li>VA applets require a runtime licence when operators out of specific add-on libraries are used, e.g., out of the &quot;blob&quot; or  &quot;compression&quot; library.				</ul>
+					<p>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="61"></td>
+				<td colspan="2" bgcolor="white" width="724">
+					<p></p>
+				</td>
+			</tr>
+		</table>
+
+		<table border="0" cellspacing="0" cellpadding="0">
+
+
+			<tr>
+				<td bgcolor="white" height="20" width="60"></td>
+				<td colspan="2" bgcolor="white" width="724"><hr></td>
+			</tr>
+
+
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td colspan="2" bgcolor="white" width="724">
+					<table>
+						<tr>
+							<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+							<td align="center" valign="middle" bgcolor="white" width="250">
+							<div align="right"><a title="Index" href="../index.html">Back to Documentation Index <img src="../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+							</td>
+							<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+
+
+
+						
+			<tr>
+				<td bgcolor="white" height="20" width="60"></td>
+				<td colspan="2" bgcolor="white" width="724"><hr></td>
+			</tr>
+			
+			
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td bgcolor="white" width="274"></td>
+				<td align="left" valign="top" bgcolor="white" width="450">
+					<div align="right">
+						</div>
+				</td>
+			</tr>
+			<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td bgcolor="white" width="274" height="20"></td>
+				<td align="left" valign="top" bgcolor="white" width="450" height="20"></td>
+			
+			
+				<tr>
+				<td colspan="3" align="left" valign="top" width="784"><img src="../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+			</tr>
+			</table>
+			<p></p>
+		</body>
+</html>
+
+

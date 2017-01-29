@@ -1,0 +1,1031 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<meta name="generator" content="Adobe GoLive 6">
+			<title>Silicon Software - Runtime 5 - Support</title>
+			<!-- #BeginHeadLocked "" -->
+				<link href="../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../lib/siso.ico" rel="shortcut icon">
+			<!-- #EndHeadLocked -->
+		<script language="JavaScript" type="text/javascript">
+			function senden(form) {
+			// ------------------ *1 ----------------
+				if (form.company.value == "" || form.lastName.value == "" || form.cameraName.value == "" || form.ownText.value == "") {
+						alert("Please fill in the marked fields!");
+						return(false);
+				}
+				
+				if (form.product1.value == 0 && form.product2.value == 0) {
+					alert("Please select a product!");
+					return(false);
+				}
+
+				if (form.software.value == 0) {
+					alert("Please select the software you use!");
+					return(false);
+				}
+
+				if (form.software.value != "ownProgramming") {
+					if (form.softwareVersion.value == 0) {
+						alert("Please select the software version!");
+						return(false);
+					}
+				}
+
+			// ------------------ *2 ----------------
+				if (form.os[0].checked) {
+					if (form.os[0].value == "nt") {
+						if (form.sp.value == "") {
+							alert("Please enter the Service Pack!");
+							return(false);
+						}
+					}
+				}
+				else if (form.os[1].checked) {
+					if (form.os[1].value == "win") {
+						if (form.sp.value == "") {
+							alert("Please enter the Service Pack!");
+							return(false);
+						}
+					}
+				}
+				else if (form.os[2].checked) {
+					if (form.os[2].value == "xp") {
+						if (form.sp.value == "") {
+							alert("Please enter the Service Pack!");
+							return(false);
+						}
+					}
+				}
+				else if (form.os[3].checked) {
+					if (form.os[3].value == "linux") {
+						if (form.distribution.value == "") {
+							alert("Please enter the distribution!");
+							return(false);
+						}
+						
+						if (form.kernelVersion.value == "") {
+							alert("Please enter the kernel version!");
+							return(false);
+						}
+					}
+				}
+				else if (form.os[4].checked) {
+					if (form.os[4].value == "rtai") {
+						if (form.rtaiVersion.value == "") {
+							alert("Please enter the RTAI version!");
+							return(false);
+						}
+					}
+				}
+				else if (form.os[5].checked) {
+					if (form.os[5].value == "qnx") {
+						if (form.qnxVersion.value == "") {
+							alert("Please enter the QNX version!");
+							return(false);
+						}
+					}
+				}
+				else if (form.os[6].checked) {
+					if (form.os[6].value == "other") {
+						if (form.otherOsName.value == "") {
+							alert("Please enter the information about your special operating system!");
+							return(false);
+						}
+					}
+				}
+				else {
+					alert("Please select an operating system!");
+					return(false);
+				}
+
+			// ------------------ *3 ----------------
+				if (form.interface[0].checked == false && form.interface[1].checked == false) {
+					alert("Please select the interface of your camera!");
+					return(false);
+				}
+				else if (form.interface[1].checked) {
+					if (form.otherInterfaceName.value == "") {
+						alert("Please enter the interface name!");
+						return(false);
+					}
+				}
+
+			// ------------------ *4 ----------------
+				if (form.camInfo1[0].checked == false && form.camInfo1[1].checked == false && form.camInfo1[2].checked == false) {
+					alert("Please select your camera model!");
+					return(false);
+				}
+
+			// ------------------ *5 ----------------
+				if (form.camInfo2[0].checked == false && form.camInfo2[1].checked == false && form.camInfo2[2].checked == false) {
+					alert("Please select your camera model!");
+					return(false);
+				}
+
+			// ------------------ *6 ----------------
+				if (form.camInfo3[0].checked == false && form.camInfo3[1].checked == false && form.camInfo3[2].checked == false) {
+					alert("Please select your camera model!");
+					return(false);
+				}
+
+			// ------------------    ----------------
+				if (form.emailAddress.value == "") {
+					alert("Please enter your email address!");
+					return(false);
+				}
+				else if (form.emailAddress.value.indexOf("@",0) == -1) {
+					alert("Please correct your email address!");
+					return(false);
+				}
+				else if (form.emailAddress.value.indexOf(".",0) == -1) {
+					alert("Please complete your email address!");
+					return(false);
+				}
+			}
+		</script>
+		</head>
+
+		<body bgcolor="#ffffff">
+		<form method="post" action="mailto:support@silicon-software.de?Subject=Support checklist" enctype="text/plain">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="3" align="left" valign="bottom" width="748"><img src="../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td bgcolor="white" width="30" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="650" height="20"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td colspan="2" bgcolor="white" width="688" height="20">
+						<h2>Support Form<br>
+							<br>
+						</h2>
+						If you wish to get regularly informend about technical product news please feel free to send an email to <i><b>mailto:subscribe@silicon-software.de</b></i> with the subject &quot;Product Info&quot;.						<h2><br>
+						</h2>
+						Additionally we provide for technical questions and statements a support form.
+						<h2>
+							<p></p>
+						</h2>
+						<h2><p>Contact</p></h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td bgcolor="white" width="30"></td>
+					<td>
+							<table>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">Company:</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="company" size=35 maxlength=32> <font size="-2"><a href="#_remark">*1</a></font></td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">Last Name:</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="lastName" size=35 maxlength=32> <font size="-2"><a href="#_remark">*1</a></font></td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">First name:</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="firstName" size=35 maxlength=32>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">Telephone:</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="telephone" size=35 maxlength=22>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">Email address:</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="emailAddress" size=35 maxlength=32> <font size="-2"><a href="#_remark">*1</a></font></td>
+								</tr>
+							</table>
+						</td>
+				</tr>
+				<tr height="30">
+					<td bgcolor="white" width="60" height="30"></td>
+					<td bgcolor="white" width="30" height="30"></td>
+					<td bgcolor="white" width="650" height="30"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td colspan="2" bgcolor="white" width="688">
+							<p></p>
+						<h2><p>PC system</p></h2>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td bgcolor="white" width="30"></td>
+					<td>
+							<table>
+							<tr>
+								<td align="left" valign="top" bgcolor="white" width="250">
+									<p>Mainboard manufacturer and model:</p>
+								</td>
+								<td align="left" valign="top" bgcolor="white"><input name="mainboard" size=35 maxlength=32></td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" bgcolor="white" width="250">
+									<p>Processor manufacturer:</p>
+								</td>
+								<td align="left" valign="top" bgcolor="white"><input name="mainboard" size=35 maxlength=32></td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" bgcolor="white" width="250">
+									<p>Processor model and tact rate:</p>
+								</td>
+								<td align="left" valign="top" bgcolor="white"><input name="processorModel" size=35 maxlength=32></td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" bgcolor="white" width="250">
+									<p>Main memory:</p>
+								</td>
+								<td align="left" valign="top" bgcolor="white"><input name="mainMemory" size=30 maxlength=12> MB</td>
+							</tr>
+							<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<p>Disk memory:</p>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="diskMemory" size=30 maxlength=12> GB
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<p>PCI system:</p>
+									</td>
+									<td align="left" valign="top" bgcolor="white">
+										<select name="pciSystem" size=1>
+											<option value="0">
+											<option value="pci">PCI
+											<option value="pcix">PCI-X
+
+										<option value="pcie">PCIe (PCI Express)
+
+									</select>
+									</td>
+								</tr>
+							</table>
+						</td>
+				</tr>
+				<tr height="30">
+					<td bgcolor="white" width="60" height="30"></td>
+					<td bgcolor="white" width="30" height="30"></td>
+					<td bgcolor="white" width="650" height="30"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td colspan="2" bgcolor="white" width="688">
+						<p></p>
+						<b>Operating system</b><font size="-2"> <a href="#_remark">*2</a></font></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td bgcolor="white" width="30"></td>
+					<td>
+							<fieldset><legend align="left">Windows<sup>TM</sup></legend>
+							<table>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="radio" name="os" value="xp"> Windows XP:								</td>
+									<td align="left" valign="top" bgcolor="white"></td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="radio" name="os" value="xp"> Windows Vista:								</td>
+									<td align="left" valign="top" bgcolor="white"></td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="radio" name="os" value="xp"> Windows 7:								</td>
+									<td align="left" valign="top" bgcolor="white"></td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="radio" name="os" value="xp"> Windows 8:								</td>
+									<td align="left" valign="top" bgcolor="white"></td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">Service Pack:</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="sp" size=35 maxlength=12> <font size="-2"><a href="#_remark">*1</a></font></td>
+								</tr>
+							</table>
+							</fieldset>
+							<fieldset><legend align="left">Linux</legend>
+							<table>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="radio" name="os" value="linux"> Linux distribution:								</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="distribution" size=35 maxlength=32></td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">Compiler version:</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="compilerVersion" size=35 maxlength=12>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">Kernel version :</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="kernelVersion" size=35 maxlength=12> <font size="-2"><a href="#_remark">*1</a></font></td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250"></td>
+									<td align="left" valign="top" bgcolor="white">
+										<table>
+											<tr>
+												<td>
+													<input type="radio" name="kernel" value="noHighMem"> No high mem
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<input type="radio" name="kernel" value="highMem4"> high mem (4 GB)
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<input type="radio" name="kernel" value="highMem64"> high mem (64 GB)
+												<br><br></td>
+											</tr>
+											<tr>
+												<td>
+													<input type="radio" name="kernel" value="noSmp"> No SMP (single processor)
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<input type="radio" name="kernel" value="smp"> SMP (multiprocessor or multithreading)
+													<p></p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="radio" name="os" value="rtai"> RT version (patch):							</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="rtaiVersion" size=35 maxlength=12>
+									</td>
+								</tr>
+							</table>
+							</fieldset>
+							<fieldset><legend align="left">QNX<sup>TM</sup></legend>
+							<table>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="radio" name="os" value="qnx"> QNX<sup>TM</sup> version:								</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="qnxVersion" size=35 maxlength=12>
+									</td>
+								</tr>
+							</table>
+							</fieldset>
+							<fieldset><legend align="left">Other</legend>
+							<table>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="radio" name="os" value="other"> Other operating system:								</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="otherOsName" size=35 maxlength=32></td>
+								</tr>
+							</table>
+							</fieldset>
+						</td>
+				</tr>
+				<tr height="30">
+					<td bgcolor="white" width="60" height="30"></td>
+					<td bgcolor="white" width="30" height="30"></td>
+					<td bgcolor="white" width="650" height="30"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td colspan="2" bgcolor="white" width="688">
+							<p></p>
+							<h2><p>Product</p></h2>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td bgcolor="white" width="30"></td>
+					<td>
+							<table>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<p>Main product <a href="#_remark"><font size="-2">*1</font></a>:</p>
+									<select name="product1" size=1>
+										<option value="0">
+										<option value="mE5VQ8-CXP6D">microEnable 5 VQ8-CXP6D</option>
+										<option value="mE5VQ8-CXP6B">microEnable 5 VQ8-CXP6B</option>
+										<option value="mE5VF8-PoCL">microEnable 5 VF8-PoCL
+										<option value="mE4VQ4-GPoE">microEnable IV VQ4-GPoE
+
+										<option value="mE4VQ4-GE">microEnable IV VQ4-GE</option>
+										<option value="mE4VD4-LVDS">microEnable IV VD4-LVDS
+										<option value="mE4VD4-PoCL">microEnable IV VD4-PoCL
+
+										<option value="mE4VD4-CL">microEnable IV VD4-CL</option>
+										<option value="mE4VD1-CL">microEnable IV VD1-CL
+
+										<option value="mE5AQ8-CXP6D">microEnable 5 AQ8-CXP6D</option>
+										<option value="mE5AQ8-CXP6B">microEnable 5 AQ8-CXP6B</option>
+										<option value="mE4AQ4-GPoE">microEnable IV AQ4-GPoE
+
+										<option value="mE4AQ4-GE">microEnable IV AQ4-GE
+
+										<option value="mE4AD4-LVDS">microEnable IV AD4-LVDS
+
+										<option value="mE4AD4-PoCL">microEnable IV AD4-PoCL
+
+										<option value="mE4AD4-CL">microEnable IV AD4-CL</option>
+										<option value="mE4AD1-mPoCL">microEnable IV AD1-mPoCL
+
+										<option value="mE4AD1-PoCL">microEnable IV AD1-PoCL
+
+										<option value="mE4AD1-CL">microEnable IV AD1-CL
+
+										<option value="mE4AS1-CL">microEnable IV AS1-CL
+
+										<option value="mE3xxl">microEnable III-XXL, hardware revision 4.0
+											<option value="mE3Vers4">microEnable III, hardware revision 4.0
+											<option value="mE3Vers3">microEnable III, hardware revision 3.0
+											<option value="mE3Vers2.1">microEnable III, hardware revision 2.1
+											<option value="mE2">microEnable II
+											<option value="mE1">microEnable I
+											<option value="pixelplant200e">PixelPlant 200e
+											<option value="pixelplant200">PixelPlant 200
+											<option value="pixelplant100">PixelPlant 100
+											<option value="clio4">CLIO for microEnable IV
+											<option value="clio3">CLIO for microEnable III
+											<option value="mUsb2Plus">microUSB2+
+											<option value="mUsb2CamExtension">microUSB2 CamExtension
+											<option value="mUsb2cl">microUSB2 (CameraLink)
+											<option value="mUsb2lvds">microUSB2 (LVDS)
+											<option value="netLinkPlus">NetLink PLUS
+											<option value="netLink">NetLink
+											<option value="mE4optoTrigger">Opto Trigger Extender for microEnable IV
+											<option value="mE3optoTrigger">Opto Trigger Extender for microEnable III
+											<option value="mE4ttlTrigger">TTL Trigger Extender for microEnable IV
+											<option value="mE3ttlTrigger">TTL Trigger Extender for microEnable III
+										</select></td>
+									<td align="left" valign="top" bgcolor="white">
+										<p>Second product:</p>
+										<select name="product2" size=1>
+										<option value="0">
+										<option value="mE5VQ8-CXP6D">microEnable 5 VQ8-CXP6D
+										<option value="mE5VQ8-CXP6B">microEnable 5 VQ8-CXP6B</option>
+										<option value="mE5VF8-PoCL">microEnable 5 VF8-PoCL</option>
+										<option value="mE4VQ4-GPoE">microEnable IV VQ4-GPoE
+
+										<option value="mE4VQ4-GE">microEnable IV VQ4-GE
+
+										<option value="mE4VD4-PoCL">microEnable IV VD4-PoCL
+
+										<option value="mE4VD4-CL">microEnable IV VD4-CL
+
+										<option value="mE4VD1-CL">microEnable IV VD1-CL
+
+										<option value="mE5AQ8-CXP6D">microEnable 5 AQ8-CXP6D</option>
+										<option value="mE5AQ8-CXP6B">microEnable 5 AQ8-CXP6B</option>
+										<option value="mE4AQ4-GPoE">microEnable IV AQ4-GPoE</option>
+										<option value="mE4AQ4-GE">microEnable IV AQ4-GE
+
+										<option value="mE4AD4-LVDS">microEnable IV AD4-LVDS</option>
+										<option value="mE4AD4-PoCL">microEnable IV AD4-PoCL
+
+										<option value="mE4AD4-CL">microEnable IV AD4-CL
+
+										<option value="mE4AD1-mPoCL">microEnable IV AD1-mPoCL
+
+										<option value="mE4AD1-PoCL">microEnable IV AD1-PoCL
+
+										<option value="mE4AD1-CL">microEnable IV AD1-CL
+
+										<option value="mE4AS1-CL">microEnable IV AS1-CL
+
+										<option value="mE3xxl">microEnable III-XXL, hardware revision 4.0
+											<option value="mE3Vers4">microEnable III, hardware revision 4.0
+											<option value="mE3Vers3">microEnable III, hardware revision 3.0
+											<option value="mE3Vers2.1">microEnable III, hardware revision 2.1
+											<option value="mE2">microEnable II
+											<option value="mE1">microEnable I
+											<option value="pixelplant200e">PixelPlant 200e
+											<option value="pixelplant200">PixelPlant 200
+											<option value="pixelplant100">PixelPlant 100
+											<option value="clio4">CLIO for microEnable IV
+											<option value="clio3">CLIO for microEnable III
+											<option value="mUsb2Plus">microUSB2+
+											<option value="mUsb2CamExtension">microUSB2 CamExtension
+											<option value="mUsb2cl">microUSB2 (CameraLink)
+											<option value="mUsb2lvds">microUSB2 (LVDS)
+											<option value="netLinkPlus">NetLink PLUS
+											<option value="netLink">NetLink
+											<option value="mE4optoTrigger">Opto Trigger Extender for microEnable IV
+											<option value="mE3optoTrigger">Opto Trigger Extender for microEnable III
+											<option value="mE4ttlTrigger">TTL Trigger Extender for microEnable IV
+											<option value="mE3ttlTrigger">TTL Trigger Extender for microEnable III
+										</select>
+										<p></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">Serial number of main product:</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="serialNumber" size=35 maxlength=8>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">Serial number of second product:</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="serialNumber" size=35 maxlength=8>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">Number of main product:</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="numberFirstProduct" size=35 maxlength=12>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">Number of second product:</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="numberSecondProduct" size=35 maxlength=12>
+										<p></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="checkbox" name="otherProductBox" value="1"> Other product:
+									</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="otherProduct" size=35 maxlength=32 onChange="changeStatus(this.form)">
+										<br><br>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="checkbox" name="loanBox" value="1"> Loaned product									</td>
+									<td align="left" valign="top" bgcolor="white">
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="checkbox" name="buyBox" value="1"> Purchased product									</td>
+									<td align="left" valign="top" bgcolor="white">
+									</td>
+								</tr>
+							</table>
+						</td>
+				</tr>
+				<tr height="30">
+					<td bgcolor="white" width="60" height="30"></td>
+					<td bgcolor="white" width="30" height="30"></td>
+					<td bgcolor="white" width="650" height="30"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td colspan="2" bgcolor="white" width="688">
+							<p></p>
+							<h2><p>Image processing system</p></h2>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td bgcolor="white" width="30"></td>
+					<td>
+							<table>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">Camera manufacturer and model:</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="cameraName" size=35 maxlength=32> <font size="-2"><a href="#_remark">*1</a></font></td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">Number of cameras:</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="numberCameras" size=35 maxlength=12>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">Number of taps:</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="numberTaps" size=35 maxlength=12>
+										<p></p>
+									</td>
+								</tr>
+							<tr>
+								<td align="left" valign="top" bgcolor="white" width="250"><b>Type of Interface</b><font size="-2"><a href="#_remark"> *3</a></font></td>
+								<td align="left" valign="top" bgcolor="white"></td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" bgcolor="white" width="250"><input type="radio" name="interface" value="cxp"> CoaXPress</td>
+								<td align="left" valign="top" bgcolor="white"></td>
+							</tr>
+							<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="radio" name="interface" value="cameraLink"> CameraLink							</td>
+									<td align="left" valign="top" bgcolor="white">
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="radio" name="interface" value="gev"> GigE Vision							</td>
+									<td align="left" valign="top" bgcolor="white">
+									</td>
+								</tr>
+							<tr>
+								<td align="left" valign="top" bgcolor="white" width="250"><input type="radio" name="interface" value="lvds"> LVDS</td>
+								<td align="left" valign="top" bgcolor="white"></td>
+							</tr>
+							<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="radio" name="interface" value="other"> Other interface:								</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="otherInterfaceName" size=35 maxlength=32>
+									<br><br></td>
+								</tr>
+							<tr>
+								<td align="left" valign="top" bgcolor="white" width="250"><b>Performance Camera Link Class</b><font size="-2"><a href="#_remark"> *4</a></font></td>
+								<td align="left" valign="top" bgcolor="white" width="250"><b>Performance CoaXPress Class</b></td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="radio" name="camInfo1" value="base"> Base Configuration									</td>
+								<td align="left" valign="top" bgcolor="white" width="250"><input type="radio" name="camInfo4" value="cxp1"> CXP-1</td>
+							</tr>
+								<tr>
+								<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="radio" name="camInfo1" value="medium"> Medium Configuration									</td>
+								<td align="left" valign="top" bgcolor="white"><input type="radio" name="camInfo4" value="cxp2"> CXP-2</td>
+							</tr>
+								<tr>
+								<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="radio" name="camInfo1" value="full"> Full/64bit Configuration								</td>
+								<td align="left" valign="top" bgcolor="white"><input type="radio" name="camInfo4" value="cxp3"> CXP-3</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" bgcolor="white" width="250">
+									<table>
+										<tr>
+											<td align="left" valign="top" bgcolor="white" width="250"><input type="radio" name="camInfo1" value="deca"> Deca/80bit Configuration</td>
+										</tr>
+									</table>
+								</td>
+								<td align="left" valign="top" bgcolor="white"><input type="radio" name="camInfo4" value="cxp5"> CXP-5</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" bgcolor="white" width="250"><br>
+									<br>
+								</td>
+								<td align="left" valign="top" bgcolor="white"><input type="radio" name="camInfo4" value="cxp6"> CXP-6</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" bgcolor="white" width="250"><b>Performance GigE Vision Class</b></td>
+								<td align="left" valign="top" bgcolor="white"><b>Performance LVDS Class</b></td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" bgcolor="white"><input type="radio" name="camInfo5" value="gev"> Single line GigE Vision</td>
+								<td align="left" valign="top" bgcolor="white">Bits/Bitdepth:</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" bgcolor="white"><input type="radio" name="camInfo5" value="lag"> LAG/Dual Link/two-line GigE Vision<br>
+									<br>
+								</td>
+								<td align="left" valign="top" bgcolor="white"><input name="camInfo6" size=35 maxlength=32></td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" bgcolor="white" width="250"><b>Type of Camera</b><font size="-2"><a href="#_remark"> *6</a></font></td>
+								<td align="left" valign="top" bgcolor="white"><b>Type of Sensor</b><font size="-2"><a href="#_remark"> *5</a></font></td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="radio" name="camInfo3" value="line"> Line-scan camera									</td>
+								<td align="left" valign="top" bgcolor="white"><input type="radio" name="camInfo2" value="gray"> Gray scale camera</td>
+							</tr>
+								<tr>
+								<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="radio" name="camInfo3" value="area"> Area-scan camera									</td>
+								<td align="left" valign="top" bgcolor="white"><input type="radio" name="camInfo2" value="rgb"> RGB camera</td>
+							</tr>
+							<tr>
+								<td align="left" valign="top" bgcolor="white" width="250"></td>
+								<td align="left" valign="top" bgcolor="white"><input type="radio" name="camInfo2" value="bayer"> Bayer camera<br>
+								</td>
+							</tr>
+						</table>
+						</td>
+				</tr>
+				<tr height="30">
+					<td bgcolor="white" width="60" height="30"></td>
+					<td bgcolor="white" width="30" height="30"></td>
+					<td bgcolor="white" width="650" height="30"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td colspan="2" bgcolor="white" width="688">
+							<p></p>
+							<h2><p>Hardware diagnostic (up to version 2.4.3d)<br>Please mark the shown faults!</p></h2>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td bgcolor="white" width="30"></td>
+					<td>
+							<table>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="checkbox" name="pld" value="1"> Access to PLD
+									</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input type="checkbox" name="fpgaAccess" value="1"> Access to FPGA
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="checkbox" name="eeprom" value="1"> Read EEPROM
+									</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input type="checkbox" name="ram" value="1"> Access to RAM
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="checkbox" name="fpgaProgrammable" value="1"> FPGA programmable
+									</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input type="checkbox" name="license" value="1"> License
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="checkbox" name="clock" value="1"> Clock tests
+									</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input type="checkbox" name="driver" value="1"> Device driver
+										<p></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">DMA read:</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="dmaA" size=21 maxlength=12> MBytes/sec.									</td>
+								</tr>
+							</table>
+						</td>
+				</tr>
+				<tr height="30">
+					<td bgcolor="white" width="60" height="30"></td>
+					<td bgcolor="white" width="30" height="30"></td>
+					<td bgcolor="white" width="650" height="30"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td colspan="2" bgcolor="white" width="688">
+							<p></p>
+							<h2><p>Hardware diagnostic (since version 3.0.0)<br>Please mark the shown faults!</p></h2>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td bgcolor="white" width="30"></td>
+					<td>
+							<table>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="checkbox" name="eeprom" value="1"> EEPROM</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input type="checkbox" name="sdramWriteA" value="1"> SDRAM write (port A)
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="checkbox" name="pld" value="1"> PLD</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input type="checkbox" name="sdramWriteB" value="1"> SDRAM write (port B)</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="checkbox" name="fpga" value="1"> FPGA programming</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input type="checkbox" name="sdramReadA" value="1"> SDRAM read&nbsp;(port A)</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="checkbox" name="register" value="1"> Register access	</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input type="checkbox" name="sdramReadB" value="1"> SDRAM read&nbsp;(port B)</td>
+								</tr>
+								<tr>
+								<td align="left" valign="top" bgcolor="white" width="250">
+										<input type="checkbox" name="clock" value="1"> Clock test
+										<p></p></td>
+							</tr>
+								<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">Performance:</td>
+									<td align="left" valign="top" bgcolor="white">
+										<input name="dmaB" size=21 maxlength=12> MBytes/sec.</td>
+								</tr>
+							</table>
+						</td>
+				</tr>
+				<tr height="30">
+					<td bgcolor="white" width="60" height="30"></td>
+					<td bgcolor="white" width="30" height="30"></td>
+					<td bgcolor="white" width="650" height="30"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td colspan="2" bgcolor="white" width="688">
+							<p></p>
+							<h2><p>Software</p></h2>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td bgcolor="white" width="30"></td>
+					<td>
+							<table>
+							<tr>
+									<td align="left" valign="top" bgcolor="white" width="250">
+										<p>Kind of software:</p>
+										<select name="software" size=1>
+											<option value="0">
+											<option value="va">VisualApplets
+											<option value="mDiag">microDiagnostics
+
+										<option value="mDisplay">microDisplay
+
+										<option value="GenICamExplorer">GenICam Explorer</option>
+										<option value="clShell">clShell
+
+										<option value="sdk">SDK
+
+										<option value="flasher">Firmware Flasher
+										<option value="ownProgramming">Own programming </option>
+									</select> <font size="-2"><a href="#_remark">*1</a></font></td>
+									<td align="left" valign="top" bgcolor="white">
+										<p>Software version:</p>
+									<select name="softwareVersion" size=1>
+										<option value="0">
+										<option value="va1.4">VisualApplets 1.4
+										<option value="va1.3">VisualApplets 1.3
+										<option value="va1.2">VisualApplets 1.2
+
+										<option value="va1.1">VisualApplets 1.1
+
+										<option value="rt5.2">Runtime 5.1</option>
+										<option value="rt5.1">Runtime 5.1</option>
+										<option value="rt5">Runtime 5</option>
+										<option value="rt4.2.25">Runtime 4.2.25</option>
+										<option value="rt4.2.15">Runtime 4.2.15
+
+										<option value="rt4.1">Runtime 4.1
+
+										<option value="rt4.0.8">Runtime 4.0.8
+
+										<option value="rt4.0.4">Runtime 4.0.4
+
+										<option value="rt3.5">Runtime 3.5
+
+										<option value="rt3.4">Runtime 3.4
+
+										<option value="rt3.3">Runtime 3.3
+
+										<option value="rt3.2">Runtime 3.2
+
+										<option value="rt3.1.0f">Runtime 3.1.0f
+
+										<option value="rt3.1.0e">Runtime 3.1.0e
+
+										<option value="rt3.1.0d">Runtime 3.1.0d
+
+										<option value="rt3.1.0b">Runtime 3.1.0b
+
+										<option value="rt3.1.0">Runtime 3.1.0
+
+										<option value="rt3.0.17c">Runtime 3.0.17c
+
+										<option value="rt3.0.17b">Runtime 3.0.17b / SR 3b
+
+										<option value="rt3.0.17">Runtime 3.0.17 / SR 3
+
+										<option value="rt3.0.16e">Runtime 3.0.16e
+
+										<option value="rt3.0.16d">Runtime 3.0.16d
+
+										<option value="rt3.0.16c">Runtime 3.0.16c
+
+										<option value="rt3.0.16b">Runtime 3.0.16b
+
+										<option value="rt3.0.16">Runtime 3.0.16 / SR 2
+
+										<option value="rt3.0.15b">Runtime 3.0.15b / SR 1b
+
+										<option value="rt3.0.15">Runtime 3.0.15 / SR 1
+
+										<option value="rt3.0.14">Runtime 3.0.14
+
+										<option value="rt3.0.13beta">Runtime 3.0.13 beta
+
+										<option value="rt3.0.12beta">Runtime 3.0.12 beta
+
+										<option value="rt3.0.11beta">Runtime 3.0.11 beta
+
+										<option value="rt3.0.9beta">Runtime 3.0.9 beta
+
+										<option value="rt3.0.8beta">Runtime 3.0.8 beta
+
+										<option value="rt2.4.3d">Runtime 2.4.3d
+
+										<option value="rt2.4.3c">Runtime 2.4.3c
+
+										<option value="rt2.4.3b">Runtime 2.4.3b
+
+										<option value="rt2.4.3">Runtime 2.4.3
+
+										<option value="rt2.4.2c7">Runtime 2.4.2c7
+
+										<option value="rt2.4.2c6">Runtime 2.4.2c6
+
+										<option value="rt2.4.2c5">Runtime 2.4.2c5
+
+										<option value="rt2.4.2c">Runtime 2.4.2c
+
+										<option value="rt2.4.2b">Runtime 2.4.2b
+
+										<option value="rt2.4.2">Runtime 2.4.2
+
+									</select> <font size="-2"><a href="#_remark">*1</a></font></td>
+								</tr>
+						</table>
+						</td>
+				</tr>
+				<tr height="30">
+					<td bgcolor="white" width="60" height="30"></td>
+					<td bgcolor="white" width="30" height="30"></td>
+					<td bgcolor="white" width="650" height="30"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td colspan="2" bgcolor="white" width="688">
+						<p></p>
+						<b>Short, but detailed error description</b> <a href="#_remark"><font size="-2">*1</font></a></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td bgcolor="white" width="30"></td>
+					<td>
+						<table>
+							<tr>
+								<td align="left" valign="top" bgcolor="white" width="650">
+									<textarea name="ownText" rows=10 cols=67></textarea>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td bgcolor="white" width="30"></td>
+					<td align="left"><br>
+						<a name="_remark"></a><b>Please fill in the marked fields:<br>
+							<font size="-2">*1</font> These fields are mandatory<br>
+							<font size="-2">*2 *3 *4 *5 *6</font> At least one of the fields has to be selected</b><br>
+						<br>
+						<input type="submit" value="Mail to Silicon Software" onClick="senden(this.form)">
+						<input type="reset" value="Delete entered data">
+						<br><br>
+					</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td bgcolor="white" width="30" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="650" height="20"><br><br>
+						<table>
+							<tr>
+								<td align="left" valign="middle" bgcolor="white" width="216"><a href="javascript:history.back()"><img src="../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0">Back</a></td>
+								<td align="center" valign="middle" bgcolor="white"><a title="Index" href="../index.html">Back to Documentation Index<img src="../../images/top.gif" alt="" width="22" height="22" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="left" valign="top" width="748"><img src="../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+			<p></p>
+		</form>
+	</body>
+</html>
+
+
+

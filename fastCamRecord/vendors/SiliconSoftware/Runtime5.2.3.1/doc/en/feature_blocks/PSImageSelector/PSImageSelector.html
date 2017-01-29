@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<title>Silicon Software - microEnable IV - Runtime 5 - Image Selector</title>
+				<link href="../../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../../lib/siso.ico" rel="shortcut icon">
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2" align="left" valign="bottom" width="740"><img src="../../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="center">
+								<h2>Image Selector</h2>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="right">
+								<div align="center">
+									<p>Parameter Set</p>
+								</div>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2>
+							
+						Description<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">..</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p>The Image Selector allows the user to cut out a period of p images from the image stream and select a particular image n from it.</p>
+					<p>A typical setup to use this module would be the following: 2 computers, 2 frame grabbers and 1 CameraLinl IO board<br>
+						(see also: <a href="../../documents/CLIO_mE3.html">CameraLink IO board (CLIO) for microEnable III</a> and <a href="../../documents/CLIO_mE4.html">CameraLink IO board (CLIO) for microEnable IV</a>).</p>
+					<div align="center">
+								<p><img src="../../../images/CLIO_mE4/CLIO_mE4_FULL_plan_front.jpg" alt="" height="320" width="175"></p>
+							</div>
+					<p>The CLIO module distributes the camera output to p frame grabbers by copying the image data. The image selector on each frame grabber is programmed to accept only one of p images, which decreases the framerate for each PC.</p>
+							<p>For the example in the Figure above, the image stream is devided into sets of two images. The PC1 accepts all even images and PC2 all odd images. Therefore, the Image Selector configuration is:</p>
+							<p>PC1</p>
+							<ul>
+								<li>Image Select Period = 2
+
+								<li>Image Select = 0
+
+							</ul>
+							<p>PC2</p>
+							<ul>
+								<li>Image Select Period = 2
+
+								<li>Image Select = 1
+
+							</ul>
+							<p></p>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							Parameters<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p></p>
+							<h3><a name="FG_IMG_SELECT_PERIOD"></a>Image Select Period</h3>
+							<p>This specifies the number of images of each image set acquired from the image stream. If you use the Image Selector to do parallel processing on several PCs, this parameter needs to have the same value on each PC.</p>
+							<p></p>
+							<h3><a name="FG_IMG_SELECT"></a>Image Select</h3>
+							<p>The parameter Image Select specifies a particular image from the image set defiened by Image Select Period. If you use the Image Selector to do parallel processing, this parameter needs to be different for each PC to ensure every computer is processing a different image.</p>
+							<p></p>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							References<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p></p>
+					<p><a href="../../documents/SDK/SDK.html">SDK Documentation</a></p>
+					<p></p>
+				</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+ 						<table>
+							<tr><br><br>
+								<td align="left" valign="middle" bgcolor="white" width="200"></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../index.html">Back to Documentation Index <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								<td align="right" valign="middle" bgcolor="white"></td>
+							</tr>
+							<tr>
+								<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../overviews/applet_feature_overview.html">Back to Feature Overview <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								</td>
+								<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				<tr>
+					<td colspan="2" align="left" valign="top" width="740"><img src="../../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+			<p></p>
+		</body>
+</html>
+
+
+

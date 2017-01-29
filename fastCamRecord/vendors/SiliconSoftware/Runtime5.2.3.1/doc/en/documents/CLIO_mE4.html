@@ -1,0 +1,1034 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<!-- #BeginTemplate "../../../Runtime5.2.data/Musterseiten/MS_blank_TOC.html" -->
+
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<meta name="generator" content="Adobe GoLive 6">
+			<title>Silicon Software - Runtime 5 - CLIO for microEnable IV</title>
+			<!-- #BeginHeadLocked "" -->
+				<link href="../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../lib/siso.ico" rel="shortcut icon">
+			<!-- #EndHeadLocked -->
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="4" align="left" valign="bottom" width="740"><img src="../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"><img src="../../images/pixel.png" alt="" height="20" width="60" border="0"></td>
+					<td align="left" valign="top" bgcolor="white" width="200" height="24"><img src="../../images/pixel.png" alt="" height="20" width="200" border="0"></td>
+					<td width="20" height="24"><img src="../../images/pixel.png" alt="" height="20" width="20" border="0"></td>
+					<td width="460" height="24"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="200"><!-- #BeginEditable "Bereich" -->
+							<table border="0" cellspacing="2" cellpadding="0" bgcolor="#e4e4e4">
+								<tr>
+									<td colspan="2">
+										<div align="center">
+											<h3><a name="_top"></a>Table of Content</h3>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td width="35">
+										<h5>
+											
+										</h5>
+									</td>
+									<td>
+										<h5>
+											
+										</h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="35">
+										<h5><b>1</b></h5>
+									</td>
+									<td>
+										<h5><b><a href="#_1">Connector Naming Conventions</a></b></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="35">
+										<h5><b>2</b></h5>
+									</td>
+									<td>
+										<h5><b><a href="#_2">Installation</a></b></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="35">
+										<h5>2.1</h5>
+									</td>
+									<td>
+										<h5><a href="#_2.1">Requirements</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="35">
+										<h5>2.2</h5>
+									</td>
+									<td>
+										<h5><a href="#_2.2">Software Installation</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="35">
+										<h5>2.3</h5>
+									</td>
+									<td>
+										<h5><a href="#_2.2">Hardware Installation</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="35">
+										<h5><b>3</b></h5>
+									</td>
+									<td>
+										<h5><b><a href="#_3">Functional Description</a></b></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="35">
+										<h5>3.1</h5>
+									</td>
+									<td>
+										<h5><a href="#_3.1">Behaviour</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="35">
+										<h5>3.2</h5>
+									</td>
+									<td>
+										<h5><a href="#_3.2">Usage</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="35">
+										<h5><b>4</b></h5>
+									</td>
+									<td>
+										<h5><b><a href="#_4">Detailed Description</a></b></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="35">
+										<h5>4.1</h5>
+									</td>
+									<td>
+										<h5><a href="#_4.1">Architecture</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="35">
+										<h5>4.2</h5>
+									</td>
+									<td>
+										<h5><a href="#_4.2">Frame Selection</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="35">
+										<h5><b>5</b></h5>
+									</td>
+									<td>
+										<h5><b><a href="#_5">Synchronization of Multiple Cameras</a></b></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="35">
+										<h5>5.1</h5>
+									</td>
+									<td>
+										<h5><a href="#_5.1">Synchronization of Image Acquisition</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="35">
+										<h5>5.2</h5>
+									</td>
+									<td>
+										<h5><a href="#_5.2">Area Scan Cameras</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="35">
+										<h5>5.3</h5>
+									</td>
+									<td>
+										<h5><a href="#_5.3">Line Scan Cameras</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="35">
+										<h5><i>5.3.1</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="#_5.3.1">Aquistion of all Lines</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="35">
+										<h5><i>5.3.2</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="#_5.3.2">Acquisition of Frames with Constant Line Number</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="35">
+										<h5><i>5.3.3</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="#_5.3.3">Acquisition of Frames with Variable Line Number</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="35">
+										<h5><b>6</b></h5>
+									</td>
+									<td>
+										<h5><b><a href="#_6">Pin Configuration microEnable IV Interface</a></b></h5>
+									</td>
+								</tr>
+							</table>
+						<!-- #EndEditable --></td>
+					<td align="left" valign="top" bgcolor="white" width="20"><img src="../../images/pixel.png" alt="" height="20" width="20" border="0"></td>
+					<td align="left" valign="top" bgcolor="white" width="460"><!-- #BeginEditable "Bereich3" -->
+							<div class=Section1>
+								<h1><b>CameraLink IO Module (CLIO) for microEnable IV</b></h1>
+								<h1><br>
+								</h1>
+								<div class=Section1>
+									<div class=Section2 align="left">
+										<div>
+											<div class=Section2 align="left">
+												<div>
+													<div class=Section1>
+														<div class=Section1>
+															<div class=Section1>
+																<div class=Section2 align="left">
+																	<div>
+																		<div class=Section2 align="left">
+																			<div>
+																				<h2>User Manual<br>
+																					<br>
+																				</h2>
+																				<h3>Runtime Software Version 5<br>
+																					<br>
+																				</h3>
+																				<h4></h4>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<h2><img src="../../images/CLIO_mE4/CLIO_mE4_FULL_plan_front.jpg" height="480" width="262"></h2>
+													<div class=Section1>
+														<div class=Section1>
+															<div class=Section2 align="left">
+																<div>
+																	<div class=Section2 align="left">
+																		<div>
+																			<div class=Section1>
+																				<div class=Section1>
+																					<div class=Section1>
+																						<div class=Section2 align="left">
+																							<div>
+																								<div class=Section2 align="left">
+																									<div>
+																										<h4>&nbsp;</h4>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<h1></h1>
+								<div class=Section1>
+									<h1><a id="_1" name="_1"></a>1 Connector Naming Conventions</h1>
+									<h1><br>
+										<img width=318 height=449 src="../../images/CLIO_mE4/CLIO_mE4_con.jpg"><br>
+									</h1>
+								</div>
+								<div class=Section1>
+									<p><br>
+										<a href="#_0"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a></p>
+									<div class=Section1>
+										<table border=1 cellspacing=0 cellpadding=2 style="border-collapse:collapse;border:none">
+											<tr style="height:22.7pt">
+												<td align="center" nowrap bgcolor="#2e368f" width=130 valign=top style="width:97.55pt;border-top:double 2.25pt;
+  border-left:double 2.25pt;border-bottom:solid 1.0pt;border-right:solid 1.0pt;
+  border-color:black;padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+													<p><b><font size="-2" color="white">Module</font></b></p>
+												</td>
+												<td align="center" nowrap bgcolor="#2e368f" width=170 valign=top style="width:127.6pt;border-top:double black 2.25pt;
+  border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+													<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></p>
+												</td>
+												<td align="center" nowrap bgcolor="#2e368f" width=314 valign=top style="width:235.4pt;border-top:double black 2.25pt;
+  border-left:none;border-bottom:solid black 1.0pt;border-right:double black 2.25pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+													<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Function</font></b></font></p>
+												</td>
+											</tr>
+											<tr style="height:22.7pt">
+												<td align="center" nowrap bgcolor="white" width=130 valign=top style="width:97.55pt;border-top:none;border-left:
+  double black 2.25pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+													<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">CameraLink Port A</font></p>
+												</td>
+												<td align="center" nowrap bgcolor="white" width=170 valign=top style="width:127.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+													<p><font size="-2" color="black">3M 10226-1210VE (MDR-26)</font></p>
+												</td>
+												<td align="center" nowrap bgcolor="white" width=314 valign=top style="width:235.4pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:double black 2.25pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+													<p><font size="-2" color="black">CameraLink Connector Port A</font></p>
+												</td>
+											</tr>
+											<tr style="height:22.7pt">
+												<td align="center" nowrap bgcolor="#dfdfdf" width=130 valign=top style="width:97.55pt;border-top:none;border-left:
+  double black 2.25pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+													<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">CameraLink Port B</font></p>
+												</td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=170 valign=top style="width:127.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+													<p><font size="-2" color="black">3M 10226-1210VE (MDR26)</font></p>
+												</td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=314 valign=top style="width:235.4pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:double black 2.25pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+													<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">CameraLink Connector Port B.</font></p>
+												</td>
+											</tr>
+											<tr style="height:22.7pt">
+												<td align="center" nowrap bgcolor="white" width=130 valign=top style="width:97.55pt;border-top:none;border-left:
+  double black 2.25pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+													<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><i>microEnable IV</i> Interface</font></p>
+												</td>
+												<td align="center" nowrap bgcolor="white" width=170 valign=top style="width:127.6pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+													<p><font size="-2" color="black">Samtec QSE-060-01-L-D-A</font></p>
+												</td>
+												<td align="center" nowrap bgcolor="white" width=314 valign=top style="width:235.4pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:double black 2.25pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.7pt">
+													<p><font size="-2" color="black">Connection to <i>microEnable IV</i> (on backside)</font></p>
+												</td>
+											</tr>
+										</table>
+										<div>
+											<div>
+												<p><br>
+													<a href="#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div>
+											<h1><a id="_2" name="_2"></a>2 Installation</h1>
+										</div>
+									</div>
+									<h1 style="margin-left:0cm;text-indent:0cm"></h1>
+									<h2><a id="_2.1" name="_2.1"></a>2.1 Requirements</h2>
+									<ol>
+										<li>A frame grabber <i>microEnable IV</i> in a PCIe slot.
+										<li>Software installation for <i>microEnable IV</i>.
+									</ol>
+									<p><br>
+									</p>
+									<div>
+										<div>
+											<p><a href="#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+											</p>
+											<h2><a id="_2.2" name="_2.2"></a>2.2 Software Installation</h2>
+										</div>
+									</div>
+									<p>There is no need to install any software in order to run the <i>CLIO</i> module.</p>
+									<p><br>
+									</p>
+									<div>
+										<div>
+											<p><a href="#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+											</p>
+											<h2><a id="_2.3" name="_2.3"></a>2.3 Hardware Installation</h2>
+										</div>
+									</div>
+									<ol>
+										<li>The <i>CLIO</i> module is a mezzanine to the <i>microEnable IV</i> frame grabber. Remove the micoEnable IV frame grabber from the PC and mount the <i>CLIO</i> module to the <i>CLIO</i> interface connector of the <i>microEnable IV</i> frame grabber.
+										<li>Fix the <i>CLIO</i> mezzanine on the <i>microEnable IV</i> board using the mounting holes.
+										<li>Plug the <i>microEnable IV</i> frame grabber and mounted <i>CLIO</i> mezzanine to a PCIe slot of the PC. The frame grabber now occupies two slots of the PC. (The <i>CLIO</i> module needs no connection to the motherboard of the PC.)
+									</ol>
+									<p><img width=419 height=364 src="../../images/CLIO_mE4/CLIO_mE4_FULL_persp.jpg"></p>
+									<div>
+										<div>
+											<p><a href="#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+												<br>
+											</p>
+											<h1><a id="_3" name="_3"></a>3 Functional Description</h1>
+										</div>
+									</div>
+									<h1 style="margin-left:0cm;text-indent:0cm"></h1>
+									<h2><a id="_3.1" name="_3.1"></a>3.1 Behaviour</h2>
+									<div class=Section1>
+										<p>The <i>CLIO</i> module allows to output the CameraLink input stream received by the <i>microEnable IV</i> frame grabber. It outputs all signals generated by the camera, i.e. the image data (D00 to D23), strobes (FVAL, LVAL, DVAL, CTRL), and the pixel clock (PCLK).<br>
+										</p>
+										<p>Neither control signals generated by the frame grabber (CC1, CC2, CC3, CC4) nor the serial communication signals (SER2FG, SER2CAM) are output by the module.<br>
+										</p>
+										<p><i>CLIO</i> is able to handle single BASE, two BASE, one MEDIUM, or one FULL configuration camera, depending on the main frame grabber module.</p>
+										<p><br>
+											<br>
+											<br>
+											<a href="#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+										</p>
+									</div>
+									<div>
+										<div>
+											<h2><a id="_3.2" name="_3.2"></a>3.2 Usage</h2>
+										</div>
+									</div>
+									<p>Because CameraLink defines a link between a single source (camera) and a single destination (frame grabber on the PC), it is impossible to implement busses between a single source (camera) and multiple destinations (frame grabbers on different PCs). However this may be useful in scenarios of very demanding application. In this cases the computing power of a single PC may be insufficient to solve an image processing task in time. The <i>CLIO</i> module now allows distributing the task to several PCs working in parallel by copying the image data in a chain. The <i>microEnable IV</i> frame grabbers are now programmed to pass only a subset of the images to their PC decreasing the computation time per unit dramatically.</p>
+									<p><br>
+										<img width=450 height=236 src="../../images/CLIO_mE4/CLIO_mE4_usage.jpg"><br>
+									</p>
+									<p><br>
+										<br>
+									</p>
+									<p><a href="#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+									</p>
+									<div>
+										<div>
+											<h1><a id="_4" name="_4"></a>4 Detailed Description</h1>
+										</div>
+									</div>
+									<h1 style="margin-left:0cm;text-indent:0cm"></h1>
+									<h2><a id="_4.1" name="_4.1"></a>4.1 Architecture</h2>
+									<p>The <i>CLIO</i> modules copy all frames received by the <i>microEnable IV</i> CameraLink port to the output. The module copies all image data (D00..D23), Strobes (FVAL, LVAL, DVAL, CTRL), and the pixel clock (PCLK). Output generated by the frame grabber (CC1..CC3) and the serial communication (SER2FG, SER2CAM) is NOT copied.<br>
+									</p>
+									<p>The <i>CLIO</i> module introduces a delay to the CameraLink data stream. In a chain the delay increases proportionally to the number of <i>CLIO</i> modules. For a single module the delay is twice the delay time of the CameraLink interface.<br>
+									</p>
+									<p>The delay time of the CameraLink ICs (<i>CLIO</i> DS90CR287 / <i>microEnable IV</i> DS90C288) is between 3.8ns and 6.3 ns. In a typical application the worst case delays are approx. one PCLK tick and far less than a typical camera line length. In most situations these delays are negligible.</p>
+									<p><br>
+										<br>
+										<a href="#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+									</p>
+									<div>
+										<div>
+											<h2><a id="_4.2" name="_4.2"></a>4.2 Frame Selection</h2>
+										</div>
+									</div>
+									<p>Each <i>CLIO</i> module copies the complete data stream to all units in the chain. The decrease of computing power and bandwidth in each PC is performed by the hardware applet in the <i>microEnable IV</i> FPGA. You have two parameters to control the selection of frames transferred to main memory. Both parameters are 8 Bit integers that can be set via the <i>microEnable IV</i> SDK and in <i>microDisplay.</i>&nbsp;</p>
+									<table border="1" cellspacing="0" cellpadding="2">
+										<tr>
+											<td align="center" nowrap bgcolor="#2e368f">
+												<p><b><font size="-2" color="white"><i>Name</i></font></b></p>
+											</td>
+											<td align="center" nowrap bgcolor="#2e368f">
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white"><i>Width</i></font></b></font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#2e368f">
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white"><i>Value</i></font></b></font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#2e368f">
+												<p><b><font size="-2" color="white"><i>Default</i></font></b></p>
+											</td>
+											<td align="center" nowrap bgcolor="#2e368f">
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white"><i>Description</i></font></b></font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white">
+												<p><b><i><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">ImgSelectPeriod</font></i></b></p>
+											</td>
+											<td align="center" nowrap bgcolor="white"><font size="-2" color="black">8</font></td>
+											<td align="center" nowrap bgcolor="white"><font size="-2" color="black">1..256</font></td>
+											<td align="center" nowrap bgcolor="white"><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></td>
+											<td align="center" nowrap bgcolor="white"><font size="-2" color="black">Period length of image sequence</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf">
+												<p><b><i><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">ImgSelect</font></i></b></p>
+											</td>
+											<td align="center" nowrap bgcolor="#dfdfdf"><font size="-2" color="black">8</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf"><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">1..256</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf"><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf"><font size="-2" color="black">All frames with Frame# modulo ImgSelectPeriod are aquired on this board</font></td>
+										</tr>
+									</table>
+									<p>&nbsp;</p>
+									<p>Examples<br>
+										<br>
+										<img width=512 height=236 src="../../images/CLIO_mE4/CLIO_mE4_framesel.jpg"></p>
+									<p><br>
+										<br>
+									</p>
+									<div>
+										<div>
+											<p><a href="#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+											</p>
+											<h1><a id="_5" name="_5"></a>5 Synchronization of Multiple Cameras</h1>
+										</div>
+									</div>
+									<h1 style="margin-left:0cm;text-indent:0cm"></h1>
+									<p>In the description below we assume a camera link camera (any type) connected with a chain of N <i>microEnable IV</i> frame grabbers. One of the frame grabbers is connected directly with the camera. This is called the master frame grabber, because this one controls the CC1 camera trigger. The remaining frame grabbers in the chain (N &#150; 1 devices) are called slave frame grabbers. In the description below we focus on proper synchronisation and set up of operating modes of the system.</p>
+									<p><br>
+										<br>
+									</p>
+									<p><a href="#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+										<br>
+									</p>
+									<div>
+										<div>
+											<h2><a id="_5.1" name="_5.1"></a>5.1 Synchronization of Image Acquisition</h2>
+										</div>
+									</div>
+									<p>Synchronization of the frame grabber chain simply means that all frame grabbers start counting frames with the same image. Obviously loosing synchronization will cause trouble in the system. In such a case some frame grabbers will work on the same image while other images are ignored by all frame grabbers.</p>
+									<p>Technically, proper synchronization can be assured if all frame grabbers are ready and enabled before the camera starts with the output of the first frame.</p>
+									<p>In order to assure this, you need to proceed with the following steps:</p>
+									<ol>
+										<li>Set the camera into triggered mode. Mind that the camera MUST run in triggered mode. A free run camera will output images during the process enabling the frame grabbers and will prohibit system synchronization.
+										<li>Set the master frame grabber into the desired trigger mode (<i>microEnable IV</i> allows different triggered modes), but DISABLE the generation of camera trigger pulses. In accordance with the camera in triggered mode it guarantees that no image runs along the chain during initialisation.
+										<li>Now start the acquisition for all frame grabbers. All slave frame grabber must report to the master frame grabber that the aquisition was successfully started. Mind that no acquisition will take place - the frame grabber are ready to work now, but the camera will not generate images. Make sure that the aqusition timeout is set to a value higher than the maximum time for the aquisition start.
+										<li>The last thing is to enable trigger generation for the master frame grabber. Now the system aquires images in full synchronization.
+									</ol>
+									<p><br>
+									</p>
+									<div>
+										<div>
+											<p><a href="#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+											</p>
+											<h2><a id="_5.2" name="_5.2"></a>5.2 Area Scan Cameras</h2>
+										</div>
+									</div>
+									<p>The set up of a frame grabber chain running an area scan camera is straight forward. As mentioned in the previous section the camera must be set into triggered mode. Also the master frame grabber must be set into triggered mode. The <i>microEnable IV</i> frame grabber allows two different trigger modes:</p>
+									<ol>
+										<li>In grabber controlled mode <i>microEnable IV</i> triggers the camera with a periodical signal. Both period and and exposure time are controlled by software. It does not need any external trigger source.
+										<li>In triggered mode the frame grabber generates a single pulse on each (rising or falling) edge of an external source (i.e. a light bulb or a generator). The exposure time of this signal is set by software.
+									</ol>
+									<p>All other framnegrabbers in the chain - the slaves - can be set to free run mode (however every mode will work).</p>
+									<p><br>
+										<img width=350 height=160 src="../../images/CLIO_mE4/CLIO_mE4_area.jpg"><br>
+									</p>
+									<p><br>
+										<br>
+									</p>
+								</div>
+								<div class=Section1>
+									<div>
+										<div>
+											<p><a href="#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+											</p>
+											<h2><a id="_5.3" name="_5.3"></a>5.3 Line Scan Cameras</h2>
+										</div>
+									</div>
+									<p>Line scan cameras are a bit more tricky than area scan cameras. The reason is that a line scan camera outputs a steady stream of lines with no indication of frame boundaries. In order to allow synchronization <i>CLIO</i> needs well defined and for all frame grabbers matching frame boundaries in order to allow frame counting.</p>
+									<p>In a typical application there is a signal from an external source indicating the start of a frame - for example a light bulb. If an object passes the light barrier the acquisition of a frame will be started. We will refer to this external signal as <b>image trigger</b> because it defines the start (and sometimes also the end) of an image.</p>
+									<p>Usually there is a second trigger in a line scan application controlling the line frequency of the camera. We will refer to this signal as <b>line trigger</b>. The line trigger setup is independent from the image trigger. It will not affect the setup of <i>CLIO</i>. The line generation can be done by the camera itself (free run), generated by the frame grabber (grabber controlled), or triggered by an external source. Line trigger generation is handled between camera and master frame grabber.&nbsp;</p>
+									<p>Compared to the setup of area scan cameras there is one big difference in the setup of the image trigger signal. For an area scan camera you need to connect the external image trigger to the master frame grabber. For the line scan camera the external image trigger must be connected to all frame grabbers.<br>
+										<br>
+									</p>
+									<p><img width=338 height=202 src="../../images/CLIO_mE4/CLIO_mE4_line.jpg"><br>
+										<br>
+										The following sections describe the setup of the image trigger depending on the application requirements.</p>
+								</div>
+								<div class=Section1>
+									<p><br>
+										<br>
+									</p>
+									<div>
+										<div>
+											<p><a href="#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+											</p>
+											<h3><a id="_5.3.1" name="_5.3.1"></a>5.3.1 Aquisition of all Lines</h3>
+										</div>
+									</div>
+									<p>For an application requiring the acquisition of all lines a very simple setup is sufficient. There is no need to run an image trigger at all. Synchronization requires the camera to run in triggered mode - free run will NOT work. Acquisition begins with the start of the generation of line triggers by the master. A certain number of lines are defined as frame. This number is set by software and must be equal for all frame grabbers. All frame grabbers need to be set into image trigger mode: free run.</p>
+									<p><br>
+										<br>
+									</p>
+									<div>
+										<div>
+											<p><a href="#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+											</p>
+											<h3><a id="_5.3.2" name="_5.3.2"></a>5.3.2 Acquisition of Frames with Constant Line Number</h3>
+										</div>
+									</div>
+									<p>This is a standard line scan application where an external signal defines the beginning of a frame. The size of a frame is fixed to a certain number of lines. This number L is set by software and must be equal for all frame grabbers.</p>
+									<p>In this application the image trigger signal must be connected to all frame grabbers. A rising edge of the image trigger causes the acquisition of a frame of L lines. All frame grabbers need to be set into image trigger mode: trigger.</p>
+									<p>You can choose any line trigger mode including free run.</p>
+									<p><br>
+										<br>
+									</p>
+									<div>
+										<div>
+											<p><a href="#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+											</p>
+											<h3><a id="_5.3.3" name="_5.3.3"></a>5.3.3 Acquisition of Frames with Variable Line Number</h3>
+										</div>
+									</div>
+									<p>This line scan acquisition allows the acquisition of frames with variable length. Like in the section before an external trigger signal defines the beginning of a frame. However the size of the frame depends on the length of this signal, i.e. the frame grabber acquires lines as long as the signal is active.</p>
+									<p>In this application the image trigger signal must be connected to all frame grabbers. All frame grabbers need to be set into image trigger mode: gate.</p>
+									<p>You can choose any line trigger mode including free run.</p>
+									<p><br>
+										<br>
+									</p>
+									<div>
+										<div>
+											<p><a href="#_0"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+											</p>
+										</div>
+									</div>
+									<h1 style="margin-left:0cm;text-indent:0cm"><a id="_6" name="_6"></a>6 Pin Configuration <i>microEnable IV</i> Interface</h1>
+									<table border=1 cellspacing=0 cellpadding=2>
+										<tr>
+											<td align="center" nowrap bgcolor="#2e368f" width=39 valign=top><b><font size="-2" color="white">Pin</font></b></td>
+											<td align="center" nowrap bgcolor="#2e368f" width=244 valign=top><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Signal</font></b></font></td>
+											<td align="center" nowrap bgcolor="#2e368f" width=247 valign=top><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Signal</font></b></font></td>
+											<td align="center" nowrap bgcolor="#2e368f" width=38 valign=top><b><font size="-2" color="white">Pin</font></b></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">1</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black">3.3V</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">3.3V</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">2</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">3</font></td>
+											<td align="center" nowrap width=244 valign=top><font size="-2" color="black">A D20</font></td>
+											<td align="center" nowrap width=247 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D19</font></td>
+											<td align="center" nowrap width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">4</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">5</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black">A D21</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">A D18</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">6</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">7</font></td>
+											<td align="center" nowrap width=244 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D22</font></td>
+											<td align="center" nowrap width=247 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D17</font></td>
+											<td align="center" nowrap width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">8</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">9</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D23</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D16</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">10</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">11</font></td>
+											<td align="center" nowrap width=244 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D12</font></td>
+											<td align="center" nowrap width=247 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">DVAL</font></td>
+											<td align="center" nowrap width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">12</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">13</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black">A D13</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">A CTRL</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">14</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">15</font></td>
+											<td align="center" nowrap width=244 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D14</font></td>
+											<td align="center" nowrap width=247 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">FVAL</font></td>
+											<td align="center" nowrap width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">16</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">17</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D15</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">LVAL</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">18</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">19</font></td>
+											<td align="center" nowrap width=244 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D08</font></td>
+											<td align="center" nowrap width=247 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D07</font></td>
+											<td align="center" nowrap width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">20</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">21</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D09</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D06</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">22</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">23</font></td>
+											<td align="center" nowrap width=244 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D10</font></td>
+											<td align="center" nowrap width=247 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D05</font></td>
+											<td align="center" nowrap width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">24</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">25</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D11</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D04</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">26</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">27</font></td>
+											<td align="center" nowrap width=244 valign=top><font size="-2" color="black">A D00</font></td>
+											<td align="center" nowrap width=247 valign=top><font size="-2" color="black">A CC4</font></td>
+											<td align="center" nowrap width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">28</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">29</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D01</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">A CC3</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">30</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">31</font></td>
+											<td align="center" nowrap width=244 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D02</font></td>
+											<td align="center" nowrap width=247 valign=top><font size="-2" color="black">A CC2</font></td>
+											<td align="center" nowrap width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">32</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">33</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D03</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">A CC1</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">34</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">35</font></td>
+											<td align="center" nowrap width=244 valign=top><font size="-2" color="black">GND</font></td>
+											<td align="center" nowrap width=247 valign=top><font size="-2" color="black">A SERTOCAM</font></td>
+											<td align="center" nowrap width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">36</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">37</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black">A </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">PCLK</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">A SERTOFG</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">38</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">39</font></td>
+											<td align="center" nowrap width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">3.3V</font></td>
+											<td align="center" nowrap width=247 valign=top><font size="-2" color="black">3.3V</font></td>
+											<td align="center" nowrap width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">40</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap width=39 valign=top>-</td>
+											<td align="center" nowrap width=244 valign=top></td>
+											<td align="center" nowrap width=247 valign=top></td>
+											<td align="center" nowrap width=38 valign=top></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">41</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">3.3V</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">3.3V</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">42</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2">43</font></td>
+											<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black">B </font><font size="-2" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D20</font></td>
+											<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black">B </font><font size="-2" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D19</font></td>
+											<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2">44</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">45</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black">B D21</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">B D18</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">46</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">47</font></td>
+											<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black">B D22</font></td>
+											<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black">B </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D17</font></td>
+											<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">48</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">49</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black">B D23</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">B D16</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">50</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">51</font></td>
+											<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black">B </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D12</font></td>
+											<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black">B </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">DVAL</font></td>
+											<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">52</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">53</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black">B </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D13</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">B </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">CTRL</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">54</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">55</font></td>
+											<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black">B </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D14</font></td>
+											<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black">B </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">FVAL</font></td>
+											<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">56</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">57</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black">B D15</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">B LVAL</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">58</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">59</font></td>
+											<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black">B </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D08</font></td>
+											<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black">B </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D07</font></td>
+											<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">60</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">61</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black">B </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D09</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">B </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D06</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">62</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">63</font></td>
+											<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black">B </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D10</font></td>
+											<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black">B </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D05</font></td>
+											<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">64</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">65</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black">B </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D11</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">B </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D04</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">66</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">67</font></td>
+											<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black">B </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D00</font></td>
+											<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black">B </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">CC4</font></td>
+											<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">68</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">69</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black">B </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D01</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">B </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">CC3</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">70</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">71</font></td>
+											<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black">B D02</font></td>
+											<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black">B CC2</font></td>
+											<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">72</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">73</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black">B </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D03</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">B CC1</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">74</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">75</font></td>
+											<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">GND</font></td>
+											<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black">B SERTOCAM</font></td>
+											<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">76</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">77</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black">B </font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">PCLK</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">B SERTOFG</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">78</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">79</font></td>
+											<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black">3.3V</font></td>
+											<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black">3.3V</font></td>
+											<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">80</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap width=39 valign=top>-</td>
+											<td align="center" nowrap width=244 valign=top></td>
+											<td align="center" nowrap width=247 valign=top></td>
+											<td align="center" nowrap width=38 valign=top></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">81</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">3.3V</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">3.3V</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">82</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">83</font></td>
+											<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C D20</font></td>
+											<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C </font><font size="-2" color="black">D19</font></td>
+											<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">84</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">85</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C D21</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C </font><font size="-2" color="black">D18</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">86</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">87</font></td>
+											<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C D22</font></td>
+											<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C </font><font size="-2" color="black">D17</font></td>
+											<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">88</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2">89</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C </font><font size="-2" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D23</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C </font><font size="-2" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">D16</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2">90</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">91</font></td>
+											<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C </font><font size="-2" color="black">D12</font></td>
+											<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C </font><font size="-2" color="black">DVAL</font></td>
+											<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">92</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black">93</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C </font><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><font size="-2" color="black">D13</font></font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C </font><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><font size="-2" color="black">CTRL</font></font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black">94</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">95</font></td>
+											<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C </font><font size="-2" color="black">D14</font></td>
+											<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C </font><font size="-2" color="black">FVAL</font></td>
+											<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">96</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">97</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C </font><font size="-2" color="black">D15</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C LVAL</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">98</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">99</font></td>
+											<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C </font><font size="-2" color="black">D08</font></td>
+											<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C </font><font size="-2" color="black">D07</font></td>
+											<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">100</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">101</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C D09</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C D06</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">102</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">103</font></td>
+											<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C D10</font></td>
+											<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C D05</font></td>
+											<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">104</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">105</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C D11</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C D04</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">106</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">107</font></td>
+											<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C </font><font size="-2" color="black">D00</font></td>
+											<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black">nc</font></td>
+											<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">108</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">109</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C D01</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">nc</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">110</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">111</font></td>
+											<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C D02</font></td>
+											<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">nc</font></td>
+											<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">112</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">113</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C D03</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">nc</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">114</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">115</font></td>
+											<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">GND</font></td>
+											<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">\FULL/2BASE</font></td>
+											<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">116</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">117</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">C PCLK</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">FULL/\2BASE</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">118</font></td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">119</font></td>
+											<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">3.3V</font></td>
+											<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">3.3V</font></td>
+											<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">120</font></td>
+										</tr>
+									</table>
+								</div>
+								<div class=Section1 align="left">
+									<div>
+										<div>
+											<p><a href="#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+												<br>
+												<br>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						<!-- #EndEditable --></td>
+				</tr>
+				<tr height="40">
+					<td bgcolor="white" width="60" height="40"></td>
+					<td colspan="3" align="left" valign="top" bgcolor="white" width="680" height="40">
+						<table>
+							<tr height="20">
+								<td align="left" valign="middle" bgcolor="white" width="200" height="20"><a href="javascript:history.back()"><img src="../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250" height="20">
+									<div align="right">
+										<a title="Index" href="../index.html">Back to Documentation Index <img src="../../images/top.gif" alt="" width="22" height="23" align="absbottom" border="0"></a></div>
+								</td>
+								<td align="right" valign="middle" bgcolor="white" width="200" height="20"><a href="javascript:history.forward()">Forward <img src="../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4" align="left" valign="top" width="740"><img src="../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+		</body>
+
+	<!-- #EndTemplate -->
+
+</html>
+
+
+

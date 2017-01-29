@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<title>Silicon Software - microEnable IV - Runtime 5 - CC Signals Area Scan</title>
+				<link href="../../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../../lib/siso.ico" rel="shortcut icon">
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2" align="left" valign="bottom" width="740"><img src="../../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="center">
+								<h2>CC Signals for Area Scan Cameras</h2>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="right">
+								<div align="center">
+									<div align="center">
+										<p>Parameter Set</p>
+									</div>
+								</div>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2>
+							
+						Description<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">..</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p>The CameraLink interface specifies four camera input signals, e.g. CC1, CC2, CC3 and CC4. Usually the camera will use one particular CC-signal to trigger the data acquisition and define the exposure time. Please, consult the vendor's manual of your camara to identify the required signals and their mapping to the CC1--CC4 lines.</p>
+							<p>Your frame grabber provides six different source signals for area-scan cameras, which can be mapped to any of the four CC-signal lines:<br>
+							</p>
+							<ul>
+								<li>ExSync<br>
+									
+									
+									The ExSync signal is used to trigger the image acquisition of your camera. It can be generated periodically, or triggered by one of the four <a href="../../documents/TriggerSystem/TriggerSystem.html#Anchor-Input-5736">trigger input signals</a>.<br>
+									
+									
+									
+									
+									When generated periodically by the frame grabber (Grabber Controlled), it determines the framerate.<br>
+									
+									
+									
+									Depending on the operation mode of your camera, its active-time can determine the exposure time.<br>
+									
+									
+									
+									For details refer to the <a href="../PSTrigger/PSAreaTrigger.html">Area Trigger System</a>. 
+								<li>Flash<br>
+									
+									
+									
+									A copy of  ExSync is called Flash. It has as separate delay and is usually used to control external flashes.
+
+								<li>Clk<br>
+									Clk provides a periodical signal of 60MHz. Some cameras can be run by an external clock signal.
+
+								<li>HD-Sync<br>
+									
+									
+									
+									The HD-Sync is a periodical signal, which provides the base time for all delays. Some area cameras can use this signal as a line trigger.
+
+								<li>Gnd
+
+								<li>Vcc
+
+							</ul>
+							<p>A detailed description of the trigger system is found in the document <i>microEnable IV</i><a href="../../documents/TriggerSystem/TriggerSystem.html">Trigger System</a>.</p>
+							<p>Please read the according chapter of the manual of your camera, which output format is used.</p>
+							<p></p>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							Parameters<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p></p>
+							<h3><a name="FG_CCSEL0"></a><a name="FG_CCSEL1"></a><a name="FG_CCSEL2"></a><a name="FG_CCSEL3"></a>CC Signals</h3>
+							<p>Four generators of output signals can be set to one of the CC signals entries in the parameters table. Please take a look at the description above.</p>
+							<p></p>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							References<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p></p>
+							<p><a href="PSCCSignalsLine.html">CC Signals for Line Scan Cameras</a></p>
+					<p><a href="../../documents/SDK/SDK.html">SDK Documentation</a></p>
+					<p></p>
+				</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+ 						<table>
+							<tr><br><br>
+								<td align="left" valign="middle" bgcolor="white" width="200"></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../index.html">Back to Documentation Index <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								<td align="right" valign="middle" bgcolor="white"></td>
+							</tr>
+							<tr>
+								<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../overviews/applet_feature_overview.html">Back to Feature Overview <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								</td>
+								<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				<tr>
+					<td colspan="2" align="left" valign="top" width="740"><img src="../../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+			<p></p>
+		</body>
+</html>
+
+
+

@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<title>Silicon Software - microEnable IV - Runtime 5 - Miscellaneous</title>
+				<link href="../../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../../lib/siso.ico" rel="shortcut icon">
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2" align="left" valign="bottom" width="740"><img src="../../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="center">
+								<h2>Miscellaneous</h2>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="right">
+								<div align="center">
+									<div align="center">
+										<p>Parameter Set</p>
+									</div>
+								</div>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2>
+							
+						Description<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">..</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p>The <i>microEnable IV</i> frame grabber stops the image acquisition, if it could not receive any image from the camera in a defined time. This time is called timeout time. It is configurable by the IO signals feature.<br>
+								<br>
+								
+								
+								
+									
+									
+									
+									
+			Also the applet specific revision no. / dll revision no. is able to be read out.<br>
+								<br>
+								
+								
+								Please read the according chapter of the manual of your camera, which output format is used.</p>
+							<p></p>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							Parameters<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<h3></h3>
+							<h3><a name="FG_TIMEOUT"></a>Timeout</h3>
+							<p>The timeout value either sets the time in seconds until a function has to be finished. This parameter can be found within the global settings.</p>
+							<p>This parameter sets also the time in seconds from the beginning of the grabbing. After this time the grabbing will be stopped and a dialog box opens with a note of breaking the grabbing.</p>
+							<p>Please note that there are two timeout values! The smallest value will be accepted.</p>
+							<p></p>
+							<h3><a name="FG_GLOBAL_ACCESS"></a>Global Access Attribute</h3>
+							<p>This parameter can be set in the parameters table below the miscellaneous entry.<br>
+								<br>
+								
+								Entries are now possible in an independent way. The standard is that some settings depends on other settings. With this setting you are able to set following statuses:<br>
+								<br>
+								
+								Auto -&gt; 0<br>
+							</p>
+							<p>Read -&gt; 1<br>
+							</p>
+							<p>Read Write -&gt; 3<br>
+							</p>
+							<p>Read Write Change -&gt; 7<br>
+								<br>
+								
+								The auto setting is the standard setting, the read setting allows only to read, the third setting allows you to read and write when the grabbing is stopped and the last setting you are allowed to change your entries during the grabbing.<br>
+								<br>
+								
+								Important: The mode &quot;Read Write Change = 7&quot; must be used carefully. In this mode changing some parameter during the acquisition could put the frame grabber in an unstable state. It is highly advised to stay in the &quot;Auto = 0&quot; mode.</p>
+							<h3></h3>
+							<h3><a name="FG_FPGA_CLK"></a>FPGA Clock</h3>
+							<p>The FPGA clock in MHz can be seen in the parameters table below the miscellaneous entry. It is an information field and can't be entered.</p>
+							<p></p>
+							<h3><a name="FG_PLX_CLK"></a>PLX Clock</h3>
+							<p>The PLX clock in MHz can be seen in the parameters table below the miscellaneous entry. It is an information field and can't be entered.</p>
+							<p></p>
+							<h3><a name="FG_HAP_FILE"></a>HAP File</h3>
+							<p>The name of the actually used HAP file can be seen in the parameters table below the miscellaneous entry. It is an information field and can't be entered.</p>
+							<p></p>
+							<h3><a name="FG_HTML_OUTPUT"></a>Save Param. Table</h3>
+							<p>Set the name of a HTML file (with ending!) and enter its path to build a browser page which shows the actually entered values together with the possible values.</p>
+							<p></p>
+							<h3><a name="FG_CAMSTATUS"></a>Camera Status</h3>
+							<p>The camera status shows whether the camera clock signal can be recognized by frame grabber or not. This field can be found in the parameters table below the miscellaneous entry and is an information field. It can't be entered.</p>
+							<p></p>
+							<h3><a name="FG_DMASTATUS"></a>DMA Status</h3>
+							<p>The DMA status can be seen in the parameters table below the miscellaneous entry. It is an information field and can't be entered.</p>
+							<p></p>
+							<h3><a name="FG_APPLET_ID"></a>Applet ID</h3>
+							<p>It is possible to have a look at the applet ID camera status shows whether the camera clock signal can be recognized by frame grabber or not. This field is shown in the parameters table below the miscellaneous entry. It is an information field and can't be entered.</p>
+							<p></p>
+							<h3><a name="FG_APPLET_VERSION"></a>Applet Version</h3>
+							<p>The applet version is shown in the parameters table below the miscellaneous entry. It is an information field and can't be entered.</p>
+							<p></p>
+							<h3><a name="FG_APPLET_REVISION"></a>Applet Revision</h3>
+							<p>Besides the applet version the applet revision can also be seen in the parameters table below the miscellaneous entry. But it is an information field so it can't be entered.</p>
+							<h3></h3>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							References<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p></p>
+					<p><a href="../../documents/SDK/SDK.html">SDK Documentation</a></p>
+					<p></p>
+				</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+ 						<table>
+							<tr><br><br>
+								<td align="left" valign="middle" bgcolor="white" width="200"></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../index.html">Back to Documentation Index <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								<td align="right" valign="middle" bgcolor="white"></td>
+							</tr>
+							<tr>
+								<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../overviews/applet_feature_overview.html">Back to Feature Overview <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								</td>
+								<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				<tr>
+					<td colspan="2" align="left" valign="top" width="740"><img src="../../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+			<p></p>
+		</body>
+</html>
+
+
+

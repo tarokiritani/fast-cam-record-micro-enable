@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<title>Silicon Software - Runtime 5 - Acquisition Applets and Features</title>
+					<link href="../lib/siso.css" rel="stylesheet" media="screen">
+					<link href="../lib/siso.ico" rel="shortcut icon">
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+				<td colspan="3" align="left" valign="bottom" width="784"><img src="../images/head.jpg" alt="" width="740" height="120"></td>
+			</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td bgcolor="white" width="274" height="20"></td>
+				<td align="left" valign="top" bgcolor="white" width="450" height="20"></td>
+			</tr>
+			<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+				<td colspan="2" bgcolor="white" width="724" height="20">
+					<h2>Silicon Software Runtime 5 Documentation </h2>
+				</td>
+			</tr>
+			</table>
+			
+<table border="0" cellspacing="0" cellpadding="0" width="784">
+		<tr height="65">
+			<td bgcolor="white" width="60" height="65"></td>
+			<td bgcolor="white" width="65" height="65"><img src="../images/index/AppletsFeatures_64x64.png" alt="" width="64" height="64"></td>
+			<td bgcolor="white" width="5" height="65" valign="middle"></td>
+			<td bgcolor="white" width="654" height="65" valign="middle"><h3>Image Acquisition with microEnable IV Frame Grabbers <br>
+						(Camera Link, LVDS and GigE Vision)</h3></td>
+			</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="0" width="846">			
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td colspan="2" bgcolor="white" width="786">
+					<hr>
+					<p></p>
+				</td>
+			</tr>
+<h3><b></b></h3>
+					<div class=Section1>
+						<table border="0" cellspacing="2" cellpadding="2">
+							
+
+			<tr height="29">
+				<td bgcolor="white" width="60" height="29"></td>
+				<td colspan="2" bgcolor="white" width="786" height="29">
+					<h3></h3>
+					<h3><b>Content</b></h3>
+					<div class=Section1>
+						<table border="0" cellspacing="2" cellpadding="2">
+							<tr>
+								<td><a href="ind_acquisition.html#_intro"><b>Getting Started</b></a></td>
+								<td><a href="ind_acquisition.html#_intro"><b><img src="../images/down.jpg" alt="" height="16" width="16" border="0"></b></a></td>
+							</tr>
+
+							<tr>
+								<td><a href="ind_acquisition.html#_mE4_CL"><font size="-1"><b>microEnable 4 Camera Link &amp; LVDS</b> </font></a></td>
+								<td><a href="ind_acquisition.html#_mE4_CL"><img src="../images/down.jpg" alt="" height="16" width="16" border="0"></a></td>
+							</tr>
+							<tr>
+								<td><a href="ind_acquisition.html#_mE4_CL"><font size="-1"><b>microEnable</b></font></a><a href="ind_acquisition.html#_mE4_GE"><font size="-1"><b> 4 GigE Vision</b></font></a></td>
+								<td><a href="ind_acquisition.html#_mE4_GE"><img src="../images/down.jpg" alt="" height="16" width="16" border="0"></a></td>
+							</tr>
+<tr>
+								<td><a href="ind_acquisition.html#_mE5_CL"><font size="-1"><b>microEnable 5</b></font></a></td>
+								<td><a href="ind_acquisition.html#_mE5_CL"><img src="../images/down.jpg" alt="" height="16" width="16" border="0"></a></td>
+							</tr>							
+							
+						</table>
+						<p><br>
+						</p>
+					</div>
+				</td>
+			</tr>			
+			<tr height="29">
+				<td bgcolor="white" width="60" height="29"></td>
+				<td bgcolor="white" width="336" height="29"></td>
+				<td bgcolor="white" width="450" height="29"></td>
+			</tr>		
+<tr>
+				<td bgcolor="white" width="60"></td>
+				<td colspan="2" bgcolor="white" width="786">
+					<hr>
+					
+					<h3><a id="_intro" name="_intro"></a>Introduction</h3>
+				</td>
+			</tr>		
+			
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td bgcolor="#dddddd" width="336"><font size="-1"><a href="documents/Applets.html">Getting started with Applets</a></font></td>
+				<td align="left" valign="top" bgcolor="#dddddd" width="450">
+					<p><br>
+						<b>Real-time on-board image processing functions running on Silicon Software frame grabbers are implemented via applets. This section gives an introduction into the world of applets and the availability of different types of applets for certain frame grabber models.<br>
+							<br>
+						</b></p>
+				</td>
+			</tr>
+			
+			
+<!--				<tr>
+				<td bgcolor="white" width="60"></td>
+				<td colspan="2" bgcolor="white" width="724">
+					<hr>
+				<h3>Image Acquisition with microEnable 5 Camera Link Frame Grabber: <font color="#3366ff">microEnable 5 VF8-PoCL</font></h3>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="60">
+					
+				</td>
+				<td colspan="2" bgcolor="white" width="724">
+					<p></p>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td bgcolor="#dddddd" width="274"><font size="-1"><a href="applets_mE5VF8CL/index.html">AcquisitionApplets &amp; Features</a></font><font size="-1"><a href="overviews/applet_feature_overview.html"><br>
+						</a></font></td>
+				<td align="left" valign="top" bgcolor="#dddddd" width="450">
+					<p><b>This documents lists all available AcquisitionApplets and features available for the following frame grabber models:<br>
+							microEnable 5 VF8-CL<br>
+							<br>
+							<font color="#434343">Important note: Since this is a custom software release it contains custom AcquisitionApplets, too.</font></b></p>
+				</td>
+			</tr>
+			<tr height="29">
+				<td bgcolor="white" width="60" height="29"></td>
+				<td bgcolor="white" width="274" height="29"></td>
+				<td bgcolor="white" width="450" height="29"></td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td bgcolor="#dddddd" width="274"><font size="-1"><a href="documents/CameraLink.html">Camera Link Camera Configuration</a></font></td>
+				<td align="left" valign="top" bgcolor="#dddddd" width="450">
+					<p><b>This section describes how the configuration of Camera Link cameras by the various vendor tools is supported - based on the serial communication interface. It also shows also how to configure your camera with the Silicon Software shell tool clshell.</b></p>
+				</td>
+			</tr>
+			<tr height="29">
+				<td bgcolor="white" width="60" height="29"></td>
+				<td bgcolor="white" width="274" height="29"></td>
+				<td bgcolor="white" width="450" height="29"></td>
+			</tr>			
+-->
+<tr height="29">
+				<td bgcolor="white" width="60" height="29"></td>
+				<td bgcolor="white" width="336" height="29"></td>
+				<td bgcolor="white" width="450" height="29"></td>
+			</tr>
+
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td colspan="2" bgcolor="white" width="786">
+					<hr>
+					<h3><a id="_mE4_CL" name="_mE4_CL"></a>Image Acquisition with microEnable IV Camera Link and LVDS Frame Grabbers</h3>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td colspan="2" bgcolor="white" width="786">
+					<p></p>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td bgcolor="#dddddd" width="336"><br>
+					<br>
+					<font size="-1"><a href="advancedacquisitionapplets/index_mE4_CL.html">Advanced AcquisitionApplets &amp; Features <br>
+							<br>
+						</a></font><font size="-1"><a href="advancedacquisitionapplets/mE4AD4-CL/index.html"><br>
+						</a></font></td>
+				<td align="left" valign="top" bgcolor="#dddddd" width="450">
+					<p><br>
+								<b>This section lists all Advanced AcquisitionApplets and features available for the following frame grabber models:<br>
+								</b></p>
+					<ul>
+						<li><b>microEnable IV AD4-CL
+</b>						<li><b>microEnable IV AD4-PoCL </b> 
+						<li><b>microEnable IV AD4-LVDS
+</b>						<li><b>microEnable IV VD4-CL </b> 
+						<li><b>microEnable IV VD4-PoCL<br>
+									</b><br>
+								
+								
+						
+					</ul>
+				</td>
+			</tr>
+			
+			<tr height="29">
+				<td bgcolor="white" width="60" height="29"></td>
+				<td bgcolor="white" width="336" height="29"></td>
+				<td bgcolor="white" width="450" height="29"></td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td bgcolor="#dddddd" width="336"><br>
+					<font size="-1"><a href="overviews/applet_feature_overview_av.html">Acquisition Applets &amp; Features<br>
+							<br>
+						</a><a href="overviews/applet_feature_overview_av.html"><br>
+						</a></font></td>
+				<td align="left" valign="top" bgcolor="#dddddd" width="450">
+					<p><br>
+								<b>This section lists all AcquisitionApplets and features available for the following frame grabber models:</b></p>
+					<ul>
+						<li><b>microEnable</b> <b>IV AS1-PoCL</b>
+								<li><b>microEnable IV AD1-CL</b>
+								<li><b>microEnable IV AD1-PoCL</b>
+								<li><b>microEnable IV AD1-mPoCL</b>
+								<li><b>microEnable IV VD1-CL</b>
+								<li><b>microEnable IV AD4-CL
+</b>
+								<li><b>microEnable IV AD4-PoCL
+</b>						<li><b>microEnable IV AD4-LVDS
+</b>						<li><b>microEnable IV VD4-CL
+</b>						<li><b>microEnable IV VD4-PoCL<br>
+									</b><br>
+								
+								
+						
+						
+					</ul>
+				</td>
+			</tr>
+			<tr height="29">
+				<td bgcolor="white" width="60" height="29"></td>
+				<td bgcolor="white" width="336" height="29"></td>
+				<td bgcolor="white" width="450" height="29"></td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td bgcolor="#dddddd" width="336"><font size="-1"><a href="documents/TriggerSystem/TriggerSystem.html">The microEnable Trigger System</a></font></td>
+				<td align="left" valign="top" bgcolor="#dddddd" width="450">
+					<p><br>
+								<b>Following this link you learn how to setup, configure, and control a synchronized image acquisition task based on the powerful Silicon Software trigger implementation.<br>
+								</b><br>
+							</p>
+				</td>
+			</tr>
+			<tr height="29">
+				<td bgcolor="white" width="60" height="29"></td>
+				<td bgcolor="white" width="336" height="29"></td>
+				<td bgcolor="white" width="450" height="29"></td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td bgcolor="#dddddd" width="336"><font size="-1"><a href="documents/CameraLink.html">Camera Link Camera Configuration</a></font></td>
+				<td align="left" valign="top" bgcolor="#dddddd" width="450">
+					<p><br>
+								<b>This section describes how the configuration of Camera Link cameras (using vendor tools) is supported - based on the serial communication interface. You also learn how to configure your camera with Silicon Software's shell tool clshell.<br>
+								</b><br>
+							</p>
+				</td>
+			</tr>
+			<tr height="29">
+				<td bgcolor="white" width="60" height="29"></td>
+				<td bgcolor="white" width="336" height="29"></td>
+				<td bgcolor="white" width="450" height="29"></td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td colspan="2" bgcolor="white" width="786">
+					<hr>
+					<h3><a id="_mE4_GE" name="_mE4_GE"></a>Image Acquisition with microEnable IV GigE Vision Frame Grabbers</h3>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="60">
+					
+				</td>
+				<td colspan="2" bgcolor="white" width="786">
+					<p></p>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td bgcolor="#dddddd" width="336"><font size="-1"><a href="advancedacquisitionapplets/index_mE4_GigE.html">Advanced AcquisitionApplets &amp; Features</a></font><br>
+					<p>
+					</p>
+				</td>
+				<td align="left" valign="top" bgcolor="#dddddd" width="450">
+					<p><br>
+								<b>This section lists all Advanced AcquisitionApplets and features available for the following frame grabber models: </b></p>
+							<ul>
+						<li><b>microEnable IV AQ4-GE </b>
+						<li><b>microEnable IV AQ4-GPoE
+</b>						<li><b>microEnable IV VQ4-GE	</b>					<li><b>microEnable IV VQ4-GPoE	<br>
+									</b><br>
+								
+								
+								
+												</ul>
+						</td>
+			</tr>
+			<tr height="29">
+				<td bgcolor="white" width="60" height="29"></td>
+				<td bgcolor="white" width="336" height="29"></td>
+				<td bgcolor="white" width="450" height="29"></td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td bgcolor="#dddddd" width="336"><font size="-1"><a href="overviews/applet_feature_overview_gb.html">Acquisition Applets &amp; Features</a></font></td>
+				<td align="left" valign="top" bgcolor="#dddddd" width="450">
+					<p><br>
+								<b>This section lists all AcquisitionApplets and features available for the following frame grabber models: <br>
+								</b></p>
+							<ul>
+								<li><b>microEnable IV AQ4-GE </b>
+								<li><b>microEnable IV AQ4-GPoE </b>
+								<li><b>microEnable IV VQ4-GE </b>
+								<li><b>microEnable IV VQ4-GPoE<br>
+									</b><br>
+								
+							</ul>
+						</td>
+			</tr>
+			<tr height="29">
+				<td bgcolor="white" width="60" height="29"></td>
+				<td bgcolor="white" width="336" height="29"></td>
+				<td bgcolor="white" width="450" height="29"></td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td bgcolor="#dddddd" width="336"><font size="-1"><a href="documents/TriggerSystem/TriggerSystem.html">The microEnable Trigger System</a></font></td>
+				<td align="left" valign="top" bgcolor="#dddddd" width="450">
+					<p><b><br>
+									Following this link you learn how to setup, configure, and control a synchronized image acquisition task based on the powerful Silicon Software trigger implementation.<br>
+								</b><br>
+							</p>
+				</td>
+			</tr>
+			<tr height="29">
+				<td bgcolor="white" width="60" height="29"></td>
+				<td bgcolor="white" width="336" height="29"></td>
+				<td bgcolor="white" width="450" height="29"></td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td bgcolor="#dddddd" width="336"><font size="-1"><a href="documents/GenICamExplorer.html">GigE Vision Camera Configuration<br>
+							- GenICam Explorer</a></font></td>
+				<td align="left" valign="top" bgcolor="#dddddd" width="450">
+					<p><br>
+								<b>
+						With the GigE Vision standard, configuration and control of GigE Vision cameras is fully standardized. Silicon Software provides the GUI&nbsp;tool <i>GenICam Explorer</i> that can be used to configure any GigE Vision based camera connected to a Silicon Software GigE Vision frame grabber - camera vendor independent. <br>
+								</b><br>
+							</p>
+				</td>
+			</tr>			
+			<tr height="28">
+				<td bgcolor="white" width="60" height="28"></td>
+				<td bgcolor="white" width="336" height="28"></td>
+				<td bgcolor="white" width="450" height="28"></td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td colspan="2" bgcolor="white" width="786">
+					<hr>
+					
+					<h3><a id="_mE5_CL" name="_mE5_CL"></a>Image Acquisition with microEnable 5 Frame Grabbers</h3>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="60">
+					
+				</td>
+				<td colspan="2" bgcolor="white" width="786">
+					<p></p>
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td bgcolor="white" width="60">
+					
+				</td>
+				<td colspan="2" bgcolor="#dddddd"  width="786">
+					<p><br>
+								<b>The applet sets for image acquisition with microEnable 5 frame grabbers are not part of this runtime installation. If you want to use microEnable 5 frame grabbers, install runtime version 5.3 or higher, together with the according applet sets. <br>
+									<br>
+								</b></p>
+				</td>
+			</tr>
+			
+			<tr height="29">
+				<td bgcolor="white" width="60" height="29"></td>
+				<td bgcolor="white" width="336" height="29"></td>
+				<td bgcolor="white" width="450" height="29"></td>
+			</tr>
+			
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td colspan="2" bgcolor="white" width="786">
+					<p></p>
+				</td>
+			</tr>
+		</table>
+
+		<table border="0" cellspacing="0" cellpadding="0">
+
+
+			<tr>
+				<td bgcolor="white" height="20" width="60"></td>
+				<td colspan="2" bgcolor="white" width="724"><hr></td>
+			</tr>
+
+
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td colspan="2" bgcolor="white" width="724">
+					<table>
+						<tr>
+							<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+							<td align="center" valign="middle" bgcolor="white" width="250">
+							<div align="right"><a title="Index" href="index.html">Back to Documentation Index <img src="../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+							</td>
+							<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+
+
+
+						
+			<tr>
+				<td bgcolor="white" height="20" width="60"></td>
+				<td colspan="2" bgcolor="white" width="724"><hr></td>
+			</tr>
+			
+			
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td bgcolor="white" width="274"></td>
+				<td align="left" valign="top" bgcolor="white" width="450">
+					<div align="right">
+						<i><font size="-1"> </font></i></div>
+				</td>
+			</tr>
+			<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td bgcolor="white" width="274" height="20"></td>
+				<td align="left" valign="top" bgcolor="white" width="450" height="20"></td>
+			
+			
+				<tr>
+				<td colspan="3" align="left" valign="top" width="784"><img src="../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+			</tr>
+			</table>
+			<p></p>
+		</body>
+</html>
+
+

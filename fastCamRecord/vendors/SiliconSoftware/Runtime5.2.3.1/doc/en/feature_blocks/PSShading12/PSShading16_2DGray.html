@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<title>Silicon Software - microEnable IV - Runtime 5 - 2D Shading</title>
+				<link href="../../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../../lib/siso.ico" rel="shortcut icon">
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2" align="left" valign="bottom" width="740"><img src="../../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="center">
+								<h2>2D Shading<br>
+							(Gain &amp; Offset Correction and Defective Pixel Interpolation)</h2>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="right">
+								<div align="center">
+									<p>Parameter Set</p>
+								</div>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							
+						Description<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">..</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p>Area Shading coprises three seperate algorithms to improve the quality of the imagery on the fly.</p>
+							<ol>
+								<li>The (subtractive) offset correction can elimnate the measuring of the dark current in your camera sensor and adjust a fixed pattern imprinted into your sensor.  
+								<li>The (multiplicative) gain correction can counterbalance inhomogeneties of the used light source and optics.								<li>The defect pixel interpolation can supress faulty pixels by a linear interpolation through its neighbors.
+
+							</ol>
+							<p>All three corrections can be utilized comfortably with the help of reference images. Alternatively, you can download your own coefficients with the SDK.</p>
+							<p>For 1. a 'black' reference image is used to calculate the offset correction. The offsets are measured pixel values for a black image, since substracting these offsets from the camera image results in a homogenous pixel value of zero.</p>
+							<p>For 2. a 'white' reference image is used to calculate the gain correction. The coefficcients are determined to rescale the luminosity of each pixel to the mean luminosity of the white reference image.</p>
+							<p>For 3. usually a 'black' reference image is used to idenify defect pixels automatically by a threshold. For details refer to the section of the parameter <a href="#FG_SHADING_THRESHOLD0">Threshold DPI</a> below.</p>
+							<p></p>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							
+						Parameters<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<h3></h3>
+							<h3><a name="FG_SHADING_SUBENABLE"></a>Offset Enable</h3>
+							<p>After <a href="#FG_LOAD_SHADINGDATA">downloading the offset summands</a> to the <i>microEnable</i> board, it is possible to enable the subtractive offset correction by selecting 'On' for the Offset Enable parameter. To disable the offset correction simply set Offset Enable to 'Off' (alternatiely overwrite all summands by 0 by deselecting a filename for the offset reference image and download the summands again).</p>
+							<p>Please mind the fact, that the offset summands are encoding the position of defect pixels as well. Therefore, no offsets are available for pixels that are marked as defect through a <a href="#FG_SHADING_FPNFILE0">DPI reference image</a>. This is independent from the status of Offset Enable.</p>
+							<p></p>
+							<h3><a name="FG_SHADING_MULTENABLE"></a>Gain Enable</h3>
+							<p>After <a href="#FG_LOAD_SHADINGDATA">downloading the gain coefficients</a> to the <i>microEnable</i> board, it is possible to enable the multiplicative gain correction by selecting 'On' for the Gain Enable parameter. To disable the gain correction simply set Gain Enable to 'Off' (alternatiely overwrite all coefficients by 1.0 by deselecting a filename for the gain reference image and download the coefficients again).</p>
+							<p></p>
+							<h3><a name="FG_SHADING_FPNENABLE"></a>DPI Enable (Defective Pixel Interpolation Enable)</h3>
+							<p>After <a href="#FG_LOAD_SHADINGDATA">downloading the positions of defect pixels</a> to the <i>microEnable</i> board, it is possible to enable the Defective Pixel Interpolation (DPI) by selecting 'On' for the DPI Enable parameter. To disable the interpolation simply set DPI Enable to 'Off' (alternatiely mark all pixels as working by deselecting a filename for the DPI reference image and download the summands again).</p>
+							<p>Please mind the fact, that the offset summands are encoding the position of defect pixels as well. Therefore, no offsets are available for pixels that are marked as defect through a <a href="#FG_SHADING_FPNFILE0">DPI reference image</a>. This is independentl from the status of DPI Enable.</p>
+							<p></p>
+							<h3><a name="FG_SHADING_SUBFILE0"></a>Filename Offset</h3>
+							<p>The parameter Filename Offset defines the reference image for the subtractive offset correction.</p>
+							<p>Usually a black image is used as reference. To record a black reference image, cover the camera lens tightly and <a href="../../documents/microDisplay.html#_3.2">acquire and save a single image</a> from the very sensor you are using in your setup.</p>
+							<p></p>
+							<h3><a name="FG_SHADING_MULTFILE0"></a>Filename Gain</h3>
+							<p>The parameter Filename Gain defines the reference image for the multiplicative offset correction.</p>
+							<p>Usually a white image is used as reference. To record a white reference image, cover your setup by a white sheet and  <a href="../../documents/microDisplay.html#_3.2">acquire and save a single image</a> under the very light conditions used in your setup.</p>
+							<p></p>
+							<h3><a name="FG_SHADING_FPNFILE0"></a>Filename DPI (Filename Defect Pixel Inperpolation)</h3>
+					<p>This parameter defines the reference image for the Defective Pixel Interpolation.</p>
+					<p>Usually a black image is used as reference. To record a black reference image, cover the camera lens tightly and <a href="../../documents/microDisplay.html">acquire and save a single image</a> from the very sensor you are using in your setup.</p>
+					<h3><a name="FG_SHADING_THRESHOLD0"></a>Threshold DPI (Threshold Defect Pixel Interplation)</h3>
+					<p>This parameter marks all pixels as faulty, which exceed a certain value in the <a href="#FG_SHADING_FPNFILE0">black reference image</a>.</p>
+					<p>The assumption is, that defect pixels have a constant value irrespective of the absorbed light. Therefore, pixels in a black reference image with values above the dark current are defect. You can easily find a valid threshold by analyzing the histogram of the black reference image, and select a value right from the gaussian peak.</p>
+					<div align="center">
+						<p><img src="threshold_histogram.jpg" alt="" width="426" height="309" border="0"></p>
+					</div>
+					<h3></h3>
+					<h3><a name="FG_LOAD_SHADINGDATA"></a>Load Coef.</h3>
+					<p>Calculate the shading coefficents from the reference images and download the data to the <i>microEnable</i>. If no reference images are selected, the identity is set for the data (offset=0, gain=1.0, interpolate=false).</p>
+					<h3><a name="FG_CLEAR_SHADINGDATA"></a>Clear Coef.</h3>
+					<p>Clearing the uploaded shading data is only neccessary before loading new shading data.</p>
+							<p></p>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							
+						References<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+					<p></p>
+					<p><a href="../../documents/SDK/SDK.html">SDK Documentation</a></p>
+					<p></p>
+				</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+ 						<table>
+							<tr><br><br>
+								<td align="left" valign="middle" bgcolor="white" width="200"></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../index.html">Back to Documentation Index <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								<td align="right" valign="middle" bgcolor="white"></td>
+							</tr>
+							<tr>
+								<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../overviews/applet_feature_overview.html">Back to Feature Overview <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								</td>
+								<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				<tr>
+					<td colspan="2" align="left" valign="top" width="740"><img src="../../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+			<p></p>
+		</body>
+</html>
+
+
+

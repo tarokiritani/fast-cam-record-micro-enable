@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<title>Silicon Software - Runtime 5 - SmartApplets</title>
+					<link href="../../lib/siso.css" rel="stylesheet" media="screen">
+					<link href="../../lib/siso.ico" rel="shortcut icon">
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+				<td colspan="3" align="left" valign="bottom" width="784"><img src="../../images/head.jpg" alt="" width="740" height="120"></td>
+			</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td bgcolor="white" width="274" height="20"></td>
+				<td align="left" valign="top" bgcolor="white" width="450" height="20"></td>
+			</tr>
+			<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+				<td colspan="2" bgcolor="white" width="724" height="20">
+					<h2>Silicon Software Runtime 5 Documentation</h2>
+				</td>
+			</tr>
+			</table>
+			
+<table border="0" cellspacing="0" cellpadding="0" width="784">
+		<tr height="65">
+			<td bgcolor="white" width="60" height="65"></td>
+			<td bgcolor="white" width="65" height="65"><img src="../../images/index/SmartApplets_64x64.png" alt="" width="64" height="64"></td>
+			<td bgcolor="white" width="5" height="65" valign="middle"></td>
+			<td bgcolor="white" width="654" height="65" valign="middle"><h3>SmartApplets Introduction</h3></td>
+			</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="0" width="784">
+			
+			
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td colspan="2" bgcolor="white" width="724">
+					<hr>
+					<p></p>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td colspan="2" bgcolor="white" width="724">
+					<hr>
+					<p>SmartApplets are application related image processing libraries. Once loaded, these applets can immediately be run. System adaptation will be effected by a graphical configuration. SmartApplets are individually adapted to compliant hardware and optimally use the potential of the according onboard vision processor.<br>
+					</p>
+					<p>Thematic focuses are combined in SmartApplets families, which are industry-, application- or technology-based oriented. SmartApplets are continuously enhanced. Hereby the number of families and the scope of each package will change.<br>
+						<br>
+					</p>
+					<p>SmartApplets provides a high quality pre-stage of Machine Vision applications. It reduces the load of host CPU by a complete outsourcing on the onboard FPGA. SmartApplets doesn't cover single processing steps but a complete chain of concerted function blocks, from the acquisition over sensor corrections and image enhancements to special functions. Hereafter the images can the post-processed by embedding in own applications or transferring in 3rd party Machine Vision software.<br>
+					</p>
+					<p></p>
+					<p>Example:</p>
+					<p><img src="../../images/smartapplets/Blob_BAG8_D4.png" alt="" height="320" width="703" border="0"></p>
+					<p>The example &quot;Blob_BAG8&quot; for microEnable IV VD4-CL demonstrates the workflow within a SmartApplet by block diagrams. The image acquisition (green) functions support grayscale BASE configuration cameras with a bit depth up to 12bit. A subsequent Lookup Table function (yellow) cares of image enhancements by gamma diagrams, contrasts, brightness etc. A median filter reduces an image noise. A binarization (orange) is processed with a configurable global threshold and an adaptive method with local threshold in a 32*32 pixel surrounding. After selection of the binarization method (SW), two-level morphology (yellow) with serial open-close function with 7*7 pixel matrix size, eliminates small objects. The Blob function (light blue) segments the image in binary objects. The object filter (blue) allows the passing of objects with certain properties by configuration of the feature extraction. By two DMA transfers, the SmartApplets outputs an object list with coordinates of bounding boxes, surface area, contour length and other object properties, and a grayscale image. The source of the image, before binarization or after the morphological processing, can be selected by setting the according switch (SW).<br>
+						<br>
+					</p>
+					<p>Target frame grabber models: microEnable IV V-Series frame grabber</p>
+					<ul>
+						<li>microEnable IV VD1-CL
+						<li>microEnable IV VD4-CL
+						<li>microEnable IV VD4-PoCL
+						<li>microEnable IV VQ4-GE
+						<li>microEnable IV VQ4-GPoE
+					</ul>
+					<p>Supported frame grabber boards of the V-series cover microEnable IV-series based on PCI Express with CameraLink or GigabitEthernet interface. &quot;Smart Applets&quot; are ready-to-run and can be loaded with initialization of the frame grabber. The above listed models are pre-licensed for &quot;SmartApplets Base families&quot; at delivery and these class of SmartApplets can be immediately loaded and used. The usage of the class SmartApplets Extended and other SmartApplets packages require an additional license code. For further information please contact your Silicon Software sales or support contact.</p>
+					<p>Our SmartApplets families are constantly improved and extended.<br>
+					</p>
+					<p><b>The SmartApplets installers are available on your Runtime 5 installation DVD. </b></p>
+					<p><b>The latest SmartApplets packages can be downloaded from the download area on the Silicon Software website.</b></p>
+					<p>Detailed documentation on a specific SmartApplets family is automatically installed during the installation of the corresponding SmartApplets family package. The documentation can be accessed via the Start Menu folder:<br>
+						
+						Windows Start -&gt; All programs -&gt; SiliconSoftware -&gt;&nbsp;SmartApplets[] -&gt; Documentation.<br>
+						<br>
+					</p>
+					<p>For more information on new or enhanced SmartApplets packages, contact your primary sales representative, or contact Silicon Software directly.<br>
+					</p>
+					<p></p>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td colspan="2" bgcolor="white" width="724">
+					<p></p>
+				</td>
+			</tr>
+		</table>
+
+		<table border="0" cellspacing="0" cellpadding="0">
+
+
+			<tr>
+				<td bgcolor="white" height="20" width="60"></td>
+				<td colspan="2" bgcolor="white" width="724"><hr></td>
+			</tr>
+
+
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td colspan="2" bgcolor="white" width="724">
+					<table>
+						<tr>
+							<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+							<td align="center" valign="middle" bgcolor="white" width="250">
+							<div align="right"><a title="Index" href="../index.html">Back to Documentation Index <img src="../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+							</td>
+							<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+
+
+
+						
+			<tr>
+				<td bgcolor="white" height="20" width="60"></td>
+				<td colspan="2" bgcolor="white" width="724"><hr></td>
+			</tr>
+			
+			
+			<tr>
+				<td bgcolor="white" width="60"></td>
+				<td bgcolor="white" width="274"></td>
+				<td align="left" valign="top" bgcolor="white" width="450">
+					<div align="right">
+						<i><font size="-1">Last modified in January 2015</font></i></div>
+				</td>
+			</tr>
+			<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td bgcolor="white" width="274" height="20"></td>
+				<td align="left" valign="top" bgcolor="white" width="450" height="20"></td>
+			
+			
+				<tr>
+				<td colspan="3" align="left" valign="top" width="784"><img src="../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+			</tr>
+			</table>
+			<p></p>
+		</body>
+</html>
+
+

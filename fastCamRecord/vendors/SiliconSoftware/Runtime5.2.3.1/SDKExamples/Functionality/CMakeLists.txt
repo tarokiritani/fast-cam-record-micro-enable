@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 2.4)
+
+ADD_SUBDIRECTORY(Acquisition_mode)
+ADD_SUBDIRECTORY(Basic_Parametrization)
+ADD_SUBDIRECTORY(Configuration_file)
+ADD_SUBDIRECTORY(Data_Format)
+ADD_SUBDIRECTORY(Info)
+ADD_SUBDIRECTORY(KneeLut)
+ADD_SUBDIRECTORY(Memory_management)
+ADD_SUBDIRECTORY(Operation_mode)
+ADD_SUBDIRECTORY(SensorReadout)
+ADD_SUBDIRECTORY(Events)

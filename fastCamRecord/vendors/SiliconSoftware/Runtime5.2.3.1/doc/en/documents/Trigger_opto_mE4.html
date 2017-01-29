@@ -1,0 +1,1431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<title>Silicon Software - Runtime 5 - Opto Trigger for microEnable IV</title>
+			<!-- #BeginHeadLocked "" -->
+				<link href="../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../lib/siso.ico" rel="shortcut icon">
+			<!-- #EndHeadLocked -->
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2" align="left" valign="bottom"><img src="../../images/head.jpg" alt="" height="120"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td bgcolor="white" width="60"><font color="white">.</font></td>
+							</tr>
+						</table>
+					</td>
+					<td align="left" valign="top" bgcolor="white">
+						<h2><br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+				<td bgcolor="white" width="60"><font color="white">.</font></td>
+				<td align="left" valign="top" bgcolor="white">
+					<div class=Section1>
+						<div class=Section2 align="left">
+							<h1><b>The I/O Opto-Coupled Trigger Boards for microEnable IV and microEnable 5</b><br>
+								<br>
+							</h1>
+							<div>
+								<div>
+									<div>
+										<div class=Section1>
+											<div class=Section1>
+												<div class=Section1>
+													<div class=Section2 align="left">
+														<div>
+															<div class=Section2 align="left">
+																<div>
+																	<h3>Runtime Software Version 5<br>
+																		<br>
+																	</h3>
+																	<h2>User Manual</h2>
+																	<h3>
+																	</h3>
+																	<h4>The Silicon Software OPTO trigger boards offer a comfortable opportunity to use opto-coupled trigger signals for controlling cameras and external peripheries. Also, several microEnable frame grabber boards can be synchronized most easily using an OPTO trigger board. The fast electronics of the trigger board and the hardware-based processing of the signals on the microEnable frame grabber guarantee small latencies. For more information on how an Opto trigger board can be used for various tasks within a trigger system, refer to the <a href="TriggerSystem/TriggerSystem.html">microEnable Trigger System</a> documentation.</h4>
+																	<p></p>
+																	<p></p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p><img width=403 height=640 src="../../images/trigger_opto_mE4/opto_mE4_plan.jpg"></p>
+						<p></p>
+						<p>At the moment, Silicon Software offers OPTO trigger boards in 6 different flavors. The six models differ in their inputs, i.e., in number and types of their inputs (see table below).</p>
+						<p>Each Opto trigger board has 8 outputs. If you have special needs, please contact our Silicon Software Sales Department or your local sales representative/distributor.</p>
+						<p></p>
+						<table border=1 cellspacing=0 cellpadding=2 width=800>
+							<tr>
+								<td align="left" nowrap bgcolor="#2e368f" width=220>
+									<p><font size="-2" color="white"><a id="_a" name="_a"></a><b>&nbsp;Opto Trigger Board</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="#2e368f" width=200>
+									<div align="center">
+										<p><b><font size="-2" color="white">Number /Type of Inputs, Pins*</font></b></p>
+									</div>
+								</td>
+								<td align="center" nowrap bgcolor="#2e368f" width=200><font size="-2" color="white"><b>Pull-Up/Pull-Down</b></font></td>
+								<td align="center" nowrap bgcolor="#2e368f" width=80><b><font size="-2" color="white">Art. Nr.</font></b></td>
+								<td align="center" nowrap bgcolor="#2e368f" width=100>
+									<p><b><font size="-2" color="white">Notes</font></b></p>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="white" width=220>
+									<p><font size="-2"><b>Opto Trigger IV (classic)</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=200>
+									<div align="center">
+										<p><font size="-2" color="black"><b>8 singled ended (Port A+B)</b></font></p>
+									</div>
+								</td>
+								<td align="left" nowrap bgcolor="white" width=200><font size="-2"><b>all inputs with pull-up resistor</b></font></td>
+								<td align="center" nowrap bgcolor="white" width=80><b><font size="-2">101266</font></b></td>
+								<td align="center" nowrap bgcolor="white" width=100><b><font size="-2"> </font></b></td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="#dfdfdf" width=220>
+									<p><font size="-2"><b>Opto Trigger IV Pull-Down (classic) </b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=200><b><font size="-2">8 single ended (Port A+B)</font></b>
+									<div align="center">
+										<p><font size="-2" color="black"></font></p>
+									</div>
+								</td>
+								<td align="left" nowrap bgcolor="#dfdfdf" width=200><font size="-2"><b>all inputs with pull-down resistor</b></font></td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=80><b><font size="-2">101433</font></b></td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=100><b><font size="-2"> </font></b></td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="white" width=220>
+									<p><font size="-2"><b>Opto Trigger IV DS Pull-Up</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=200>
+									<div align="center">
+										<p><b><font size="-2">4 differential (Pin 11, 13 of Port A+B )</font></b></p>
+									</div>
+								</td>
+								<td align="left" nowrap bgcolor="white" width=200><font size="-2"><b>all inputs with pull-up resistor</b></font></td>
+								<td align="center" nowrap bgcolor="white" width=80><b><font size="-2">101435</font></b></td>
+								<td align="center" nowrap bgcolor="white" width=100><b><font size="-2"> </font></b></td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="#dfdfdf" width=220>
+									<p><font size="-2"><b>Opto Trigger IV DS Pull-Down</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=200><b><font size="-2">4 differential (Pin 11, 13 of Port A+B )</font></b>
+									<div align="center">
+										<p><font size="-2" color="black"></font></p>
+									</div>
+								</td>
+								<td align="left" nowrap bgcolor="#dfdfdf" width=200><font size="-2"><b>all inputs with pull-down resistor</b></font></td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=80><b><font size="-2">101437</font></b></td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=100><b><font size="-2"> </font></b></td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="white" width=220>
+									<p><font size="-2"><b>Opto Trigger IV DS/SE Pull-Up</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=200>
+									<div align="center">
+										<p><b><font size="-2">4 single ended (Port A)<br>
+													2 differential (Pin 11, 13 of Port B )</font></b></p>
+									</div>
+								</td>
+								<td align="left" nowrap bgcolor="white" width=200><font size="-2"><b>all inputs with pull-up resistor</b></font></td>
+								<td align="center" nowrap bgcolor="white" width=80><b><font size="-2">101443</font></b></td>
+								<td align="center" nowrap bgcolor="white" width=100><b><font size="-2">6 inputs in sum</font></b></td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="#dfdfdf" width=220>
+									<p><font size="-2"><b>Opto Trigger IV DS/SE Pull-Down</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=200><b><font size="-2">4 single ended (Port A)<br>
+											 2 differential (Pin 11, 13 of Port B )</font></b>
+									<div align="center">
+										<p><font size="-2" color="black"></font></p>
+									</div>
+								</td>
+								<td align="left" nowrap bgcolor="#dfdfdf" width=200><font size="-2"><b>all inputs with pull-down resistor</b></font></td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=80><b><font size="-2">101444</font></b></td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=100><b><font size="-2">6 inputs in sum</font></b></td>
+							</tr>
+						</table>
+						<p>*The pin numbers are related to the SUB-D15 female plugs on the<i> </i>Opto trigger board. The upper one is called Port A, the lower one Port B (see <a href="#_1">figure below</a>).</p>
+						<p></p>
+						<p><b>For detailed information refer to the following sections, especially <a href="#_8">Section 8</a>.</b></p>
+						<h1></h1>
+						<h1><a id="_0" name="_0"></a><b>Content</b></h1>
+						<h1></h1>
+						<table border="0" cellspacing="2" cellpadding="2">
+							<tr>
+								<td width="35"><b>1</b></td>
+								<td><b>Connector Naming Conventions</b></td>
+								<td><a href="Trigger_opto_mE4.html#_1"><b><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><b>2</b></td>
+								<td><b>Installation</b></td>
+								<td><a href="Trigger_opto_mE4.html#_2"><b><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35">2.1</td>
+								<td>Requirements</td>
+								<td><a href="Trigger_opto_mE4.html#_2.1"><b><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35">2.2</td>
+								<td>Software Installation</td>
+								<td><a href="Trigger_opto_mE4.html#_2.2"><b><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35">2.3</td>
+								<td>Hardware Installation</td>
+								<td><a href="Trigger_opto_mE4.html#_2.3"><b><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><b>3</b></td>
+								<td><b>Functional Description</b></td>
+								<td><a href="Trigger_opto_mE4.html#_3"><b><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35">3.1</td>
+								<td>Overview</td>
+								<td><a href="Trigger_opto_mE4.html#_3.1"><b><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35">3.2</td>
+								<td>Opto Coupling</td>
+								<td><a href="Trigger_opto_mE4.html#_3.2"><b><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35">3.3</td>
+								<td>Output Signals</td>
+								<td><a href="Trigger_opto_mE4.html#_3.3"><b><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35">3.4</td>
+								<td>Input Signals</td>
+								<td><a href="Trigger_opto_mE4.html#_3.4"><b><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35">3.5</td>
+								<td>Multiboard Usage</td>
+								<td><a href="Trigger_opto_mE4.html#_3.5"><b><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><b>4</b></td>
+								<td><b>LED</b></td>
+								<td><a href="Trigger_opto_mE4.html#_4"><b><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><b>5</b></td>
+								<td><b>Timing Characteristics</b></td>
+								<td><a href="Trigger_opto_mE4.html#_5"><b><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35">5.1</td>
+								<td>Outputs</td>
+								<td><a href="Trigger_opto_mE4.html#_5.1"><b><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35">5.2</td>
+								<td>Inputs</td>
+								<td><a href="Trigger_opto_mE4.html#_5.2"><b><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><b>6</b></td>
+								<td><b>Electrical Characteristics</b></td>
+								<td><a href="Trigger_opto_mE4.html#_6"><b><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35">6.1</td>
+								<td>Outputs</td>
+								<td><a href="Trigger_opto_mE4.html#_6.1"><b><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35">6.2</td>
+								<td>Inputs</td>
+								<td><a href="Trigger_opto_mE4.html#_6.2"><b><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><b>7</b></td>
+								<td><b>Pin Configuration</b></td>
+								<td><a href="Trigger_opto_mE4.html#_7"><b><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35">7.1</td>
+								<td>Pin Configuration SUB_D15</td>
+								<td><a href="Trigger_opto_mE4.html#_7.2"><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></a></td>
+							</tr>
+							<tr>
+								<td width="35">7.2</td>
+								<td>Pin Configuration Flat Cable</td>
+								<td><a href="Trigger_opto_mE4.html#_7.2"><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></a></td>
+							</tr>
+							<tr>
+								<td width="35"><b>8</b></td>
+								<td><b>Schematic Drawing</b></td>
+								<td><a href="#_8"><b><img src="../../images/down.jpg" alt="" height="15" width="15" border="0"></b></a></td>
+							</tr>
+						</table>
+						<p><br>
+							<br>
+							<br>
+						</p>
+						<h1><a id="_1" name="_1"></a>1 Connector Naming Conventions</h1>
+						<p><img width=318 height=449 src="../../images/trigger_opto_mE4/opto_mE4_connectors.jpg"></p>
+						<p>&nbsp;</p>
+						<table border=1 cellspacing=0 cellpadding=2>
+							<tr>
+								<td align="center" nowrap bgcolor="#2e368f" width=130 valign=top>
+									<p><b><font size="-2" color="white">Module</font></b></p>
+								</td>
+								<td align="center" nowrap bgcolor="#2e368f" width=170 valign=top>
+									<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="#2e368f" width=314 valign=top>
+									<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Function</font></b></font></p>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" nowrap bgcolor="white" width=130 valign=top>
+									<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Trigger Connector A</font></p>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=170 valign=top>
+									<p><font size="-2" color="black">SUB-D15 female</font></p>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=314 valign=top>
+									<p><font size="-2" color="black">Port A Input and Output of up to four signals each</font></p>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=130 valign=top>
+									<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Trigger Connector B</font></p>
+								</td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=170 valign=top>
+									<p><font size="-2" color="black">SUB-D15 female</font></p>
+								</td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=314 valign=top>
+									<p><font size="-2" color="black">Port B Input and Output of up to four signals each</font></p>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" nowrap bgcolor="white" width=130 valign=top>
+									<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Flat Cable</font></p>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=170 valign=top>
+									<p><font size="-2" color="black">34-pin Flat Cable Connector</font></p>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=314 valign=top>
+									<p><font size="-2" color="black">Cable connection to frame grabber</font></p>
+								</td>
+							</tr>
+						</table>
+						<div>
+							<div>
+								<p><a href="Trigger_opto_mE4.html#_0"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+									<br>
+									<br>
+								</p>
+							</div>
+						</div>
+						<h1><a id="_2" name="_2"></a>2 Installation</h1>
+						<h2><a id="_2.1" name="_2.1"></a><font size="3">2.1 Requirements</font></h2>
+						<ol>
+							<li>One or more microEnable frame grabber(s)<i>, </i>plugged into PCIe slot(s) of the PC.
+							<li>Frame grabber runtime installation.<br>
+								<br>
+							
+							
+							
+						</ol>
+						<h2><a id="_2.2" name="_2.2"></a><font size="3">2.2 Software Installation</font></h2>
+						<p>There is no need to install any other software in order to use the Opto<i> </i>Trigger boards.<br>
+							<br>
+						</p>
+						<h2><a id="_2.3" name="_2.3"></a><font size="3">2.3 Hardware Installation</font></h2>
+						<ol>
+							<li>Plug the Opto trigger board into one of the PC's empty slot brackets.							<li>Connect the flat cable connector of the Opto trigger board to the frame grabber via 34-pin flat cable.							<li>If there are further frame grabbers to connect: Use the flat cable connector of the Opto trigger board to connect to all frame grabbers via multiple-socket 34-pin flat cable.					</ol>
+						<div>
+							<div>
+								<p><a href="Trigger_opto_mE4.html#_0"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+									<br>
+									<br>
+								</p>
+							</div>
+						</div>
+						<h1><a id="_3" name="_3"></a>3 Functional Description</h1>
+						<h2><a id="_3.1" name="_3.1"></a><font size="3">3.1 Overview</font></h2>
+						<div class=Section1>
+							<div class=Section1>
+								<div class=Section1>
+									<p><img width=318 height=449 src="../../images/trigger_opto_mE4/opto_mE4_function.jpg"></p>
+									<p><br>
+										<br>
+									</p>
+								</div>
+							</div>
+							<h2><a id="_3.2" name="_3.2"></a><font size="3">3.2 Opto-Coupling</font></h2>
+						</div>
+						<p>The Opto trigger board allows to connect external electronics to the trigger system of the <i>microEnable </i>frame grabber. All signals are electrically isolated, using high-speed opto-couplers.<br>
+						</p>
+						<p>There are three different power/ground systems on the Opto trigger board. One supplies the signals of the port A connector, another one the signals of the port B connector, and the third one the signals of the flat cable connector. There is no electrical connection between these three power/ground systems.<br>
+						</p>
+						<p>Each of the three power/ground systems may have a different supply voltage. The voltage range lies between 6 and 25.0 Volt. The signal voltage is defined by the supply voltage for both, input and outputs. Refer to <a href="Trigger_opto_mE4.html#_6">section 6</a> for details on the electrical characteristics.</p>
+						<div class=Section1>
+							<div class=Section1>
+								<p><br>
+									<a href="Trigger_opto_mE4.html#_0"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+									<br>
+								</p>
+							</div>
+						</div>
+						<h2><a id="_3.3" name="_3.3"></a><font size="3">3.3 Output&nbsp;Signals</font></h2>
+						<div class=Section1>
+							<p>The Opto trigger board supports eight output signals. These signals are connected to the trigger outputs of the frame grabber. Please refer to the the frame grabber documentation of the frame grabber you are using (<a href="mE4_A-Series.html"><i>microEnable IV A-Series</i></a>, <a href="mE4_V-Series.html"><i>microEnable IV-V Series</i></a>, or <a href="mE5-Series.html"><i>microEnable 5</i></a>) and to the <a href="TriggerSystem/TriggerSystem.html">trigger system</a> documentation.<br>
+							</p>
+							<p>The opto-couplers do not directly connect to the output, but are buffered by MOSFET transistors. These transistors build an easy-to-use open collector driver with a 5 mA static current diode as pull-up. Note that the power must be delivered by the external power source.<br>
+							</p>
+							<p>The polarity of the output signals is NOT inverted.</p>
+							<p>For more information, see section <a href="#_8">8 Schematic Drawing</a>.</p>
+							<p><br>
+								<a href="Trigger_opto_mE4.html#_0"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+							</p>
+						</div>
+						<h2><a id="_3.4" name="_3.4"></a><font size="3">3.4 Input Signals</font></h2>
+						<div class=Section1>
+							<p>The <i>IO-Opto</i> module supports up to eight input signals. These signals are connected to the trigger inputs of the <i>microEnable IV</i> frame grabber. They are intended to trigger image or line acquisition. Please refer to the <a href="mE4_A-Series.html"><i>microEnable IV</i> A-Series documentation</a> or <a href="mE4_V-Series.html"><i>microEnable IV</i> V-Series documentation</a> and to the microEnable IV <a href="TriggerSystem/TriggerSystem.html">trigger system overview</a><br>
+								<br>
+							</p>
+							<p>The input signals are not directly passed to the opto couplers but send to differential comparators. The advantage is that the input accepts low current, voltage driven signals between 6 an 25V. (Input signals can have pull up or a pull down resistor of 10k Ohm)<br>
+							</p>
+							<p>The polarity of the input signals is NOT inverted.<br>
+							</p>
+						</div>
+						<p><a href="Trigger_opto_mE4.html#_0"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+							<br>
+							<br>
+						</p>
+						<h2><a id="_3.5" name="_3.5"></a><font size="3">3.5 Multiboard Usage</font></h2>
+						<div class=Section2>
+							<div>
+								<div>
+									<div class=Section2>
+										<p>In case of multiboard usage, the frame grabber(s) are connected to the Opto trigger board(s) by a specific 34-pin flat cable (see <i>Notes</i> below).  The signals of this cable use open collector drivers. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class=Section1>
+							<div class=Section2>
+								<div>
+									<div>
+										<div class=Section2>
+											<p>This allows to either</p>
+											<ul>
+												<li>use several Opto trigger boards (and TLL trigger boards) at the same time (inputs are wired-ORed), or
+												<li>use the same Opto trigger board with several frame grabbers (outputs are wired-ORed).
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p>Using one Opto trigger board for several frame grabbers makes synchronizing the frame grabbers most easy. By sharing the trigger input lines of the Opto trigger board, all frame grabbers in the PC are accurately synchronized.There is no limit how many  frame grabbers can be connected to one<i> </i>Opto trigger board. However, all connected frame grabbers must be seated in the same PC. Commonly, the Opto trigger board supports all frame grabbers in one PC.</p>
+						<div class=Section1>
+							<p><br>
+							</p>
+						</div>
+						<p>The scheme described above is useful if the acquisition is controlled by an external generator. However, there are applications where no external source is available or desired. In this cases, a master frame grabber needs to synchronize all its slave frame grabbers.</p>
+						<h4><b><u>Important Notes</u></b></h4>
+						<p><b>Note 1:</b> <b>Do NOT connect frame grabbers residing in different PCs.</b></p>
+						<p><b>Note 2</b>: <b>To connect to several frame grabbers, a <i>custom-made single flat cable</i> with a connector for the Opto trigger board and multiple connectors for the frame grabbers must be used. Please contact Silicon Software sales department for ordering information.</b><br>
+						</p>
+						<p><b>Note 3</b>: <b>microEnable IV AD4-CL, microEnable IV AD4-LVDS, and the microEnable IV VD4-CL with implemented I/O option &quot;3.3V TTL (LVTTL) compatible (push/pull)&quot; DO NOT allow the</b><b> connection of two or more microEnable IV frame grabbers via the flat cable!!</b></p>
+						<p><a href="Trigger_opto_mE4.html#_0"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+							<br>
+							<br>
+						</p>
+						<div class=Section1>
+							<h1><a id="_4" name="_4"></a>4 LED</h1>
+							<div class=Section1>
+								<table border=1 cellspacing=0 cellpadding=2>
+									<tr>
+										<td align="center" nowrap bgcolor="#2e368f" width=130 valign=top>
+											<p><b><font size="-2" color="white">LED</font></b></p>
+										</td>
+										<td align="center" nowrap bgcolor="#2e368f" width=170 valign=top>
+											<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></p>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" nowrap bgcolor="white" width=130 valign=top>
+											<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Port A</font></p>
+										</td>
+										<td align="center" nowrap bgcolor="white" width=170 valign=top>
+											<p><font size="-2" color="black">Check for power on port A</font></p>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" nowrap bgcolor="#dfdfdf" width=130 valign=top>
+											<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Port B</font></p>
+										</td>
+										<td align="center" nowrap bgcolor="#dfdfdf" width=170 valign=top>
+											<p><font size="-2" color="black">Check for power on port B</font></p>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" nowrap bgcolor="white" width=130 valign=top>
+											<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Power</font></p>
+										</td>
+										<td align="center" nowrap bgcolor="white" width=170 valign=top>
+											<p><font size="-2" color="black">Check for power on board from PC</font></p>
+										</td>
+									</tr>
+								</table>
+								<p><a href="Trigger_opto_mE4.html#_0"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+									<br>
+									<br>
+								</p>
+							</div>
+						</div>
+						<h1><a id="_5" name="_5"></a>5 Timing Characteristics</h1>
+						<h2><a id="_5.1" name="_5.1"></a><font size="3">5.1 Outputs</font></h2>
+						<p>&nbsp;</p>
+						<table border=1 cellspacing=0 cellpadding=2 width=388>
+							<tr>
+								<td align="left" nowrap bgcolor="#2e368f" width=240>
+									<p><font size="-2" color="white">&nbsp;</font></p>
+								</td>
+								<td align="center" nowrap bgcolor="#2e368f" width=66>
+									<div align="center">
+										<p><b><font size="-2" color="white">Typ</font></b></p>
+									</div>
+								</td>
+								<td align="center" nowrap bgcolor="#2e368f" width=60>
+									<p><b><font size="-2" color="white">Unit</font></b></p>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="white" width=240>
+									<p><font size="-2"><b>Delay High / Low Transition (50% - 50%)</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=66>
+									<div align="center">
+										<p><font size="-2" color="black">240&nbsp;</font></p>
+									</div>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=60>
+									<p><font size="-2" color="black">ns</font></p>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="#dfdfdf" width=240>
+									<p><font size="-2"><b>Fall Time (90% - 10%)</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=66>
+									<div align="center">
+										<p><font size="-2" color="black">90</font></p>
+									</div>
+								</td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=60>
+									<p><font size="-2" color="black">ns</font></p>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="white" width=240>
+									<p><font size="-2"><b>Delay Low / High Transition (6 V) (50% - 50%)</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=66>
+									<div align="center">
+										<p><font size="-2" color="black">&nbsp;140</font></p>
+									</div>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=60>
+									<p><font size="-2" color="black">ns</font></p>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="#dfdfdf" width=240>
+									<p><font size="-2"><b>Rise Time (6 V) (10% - 90%)</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=66>
+									<div align="center">
+										<p><font size="-2" color="black">&nbsp;50</font></p>
+									</div>
+								</td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=60>
+									<p><font size="-2" color="black">ns</font></p>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="white" width=240>
+									<p><font size="-2"><b>Delay Low / High Transition (12V) (50% - 50%)</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=66>
+									<div align="center">
+										<p><font size="-2" color="black">&nbsp;180</font></p>
+									</div>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=60>
+									<p><font size="-2" color="black">ns</font></p>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="#dfdfdf" width=240>
+									<p><font size="-2"><b>Rise Time (12V) (10% - 90%)</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=66>
+									<div align="center">
+										<p><font size="-2" color="black">&nbsp;100</font></p>
+									</div>
+								</td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=60>
+									<p><font size="-2" color="black">ns</font></p>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="white" width=240>
+									<p><font size="-2"><b>Delay Low / High Transition (24 V) (50% - 50%)</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=66>
+									<div align="center">
+										<p><font size="-2" color="black">&nbsp;250</font></p>
+									</div>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=60>
+									<p><font size="-2" color="black">ns</font></p>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="#dfdfdf" width=240>
+									<p><font size="-2"><b>Rise Time (24 V) (10% - 90%)</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=66>
+									<div align="center">
+										<p><font size="-2" color="black">&nbsp;250</font></p>
+									</div>
+								</td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=60>
+									<p><font size="-2" color="black">ns</font></p>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="white" width=240>
+									<p><font size="-2"><b>min. Pulse Width</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=66>
+									<div align="center">
+										<p><font size="-2" color="black">&nbsp;500</font></p>
+									</div>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=60>
+									<p><font size="-2" color="black">ns</font></p>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="#dfdfdf" width=240>
+									<p><font size="-2"><b>max. Frequency (50% duty cycle)</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=66>
+									<div align="center">
+										<p><font size="-2" color="black">&nbsp;1.0</font></p>
+									</div>
+								</td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=60>
+									<p><font size="-2" color="black">MHz</font></p>
+								</td>
+							</tr>
+						</table>
+						<div>
+							<div>
+								<p>Due to the use of a static current diode as pull-up of the output signal, there is a static rise time that leads to different low-high transition delays for different voltages. The delay time is measured from/to 50 % of the signal level.</p>
+								<p><a href="Trigger_opto_mE4.html#_0"><img src="../../images/up.jpg" alt="" height="15" width="16" align="right" border="0"></a><br>
+									<br>
+									<br>
+								</p>
+							</div>
+						</div>
+						<h2><a id="_5.2" name="_5.2"></a><font size="3">5.2 Inputs</font></h2>
+						<p></p>
+						<table border=1 cellspacing=0 cellpadding=2 width=388>
+							<tr>
+								<td align="left" nowrap bgcolor="#2e368f" width=240>
+									<p><font size="-2" color="white">&nbsp;</font></p>
+								</td>
+								<td align="center" nowrap bgcolor="#2e368f" width=66>
+									<div align="center">
+										<p><b><font size="-2" color="white">Typ</font></b></p>
+									</div>
+								</td>
+								<td align="center" nowrap bgcolor="#2e368f" width=60>
+									<p><b><font size="-2" color="white">Unit</font></b></p>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="white" width=240>
+									<p><font size="-2"><b>Delay High / Low Transition</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=66>
+									<div align="center">
+										<p><font size="-2" color="black">240&nbsp;</font></p>
+									</div>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=60>
+									<p><font size="-2" color="black">ns</font></p>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="#dfdfdf" width=240>
+									<p><font size="-2"><b>Delay Low / High Transition (6 V)</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=66>
+									<div align="center">
+										<p><font size="-2" color="black">140</font></p>
+									</div>
+								</td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=60>
+									<p><font size="-2" color="black">ns</font></p>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="white" width=240>
+									<p><font size="-2"><b>Delay Low / High Transition (12V)</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=66>
+									<div align="center">
+										<p><font size="-2" color="black">180</font></p>
+									</div>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=60>
+									<p><font size="-2" color="black">ns</font></p>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="#dfdfdf" width=240>
+									<p><font size="-2"><b>Delay Low / High Transition (24 V)</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=66>
+									<div align="center">
+										<p><font size="-2" color="black">250</font></p>
+									</div>
+								</td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=60>
+									<p><font size="-2" color="black">ns</font></p>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="white" width=240>
+									<p><font size="-2"><b>min. Pulse Width</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=66>
+									<div align="center">
+										<p><font size="-2" color="black">500</font></p>
+									</div>
+								</td>
+								<td align="center" nowrap bgcolor="white" width=60>
+									<p><font size="-2" color="black">ns</font></p>
+								</td>
+							</tr>
+							<tr>
+								<td align="left" nowrap bgcolor="#dfdfdf" width=240>
+									<p><font size="-2"><b>max. Frequency (50% duty cycle)</b></font></p>
+								</td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=66>
+									<div align="center">
+										<p><font size="-2" color="black">1.0</font></p>
+									</div>
+								</td>
+								<td align="center" nowrap bgcolor="#dfdfdf" width=60>
+									<p><font size="-2" color="black">MHz</font></p>
+								</td>
+							</tr>
+						</table>
+						<div>
+							<div>
+								<p>For this measurement, the output signals generated by an Opto trigger board have been used as signal source. Voltage dependance of low-high transition delay is because of the voltage dependant rise time of the signal.</p>
+								<p><a href="Trigger_opto_mE4.html#_0"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+									<br>
+									<br>
+								</p>
+							</div>
+						</div>
+						<h1><a id="_6" name="_6"></a>6 Electrical Characteristics</h1>
+						<div class=Section1>
+							<h2><a id="_6.1" name="_6.1"></a><font size="3">6.1 Outputs</font></h2>
+							<p></p>
+							<table border=1 cellspacing=0 cellpadding=2 width=520>
+								<tr>
+									<td align="left" nowrap bgcolor="#2e368f" width=240>
+										<p><font size="-2" color="white">&nbsp;</font></p>
+									</td>
+									<td align="center" nowrap bgcolor="#2e368f" width=66>
+										<div align="center">
+											<p><b><font size="-2" color="white">Min</font></b></p>
+										</div>
+									</td>
+									<td align="center" nowrap bgcolor="#2e368f" width=60><b><font size="-2" color="white">Typ</font></b></td>
+									<td align="center" nowrap bgcolor="#2e368f" width=60><b><font size="-2" color="white">Max</font></b></td>
+									<td align="center" nowrap bgcolor="#2e368f" width=60>
+										<p><b><font size="-2" color="white">Unit</font></b></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" nowrap bgcolor="white" width=240>
+										<p><font size="-2"><b>Supply Voltage (max.Supply Current per port*)</b></font></p>
+									</td>
+									<td align="center" nowrap bgcolor="white" width=66>
+										<div align="center">
+											<p><font size="-2" color="black">4.5 (150 mA)</font></p>
+										</div>
+									</td>
+									<td align="center" nowrap bgcolor="white" width=60> </td>
+									<td align="center" nowrap bgcolor="white" width=60><font size="-2">25 (75 mA)</font></td>
+									<td align="center" nowrap bgcolor="white" width=60>
+										<p><font size="-2" color="black">V</font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" nowrap bgcolor="#dfdfdf" width=240>
+										<p><font size="-2"><b>Output Signal Voltage High</b></font></p>
+									</td>
+									<td align="center" nowrap bgcolor="#dfdfdf" width=66> 
+										<div align="center">
+											<p><font size="-2" color="black"></font></p>
+										</div>
+									</td>
+									<td align="center" nowrap bgcolor="#dfdfdf" width=60><font size="-2">80-90% Supply Voltage</font></td>
+									<td align="center" nowrap bgcolor="#dfdfdf" width=60> <font size="-2"></font></td>
+									<td align="center" nowrap bgcolor="#dfdfdf" width=60>
+										<p><font size="-2" color="black">V</font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" nowrap bgcolor="white" width=240>
+										<p><font size="-2"><b>Output Signal Voltage Low</b></font></p>
+									</td>
+									<td align="center" nowrap bgcolor="white" width=66>
+										<div align="center">
+											<p> </p>
+										</div>
+									</td>
+									<td align="center" nowrap bgcolor="white" width=60> </td>
+									<td align="center" nowrap bgcolor="white" width=60><font size="-2">0.3</font></td>
+									<td align="center" nowrap bgcolor="white" width=60>
+										<p><font size="-2" color="black">V</font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" nowrap bgcolor="#dfdfdf" width=240>
+										<p><font size="-2"><b>Output Current</b></font></p>
+									</td>
+									<td align="center" nowrap bgcolor="#dfdfdf" width=66> 
+										<div align="center">
+											<p><font size="-2" color="black"></font></p>
+										</div>
+									</td>
+									<td align="center" nowrap bgcolor="#dfdfdf" width=60><font size="-2">5</font></td>
+									<td align="center" nowrap bgcolor="#dfdfdf" width=60> <font size="-2"></font></td>
+									<td align="center" nowrap bgcolor="#dfdfdf" width=60>
+										<p><font size="-2" color="black">mA (per channel)</font></p>
+									</td>
+								</tr>
+							</table>
+							<div>
+								<div>
+									<div class=Section1>
+										<div class=Section1>
+											<div class=Section1>
+												<div class=Section1>
+													<div>
+														<div>
+															<p>Hardware Revision V1.2 or less (SN less than D4290034): Minimum supply voltage is 6 V.</p>
+															<div class=Section1>
+																<div class=Section1>
+																	<div class=Section1>
+																		<div class=Section1>
+																			<div>
+																				<div>
+																					<p>* Supply current depends on number of input and outputs, signal and voltage level.<a href="Trigger_opto_mE4.html#_0"><img src="../../images/up.jpg" alt="" height="15" width="16" align="right" border="0"></a> The numbers in the table reflect the worst case scenario: 4 inputs and 4 outputs with low signal levels.<br>
+																						<br>
+																						<br>
+																					</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<h2><a id="_6.2" name="_6.2"></a><font size="3">6.2 Inputs</font></h2>
+							<p>&nbsp;</p>
+							<div class=Section1>
+								<div class=Section1>
+									<table border=1 cellspacing=0 cellpadding=2 width=520>
+										<tr>
+											<td align="left" nowrap bgcolor="#2e368f" width=240>
+												<p><font size="-2" color="white">&nbsp;</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#2e368f" width=66>
+												<div align="center">
+													<p><b><font size="-2" color="white">Min</font></b></p>
+												</div>
+											</td>
+											<td align="center" nowrap bgcolor="#2e368f" width=60><b><font size="-2" color="white">Typ</font></b></td>
+											<td align="center" nowrap bgcolor="#2e368f" width=60><b><font size="-2" color="white">Max</font></b></td>
+											<td align="center" nowrap bgcolor="#2e368f" width=60>
+												<p><b><font size="-2" color="white">Unit</font></b></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="left" nowrap bgcolor="white" width=240>
+												<p><font size="-2"><b>Supply Voltage</b></font></p>
+											</td>
+											<td align="center" nowrap bgcolor="white" width=66>
+												<div align="center">
+													<p><font size="-2" color="black">4.5</font></p>
+												</div>
+											</td>
+											<td align="center" nowrap bgcolor="white" width=60> </td>
+											<td align="center" nowrap bgcolor="white" width=60><font size="-2">25</font></td>
+											<td align="center" nowrap bgcolor="white" width=60>
+												<p><font size="-2" color="black">V</font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="left" nowrap bgcolor="#dfdfdf" width=240>
+												<p><font size="-2"><b>Input Signal Voltage High</b></font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=66> 
+												<div align="center">
+													<p><font size="-2" color="black"></font></p>
+												</div>
+											</td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=60><font size="-2">&gt; 20% Supply Voltage</font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=60> <font size="-2"></font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=60>
+												<p><font size="-2" color="black">V</font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="left" nowrap bgcolor="white" width=240>
+												<p><font size="-2"><b>Input Signal Voltage Low</b></font></p>
+											</td>
+											<td align="center" nowrap bgcolor="white" width=66>
+												<div align="center">
+													<p> </p>
+												</div>
+											</td>
+											<td align="center" nowrap bgcolor="white" width=60><font size="-2">&lt; 20% Supply Voltage</font></td>
+											<td align="center" nowrap bgcolor="white" width=60> </td>
+											<td align="center" nowrap bgcolor="white" width=60>
+												<p><font size="-2" color="black">V</font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="left" nowrap bgcolor="#dfdfdf" width=240>
+												<p><font size="-2"><b>Input Supply Current</b></font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=66> 
+												<div align="center">
+													<p><font size="-2" color="black"></font></p>
+												</div>
+											</td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=60> </td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=60><font size="-2">5</font><font size="-2"></font></td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=60>
+												<p><font size="-2" color="black">mA (per channel)</font></p>
+											</td>
+										</tr>
+									</table>
+									<div>
+										<div>
+											<p>Hardware Revision V1.2 or less (SN less than D4290034): Minimum supply voltage is 6 V.</p>
+											<div class=Section1>
+												<div class=Section1>
+													<div class=Section1>
+														<div class=Section1>
+															<div>
+																<div>
+																	<p>Hardware Revision V1.3 or less: 4.7 kOhm pull-up at inputs.</p>
+																	<p>Hardware Revision V1.4: 10 kOhm pull-up, or 10 kOhm pull-down at inputs, see  section <a href="#_a">Available Opto Trigger Boards</a>.</p>
+																	<div class=Section1>
+																		<div class=Section1>
+																			<div class=Section1>
+																				<div class=Section1>
+																					<div>
+																						<div>
+																							<div class=Section1>
+																								<div class=Section1>
+																									<div class=Section1>
+																										<div class=Section1>
+																											<div>
+																												<div>
+																													<p></p>
+																													<p><b>Important Note:</b></p>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<p><b>The opto trigger board has been designed with a varistor which opens at an input voltage of 30V to let the onboard surge protector get active to protect the board. At a total supply voltage of 36V, the electronic chips will become defective.</b></p>
+											<p><a href="Trigger_opto_mE4.html#_0"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+												<b><br>
+												</b><b><br>
+												</b></p>
+											<div class=Section1>
+												<div class=Section1>
+													<div>
+														<div></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<h1><a id="_7" name="_7"></a>7 Pin Configuration</h1>
+							<h2><a id="_7.1" name="_7.1"></a><font size="3">7.1 Pin Configuration SUB-D15</font></h2>
+						</div>
+						<div class=Section1></div>
+						<h1>&nbsp;</h1>
+						<p><img width=350 height=171 src="../../images/trigger_opto_mE4/opto_mE4_subd15.jpg"></p>
+						<div>
+							<div>
+								<div class=Section2>
+									<p>There are two SUB-D15 female plugs on the<i> </i>Opto trigger board. The upper one is called Port A, the lower one Port B (see the figure in section <a href="#_1">Connector Naming Conventions</a>).</p>
+									<p>&nbsp;</p>
+									<table border=1 cellspacing=0 cellpadding=2>
+										<tr>
+											<td align="center" nowrap bgcolor="#2e368f" width=44>
+												<p><b><font size="-2" color="white">&nbsp;</font></b></p>
+											</td>
+											<td align="center" nowrap bgcolor="#2e368f" width=227>
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">SUB-D15 Port A</font></b></font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#2e368f" width=227>
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">SUB-D15 Port B</font></b></font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#7689c4" width=44>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>Pin #</b></font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#7689c4" width=227>
+												<p><font size="-2" color="black"><b>Signal Name</b></font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#7689c4" width=227>
+												<p><font size="-2" color="black"><b>Signal Name</b></font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=44>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">1</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="white" width=227>
+												<p><font size="-2"><b>Trigger Output 0 Port A</b><br>
+														<i>Flash Signa</i>l<br>
+													</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="white" width=227>
+												<p><font size="-2"><b>Trigger Output 4 Port B</b><br>
+														<i>Flash Signa</i>l<br>
+													</font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=44>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">2</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=227>
+												<p><font size="-2"><b>Trigger Output 1 Port A </b><br>
+														<i>For Area Cameras: Image Trigger (Ex Sync)<br>
+															For Line Cameras: Line Trigger (ExSync2)</i></font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=227>
+												<p><font size="-2"><b>Trigger Output 5 Port B </b><br>
+														<i>For Area Cameras: Image Trigger (Ex Sync)<br>
+															For Line Cameras: Line Trigger (ExSync2)</i></font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=44>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">3</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="white" width=227>
+												<p><font size="-2"><b>Trigger Output 2 Port A</b><br>
+														<i>For Area Cameras: HD Sync<br>
+															For Line Cameras: Line Trigger Line(Ex Sync)</i></font></p>
+											</td>
+											<td align="center" nowrap bgcolor="white" width=227>
+												<p><font size="-2"><b>Trigger Output 6 Port B</b><br>
+														<i>For Area Cameras: HD Sync<br>
+															For Line Cameras: Line Trigger Line(Ex Sync)</i></font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=44>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">4</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=227>
+												<p><font size="-2"><b>Trigger Output 3 Port A</b><br>
+														<i>User Output (DigitalOut Bit#0)</i></font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=227>
+												<p><font size="-2"><b>Trigger Output 7 Port B</b><br>
+														<i>User Output (DigitalOut Bit#0)</i></font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=44>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">5</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="white" width=227>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">V_IN (VCC Input)</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="white" width=227>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">V_IN (VCC Input)</font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=44>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">6</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=227>
+												<p><font size="-2" color="black">GND</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=227>
+												<p><font size="-2" color="black">GND</font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=44>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">7</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="white" width=227>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">nc</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="white" width=227>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">nc</font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=44>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">8</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=227>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">nc</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=227>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">nc</font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=44>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">9</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="white" width=227>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">nc</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="white" width=227>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">nc</font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=44>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">10</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=227>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">V_IN (VCC Input)</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=227>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">V_IN (VCC Input)</font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=44>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">11</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="white" width=227>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>Trigger Input 0 Port A</b></font></p>
+											</td>
+											<td align="center" nowrap bgcolor="white" width=227>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>Trigger Input 4 Port B</b></font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=44>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">12</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=227>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>Trigger Input 1 Port A</b></font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=227>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>Trigger Input 5 Port B</b></font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=44>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">13</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="white" width=227>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>Trigger Input 2 Port A</b></font></p>
+											</td>
+											<td align="center" nowrap bgcolor="white" width=227>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>Trigger Input 6 Port B</b></font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=44>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">14</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=227>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>Trigger Input 3 Port A</b></font></p>
+											</td>
+											<td align="center" nowrap bgcolor="#dfdfdf" width=227>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>Trigger Input 7 Port B</b></font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="center" nowrap bgcolor="white" width=44>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">15</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="white" width=227>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">GND</font></p>
+											</td>
+											<td align="center" nowrap bgcolor="white" width=227>
+												<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">GND</font></p>
+											</td>
+										</tr>
+									</table>
+									<p><b>Connector</b>: SUB-D15 female (Port A and B)</p>
+								</div>
+								<p><a href="Trigger_opto_mE4.html#_0"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+									<br>
+									<br>
+								</p>
+							</div>
+						</div>
+						<h1><a id="_7.2" name="_7.2"></a>7.2 Pin Configuration Flat Cable</h1>
+						<div class=Section2>
+							<div>
+								<div>
+									<div class=Section2>
+										<p>The 34-pin flat cable connector links the Opto trigger board to the frame grabber.</p>
+										<table border=1 cellspacing=0 cellpadding=2>
+											<tr>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">1</font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black"><b>Trigger Output 0 Port A</b></font><br>
+													<font size="-2" color="black"><i>Flash Signal</i></font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">+3.3V</font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">2</font></td>
+											</tr>
+											<tr>
+												<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">3</font></td>
+												<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black"><b>Trigger Output 1 Port A</b></font><br>
+													<font size="-2" color="black"><i>For Area Cameras: Image Trigger (ExSync)</i></font><br>
+													<font size="-2" color="black"><i>For Line Cameras: Line Trigger (ExSync2)</i></font></td>
+												<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black">+3.3V</font></td>
+												<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">4</font></td>
+											</tr>
+											<tr>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">5</font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black"><b>Trigger Output 2 Port A</b></font><br>
+													<font size="-2" color="black"><i>For Area Cameras: HD Sync</i></font><br>
+													<font size="-2" color="black"><i>For Line Cameras: Line Trigger (ExSync)</i></font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">GND</font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">6</font></td>
+											</tr>
+											<tr>
+												<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">7</font></td>
+												<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black"><b>Trigger Output 3 Port A</b></font><br>
+													<font size="-2" color="black"><i>User Output (Digital Out Bit #0)</i></font></td>
+												<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">GND</font></td>
+												<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">8</font></td>
+											</tr>
+											<tr>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">9</font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>Trigger Input 0 Port A</b></font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">GND</font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">10</font></td>
+											</tr>
+											<tr>
+												<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">11</font></td>
+												<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black"><b>Trigger Input 1 Port A</b></font></td>
+												<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black">GND</font></td>
+												<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">12</font></td>
+											</tr>
+											<tr>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">13</font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>Trigger Input 2 Port A</b></font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">GND</font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">14</font></td>
+											</tr>
+											<tr>
+												<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">15</font></td>
+												<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>Trigger Input 3 Port A</b></font></td>
+												<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">GND</font></td>
+												<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">16</font></td>
+											</tr>
+											<tr>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">17</font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black"><b>Trigger Output 4 Port B</b></font><br>
+													<font size="-2" color="black"><i>Flash Signal</i></font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">GND</font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">18</font></td>
+											</tr>
+											<tr>
+												<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">19</font></td>
+												<td align="center" nowrap bgcolor="white" width=244 valign=top>
+													<p><font size="-2" color="black"><b>Trigger Output 5 Port B</b></font><br>
+														<font size="-2" color="black"><i>For Area Cameras: Image Trigger (ExSync)</i></font><br>
+														<font size="-2" color="black"><i>For Line Cameras: Line Trigger (ExSync2)</i></font></p>
+												</td>
+												<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">GND</font></td>
+												<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">20</font></td>
+											</tr>
+											<tr>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">21</font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black"><b>Trigger Output 6 Port B</b></font><br>
+													<font size="-2" color="black"><i>For Area Cameras: HD Sync</i></font><br>
+													<font size="-2" color="black"><i>For Line Cameras: Line Trigger (ExSync)</i></font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">GND</font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">22</font></td>
+											</tr>
+											<tr>
+												<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">23</font></td>
+												<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black"><b>Trigger Output 7 Port B</b></font><br>
+													<font size="-2" color="black"><i>User Output (Digital Out Bit #1)</i></font></td>
+												<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">GND</font></td>
+												<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">24</font></td>
+											</tr>
+											<tr>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">25</font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black"><b>Trigger Input 4 Port B</b></font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">GND</font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">26</font></td>
+											</tr>
+											<tr>
+												<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">27</font></td>
+												<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>Trigger Input 5 Port B</b></font></td>
+												<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black">GND</font></td>
+												<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">28</font></td>
+											</tr>
+											<tr>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">29</font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>Trigger Input 6 Port B</b></font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">GND</font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">30</font></td>
+											</tr>
+											<tr>
+												<td align="center" nowrap bgcolor="white" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">31</font></td>
+												<td align="center" nowrap bgcolor="white" width=244 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>Trigger Input 7 Port B</b></font></td>
+												<td align="center" nowrap bgcolor="white" width=247 valign=top><font size="-2" color="black">VCCIO (+2.5V / +3.3V)</font></td>
+												<td align="center" nowrap bgcolor="white" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">32</font></td>
+											</tr>
+											<tr>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=39 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">33</font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=244 valign=top><font size="-2" color="black">Presence Detect</font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=247 valign=top><font size="-2" color="black">VCCIO (+2.5V / +3.3V)</font></td>
+												<td align="center" nowrap bgcolor="#dfdfdf" width=38 valign=top><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">34</font></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class=Section2>
+							<p><i><b>Connector</b>: Flat cable (34 pin)</i></p>
+							<p><i>Signals are driven by open-collector drivers, pull-ups are on-board.</i></p>
+							<p><br>
+								<br>
+								<br>
+							</p>
+							<h1><a id="_8" name="_8"></a>8 Schematic Drawing</h1>
+							<br>
+							<h3>Input circuit (2 times the following circuit, Trigger Input 0..3 (Port A) and Trigger Input 4-7 (Port B) )</h3>V_IN und GND_IN are galvanically isolated from the PC:<br>
+							<br>
+							<p></p>
+							<h1><img src="../../images/trigger_opto_mE4/opto_me4_schematic_input.jpg" alt="" height="681" width="628" border="0"></h1>
+							<h1></h1>
+							<h1></h1>
+							<h3>Output circuit</h3>
+							V_IN und GND_IN are galvanically isolated from the PC:<br>
+							<br>
+							<img src="../../images/trigger_opto_mE4/opto_me4_schematic_output.jpg" alt="" height="310" width="693" border="0"></div>
+						<div class=Section1>
+							<div>
+								<div>
+									<p><a href="Trigger_opto_mE4.html#_0"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+										<br>
+										<br>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" height="20">
+						<table>
+						<tr>
+								<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+								<div align="center">
+									<a title="Index" href="../index.html">Back to Documentation Index <img src="../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+							</td>
+								<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+					</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="left" valign="top"><img src="../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+		</body>
+</html>
+
+
+

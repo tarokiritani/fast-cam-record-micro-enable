@@ -1,0 +1,530 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<title>Silicon Software - Runtime 5 - GigE Explorer</title>
+					<link href="../../lib/siso.css" rel="stylesheet" media="screen">
+					<link href="../../lib/siso.ico" rel="shortcut icon">
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="3" align="left" valign="bottom"><img src="../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"><img src="../../images/pixel.png" alt="" height="20" width="60" border="0"></td>
+					<td bgcolor="white" width="30" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" height="20"></td>
+				</tr>
+				<tr height="1147">
+				<td bgcolor="white" width="60" height="1147"></td>
+				<td colspan="2" bgcolor="white" height="1147">
+					<h1>GenICam Explorer<br>
+						<br>
+					</h1>
+					<h1>The Silicon Software Tool for Camera Control and Camera Configuration<br>
+					</h1>
+					<h1></h1>
+					<div>
+						<h1><a id="_top" name="_top"></a>Content</h1>
+						<p>&nbsp;</p>
+						<table border="0" cellspacing="2" cellpadding="2">
+							<tr>
+								<td width="35"><b>1</b></td>
+								<td><b>Overview</b></td>
+								<td><a href="GenICamExplorer.html#_1"><b><img src="../../images/down.jpg" alt="" height="16" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><b><font size="1">1.1</font></b></td>
+								<td><b><font size="1">System Requirements</font></b></td>
+								<td><a href="GenICamExplorer.html#_1.1"><b><img src="../../images/down.jpg" alt="" height="16" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><b>2</b></td>
+								<td><b>GenICam Explorer with GigE Vision</b></td>
+								<td><a href="GenICamExplorer.html#_2"><b><img src="../../images/down.jpg" alt="" height="16" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><font size="1">2.1</font></td>
+								<td><b><font size="1">Configuring the GenICam Parameters of the Camera</font></b></td>
+								<td><a href="GenICamExplorer.html#_2.1"><b><img src="../../images/down.jpg" alt="" height="16" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><font size="1">2.2</font></td>
+								<td><b><font size="1">Saving a Particular Camera Configuration</font></b></td>
+								<td><a href="GenICamExplorer.html#_2.2"><b><img src="../../images/down.jpg" alt="" height="16" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><b><font size="1">2.3</font></b></td>
+								<td><font size="1"><b>Setting Timeout and Number of Retries for CAM&nbsp;Communication</b></font></td>
+								<td><a href="GenICamExplorer.html#_2.3"><b><img src="../../images/down.jpg" alt="" height="16" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><b><font size="1">2.4</font></b></td>
+								<td><b><font size="1">Configuring the Link Topology</font></b></td>
+								<td><a href="GenICamExplorer.html#_2.4"><b><img src="../../images/down.jpg" alt="" height="16" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><b><font size="1">2.5</font></b></td>
+								<td><b><font size="1">Saving a Particular Link Topology Configuration</font></b></td>
+								<td><a href="GenICamExplorer.html#_2.5"><b><img src="../../images/down.jpg" alt="" height="16" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><font size="1">2.6</font></td>
+								<td><b><font size="1">IP Configuration</font></b></td>
+								<td><a href="GenICamExplorer.html#_2.6"><b><img src="../../images/down.jpg" alt="" height="16" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><b>3</b></td>
+								<td><b>GenICam Explorer with CoaXPress</b></td>
+								<td><a href="GenICamExplorer.html#_3"><b><img src="../../images/down.jpg" alt="" height="16" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><font size="1">3.1</font></td>
+								<td><b><font size="1">Automatic Actions at Program Start</font></b></td>
+								<td><a href="GenICamExplorer.html#_3.1"><b><img src="../../images/down.jpg" alt="" height="16" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><font size="1">3.2</font></td>
+								<td><b><font size="1">Configuring the GenICam Parameters of the Camera</font></b></td>
+								<td><a href="GenICamExplorer.html#_3.2"><b><img src="../../images/down.jpg" alt="" height="16" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><b><font size="1">3.3</font></b></td>
+								<td><b><font size="1">Saving a Particular Camera Configuration</font></b></td>
+								<td><a href="GenICamExplorer.html#_3.3"><b><img src="../../images/down.jpg" alt="" height="16" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><b><font size="1">3.4</font></b></td>
+								<td><b><font size="1">Configuring the Link Topology</font></b></td>
+								<td><a href="GenICamExplorer.html#_3.4"><b><img src="../../images/down.jpg" alt="" height="16" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><b><font size="1">3.5</font></b></td>
+								<td><b><font size="1">Saving a Particular Link Topology Configuration</font></b></td>
+								<td><a href="GenICamExplorer.html#_3.5"><b><img src="../../images/down.jpg" alt="" height="16" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><font size="1">3.6</font></td>
+								<td><b><font size="1">Starting Layout Discovery Manually</font></b></td>
+								<td><a href="GenICamExplorer.html#_3.6"><b><img src="../../images/down.jpg" alt="" height="16" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><font size="1">3.7</font></td>
+								<td><b><font size="1">Re-Starting the Camera Manually</font></b></td>
+								<td><a href="GenICamExplorer.html#_3.7"><b><img src="../../images/down.jpg" alt="" height="16" width="15" border="0"></b></a></td>
+							</tr>
+							<tr>
+								<td width="35"><font size="1">3.8</font></td>
+								<td><b><font size="1">Configuring Program Behaviour at Program Start</font></b></td>
+								<td><a href="GenICamExplorer.html#_3.8"><b><img src="../../images/down.jpg" alt="" height="16" width="15" border="0"></b></a></td>
+							</tr>
+						</table>
+						<p><br>
+						</p>
+					</div>
+					<h1><br>
+					</h1>
+					<h1><a id="_1" name="_1"></a>Overview</h1>
+					<p>The <b><i>GenICam Explorer</i></b> is a GUI tool for communication with GigE Vision and&nbsp;CoaXPress cameras. The <b><i>GenICam Explorer </i></b>provides direct access to the GenICam interface of the camera.</p>
+					<p>Using the <b><i>GenICam Explorer, </i></b>you can</p>
+					<ul>
+						<li>adjust your camera settings via a graphical user interface.
+						<li>configure the link topology of your vision system.
+						<li>save defined settings for later re-use.
+					</ul>
+					<p>The <b><i>GenICam Explorer</i></b> comes as part of the runtime installation. Once you have installed your runtime, you can start the GenICam Explorer. The <b><i>GenICam Explorer</i></b> supports all cameras with CoaXPress or GigE Vision interface.<br>
+					</p>
+					<div align="left">
+						<div align="left">
+							<p><a href="GenICamExplorer.html#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+							</p>
+						</div>
+					</div>
+					<h3><b><a id="_1.1" name="_1.1"></a>System Requirements</b></h3>
+					<p>If you want to access a camera with the GenICam Explorer, make sure that<br>
+					</p>
+					<p>&#x2022; Camera and frame grabber are plugged and powered (camera may be powered by the grabber via power over).<br>
+					</p>
+					<p>&#x2022; The Silicon Software Runtime has been installed.<br>
+						<br>
+					</p>
+					<p><b>Please note:</b> You can run <b><i>GenICam Explorer</i></b> and <i><b>microDisplay</b></i> simultaneously. Since Runtime version 5.2, you can make changes in the GenICam Explorer while an applet is loaded in microDisplay and the acquisition is running.<br>
+					</p>
+					<div align="left">
+						<div align="left">
+							<p><a href="GenICamExplorer.html#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+							</p>
+						</div>
+					</div>
+					<h3>
+					</h3>
+					<h1><a id="_2" name="_2"></a>GenICam Explorer with GigE Vision Cameras</h1>
+					<h3><b><a id="_2.1" name="_2.1"></a>Configuring the GenICam Parameters of the Camera</b></h3>
+					<p>As soon as the GenICam Explorer discovers a camera and connects to the camera, you have direct access to all GenICam Parameters of the Camera.</p>
+					<ol>
+						<li>Start the GenICam Explorer.
+						<p>After being started, the GenICam Explorer automatically discovers physically connected cameras and displays information on these camera(s).</p>
+						<p><img src="../../images/CamDet.jpg" alt="" width="400" border="0"></p>
+						<p>In the upper panel on the left, all frame grabber boards with their link groups are listed. </p>
+						<p>In the bottom panel on the left, all detected cameras are listed. To get information on a certain camera, select the camera in this panel.</p>
+						<li>Click on the<b> Quick Connect</b> button.
+
+						<p>Now, the frame grabber connects to the camera vial its GenICam inferface.</p>
+						<li>Go to the <b>GenICam</b> tab.
+
+						<li>Select our user role: 
+						<p>You can choose between three display modes (right upper corner):&nbsp;Beginner, Expert, and Guru. If you set the display mode to Beginner, you can only see and alter the most important camera settings. In expert mode, most settings are enabled and in guru mode, all possible settings can be seen and adapted.</p>
+						<li>Set all parameters to your needs. You find additional information on each parameter in the right hand bottom panel as soon as you click on the parameter.
+						<li>If you don't see the changes in your settings immediately, click on the <b>Force Update</b> button.
+					</ol>
+					<ol>
+						<br>
+						<img src="../../images/Parameters.jpg" alt="" width="400" border="0">
+					</ol>
+					<p><a href="GenICamExplorer.html#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+					</p>
+					<div align="left">
+						<div align="left"></div>
+					</div>
+					<h3><b><a id="_2.2" name="_2.2"></a>Saving a Particular Camera Configuration</b></h3>
+					<p>You can save the configuration of a camera and re-use this particular configuration later. The configuration parameters are stored in a text file.</p>
+					<p>To save a configuration:</p>
+					<ul>
+						<li>Click on the <b>Dump Parameters... </b>button and define the directory you want to store the configuration file in.
+					</ul>
+					<p>To re-use a configuration:</p>
+					<ul>
+						<li>Click on the <b>Load Parameters... </b>button and select the configuration file you want to use from your system.
+					</ul>
+					<div align="left">
+						<div align="left">
+							<p><a href="GenICamExplorer.html#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+							</p>
+						</div>
+					</div>
+					<h3><b><a id="_2.3" name="_2.3"></a>Setting Timeout and Number of Retries for </b>Communication between Frame Grabber and Camera</h3>
+					<p>To configure the timespan, after which timeout occurs, and the number of retries:</p>
+					<ol>
+						<li>Go to the <b>Connection</b> tab.
+						<li>Click on the <b>Advanced Properties</b> ... button.
+						<li>Adapt timout and number of retries to your requirements.
+					</ol>
+					<p></p>
+					<h3><b><a id="_2.4" name="_2.4"></a>Configuring the Link Topology</b></h3>
+					<p>To adapt the link topology of your vision system to your needs:&nbsp;</p>
+					<ol>
+						<li>Open the GenICam explorer.
+						<li>From the <b>Tools</b> menu, select <b>Hardware</b>.
+
+						<p><img src="../../images/GigE_Explorer/Hardware.jpg" alt="" border="0"></p>
+						<p>The Hardware Setup dialog opens.</p>
+						
+					<p><img src="../../images/GigE_Explorer/Links.jpg" alt="" width="550" border="0"></p>
+					
+						<li>Check if you need to change the link topology.
+						<p>Note: Link No. 0 is the port that is physically placed farthest from the mother board, i.e., the link with the highest number is the port physically closest to the motherboard.
+						<li>Click on the Edit button to edit the link topology.
+						<li>Adapt the parameters to your needs.
+						
+					
+					<p>If you want to use Link Aggregation: In the field <b>Link Groups</b>, specify how many link groups you want to set up. Define which physical links belong to which link group.</p>
+					<p><img src="../../images/GigE_Explorer/Topol.jpg" alt="" width="550" border="0"></p>
+					<li>Click on the <b>Apply</b> button.
+					</ol>
+					<p></p>
+					<div align="left">
+						<div align="left">
+							<p><a href="GenICamExplorer.html#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+							</p>
+						</div>
+					</div>
+					<h3><b><a id="_2.5" name="_2.5"></a>Saving a Particular Link Topology Configuration</b></h3>
+					<p>You can save the configuration of the link topology and re-use this particular configuration later. The configuration parameters are stored in a text file.</p>
+					<p>To save a configuration:</p>
+					<ul>
+						<li>Click on the <b>Save Configuration... </b>button and define the directory you want to store the configuration file in.
+					</ul>
+					<p>To re-use a configuration:</p>
+					<ul>
+						<li>Click on the <b>Load Configuration... </b>button and select the configuration file you want to use from your system.
+
+						<li>
+					</ul>
+					<h3><b><a id="_2.6" name="_2.6"></a>IP Configuration</b></h3>
+					To configure the IP address of your frame grabber, use the options in the Hardware Dialog:
+					<ol>
+						<li>Open the GenICam explorer.
+						<li>From the <b>Tools</b> menu, select <b>Hardware</b>.
+						<li>Adapt the IP configuration to your needs.
+					</ol>
+					<div align="left">
+						<div align="left">
+							<h1><a href="GenICamExplorer.html#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<a id="_3" name="_3"></a>GenICam Explorer with CoaXPress</h1>
+							When working with a CXP camera and frame grabber, the GenICam Explorer discovers connected cameras automatically and provides direct access to the GenICam interface of the camera.</div>
+					</div>
+					<ol>
+						<p><br>
+						</p>
+						<p><img src="../../images/GigE_Explorer/2013-12-16_13h55_05.png" alt="" width="500" border="0"></p>
+						<p><i>GenICam Explorer connected to a CoaXPress camera </i></p>
+						<p><br>
+						</p>
+						<h3><b><a id="_3.1" name="_3.1"></a>Automatic Actions at Program Start</b></h3>
+						<p>As soon as the GenICam Explorer is started,<br>
+						</p>
+						<ul>
+							<li>the start window of the GenICam Explorer opens.<br>
+							<li>the GenICam Explorer starts the automatic camera discovery.<br>
+							<li>the GenICam Explorer connects to the discovered camera.<br>
+							<li>the GenICam Explorer opens a window where you can directly adapt the GenICam parameters of the camera to your needs.<br>
+								<br>
+							
+						</ul>
+						<p>You can define if you want the GenICam Explorer to take all this steps automatically. If you prefer user interaction, you can configure the program behavior (see below).</p>
+						<div align="left">
+							<div align="left">
+								<p><a href="GenICamExplorer.html#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								</p>
+							</div>
+						</div>
+						<h3><b><a id="_3.2" name="_3.2"></a>Configuring the GenICam Parameters of the Camera</b></h3>
+						<p>As soon as the GenICam Explorer discovers a camera and connects to the camera, you have direct access to all GenICam Parameters of the Camera.</p>
+						<ol>
+							<li>Go to the GenICam tab on your program window.
+
+							<li>Select your user role: You can choose between three display modes (right upper corner):&nbsp;Beginner, Expert, and Guru. If you set the display mode to Beginner, you can only see and alter the most important camera settings. In expert mode, most settings are enabled and in guru mode, all possible settings can be seen and adapted.
+							<li>Set all parameters to your needs. You find additional information on each parameter in the right hand bottom panel as soon as you click on the parameter.
+							<li>If you don't see the changes in your settings immediately, click on the <b>Force Update</b> button.
+						</ol>
+						<p><br>
+						</p>
+						<p><img src="../../images/GigE_Explorer/2013-12-16_14h47_13.png" alt="" width="700" border="1"></p>
+						<p></p>
+						<div align="left">
+							<div align="left">
+								<p><a href="GenICamExplorer.html#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								</p>
+							</div>
+						</div>
+						<h3><b><a id="_3.3" name="_3.3"></a>Saving a Particular Camera Configuration</b></h3>
+						<p>You can save the configuration of a camera and re-use this particular configuration later. The configuration parameters are stored in a text file.</p>
+						<p>To save a configuration:</p>
+						<ul>
+							<li>Click on the <b>Save Parameters... </b>button and define the directory you want to store the configuration file in.
+						</ul>
+						<p>To re-use a configuration:</p>
+						<ul>
+							<li>Click on the <b>Load Parameters... </b>button and select the configuration file you want to use from your system.
+						</ul>
+						<p></p>
+						<div align="left">
+							<div align="left">
+								<p><a href="GenICamExplorer.html#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								</p>
+							</div>
+						</div>
+						<h3><b><a id="_3.4" name="_3.4"></a>Configuring the Link Topology</b></h3>
+						<p>To adapt the link topology of your vision system to your needs:&nbsp;</p>
+						<ol>
+							<li>Open the GenICam explorer.
+							<li>From the <b>Tools</b> menu, select <b>Hardware Setup</b>.
+						</ol>
+						<h3><img src="../../images/GigE_Explorer/2013-12-16_14h13_35.png" alt="" width="271" height="161" border="0"></h3>
+						<p>The Hardware Setup dialog opens.</p>
+						<p><img src="../../images/GigE_Explorer/2013-12-16_14h14_16.png" alt="" width="700" border="0"></p>
+						<ol>
+							<li>Check if you need to change the link topology.
+							<li>Click on the Edit button to edit the link topology.
+							<li>Adapt the parameters to your needs.
+							<li>Click on the <b>Apply</b> button.
+						</ol>
+						<p></p>
+						<div align="left">
+							<div align="left">
+								<p><a href="GenICamExplorer.html#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								</p>
+							</div>
+						</div>
+						<h3><b><a id="_3.5" name="_3.5"></a>Saving a Particular Link Topology Configuration</b></h3>
+						<p>You can save the configuration of the link topology and re-use this particular configuration later. The configuration parameters are stored in a text file.</p>
+						<p>To save a configuration:</p>
+						<ul>
+							<li>Click on the <b>Save Configuration... </b>button and define the directory you want to store the configuration file in.
+						</ul>
+						<p>To re-use a configuration:</p>
+						<ul>
+							<li>Click on the <b>Load Configuration... </b>button and select the configuration file you want to use from your system.
+						</ul>
+						<h3></h3>
+						<div align="left">
+							<div align="left">
+								<p><a href="GenICamExplorer.html#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								</p>
+							</div>
+						</div>
+						<h3><b><a id="_3.6" name="_3.6"></a>Starting Layout Discovery Manually</b></h3>
+						<p>If the current link topology cannot be detected or after you changed cable connections, the following message may appear:<br>
+						</p>
+						<p><img src="../../images/GigE_Explorer/2013-12-16_15h22_06.png" alt="" width="400" border="0"></p>
+						<p><br>
+						</p>
+						<p>If this message appears, simply:</p>
+						<ol>
+							<li>Click on <b>Start Full Discovery</b>.<br>
+							
+						</ol>
+						<p>Otherwise (if this message does not appear):</p>
+						<ol>
+							<li>From the <b>Tools</b> menu, select <b>Hardware Setup</b>. The <i>Hardware Setup </i>dialog opens.<br>
+							<li>In the left upper corner, select the frame grabber you are working with.<br>
+							<li>Go to the<i> Link Configuration</i> tab.<br>
+							<li>Click on <b>Restart Layout Discovery</b>.
+							<li>Wait until the process is finished. You get an according message. The current link topology is displayed now.<br>
+							
+						</ol>
+						<p><img src="../../images/GigE_Explorer/2013-12-16_15h29_24.png" alt="" width="709" height="157" border="1"></p>
+						<p><br>
+						</p>
+						<div align="left">
+							<div align="left">
+								<p><a href="GenICamExplorer.html#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								</p>
+							</div>
+						</div>
+						<h3><b><a id="_3.7" name="_3.7"></a>Re-Starting the Camera Manually</b></h3>
+						<p>To restart the camera:&nbsp;</p>
+						<ol>
+							<li>From the <b>Tools</b> menu, select <b>Hardware Setup</b>. The <i>Hardware Setup </i>dialog opens.<br>
+							<li>In the left upper corner, select the frame grabber you are working with.<br>
+							<li>Go to the<i> Link Configuration</i> tab.<br>
+							<li>Click on the<b> Power Cycle</b> button.
+						</ol>
+						<p><br>
+						</p>
+						<div align="left">
+							<div align="left">
+								<p><a href="GenICamExplorer.html#_top"><img src="../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								</p>
+							</div>
+						</div>
+						<h3><b><a id="_3.8" name="_3.8"></a>Configuring Program Behaviour at Program Start</b></h3>
+						<p>To configure the program behavior at program start:<br>
+						</p>
+						<ol>
+							<li>In the <b>File</b> menu, select <b>Preferences</b>.<br>
+							<li>Select the options according to your needs.
+						</ol>
+						<p></p>
+						<p><img src="../../images/GigE_Explorer/2013-12-16_14h36_41.png" alt="" width="300" border="0"></p>
+						<p></p>
+						<p></p>
+						<p></p>
+					</ol>
+				</td>
+			</tr>
+				<tr>
+				<td bgcolor="white" width="60">
+					<p></p>
+				</td>
+				<td bgcolor="white" width="30"></td>
+				<td align="left" valign="top" bgcolor="white">
+					<p></p>
+				</td>
+			</tr>
+				<tr height="30">
+				<td bgcolor="white" width="60" height="30"></td>
+				<td bgcolor="white" width="30" height="30"></td>
+				<td bgcolor="white" height="30"></td>
+			</tr>
+				<tr>
+				<td bgcolor="white" width="60"></td>
+				<td colspan="2" bgcolor="white">
+					<p></p>
+					<p>
+					</p>
+					<p></p>
+					<p></p>
+					<p></p>
+				</td>
+			</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td bgcolor="white" width="30"></td>
+					<td align="left" valign="top" bgcolor="white">
+					<p></p>
+					<p></p>
+				</td>
+				</tr>
+				<tr height="30">
+					<td bgcolor="white" width="60" height="30"></td>
+					<td bgcolor="white" width="30" height="30"></td>
+					<td bgcolor="white" height="30"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td colspan="2" bgcolor="white">
+					<p></p>
+					<p></p>
+				</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td bgcolor="white" width="30"></td>
+					<td align="left" valign="top" bgcolor="white">
+					<p></p>
+					<p></p>
+				</td>
+				</tr>
+				<tr height="30">
+					<td bgcolor="white" width="60" height="30"></td>
+					<td bgcolor="white" width="30" height="30"></td>
+					<td bgcolor="white" height="30"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"></td>
+					<td colspan="2" bgcolor="white">
+					<p></p>
+					<p></p>
+				</td>
+				</tr>
+				<tr height="30">
+					<td bgcolor="white" width="60" height="30"></td>
+					<td bgcolor="white" width="30" height="30"></td>
+					<td bgcolor="white" height="30"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td bgcolor="white" width="30" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" height="20">
+						<table>
+							<tr><br><br>
+								<td align="left" valign="middle" bgcolor="white" width="200"></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../index.html">Back to Documentation Index <img src="../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								<td align="right" valign="middle" bgcolor="white"></td>
+							</tr>
+							<tr>
+								<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"></div>
+								</td>
+								<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+			<tr>
+					<td colspan="3" align="left" valign="top"><img src="../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+			<p></p>
+		</body>
+</html>
+
+
+
+
+

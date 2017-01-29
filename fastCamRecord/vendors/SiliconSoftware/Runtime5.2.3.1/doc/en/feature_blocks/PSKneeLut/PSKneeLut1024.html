@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<title>Silicon Software - microEnable IV - Runtime 5 - Knee LUT</title>
+				<link href="../../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../../lib/siso.ico" rel="shortcut icon">
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2" align="left" valign="bottom" width="740"><img src="../../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="center">
+								<h2>Knee Lookup Table</h2>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="right">
+								<div align="center">
+									<div align="center">
+										<p>Parameter Set</p>
+									</div>
+								</div>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2>
+							
+						Description<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">..</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p>Before the image data is transferred over the PCIe bus a Lookup Table performs a 16 bit to 16 bit conversion for each color component. The implementation is a so called Knee Lookup Table, which uses 1024 supporting points and a linear interpolation in between.</p>
+							<div align="center">
+								<p></p>
+							</div>
+							<div align="left">
+								<p>An array of 1025 floating point values defines the 1024 normalized supporting points of the knee LUT, while the slopes for the interpolation are given by two succeeding base points. This explains the need for the 1025<sup>th</sup> base point which exceed the valid range to enable a linear interpolation within the full range of 16bit/pixel. Therefore, the 16bit pixels are normalized to 65536, instead to 65535.</p>
+							</div>
+							<div align="center">
+								<p><img src="kneelut16.gif" alt="" width="396" height="312" border="0"></p>
+							</div>
+							<div align="left">
+								<p>Besides the given <a href="../PSProcessing/PSProcessing.html">image processing capabilities</a>, you are able to load your own user defined knee LUT into the applet. The following two examples try to illustrate the procedure.</p>
+								<p><b><u>Identity (input pixel equals output pixel)</u></b></p>
+								<p>For normalized pixel values (x' = X / max = X / 65536) the identity is defined by</p>
+							</div>
+							<div align="center">
+								<p>y' = f(x') = x'</p>
+							</div>
+							<div align="left">
+								<p>The normalized x' at the supporting points i is x'<sub>i</sub> = i * 64 / 65536 and therefore the normalized supporting points y'<sub>i</sub> become</p>
+							</div>
+							<div align="center">
+								<p>y'<sub>i</sub> = i * 64 / 65536.</p>
+								<table border="1" cellspacing="0" cellpadding="2">
+									<tr bgcolor="#0008a3">
+										<td align="center" bgcolor="#2e368f"><b><font color="white">Supporting Point # </font></b></td>
+										<td align="center" bgcolor="#2e368f"><b><font color="white">Normalized Output</font></b></td>
+									</tr>
+									<tr bgcolor="#8d9dff">
+										<td align="center" bgcolor="#7689c4"><font size="-1">i</font></td>
+										<td align="center" bgcolor="#7689c4"><font size="-1">y'<sub>i</sub></font></td>
+									</tr>
+									<tr>
+										<td align="center" bgcolor="white">
+											<div align="center">
+												<font face="Courier New,Courier,Monaco">0</font></div>
+										</td>
+										<td align="center" bgcolor="white"><font face="Courier New,Courier,Monaco">0.000000000000</font></td>
+									</tr>
+									<tr>
+										<td align="center" bgcolor="#dfdfdf">
+											<div align="center">
+												<font face="Courier New,Courier,Monaco">1</font></div>
+										</td>
+										<td align="center" bgcolor="#dfdfdf"><font face="Courier New,Courier,Monaco">0.000976577401</font></td>
+									</tr>
+									<tr>
+										<td align="center" bgcolor="white">
+											<div align="center">
+												<font face="Courier New,Courier,Monaco">2</font></div>
+										</td>
+										<td align="center" bgcolor="white"><font face="Courier New,Courier,Monaco">0.001953154803</font></td>
+									</tr>
+									<tr>
+										<td align="center" bgcolor="#dfdfdf">
+											<div align="center">
+												<font face="Courier New,Courier,Monaco">3</font></div>
+										</td>
+										<td align="center" bgcolor="#dfdfdf"><font face="Courier New,Courier,Monaco">0.002929732204</font></td>
+									</tr>
+									<tr>
+										<td align="center" bgcolor="white">
+											<div align="center">
+												<font face="Courier New,Courier,Monaco">4</font></div>
+										</td>
+										<td align="center" bgcolor="white"><font face="Courier New,Courier,Monaco">0.003906309606</font></td>
+									</tr>
+									<tr>
+										<td align="center" bgcolor="#dfdfdf">
+											<div align="center">
+												<font face="Courier New,Courier,Monaco"><font size="-1">...</font></font></div>
+										</td>
+										<td align="center" bgcolor="#dfdfdf">
+											<div align="center">
+												<font size="-1" face="Courier New,Courier,Monaco">...</font></div>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" bgcolor="white">
+											<div align="center">
+												<font face="Courier New,Courier,Monaco">255</font></div>
+										</td>
+										<td align="center" bgcolor="white"><font face="Courier New,Courier,Monaco">0.999038681621</font></td>
+									</tr>
+									<tr>
+										<td align="center" bgcolor="#dfdfdf">
+											<div align="center">
+												<font face="Courier New,Courier,Monaco">256</font></div>
+										</td>
+										<td align="center" bgcolor="#dfdfdf"><font face="Courier New,Courier,Monaco">1.000015259022</font></td>
+									</tr>
+								</table>
+							</div>
+							<div align="left">
+								<p></p>
+								<p></p>
+								<p><b><u>Gamma correction</u></b></p>
+								<p>For your convenience, the gamma correction is out of the box available in the <a href="../PSProcessing/PSProcessing.html">image processing section</a>.</p>
+								<div align="left">
+									<p>For normalized pixel values (x' = X / max = X / 65536) the gamma correction is defined by</p>
+								</div>
+							</div>
+							<div align="center">
+								<p>y' = f(x') = x' <sup>(1/gamma)</sup></p>
+							</div>
+							<div align="left">
+								<p>The normalized x' at the supporting points i is x'<sub>i</sub> = i * 64 / 65536 and therefore the normalized supporting points y'<sub>i</sub> become</p>
+							</div>
+							<div align="center">
+								<p>y'<sub>i</sub> = (i * 64 / 65536)<sup>(1/gamma).</sup></p>
+							</div>
+							<div align="left">
+								<p>For gamma = 1.8 the supporting points are:</p>
+							</div>
+							<div align="center">
+								<table border="1" cellspacing="0" cellpadding="2">
+									<tr bgcolor="#0008a3">
+										<td align="center" bgcolor="#2e368f"><b><font color="white">Supporting Point # </font></b></td>
+										<td align="center" bgcolor="#2e368f"><b><font color="white">Normalized Output</font></b></td>
+									</tr>
+									<tr bgcolor="#8d9dff">
+										<td align="center" bgcolor="#7689c4"><font size="-1">i</font></td>
+										<td align="center" bgcolor="#7689c4">y'<sub>i</sub></td>
+									</tr>
+									<tr>
+										<td>
+											<div align="center">
+												<font face="Courier New,Courier,Monaco">0</font></div>
+										</td>
+										<td><font face="Courier New,Courier,Monaco">0.000000000000</font></td>
+									</tr>
+									<tr>
+										<td>
+											<div align="center">
+												<font face="Courier New,Courier,Monaco">1</font></div>
+										</td>
+										<td><font face="Courier New,Courier,Monaco">0.021262343753</font></td>
+									</tr>
+									<tr>
+										<td>
+											<div align="center">
+												<font face="Courier New,Courier,Monaco">2</font></div>
+										</td>
+										<td><font face="Courier New,Courier,Monaco">0.031250000000</font></td>
+									</tr>
+									<tr>
+										<td>
+											<div align="center">
+												<font face="Courier New,Courier,Monaco">3</font></div>
+										</td>
+										<td><font face="Courier New,Courier,Monaco">0.039145198435</font></td>
+									</tr>
+									<tr>
+										<td>
+											<div align="center">
+												<font face="Courier New,Courier,Monaco">4</font></div>
+										</td>
+										<td><font face="Courier New,Courier,Monaco">0.045929202884</font></td>
+									</tr>
+									<tr>
+										<td>
+											<div align="center">
+												<font face="Courier New,Courier,Monaco">...</font></div>
+										</td>
+										<td>
+											<div align="center">
+												<font face="Courier New,Courier,Monaco">...</font></div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div align="center">
+												<font face="Courier New,Courier,Monaco">255</font></div>
+										</td>
+										<td><font face="Courier New,Courier,Monaco">0.999457347485</font></td>
+									</tr>
+									<tr>
+										<td>
+											<div align="center">
+												<font face="Courier New,Courier,Monaco">256</font></div>
+										</td>
+										<td><font face="Courier New,Courier,Monaco">1.000000000000</font></td>
+									</tr>
+								</table>
+							</div>
+							<div align="left">
+								<p>The graphical plot of y'<sub>i</sub> against i of the two examples is shown below. The error of a linear approximation of the gamma correction is overexagerated to point out the inherent problem of the linear interpolation for non-linear functions.</p>
+							</div>
+							<div align="center">
+								<p><img src="kneelut16_example.gif" alt="" width="750" height="443" usemap="#kneelut_example" border="0"><map name="kneelut_example"></map></p>
+							</div>
+							<div align="left">
+								<p>The Knee LUT is implemented for each component: Once for gray and three times for color (RGB or Bayer).</p>
+								<p></p>
+								<p></p>
+							</div>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							Parameters<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<h3></h3>
+							<h3><a name="FG_KNEE_LUT_FILE"></a>Knee Lut File</h3>
+							<p>The parameter <i>Knee Lut File</i> specifies the filename for a user defined Knee Lookup Table described above.</p>
+							<h3></h3>
+							<h3><a name="FG_KNEE_LUT_SAVE_LOAD_FILE"></a>Action</h3>
+							<p>For the parameter <i>Action</i> the option 'Load LUT from File' downloads the Knee Lookup Table definition to the frame grabber. If no filename is given, then the current configuration in the frame grabber is replaced by the identity.</p>
+							<p>'Save LUT to File' writes the current knee LUT configuration into a file specified by <a href="PSKneeLut1024.html#FG_KNEE_LUT_FILE">Knee Lut File</a>.</p>
+							<p></p>
+							<p></p>
+							<h3></h3>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							References<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p></p>
+					<p><a href="../../documents/SDK/SDK.html">SDK Documentation</a></p>
+					<p></p>
+				</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+ 						<table>
+							<tr><br><br>
+								<td align="left" valign="middle" bgcolor="white" width="200"></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../index.html">Back to Documentation Index <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								<td align="right" valign="middle" bgcolor="white"></td>
+							</tr>
+							<tr>
+								<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../overviews/applet_feature_overview.html">Back to Feature Overview <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								</td>
+								<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				<tr>
+					<td colspan="2" align="left" valign="top" width="740"><img src="../../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+			<p></p>
+		</body>
+</html>
+
+
+

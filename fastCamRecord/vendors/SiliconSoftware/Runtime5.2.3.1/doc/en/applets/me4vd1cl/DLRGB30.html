@@ -1,0 +1,794 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<title>Silicon Software - microEnable IV - Runtime 5 - Dual Line RGB 30</title>
+				<link href="../../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../../lib/siso.ico" rel="shortcut icon">
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2" align="left" valign="bottom" width="740"><img src="../../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="center">
+								<h2>Dual Line RGB 30 Applet</h2>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="right">
+						<div align="right">
+							<p></p>
+							<p>for <i>microEnable IV-FULL x1<br>
+								</i>for <i>microEnable IV VD1-CL<br>
+								</i></p>
+						</div>
+					</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2>
+							
+						Description<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">..</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+					<p>The hardware applet Dual Line RGB 30 enables the simultanous operation of two color scale cameras. Supported are all color line-scan cameras in the Base Configuration of the CameraLink standard and a resolution of up to 16,384 x 65,535 pixels.</p>
+				</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							
+						Highlights<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+					<ul>
+						<li>Support of all color base <a href="../../feature_blocks/PSCameraLink/PSCameraLink_RGB48.html">CameraLink input formats</a> (Base RGB 24bit/pixel at up to 85MHz)	
+						<li>Additional support for <a href="../../feature_blocks/PSCameraLink/PSCameraLink_RGB48.html#FG_CAMERA_LINK_SERIALRGB">non-standard serial RGB formats</a>, which enable RGB with higher bit/pixel through a CameraLink base configuration (RGB assembled from Single Tap 8, 10, 12, 14, 16, and Dual Tap 8, 10, 12 at up to 85 MHz), however the CameraLink input will be cropped to 30bits (10bit/component), because of shading implementation.
+						<li>General transfer rate of up to 200MB/s on single line PCIe systems (depending on used applet!). For more information, open <a href="../../documents/microDiagnostics.html"><i>microDiagnosis</i></a> and run a test on your target applet.
+
+						<li>On-board 1D <a href="../../feature_blocks/PSShading12/PSShading16_1DRGB.html">Shading</a> correction, which adjusts offset and gain for each pixel seperately to rectify inherent disortions from the sensor and/or illumination
+
+						<li><a href="../../feature_blocks/PSKneeLut/PSKneeLut1024.html">Knee Lookup Table</a> for piecewise linear conversion from 16 bit/pixel to 16 bit/pixel.
+
+						<li><a href="../../feature_blocks/PSProcessing/PSProcessing.html">Basic image processing</a>, e. g. <a href="../../feature_blocks/PSBayer/FB_WhiteBalance.html">whitebalancing</a>, bightness, contrast and gamma-correction.
+
+						<li>Highly customizable <a href="../../feature_blocks/PSTrigger/PSLineTriggerShaft.html">Trigger System</a>
+						<li><a href="../../documents/TriggerSystem/ShaftEncoder.html">Shaft Encoder A/B support</a> (rovolving direction detection and compensation)	
+						<li><a href="../../feature_blocks/PSTrigger/PSSoftwareTrigger.html">Software trigger control</a>
+						<li>Max. <a href="../../feature_blocks/PSWindow/PSWindow.html">image dimension</a> of 16,384 x 65,535 pixel
+
+						<li>8bit or 16bit per color component (RGB24/RGB48)
+
+						<li>Hardware generated image number
+
+						<li><a href="../../feature_blocks/PSWindow/PSWindow.html">Regions of Interest</a> support
+
+						<li><a href="../../feature_blocks/PSImageSelector/PSImageSelector.html">Image selector</a>
+						<li>Latency of a single line
+
+						<li>Support of RS232 clser interface
+
+						<li>Camera detection abilities
+
+						<li><a href="../../feature_blocks/PSDigitalIO/PSDigitalIO.html">DigI/O</a>
+						<li><a href="../../feature_blocks/PSCCSignals/PSCCSignalsLine.html">CC signals</a>
+						<li><a href="../../feature_blocks/PSMisc/FB_Miscellaneous.html">Miscellaneous</a>
+					</ul>
+					<ul>
+						
+					</ul>
+					<ul>
+						
+					</ul>
+					<ul>
+						
+					</ul>
+					<ul>
+						
+					</ul>
+					<ul>
+						
+					</ul>
+					<ul>
+						
+					</ul>
+				</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							
+						References<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+					<p><a href="../../documents/SDK/SDK.html">SDK Documentation</a></p>
+				</td>
+				</tr>
+				
+				
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>					
+					<td align="left" valign="top" bgcolor="white" width="680">
+					<h2><br>
+					Parameter Table
+					</h2>
+					<table border="2" cellspacing="2" cellpadding="2">
+<tr>
+<th bgcolor="#555555"><font size="1"><b><font color="white">
+Parameter</font></b></font></th>
+<th bgcolor="#555555"><font size="1"><b><font color="white">
+Description</font></b></font></th>
+<th bgcolor="#555555"><font size="1"><b><font color="white">
+Unit</font></b></font></th>
+<th bgcolor="#555555"><font size="1"><b><font color="white">
+Access</font></b></font></th>
+<th bgcolor="#555555"><font size="1"><b><font color="white">
+Type</font></b></font></th>
+<th bgcolor="#555555"><font size="1"><b><font color="white">
+Range</font></b></font></th>
+<th bgcolor="#555555"><font size="1"><b><font color="white">
+Default Value</font></b></font></th>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_LINEPERIODE </font></td>
+<td bgcolor="white"><font size="1"> Length of the ExSync period. </font></td>
+<td bgcolor="white"><font size="1"> [µs] </font></td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> double </font></td>
+<td bgcolor="white"><font size="1"> 0-4194.29 </font></td>
+<td bgcolor="white"><font size="1"> 200 </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_WIDTH </font></td>
+<td bgcolor="#dddddd"><font size="1"> Image width of the acquisition window. </font></td>
+<td bgcolor="#dddddd"><font size="1"> [pixels] </font></td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"><font size="1"> 2-16384 </font></td>
+<td bgcolor="#dddddd"><font size="1"> 512 </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_HEIGHT </font></td>
+<td bgcolor="white"><font size="1"> Image height of the acquisition window. </font></td>
+<td bgcolor="white"><font size="1"> [pixels] </font></td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"><font size="1"> 1-65535 </font></td>
+<td bgcolor="white"><font size="1"> 512 </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_XOFFSET </font></td>
+<td bgcolor="#dddddd"><font size="1"> Horizontal offset of the image. </font></td>
+<td bgcolor="#dddddd"><font size="1"> [pixels] </font></td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0-16384 </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0 </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_YOFFSET </font></td>
+<td bgcolor="white"><font size="1"> Vertical offset of the image. </font></td>
+<td bgcolor="white"><font size="1"> [pixels] </font></td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"><font size="1"> 0-65535 </font></td>
+<td bgcolor="white"><font size="1"> 0 </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_TIMEOUT </font></td>
+<td bgcolor="#dddddd"><font size="1"> Framegrabber image timeout. </font></td>
+<td bgcolor="#dddddd"><font size="1"> [s] </font></td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"><font size="1"> 2-2147483646 </font></td>
+<td bgcolor="#dddddd"><font size="1"> 1000000 </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_FORMAT </font></td>
+<td bgcolor="white"><font size="1"> Pixel format of the output image. </font></td>
+<td bgcolor="white"><font size="1"> [bit] </font></td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"> <li><font size="1">FG_COL24</font></li><li><font size="1">FG_COL48</font></li> </td>
+<td bgcolor="white"><font size="1"> FG_COL24 </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_CAMSTATUS </font></td>
+<td bgcolor="#dddddd"><font size="1"> Camera Status. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read Only</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0-0 </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0 </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_PIXELDEPTH </font></td>
+<td bgcolor="white"><font size="1"> Information about the number of valid bits per component. </font></td>
+<td bgcolor="white"><font size="1"> [bit] </font></td>
+<td bgcolor="white"><font size="1"> Read Only</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"><font size="1"> 0-128 </font></td>
+<td bgcolor="white"><font size="1"> 8 </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_BITALIGNMENT </font></td>
+<td bgcolor="#dddddd"><font size="1"> Defines if the output data are right aligned or left aligned. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"> <li><font size="1">FG_RIGHT_ALIGNED</font></li><li><font size="1">FG_LEFT_ALIGNED</font></li> </td>
+<td bgcolor="#dddddd"><font size="1"> FG_RIGHT_ALIGNED </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_USEDVAL </font></td>
+<td bgcolor="white"><font size="1"> Use CameraLink&prime;s Dval signal or ignore it. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"> <li><font size="1">FG_NO</font></li><li><font size="1">FG_YES</font></li> </td>
+<td bgcolor="white"><font size="1"> FG_YES </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_SENSORREADOUT </font></td>
+<td bgcolor="#dddddd"><font size="1"> Select the sensor readout strategy matching your camera, to perform the correct on-bard pixel reshuffeling. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"> <li><font size="1">SMODE_UNCHANGED</font></li> </td>
+<td bgcolor="#dddddd"><font size="1"> SMODE_UNCHANGED </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_LINETRIGGERMODE </font></td>
+<td bgcolor="white"><font size="1"> Trigger mode for the ExSync generation. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"> <li><font size="1">GRABBER_CONTROLLED</font></li><li><font size="1">ASYNC_TRIGGER</font></li><li><font size="1">ASYNC_GATED</font></li><li><font size="1">GRABBER_CONTROLLED_GATED</font></li> </td>
+<td bgcolor="white"><font size="1"> GRABBER_CONTROLLED </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_IMGTRIGGERMODE </font></td>
+<td bgcolor="#dddddd"><font size="1"> Trigger mode for the image generation. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"> <li><font size="1">FREE_RUN</font></li><li><font size="1">ASYNC_TRIGGER</font></li><li><font size="1">ASYNC_GATED</font></li><li><font size="1">ASYNC_GATED_MULTIFRAME</font></li> </td>
+<td bgcolor="#dddddd"><font size="1"> FREE_RUN </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_IMGTRIGGERON </font></td>
+<td bgcolor="white"><font size="1"> Switch the image gate on or off. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"> <li><font size="1">FG_OFF</font></li><li><font size="1">FG_ON</font></li> </td>
+<td bgcolor="white"><font size="1"> FG_ON </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_LINETRIGGERINSRC </font></td>
+<td bgcolor="#dddddd"><font size="1"> Trigger input signal on the trigger board for the ExSync generation. This signal is also interpreted as Source A when using a ShaftEncoder. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read Only</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"> <li><font size="1">Input_0</font></li><li><font size="1">Input_1</font></li><li><font size="1">Input_2</font></li><li><font size="1">Input_3</font></li><li><font size="1">Input_4</font></li><li><font size="1">Input_5</font></li><li><font size="1">Input_6</font></li><li><font size="1">Input_7</font></li> </td>
+<td bgcolor="#dddddd"><font size="1"> Input_1 </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_IMGTRIGGERINSRC </font></td>
+<td bgcolor="white"><font size="1"> Trigger input signal on the trigger board for the image generation. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read Only</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"> <li><font size="1">Software</font></li><li><font size="1">Input_0</font></li><li><font size="1">Input_1</font></li><li><font size="1">Input_2</font></li><li><font size="1">Input_3</font></li><li><font size="1">Input_4</font></li><li><font size="1">Input_5</font></li><li><font size="1">Input_6</font></li><li><font size="1">Input_7</font></li> </td>
+<td bgcolor="white"><font size="1"> Input_0 </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_LINETRIGGERINPOLARITY </font></td>
+<td bgcolor="#dddddd"><font size="1"> Polarity of the line trigger input polarity. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read Only</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"> <li><font size="1">High_Active</font></li><li><font size="1">Low_Active</font></li> </td>
+<td bgcolor="#dddddd"><font size="1"> High_Active </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_IMGTRIGGERINPOLARITY </font></td>
+<td bgcolor="white"><font size="1"> Polarity of the image trigger input polarity. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read Only</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"> <li><font size="1">High_Active</font></li><li><font size="1">Low_Active</font></li> </td>
+<td bgcolor="white"><font size="1"> High_Active </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_IMGTRIGGERGATEDELAY </font></td>
+<td bgcolor="#dddddd"><font size="1"> Delay of the image gate in lines with respect to ExSync. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read Only</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0-1023 </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0 </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_EXSYNCON </font></td>
+<td bgcolor="white"><font size="1"> Switch the ExSync signal on or off. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"> <li><font size="1">FG_OFF</font></li><li><font size="1">FG_ON</font></li> </td>
+<td bgcolor="white"><font size="1"> FG_ON </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_EXSYNCPOLARITY </font></td>
+<td bgcolor="#dddddd"><font size="1"> Polatity of the ExSync out signal. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"> <li><font size="1">Low_Active</font></li><li><font size="1">High_Active</font></li> </td>
+<td bgcolor="#dddddd"><font size="1"> Low_Active </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_DEADTIME </font></td>
+<td bgcolor="white"><font size="1"> Dead time. </font></td>
+<td bgcolor="white"><font size="1"> [µs] </font></td>
+<td bgcolor="white"><font size="1"> Read Only</font></td> <td bgcolor="white"><font size="1"> double </font></td>
+<td bgcolor="white"><font size="1"> 0-0 </font></td>
+<td bgcolor="white"><font size="1"> -1 </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_DEADTIME_OFFSET </font></td>
+<td bgcolor="#dddddd"><font size="1"> In all external line trigger modes, an additional deadtime ensures a gap between the exposure time and a re-trigger. </font></td>
+<td bgcolor="#dddddd"><font size="1"> [µs] </font></td>
+<td bgcolor="#dddddd"><font size="1"> Read Only</font></td> <td bgcolor="#dddddd"><font size="1"> double </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0-4175.29 </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0 </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_FLASHON </font></td>
+<td bgcolor="white"><font size="1"> Switch the flash signal on or off. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"> <li><font size="1">FG_OFF</font></li><li><font size="1">FG_ON</font></li> </td>
+<td bgcolor="white"><font size="1"> FG_ON </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_STROBEPULSEDELAY </font></td>
+<td bgcolor="#dddddd"><font size="1"> Delay of the flash signal in lines with respect to the image trigger input signal. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0-1023 </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0 </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_SENDSOFTWARETRIGGER </font></td>
+<td bgcolor="white"><font size="1"> Generate a software trigger pulse. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"> <li><font size="1">Send</font></li> </td>
+<td bgcolor="white">  </td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_SETSOFTWARETRIGGER </font></td>
+<td bgcolor="#dddddd"><font size="1"> Switch Software trigger signal on or off. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"> <li><font size="1">Low</font></li><li><font size="1">High</font></li> </td>
+<td bgcolor="#dddddd"><font size="1"> Low </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_LINETRIGGERDELAY </font></td>
+<td bgcolor="white"><font size="1"> Delay of the ExSync signal with respect to the trigger input signal. </font></td>
+<td bgcolor="white"><font size="1"> [µs] </font></td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> double </font></td>
+<td bgcolor="white"><font size="1"> 0-2097.14 </font></td>
+<td bgcolor="white"><font size="1"> 0 </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_SHAFTENCODERINSRC </font></td>
+<td bgcolor="#dddddd"><font size="1"> Selects the input signal on the trigger board for Source B of the ShaftEncoder. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"> <li><font size="1">Input_0</font></li><li><font size="1">Input_1</font></li><li><font size="1">Input_2</font></li><li><font size="1">Input_3</font></li><li><font size="1">Input_4</font></li><li><font size="1">Input_5</font></li><li><font size="1">Input_6</font></li><li><font size="1">Input_7</font></li> </td>
+<td bgcolor="#dddddd"><font size="1"> Input_0 </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_SHAFTENCODERON </font></td>
+<td bgcolor="white"><font size="1"> Switch ShaftEncoder filter on or off. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"> <li><font size="1">FG_OFF</font></li><li><font size="1">FG_ON</font></li> </td>
+<td bgcolor="white"><font size="1"> FG_OFF </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_SHAFTENCODERLEADING </font></td>
+<td bgcolor="#dddddd"><font size="1"> Determines the leading signal (=direction) for the ShaftEncoder. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"> <li><font size="1">SOURCE_A</font></li><li><font size="1">SOURCE_B</font></li> </td>
+<td bgcolor="#dddddd"><font size="1"> SOURCE_A </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_RGB_MAP_RED </font></td>
+<td bgcolor="white"><font size="1"> Defines the position of the red pixel in serial rgb mode. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read Only</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"> <li><font size="1">FG_MAP_PIXEL0</font></li><li><font size="1">FG_MAP_PIXEL1</font></li><li><font size="1">FG_MAP_PIXEL2</font></li> </td>
+<td bgcolor="white"><font size="1"> FG_MAP_PIXEL0 </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_RGB_MAP_GREEN </font></td>
+<td bgcolor="#dddddd"><font size="1"> Defines the position of the green pixel in serial rgb mode. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read Only</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"> <li><font size="1">FG_MAP_PIXEL0</font></li><li><font size="1">FG_MAP_PIXEL1</font></li><li><font size="1">FG_MAP_PIXEL2</font></li> </td>
+<td bgcolor="#dddddd"><font size="1"> FG_MAP_PIXEL1 </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_RGB_MAP_BLUE </font></td>
+<td bgcolor="white"><font size="1"> Defines the position of the blue pixel in serial rgb mode. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read Only</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"> <li><font size="1">FG_MAP_PIXEL0</font></li><li><font size="1">FG_MAP_PIXEL1</font></li><li><font size="1">FG_MAP_PIXEL2</font></li> </td>
+<td bgcolor="white"><font size="1"> FG_MAP_PIXEL2 </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_LINEEXPOSURE </font></td>
+<td bgcolor="#dddddd"><font size="1"> Length of the ExSync exposure. </font></td>
+<td bgcolor="#dddddd"><font size="1"> [µs] </font></td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> double </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0-200 </font></td>
+<td bgcolor="#dddddd"><font size="1"> 19 </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_CAMERA_LINK_CAMTYP </font></td>
+<td bgcolor="white"><font size="1"> Compatibility parameter. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"> <li><font size="1">FG_CL_SINGLETAP_8_BIT</font></li><li><font size="1">FG_CL_SINGLETAP_10_BIT</font></li><li><font size="1">FG_CL_SINGLETAP_12_BIT</font></li><li><font size="1">FG_CL_SINGLETAP_14_BIT</font></li><li><font size="1">FG_CL_SINGLETAP_16_BIT</font></li><li><font size="1">FG_CL_DUALTAP_8_BIT</font></li><li><font size="1">FG_CL_DUALTAP_10_BIT</font></li><li><font size="1">FG_CL_DUALTAP_12_BIT</font></li><li><font size="1">FG_CL_RGB</font></li> </td>
+<td bgcolor="white"><font size="1"> FG_CL_RGB </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_KNEE_LUT_SCALE </font></td>
+<td bgcolor="#dddddd"><font size="1"> Select a scaling factor for all pixels. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> double </font></td>
+<td bgcolor="#dddddd"><font size="1"> -65536-65536 </font></td>
+<td bgcolor="#dddddd"><font size="1"> 1 </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_KNEE_LUT_OFFSET </font></td>
+<td bgcolor="white"><font size="1"> Select a relative offset added to all pixels. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> double </font></td>
+<td bgcolor="white"><font size="1"> -1-1 </font></td>
+<td bgcolor="white"><font size="1"> 0 </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_KNEE_LUT_GAMMA </font></td>
+<td bgcolor="#dddddd"><font size="1"> Gamma correction applied to all pixels. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> double </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0-10 </font></td>
+<td bgcolor="#dddddd"><font size="1"> 1 </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_KNEE_LUT_INVERT </font></td>
+<td bgcolor="white"><font size="1"> Invert all pixels. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"> <li><font size="1">FG_OFF</font></li><li><font size="1">FG_ON</font></li> </td>
+<td bgcolor="white"><font size="1"> FG_OFF </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_KNEE_LUT_FILE </font></td>
+<td bgcolor="#dddddd"><font size="1"> Set a filename for the KneeLut. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> char * </font></td>
+<td bgcolor="#dddddd"><font size="1"> N/A </font></td>
+<td bgcolor="#dddddd">   </td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_KNEE_LUT_SAVE_LOAD_FILE </font></td>
+<td bgcolor="white"><font size="1"> Perform the actions &prime;save&prime; or &prime;load&prime;, in order to store/restore the KneeLut. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"> <li><font size="1">FG_LOAD_LUT_FROM_FILE</font></li><li><font size="1">FG_SAVE_LUT_TO_FILE</font></li> </td>
+<td bgcolor="white"><font size="1"> FG_LOAD_LUT_FROM_FILE </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_SCALINGFACTOR_RED </font></td>
+<td bgcolor="#dddddd"><font size="1"> Select a scaling factor for the red component. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> double </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0-4096 </font></td>
+<td bgcolor="#dddddd"><font size="1"> 1 </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_SCALINGFACTOR_BLUE </font></td>
+<td bgcolor="white"><font size="1"> Select a scaling factor for the blue component. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> double </font></td>
+<td bgcolor="white"><font size="1"> 0-4096 </font></td>
+<td bgcolor="white"><font size="1"> 1 </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_SCALINGFACTOR_GREEN </font></td>
+<td bgcolor="#dddddd"><font size="1"> Select a scaling factor for the green component. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> double </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0-4096 </font></td>
+<td bgcolor="#dddddd"><font size="1"> 1 </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_CCSEL0 </font></td>
+<td bgcolor="white"><font size="1"> Assign a particular signal to CameraLink&prime;s CC1 line. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"> <li><font size="1">CC_EXSYNC</font></li><li><font size="1">CC_HDSYNC</font></li><li><font size="1">CC_STROBEPULSE</font></li><li><font size="1">CC_CLK</font></li><li><font size="1">CC_GND</font></li><li><font size="1">CC_VCC</font></li><li><font size="1">CC_NOT_EXSYNC</font></li><li><font size="1">CC_NOT_HDSYNC</font></li><li><font size="1">CC_NOT_STROBEPULSE</font></li> </td>
+<td bgcolor="white"><font size="1"> CC_EXSYNC </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_CCSEL1 </font></td>
+<td bgcolor="#dddddd"><font size="1"> Assign a particular signal to CameraLink&prime;s CC2 line. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"> <li><font size="1">CC_EXSYNC</font></li><li><font size="1">CC_HDSYNC</font></li><li><font size="1">CC_STROBEPULSE</font></li><li><font size="1">CC_CLK</font></li><li><font size="1">CC_GND</font></li><li><font size="1">CC_VCC</font></li><li><font size="1">CC_NOT_EXSYNC</font></li><li><font size="1">CC_NOT_HDSYNC</font></li><li><font size="1">CC_NOT_STROBEPULSE</font></li> </td>
+<td bgcolor="#dddddd"><font size="1"> CC_VCC </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_CCSEL2 </font></td>
+<td bgcolor="white"><font size="1"> Assign a particular signal to CameraLink&prime;s CC3 line. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"> <li><font size="1">CC_EXSYNC</font></li><li><font size="1">CC_HDSYNC</font></li><li><font size="1">CC_STROBEPULSE</font></li><li><font size="1">CC_CLK</font></li><li><font size="1">CC_GND</font></li><li><font size="1">CC_VCC</font></li><li><font size="1">CC_NOT_EXSYNC</font></li><li><font size="1">CC_NOT_HDSYNC</font></li><li><font size="1">CC_NOT_STROBEPULSE</font></li> </td>
+<td bgcolor="white"><font size="1"> CC_VCC </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_CCSEL3 </font></td>
+<td bgcolor="#dddddd"><font size="1"> Assign a particular signal to CameraLink&prime;s CC4 line. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"> <li><font size="1">CC_EXSYNC</font></li><li><font size="1">CC_HDSYNC</font></li><li><font size="1">CC_STROBEPULSE</font></li><li><font size="1">CC_CLK</font></li><li><font size="1">CC_GND</font></li><li><font size="1">CC_VCC</font></li><li><font size="1">CC_NOT_EXSYNC</font></li><li><font size="1">CC_NOT_HDSYNC</font></li><li><font size="1">CC_NOT_STROBEPULSE</font></li> </td>
+<td bgcolor="#dddddd"><font size="1"> CC_VCC </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_DIGIO_INPUT </font></td>
+<td bgcolor="white"><font size="1"> Information about the digital input signals at the trigger board. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read Only</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"><font size="1"> 0-255 </font></td>
+<td bgcolor="white"><font size="1"> 3 </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_DIGIO_OUTPUT </font></td>
+<td bgcolor="#dddddd"><font size="1"> Select a value to be mapped to the digital outputs at the trigger board. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0-3 </font></td>
+<td bgcolor="#dddddd"><font size="1"> 3 </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_APPLET_ID </font></td>
+<td bgcolor="white"><font size="1"> Returns the Applet ID. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read Only</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"><font size="1"> 0-0 </font></td>
+<td bgcolor="white"><font size="1"> 0 </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_APPLET_VERSION </font></td>
+<td bgcolor="#dddddd"><font size="1"> Returns the Applet Version. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read Only</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0-0 </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0 </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_APPLET_REVISION </font></td>
+<td bgcolor="white"><font size="1"> Returns the Applet Revision. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read Only</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"><font size="1"> 0-0 </font></td>
+<td bgcolor="white"><font size="1"> 0 </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_LINE_DOWNSCALE </font></td>
+<td bgcolor="#dddddd"><font size="1"> Downscale factor of the trigger input signal. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"><font size="1"> 1-255 </font></td>
+<td bgcolor="#dddddd"><font size="1"> 1 </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_LINE_DOWNSCALEINIT </font></td>
+<td bgcolor="white"><font size="1"> Phase of the downscaling with respect to the image gate. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"><font size="1"> 1-255 </font></td>
+<td bgcolor="white"><font size="1"> 1 </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_FLASH_POLARITY </font></td>
+<td bgcolor="#dddddd"><font size="1"> Flash signal polarity. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"> <li><font size="1">Low_Active</font></li><li><font size="1">High_Active</font></li> </td>
+<td bgcolor="#dddddd"><font size="1"> High_Active </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_CLEAR_SHADINGDATA </font></td>
+<td bgcolor="white"><font size="1"> Download identity coefficients to the microEnable. (Offset=0.0, Gain=1.0) </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"> <li><font size="1">Clear</font></li> </td>
+<td bgcolor="white">  </td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_LINESHADING_SUB_ENABLE </font></td>
+<td bgcolor="#dddddd"><font size="1"> Enable or disable the subtractive offset correction. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read Only</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"> <li><font size="1">FG_OFF</font></li><li><font size="1">FG_ON</font></li> </td>
+<td bgcolor="#dddddd"><font size="1"> FG_OFF </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_LINESHADING_MULT_ENABLE </font></td>
+<td bgcolor="white"><font size="1"> Enable or disable the multiplicative gain correction. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read Only</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"> <li><font size="1">FG_OFF</font></li><li><font size="1">FG_ON</font></li> </td>
+<td bgcolor="white"><font size="1"> FG_OFF </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_LINESHADING_MULT_FILENAME </font></td>
+<td bgcolor="#dddddd"><font size="1"> Select the filename of the reference image for the multiplicative gain correction. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> char * </font></td>
+<td bgcolor="#dddddd"><font size="1"> N/A </font></td>
+<td bgcolor="#dddddd">  </td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_LINESHADING_SUB_FILENAME </font></td>
+<td bgcolor="white"><font size="1"> Select the filename of the reference image for the subtractive offset correction. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> char * </font></td>
+<td bgcolor="white"><font size="1"> N/A </font></td>
+<td bgcolor="white">  </td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_LINESHADING_LOAD_FROM_FILE </font></td>
+<td bgcolor="#dddddd"><font size="1"> Calculate the shading coefficents from the reference images and download the data to the microEnable. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"> <li><font size="1">Load</font></li> </td>
+<td bgcolor="#dddddd">  </td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_LINESHADING_MODE </font></td>
+<td bgcolor="white"><font size="1"> The configuration of the RAM controller. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"> <li><font size="1">SHADING_OFF</font></li><li><font size="1">SHADING_SUB</font></li><li><font size="1">SHADING_MULT</font></li><li><font size="1">SHADING_SUB_MULT</font></li> </td>
+<td bgcolor="white"><font size="1"> SHADING_OFF </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_SHADING_WIDTH </font></td>
+<td bgcolor="#dddddd"><font size="1"> Select the physical width of the sensor, is required for shading correction together with sensor readout correction. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read Only</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0-16384 </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0 </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_AUTO_SHADING_WIDTH </font></td>
+<td bgcolor="white"><font size="1"> If set to &prime;On&prime; the parameter sensor width (FG_SHADING_WIDTH) is set to the image width (FG_WIDTH). Default is &prime;On&prime;, since it is assumed that image width and sensor width are equal. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read Only</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"> <li><font size="1">FG_OFF</font></li><li><font size="1">FG_ON</font></li> </td>
+<td bgcolor="white"><font size="1"> FG_ON </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_DMASTATUS </font></td>
+<td bgcolor="#dddddd"><font size="1"> Returns the status of the DMA transmission. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read Only</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0-0 </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0 </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_PLX_CLK </font></td>
+<td bgcolor="white"><font size="1"> The frequency of the PCIe Clock. </font></td>
+<td bgcolor="white"><font size="1"> [MHz] </font></td>
+<td bgcolor="white"><font size="1"> Read Only</font></td> <td bgcolor="white"><font size="1"> double </font></td>
+<td bgcolor="white"><font size="1"> 0-1024 </font></td>
+<td bgcolor="white"><font size="1"> 100 </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_MEASURED_PCIE_CLK </font></td>
+<td bgcolor="#dddddd"><font size="1"> Returns a measured value of the PCIe Bus frequency. </font></td>
+<td bgcolor="#dddddd"><font size="1"> [MHz] </font></td>
+<td bgcolor="#dddddd"><font size="1"> Read Only</font></td> <td bgcolor="#dddddd"><font size="1"> double </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0-1024 </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0 </font></td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_FPGA_CLK </font></td>
+<td bgcolor="white"><font size="1"> Returns the frequency of the FPGA Clock. This frequency can not be changed. </font></td>
+<td bgcolor="white"><font size="1"> [MHz] </font></td>
+<td bgcolor="white"><font size="1"> Read Only</font></td> <td bgcolor="white"><font size="1"> double </font></td>
+<td bgcolor="white"><font size="1"> 0-1024 </font></td>
+<td bgcolor="white"><font size="1"> 400 </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_HAP_FILE </font></td>
+<td bgcolor="#dddddd"><font size="1"> The name of the Hap file. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read Only</font></td> <td bgcolor="#dddddd"><font size="1"> char * </font></td>
+<td bgcolor="#dddddd"><font size="1"> N/A </font></td>
+<td bgcolor="#dddddd">  </td>
+</tr>
+<tr>
+<td bgcolor="white"><font size="1"> FG_IMG_SELECT_PERIOD </font></td>
+<td bgcolor="white"><font size="1"> Select the length of an image sequence. Only a single image of the sequence is grabbed. </font></td>
+<td bgcolor="white">  </td>
+<td bgcolor="white"><font size="1"> Read/Write</font></td> <td bgcolor="white"><font size="1"> int </font></td>
+<td bgcolor="white"><font size="1"> 1-256 </font></td>
+<td bgcolor="white"><font size="1"> 1 </font></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd"><font size="1"> FG_IMG_SELECT </font></td>
+<td bgcolor="#dddddd"><font size="1"> Defines which image of the image sequence is grabbed. </font></td>
+<td bgcolor="#dddddd">  </td>
+<td bgcolor="#dddddd"><font size="1"> Read/Write</font></td> <td bgcolor="#dddddd"><font size="1"> int </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0-255 </font></td>
+<td bgcolor="#dddddd"><font size="1"> 0 </font></td>
+</tr>
+</table>
+				</td>													
+				</tr>				
+				
+				
+				
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+						<table>
+							<tr><br>
+								<br>
+								<td align="left" valign="middle" bgcolor="white" width="216"><a href="javascript:history.back()">Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="218">
+									<table>
+										<tr>
+											<td align="center"><a title="Index" href="../../index.html">Back to Documentation Index<img src="../../../images/top.gif" alt="" width="22" height="22" border="0"></a></td>
+										</tr>
+										<tr>
+											<td align="center"><a title="Index" href="../../overviews/applet_feature_overview.html">Back to Feature Overview
+ <img src="../../../images/top.gif" alt="" width="22" height="22" border="0"></a></td>
+										</tr>
+									</table>
+								<td align="right" valign="middle" bgcolor="white" width="216"><a href="javascript:history.forward()">Forward</a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="left" valign="top" width="740"><img src="../../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+			<p></p>
+		</body>
+</html>
+
+
+

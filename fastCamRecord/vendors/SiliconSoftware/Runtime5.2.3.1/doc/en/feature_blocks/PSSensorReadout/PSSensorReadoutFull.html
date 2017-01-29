@@ -1,0 +1,1350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<title>Silicon Software - microEnable IV - Runtime 5 - Sensor Readout Medium Configuration</title>
+				<link href="../../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../../lib/siso.ico" rel="shortcut icon">
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2" align="left" valign="bottom" width="740"><img src="../../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="center">
+								<h2>Sensor Readout Correction<br>(for Full CameraLink)</h2>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="right">
+								<div align="center">
+									<p>Parameter Set</p>
+								</div>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2>
+							
+						Description<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">..</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p>Most camera sensors are read out sequentially in the so called raster scan format (line by line from top-left to bottom-right) However, to speed up the data transfer, some sensors can be configured to read out several pixels in parallel. As a result, pixels transferred succeeding over the CamerLink cable are not necessarily neighbouring pixels. The Sensor Readout Correction can reshuffle the pixels on-board of the frame grabber and transfer the grabbed image in the usual raster-scan fashion. All common readout strategies are supported to save computational power of the host system.</p>
+					<p><b>Please note that only cameras are supported which deliver a line whose width is divisable by 128. </b><b>The parameter FG_WIDTH of microDisplay or the SDK is not directly affected by the camera line width restriction. FG_WIDTH cuts off a region of interests from the delivered camera line. It must be divisibly by 16.</b></p>
+					<p></p>
+				</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							Parameters<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<h3></h3>
+							<h3><a name="FG_SENSORREADOUT"></a>Readout Mode</h3>
+							<p>The parameter Readout Mode selects the pixel reshuffeling schema:</p>
+					<table width="417" border="1" cellspacing="0" cellpadding="2" bgcolor="white">
+								<tr>
+									<td align="center" nowrap bgcolor="#2e368f"><b><font size="-2" color="white">Sensor Mode</font></b></td>
+							<td colspan="8" align="center" nowrap bgcolor="#2e368f" width="482"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Function</font></b></font></td>
+							<td align="center" nowrap bgcolor="#2e368f"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Mode No</font></b></font></td>
+						</tr>
+								<tr>
+							<td align="center" nowrap bgcolor="white">
+								<div align="left">
+									<font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">SMODE_UNCHANGED</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">12345678&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white"><font size="-2">0</font></td>
+						</tr>
+								<tr>
+							<td align="center" nowrap bgcolor="#dfdfdf">
+								<div align="left">
+									<font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">SMODE_REVERSE</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;87654321</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf"><font size="-2">3</font></td>
+						</tr>
+								<tr>
+							<td align="center" nowrap bgcolor="white">
+								<div align="left">
+									<font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">SMODE_TAB8_0</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">1234&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;8765</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white"><font size="-2">30</font></td>
+						</tr>
+								<tr>
+							<td align="center" nowrap bgcolor="#dfdfdf">
+								<div align="left">
+									<font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">SMODE_TAB8_1</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">1234&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;5678</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf"><font size="-2">31</font></td>
+						</tr>
+								<tr>
+							<td align="center" nowrap bgcolor="white">
+								<div align="left">
+									<font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">SMODE_TAB8_2</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">1234&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">5678&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white"><font size="-2">32</font></td>
+						</tr>
+								<tr>
+							<td align="center" nowrap bgcolor="#dfdfdf">
+								<div align="left">
+									<font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">SMODE_TAB8_3</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">12&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">34&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">56&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">78&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf"><font size="-2">33</font></td>
+						</tr>
+								<tr>
+							<td align="center" nowrap bgcolor="white">
+								<div align="left">
+									<font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">SMODE_TAB8_4</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;87</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;65</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;43</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;21</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white"><font size="-2">34</font></td>
+						</tr>
+								<tr>
+							<td align="center" nowrap bgcolor="#dfdfdf">
+								<div align="left">
+									<font color="black"><font size="-2"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">SMODE_TAB8_5</font></font></font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">12&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">34&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;56</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;78</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf"><font size="-2">35</font></td>
+						</tr>
+						<tr>
+							<td align="center" nowrap bgcolor="white">
+								<div align="left">
+									<font size="-2">SMODE_TAB8_6</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">5678&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;4321</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white"><font size="-2">36</font></td>
+						</tr>
+						<tr>
+							<td align="center" nowrap bgcolor="#dfdfdf">
+								<div align="left">
+									<font size="-2">SMODE_TAB8_7</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">8765&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;4321</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf"><font size="-2">37</font></td>
+						</tr>
+						<tr>
+							<td align="center" nowrap bgcolor="white">
+								<div align="left">
+									<font size="-2">SMODE_TAB8_8</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;8765</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;4321</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white"><font size="-2">38</font></td>
+						</tr>
+						<tr>
+							<td align="center" nowrap bgcolor="#dfdfdf">
+								<div align="left">
+									<font size="-2">SMODE_TAB8_9</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">87&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">65&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;43</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;21</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf"><font size="-2">39</font></td>
+						</tr>
+						<tr>
+							<td align="center" nowrap bgcolor="white">
+								<div align="left">
+									<font size="-2">SMODE_TAB8_10</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">12&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">34&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;65</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;87</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white"><font size="-2">40</font></td>
+						</tr>
+						<tr>
+							<td align="center" nowrap bgcolor="#dfdfdf">
+								<div align="left">
+									<font size="-2">SMODE_TAB8_11</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">78&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">56&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;43</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									
+								</div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;21</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf"><font size="-2">41</font></td>
+						</tr>
+						<tr>
+							<td align="center" nowrap bgcolor="white">
+								<div align="left">
+									<font size="-2">SMODE_TAB8_12</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">1&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">2&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">3&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">4&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">5&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">6&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">7&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">8&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white"><font size="-2">42</font></td>
+						</tr>
+						<tr>
+							<td align="center" nowrap bgcolor="#dfdfdf">
+								<div align="left">
+									<font size="-2">SMODE_TAB8_13</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;8</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;7</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;6</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;5</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;4</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;3</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;2</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;1</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf"><font size="-2">43</font></td>
+						</tr>
+						<tr>
+							<td align="center" nowrap bgcolor="white">
+								<div align="left">
+									<font size="-2">SMODE_TAB8_14</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">1&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">2&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">3&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">4&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;5</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;6</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;7</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;8</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white"><font size="-2">44</font></td>
+						</tr>
+						<tr>
+							<td align="center" nowrap bgcolor="#dfdfdf">
+								<div align="left">
+									<font size="-2">SMODE_TAB8_15</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">8&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">7&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">6&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">5&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;4</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;3</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;2</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;1</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf"><font size="-2">45</font></td>
+						</tr>
+						<tr>
+							<td align="center" nowrap bgcolor="white">
+								<div align="left">
+									<font size="-2">SMODE_TAB8_16</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">1&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">2&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;3</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;4</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">5&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">6&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;7</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;8</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white"><font size="-2">46</font></td>
+						</tr>
+						<tr>
+							<td align="center" nowrap bgcolor="#dfdfdf">
+								<div align="left">
+									<font size="-2">SMODE_TAB8_17</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">8&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">7&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;6</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;5</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">4&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">3&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;2</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;1</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf"><font size="-2">47</font></td>
+						</tr>
+						<tr>
+							<td align="center" nowrap bgcolor="white">
+								<div align="left">
+									<font size="-2">SMODE_TAB8_18</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;1</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;2</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;3</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;4</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;5</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;6</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;7</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;8</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white"><font size="-2">48</font></td>
+						</tr>
+						<tr>
+							<td align="center" nowrap bgcolor="#dfdfdf">
+								<div align="left">
+									<font size="-2">SMODE_TAB8_19</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">8&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">7&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">6&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">5&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">4&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">3&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">2&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">1&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf"><font size="-2">49</font></td>
+						</tr>
+						<tr>
+							<td align="center" nowrap bgcolor="white">
+								<div align="left">
+									<font size="-2">SMODE_TAB8_20</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;1</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;2</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;3</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="right">
+									<font size="-2">&lt;4</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">5&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">6&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">7&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white" width="55">
+								<div align="left">
+									<font size="-2">8&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="white"><font size="-2">50</font></td>
+						</tr>
+						<tr>
+							<td align="center" nowrap bgcolor="#dfdfdf">
+								<div align="left">
+									<font size="-2">SMODE_TAB8_21</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;8</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;7</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;6</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="right">
+									<font size="-2">&lt;5</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">4&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">3&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">2&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf" width="55">
+								<div align="left">
+									<font size="-2">1&gt;</font></div>
+							</td>
+							<td align="center" nowrap bgcolor="#dfdfdf"><font size="-2">51</font></td>
+						</tr>
+					</table>
+					<p>The reshuffeling schemata table consists of twelve basic schemata and their mirrored versions. The mirrored schemata allow to mount line scan cameras in 180 degree fashion when mounting the normal way is not mechanically convinient.</p>
+					<h3><br>
+						<br>
+						<br>
+					</h3>
+					<div align="left">
+								<p>The following figure illustrates the read out schema <b>12345678&gt;</b> of <font color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>SMODE_UNCHANGED</b></font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"> </font>for the 8 tap full cameras. Read out direction is forward. This read out schema does not require pixel reshuffeling.</p>
+						<p><img src="SC8Tap_UNCHANGED.jpg" alt="" height="540" width="720" border="0"></p>
+						<p><br>
+									<br>
+									<br>
+							The next figure illustrates the read out shema <b>&lt;87654321</b> of <font color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>SMODE_REVERSE</b></font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"> </font>for the 8 tap full cameras. Reout direction is backward. This schema is a mirrored version of <font color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>SMODE_UNCHANGED</b></font><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b> </b></font>and performs a line mirroring for correction.</p>
+						<div align="left">
+									<div align="left">
+										<div align="left">
+											<div align="left">
+												<div align="left">
+													<div align="left">
+														<p><img width=720 height=540 src="SC8Tap_REVERSE.jpg"></p>
+													</div>
+												</div>
+												<p><br>
+													<br>
+													<br>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div align="left">
+									<div align="left">
+										<p>The sensor readout mode <b>SMODE_TAB8_0</b> reads out half of the line forwards and half of the line backwards. The number of pixels read out from both halves is divided into groups of 4 neighbouring pixels. A block of 4 pixels from the first half and a block of 4 pixels from the last half are transmitted over CameraLink as a single 8 pixel block.</p>
+										<p><img width=720 height=540 src="SC8Tap_TAB8_0.jpg"></p>
+										<p><br>
+											<br>
+											<br>
+										</p>
+										<div align="left">
+											<div align="left">
+												<div align="left">
+													<p>The sensor readout mode <b>SMODE_TAB8_1</b> reads out half of the line forwards and half of the line backwards. The number of pixels read out from both halves is divided into groups of 4 neighbouring pixels. A block of 4 pixels from the first half and a block of 4 pixels from the last half are transmitted over CameraLink as a single 8 pixel block. The order of pixels in the second 4 pixel block is mirrored in comparision to <b>SMODE_TAB8_0</b>.</p>
+												</div>
+											</div>
+										</div>
+										<div align="left">
+											<div align="left">
+												<div align="left">
+													<div align="left">
+														<div align="left">
+															<p><img width=720 height=540 src="SC8Tap_TAB8_1.jpg"></p>
+														</div>
+													</div>
+												</div>
+												<p><br>
+													<br>
+													<br>
+												</p>
+												<p>The sensor readout mode <b>SMODE_TAB8_2</b> reads out the both line halves forwards. The number of pixels read out from both halves is divided into groups of 4 neighbouring pixels. A block of 4 pixels from the first half and a block of 4 pixels from the last half are transmitted over CameraLink as a single 8 pixel block.</p>
+												<p><img width=720 height=540 src="SC8Tap_TAB8_2.jpg"><br>
+													<br>
+													<br>
+													<br>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div align="left">
+									<div align="left">
+										<div align="left">
+											<div align="left">
+												<div align="left">
+													<p>The sensor readout mode <b>SMODE_TAB8_3</b> reads out the four line quarters forwards. The number of pixels read out from all quarters is divided into groups of 2 neighbouring pixels. A block of 2 pixels from each quarter is transmitted over CameraLink as a single concatenated 8 pixel block.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<p><img width=720 height=540 src="SC8Tap_TAB8_3.jpg"><br>
+									<br>
+									<br>
+									<br>
+								</p>
+								<div align="left">
+									<div align="left">
+										<div align="left">
+											<div align="left">
+												<div align="left">
+													<div align="left">
+														<p>The sensor readout mode <b>SMODE_TAB8_4</b> reads out the four line quarters backwards. This schema is a mirrored version of <b>SMODE_TAB8_3</b>.The number of pixels read out from all quarters is divided into groups of 2 neighbouring pixels. A block of 2 pixels from each quarter is transmitted over CameraLink as a single concatenated 8 pixel block.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<p><img width=720 height=540 src="SC8Tap_TAB8_4.jpg"></p>
+								<div align="left">
+									<p><br>
+										<br>
+										<br>
+									</p>
+									<div align="left">
+										<div align="left">
+											<div align="left">
+												<div align="left">
+													<div align="left">
+														<div align="left">
+															<p>The sensor readout mode <b>SMODE_TAB8_5</b> reads out the first and the second line quarters forwards and the third and the fourth line quarters backwards. The number of pixels read out from all quarters is divided into groups of 2 neighbouring pixels. A block of 2 pixels from each quarter is transmitted over CameraLink as a single concatenated 8 pixel block.</p>
+													<p><img width=720 height=540 src="SC8Tap_TAB8_5.jpg"></p>
+												</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+					<p><br>
+						<br>
+						<br>
+					</p>
+					<p>The sensor readout mode <b>SMODE_TAB8_6</b> reads out the first line half forwards and the last line half backwards. This schema is a mirrored version of <b>SMODE_TAB8_0</b>. The number of pixels read out from both halves is divided into groups of 4 neighbouring pixels. A block of 4 pixels from the first half and a block of 4 pixels from the last half are transmitted over CameraLink as a single 8 pixel block.</p>
+					<p><img src="SC8Tap_TAB8_6.jpg" alt="" height="540" width="720" border="0"></p>
+					<p><br>
+						<br>
+						<br>
+					</p>
+					<p>The sensor readout mode <b>SMODE_TAB8_7</b> reads out the first line half forwards and the last line half backwards. This schema is a mirrored version of <b>SMODE_TAB8_1</b>. The number of pixels read out from both halves is divided into groups of 4 neighbouring pixels. A block of 4 pixels from the first half and a block of 4 pixels from the last half are transmitted over CameraLink as a single 8 pixel block.</p>
+					<p><img src="SC8Tap_TAB8_7.jpg" alt="" height="540" width="720" border="0"></p>
+					<p><br>
+						<br>
+						<br>
+					</p>
+					<p>The sensor readout mode <b>SMODE_TAB8_8</b> reads out the both line halves backwards. This schema is a mirrored version of <b>SMODE_TAB8_2</b>. The number of pixels read out from both halves is divided into groups of 4 neighbouring pixels. A block of 4 pixels from the last half and a block of 4 pixels from the first half are transmitted over CameraLink as a single 8 pixel block.</p>
+					<p><img src="SC8Tap_TAB8_8.jpg" alt="" height="540" width="720" border="0"></p>
+					<p><br>
+						<br>
+						<br>
+					</p>
+					<p>The sensor readout mode <b>SMODE_TAB8_9</b> reads out the fourth and the third line quarters backwards and the second and the first line quarters forwards. This schema is a mirrored version of <b>SMODE_TAB8_5</b>. The number of pixels read out from all quarters is divided into groups of 2 neighbouring pixels. A block of 2 pixels from each quarter is transmitted over CameraLink as a single concatenated 8 pixel block.</p>
+					<p><img src="SC8Tap_TAB8_9.jpg" alt="" height="540" width="720" border="0"></p>
+					<p><br>
+						<br>
+						<br>
+					</p>
+					<p>The sensor readout mode <b>SMODE_TAB8_10</b> reads out the first and the second line quarters forwards and the third and the fourth line quarters backwards. The number of pixels read out from all quaters is divided into groups of 2 neighbouring pixels. A block of 2 pixels from each quarter is transmitted over CameraLink as a single concatenated 8 pixel block.</p>
+					<p><img src="SC8Tap_TAB8_10.jpg" alt="" height="540" width="720" border="0"></p>
+					<p><br>
+						<br>
+						<br>
+					</p>
+					<p>The sensor readout mode <b>SMODE_TAB8_11</b> reads out the last and the third line quarters backwards and the second and the first line quarters forwards. This schema is a mirrored version of <b>SMODE_TAB8_10</b>. The number of pixels read out from all quaters is divided into groups of 2 neighbouring pixels. A block of 2 pixels from each quarter is transmitted over CameraLink as a single concatenated 8 pixel block.</p>
+					<p><img src="SC8Tap_TAB8_11.jpg" alt="" height="540" width="720" border="0"></p>
+					<p><br>
+						<br>
+						<br>
+					</p>
+					<p>The sensor readout mode <b>SMODE_TAB8_12</b> reads out all eighth parts of the line forwards. The number of pixels read out from all eighth parts is divided into groups of 1 pixel. A block of 1 pixel from each eighth is transmitted over CameraLink as a single concatenated 8 pixel block.</p>
+					<p><img src="SC8Tap_TAB8_12.jpg" alt="" height="540" width="720" border="0"></p>
+					<p><br>
+						<br>
+						<br>
+					</p>
+					<p>The sensor readout mode <b>SMODE_TAB8_13</b> reads out all eighth parts of the line backwards. This schema is a mirrored version of <b>SMODE_TAB8_12</b>. The number of pixels read out from all eighth parts is divided into groups of 1 pixel. A block of 1 pixel from each eighth is transmitted over CameraLink as a single concatenated 8 pixel block.</p>
+					<p><img src="SC8Tap_TAB8_13.jpg" alt="" height="540" width="720" border="0"></p>
+					<p><br>
+						<br>
+						<br>
+					</p>
+					<p>The sensor readout mode <b>SMODE_TAB8_14</b> reads out the first four eighth parts of the line forwards and the last four eighth parts of the line backwards. The number of pixels read out from all eighth parts is divided into groups of 1 pixel. A block of 1 pixel from each eighth is transmitted over CameraLink as a single concatenated 8 pixel block.</p>
+					<p><img src="SC8Tap_TAB8_14.jpg" alt="" height="540" width="720" border="0"></p>
+					<p><br>
+						<br>
+						<br>
+					</p>
+					<p>The sensor readout mode <b>SMODE_TAB8_15</b> reads out the last four eighth parts of the line backwards and the first four eighth parts of the line forwards. This schema is a mirrored version of <b>SMODE_TAB8_14</b>. The number of pixels read out from all eighth parts is divided into groups of 1 pixel. A block of 1 pixel from each eighth is transmitted over CameraLink as a single concatenated 8 pixel block.</p>
+					<p><img src="SC8Tap_TAB8_15.jpg" alt="" height="540" width="720" border="0"></p>
+					<p><br>
+						<br>
+						<br>
+					</p>
+					<p>The sensor readout mode <b>SMODE_TAB8_16</b> reads out the first and second line eighth parts forwards, the third and fourth line eighth parts backwards, the fifth and sixth eighth parts forwards, and the seventh and last eighth parts of the line backwards. The number of pixels read out from all eighth parts is divided into groups of 1 pixel. A block of 1 pixel from each eighth is transmitted over CameraLink as a single concatenated 8 pixel block.</p>
+					<p><img src="SC8Tap_TAB8_16.jpg" alt="" height="540" width="720" border="0"></p>
+					<p><br>
+						<br>
+						<br>
+					</p>
+					<p>The sensor readout mode <b>SMODE_TAB8_17</b> reads out the last and seventh line eighth parts backwards, the sixth and fifth line eighth parts forwards, the fourth and third eighth parts backwards, and the second and first eighth parts of the line forwards. This schema is a mirrored version of <b>SMODE_TAB8_16</b>. The number of pixels read out from all eighth parts is divided into groups of 1 pixel. A block of 1 pixel from each eighth is transmitted over CameraLink as a single concatenated 8 pixel block.</p>
+					<p><img src="SC8Tap_TAB8_17.jpg" alt="" height="540" width="720" border="0"></p>
+					<p><br>
+						<br>
+						<br>
+					</p>
+					<p>The sensor readout mode <b>SMODE_TAB8_18</b> reads out all eighth parts of the line backwards. The number of pixels read out from all eighth parts is divided into groups of 1 pixel. A block of 1 pixel from each eighth is transmitted over CameraLink as a single concatenated 8 pixel block.</p>
+					<p><img src="SC8Tap_TAB8_18.jpg" alt="" height="540" width="720" border="0"></p>
+					<p><br>
+						<br>
+						<br>
+					</p>
+					<p>The sensor readout mode <b>SMODE_TAB8_19</b> reads out all eighth parts of the line forwards. This schema is a mirrored version of <b>SMODE_TAB8_18</b>. The number of pixels read out from all eighth parts is divided into groups of 1 pixel. A block of 1 pixel from each eighth is transmitted over CameraLink as a single concatenated 8 pixel block.</p>
+					<p><img src="SC8Tap_TAB8_19.jpg" alt="" height="540" width="720" border="0"></p>
+					<p><br>
+						<br>
+						<br>
+					</p>
+					<p>The sensor readout mode <b>SMODE_TAB8_20</b> reads out the first four eighth parts backwards and the last four eighth parts of the line forwards. The number of pixels read out from all eighth parts is divided into groups of 1 pixel. A block of 1 pixel from each eighth is transmitted over CameraLink as a single concatenated 8 pixel block.</p>
+					<p><img src="SC8Tap_TAB8_20.jpg" alt="" height="540" width="720" border="0"></p>
+					<p><br>
+						<br>
+						<br>
+					</p>
+					<p>The sensor readout mode <b>SMODE_TAB8_21</b> reads out the last four eighth parts forwards and the first four eighth parts of the line backwards. The number of pixels read out from all eighth parts is divided into groups of 1 pixel. A block of 1 pixel from each eighth is transmitted over CameraLink as a single concatenated 8 pixel block.</p>
+					<p><img src="SC8Tap_TAB8_21.jpg" alt="" height="540" width="720" border="0"></p>
+					<h2><br>
+						References<br>
+					</h2>
+				</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p></p>
+					<p><a href="../../documents/SDK/SDK.html">SDK Documentation</a></p>
+					<p></p>
+				</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+ 						<table>
+							<tr><br><br>
+								<td align="left" valign="middle" bgcolor="white" width="200"></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../index.html">Back to Documentation Index <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								<td align="right" valign="middle" bgcolor="white"></td>
+							</tr>
+							<tr>
+								<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../overviews/applet_feature_overview.html">Back to Feature Overview <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								</td>
+								<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				<tr>
+					<td colspan="2" align="left" valign="top" width="740"><img src="../../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+		<p></p>
+		<p></p>
+		</body>
+</html>
+
+
+

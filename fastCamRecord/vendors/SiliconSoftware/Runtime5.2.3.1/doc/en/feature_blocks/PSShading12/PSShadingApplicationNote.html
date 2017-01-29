@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<title>Silicon Software - microEnable IV - Runtime 5 - Line Trigger in General</title>
+				<link href="../../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../../lib/siso.ico" rel="shortcut icon">
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2" align="left" valign="bottom"><img src="../../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" height="20">
+							<div align="center">
+								<h2>Shading and Fixed Pattern Noise Correction</h2>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" height="20">
+							<div align="center">
+								<p>Application Note</p>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" height="20"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white">
+					<h1><a name="_1"></a>1 Problem Description</h1>
+				</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white">
+							<p>With shading and fixed pattern noise you can solve three different problems of the image acquisition. In the following, it will be described in a short form how</p>
+							<ul>
+								<li><a href="#_2">defective pixel of the sensor can be detected and corrected</a>,							<li><a href="#_3">the offset of black pixels can be eleminated (with the help of the dark current many pixel don't have the value 0, even if they aren't exposed by light)</a>,								<li><a href="#_4">irregular illumination ratio can be corrected by calculation
+</a>								
+							</ul>
+					<p>is possible with the software <i><a href="../../documents/microDisplay.html">microDisplay</a></i> and with the <i><a href="../../documents/SDK/SDK.html">SDK</a></i>.</p>
+					<p>The Shading Correction contains two different parts: The <a href="#_3">subtractive correction</a> and the <a href="#_4">multiplicative correction</a>. With the <a href="#_3">subtractive correction</a>, the so called dark current can be corrected. With the <a href="#_4">multiplicative correction</a>, irregular illumination circumstances will be corrected.</p>
+					<p>Dependent of the literature source, the subtractive  correction is also called offset  correction and the multiplicative  correction is also described as gain correction. </p>
+					<p></p>
+				</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white">
+					<h1><br>
+						<a name="_2"></a>2 Fixed Pattern Noise Correction / Defective Pixel Interpolation</h1>
+				</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white">
+					<h3></h3>
+					<h2><a name="_2.1"></a>2.1 Background</h2>
+					<p>Defective pixel of the sensor can be eleminated with the help of the so called 'Fixed Pattern Noise Correction' (sometimes it it called 'Dead Pixel Cancelation').</p>
+					<div align="center">
+						<p><img width=40% src="../../../images/shading/illu1+2.JPG"><br>
+							<i><b>Illustration 1 <br>
+									On the left:</b> Original test image.<br>
+							</i><i><b>On the right:</b> Test image area.</i></p>
+							<p></p>
+					</div>
+					<p>In <i>illustration 1</i> a test image can be seen. It shows areas of defective pixels within right half which have been enlarged. The recognizable faulty pixel have been caused by defects within sensor. That means either that the defective pixel always must be at the same coordinates (therefore the name 'Fixed Pattern Noise'). On the other side the pattern of the defective pixels is differing for each camera sensor. Therefore, the correction of defective pixels has to be done for each camera itself.</p>
+					<p>For humans the defective pixels in <i>illustration 1</i> are easy to detect. But, how can defective pixels of the sensor be detected automatically? Therefore, it is to think about what a defective pixel is. It is a point within the image that doesn't measure the indensity of the incoming light. Thus, a defective pixel delivers a fixed value independent from light indensity. Therefore, it is easy to detect the dead pixels automatically, if the sensor field will be completely darkened. Because in this case the defective pixel still deliver there constant value. Thus, they are more bright than the correct pixel.</p>
+					<div align="center">
+						<p><img width=40% src="../../../images/shading/illu3.JPG"><br>
+							<i><b>Illustration 2:</b> Brightened image of the completely darkened sensor.</i></p>
+						<p></p>
+						<p><img width=40% src="../../../images/shading/illu4.JPG"><br>
+							<i><b>Illustration 3:</b> Histogram of the darkened sensor from illustration 2.</i></p>
+						<p></p>
+						<p><img width=40% src="../../../images/shading/illu5.JPG"><br>
+							<i><b>Illustration 4:</b> The defective pixels of illustration 2 are marked white by a threshold of 36.</i></p>
+					</div>
+					<p></p>
+					
+					The image of a completely darkened sensor can be seen in <i>illustration 2.</i> But the complete image has been brightened to see more details for reproduction. The defective pixels can be seen in plain like lightning stars in front of a lightly noisy background.
+
+					<p>If we take a look at <i>illustration 3</i>, we will see that mostly all pixel values will be round about the peak of the brightness value 15. Two things will astonish: Either, the pixel value for most of the pixels is not null even without light, nor the shifted dark point is blurred. The reason for it is the so called dark current which causes that the pixel value is greater than null, even without light. Moreover, the dark current for each pixel is slightly different which results in a bell-shaped arrangement.</p>
+					<p>In spite of the difficulties in fact of the dark current, defective pixels can be detected automatically, if the pixels outside the bell-shaped curve are surely dead pixels. This red borderline is shown in <i>illustration 3</i>. In our example, the threshold is at 36.</p>
+					<p>If all pixel values which are greater than 36 within the dark image are marked white, the resulting image is shown in <i>illustration 4</i>. Accordingly, all white pixels are defective and violates the image analysis. The interference can be reduced, if an interpolated (means calculated) pixel value improves the representation of the unknown pixel.</p>
+					<div align="center">
+						<p><img width=40% src="../../../images/shading/illu6.JPG" align="middle"><br>
+							<i><b>Illustration 5:<br>
+								</b>The test image with Fixed Pattern Noise Correction.<br>
+								
+								Defective Pixels have been replaced by linear interpolation of its neighbors.</i></p>
+						<p></p>
+					</div>
+					<p>The Fixed Pattern Noise Correction interpolates the value of defective pixels out of its left and right neighbor. Herewith, a linear interpolation will be used. That means, the average of neighbor pixels will be used for faulty pixels. The resulting image of such a correction is shown in <i>illustration 5</i>.</p>
+					<p></p>
+				</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white">
+					<h1><br>
+						<a name="_3"></a>3 Shading Correction: Subtractive Calculation</h1>
+				</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white">
+					<p></p>
+					<h2><a name="_3.1"></a>3.1 Background</h2>
+					<p>The Shading Correction contains two different parts: The subtractive correction and the <a href="#_4">multiplicative correction</a>. With the subtractive correction, the so called dark current can be corrected. With the <a href="#_4">multiplicative correction</a>, irregular illumination circumstances will be corrected.</p>
+					<p>If the sensor will be covered with a photoresistant item and an image will be acquired, the resulting image is a so called dark image of the sensor. In <i>illustration 6</i>, an example of a brightend dark image is shown. With a perfect sensor, the dark image would be stady and all the pixel values would be exactly null. No real sensor can produce such an image.</p>
+					<div align="center">
+						<p><img width=40% src="../../../images/shading/illu7.JPG"><br>
+							<i><b>Illustration 6:</b> Dark image of a sensor.<br>
+								
+								For better reproduction, the image has been brightened a lot.</i></p>
+						<p></p>
+					</div>
+					<p>In a histogram of a (not brightened) dark image, the background noise of individual pixels can be seen. In contrast to a perfect sensor, not all the pixels are null, but most of the pixels are blurred and on the bell-shaped curve near 15.</p>
+					<p>The reason is that during exposure, in semi-conductor material electrons can get free because of temperature effects, even if no light has fallen on the sensor element and therefore, the messurement always will be greater than null. This effect is called the dark current and it is not only temperature depending, but it will be affected by the physical consistence (impurity) within teh sensor element of the corresponding pixel. Hence, the dark current is either temperature depending (which is in practice of little importance) and it is different for each sensor.</p>
+					<div align="center">
+						<p><img width=40% src="../../../images/shading/illu8.JPG"><br>
+							<i><b>Illustration 7:</b> Histogram of the dark image in illustration 7.</i></p>
+						<p></p>
+						<p><img width=40% src="../../../images/shading/illu9.JPG"><br>
+							<i><b>Illustration 8:</b> Histogram of a dark image with enabled subtractive correction.</i></p>
+						<p></p>
+					</div>
+					<p>Therefore, the dark current of a pixel is determined by its unchangable physical properties (temperature variation neglected). Consequence is the important property that the dark current for each pixel is different, but constant. Therefore, it has to be messured for each sensor only once.</p>
+					<p>After the derivation has been clarified, we can take a look at the effect according the image acquisition. In an ideal sensor, electrons will get free in the semi-conductor material. Its number is directly proportional to the indensity of the incoming light, so that the light indensity can be determined by messuring the originated stream. Hereof, the electrons that got free are independent in fact of temperature effects and they generate the additional dark current which falsify the messurement. The independence at the becoming of both streams enables the simple correction of light messurement by the subtraction of the additional dark current from the messured stream.</p>
+					<p>Herewith, it is obvious, how the messurement falsified by the dark current can be eleminated by the subtractive correction: Initially, the sensor has to be covered completely and the dark image has to be acquired as reference image. At this juncture, the messured pixel values are not null, but the pixel depending dark current. Because the dark current as additional component is contained in the light messurement, the dark reference image must be subtracted, so that the pattern in the image that has been caused by the dark current will be eleminated.</p>
+					<p>The effect of the subtractive correction gets more conspicuous in case of very dark images, that means in case of very small pixel values, because here, the relative fault is the biggest caused by the dark current. A trivial example is the acquisition of a dark image at enabled subtractive correction. The result is completely black as it could have been expected with a ideal sensor. We renounce the reproduction of such a completely black image, at this point, but in <i>illustration 8</i> the histogram is shown. Obviously, the betterness can be seen: The bell-shaped curve in <i>illustration 7</i> has become a small peak which is located at null.</p>
+					<h2></h2>
+				</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white">
+					<h1><br>
+						<a name="_4"></a>4 Shading Correction: Multiplicative Calculation</h1>
+				</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" >
+					<h2></h2>
+					<h2><a name="_4.1"></a>4.1 Background</h2>
+					<p>The Shading Correction contains two different parts: The <a href="#_3">subtractive correction</a> and the multiplicative correction. With the <a href="#_3">subtractive correction</a>, the so called dark current can be corrected. With the multiplicative correction, irregular illumination circumstances will be corrected.</p>
+					<p>The irregular illumination of an image field complicates the image analysis. Therefore, at assembly of apperatures it has to bee seen that an ideal illumination level can be guaranteed. Nevertheless, an illumination which is not perfect can not be avoided with a passable effort. Additionally, the lense system of the camera causes unavoidable and less good illuminated image margins.</p>
+					<p>Often, it will be tried to adjust this shortcoming of image acquisition with spatially adaptive algorithms. But it is more elegant to correct the static illumination shortcoming with multiplicative shading correction, already at image acquisition.</p>
+					<p>At this point, it is helpful to see an application for illustration, e. g. the binary segmentation of the image. The left image in <i>illustration 9 (on the left)</i> shows the image acquisition of a text that should be segmented into the two classes 'background' and 'text'. The result of the segmentation is shown in <i>illustration 9 (on the right)</i>.</p>
+					<p>In the left top of the image the image is under segmented, that means, the letters are already illuminated in this image half, so that parts are classified as background. Besides, the bad illuminated image part on the right shows an over segmentation, where the background has been classified as text. The irregular illumination of an image area makes it unpossible to segment the image with a global threshold, that means with a uniform threshold for the whole image. If the threshold would be reduced for correctly segmenting the letters on the right side of the image, the classification on the left top of the image would get more worse (<i>illustration 10</i>). In contrast, the opposite would be the result (<i>illustration 10</i>).</p>
+					<div align="center">
+						<p><img width=50% src="../../../images/shading/illu10.JPG"><br>
+							<i><b>Illustration 9<br>
+									On the left:</b> Text which is irregular illuminated.<br>
+								<b>On the right:</b> The same image, but binary segmented with a global threshold.</i></p>
+						<p></p>
+						<p><img width=50% src="../../../images/shading/illu11.JPG"><br>
+							<i><b>Illustration 10:<br>
+								</b>Reducing the threshold (left image), reduces the quality of segmentation in highly illuminated areas.<br>
+								Rising the threshold (right image), reduces the quality of segmentation in worse illuminated areas.</i></p>
+						<p></p>
+					</div>
+					<p>To avoid the pattern noise which came up with the irregular illumination of the image field, the acquisition of an image is nesseccary which only contains the not perfect illumination circumstances. Such an image can be gotten, if a completely white image field will be acquired under given illumination circumstances. In such an image, each pixel would be exacly white, if it would be ideal illuminated and the camera's optic wouldn't cause pattern noise. Such an image is called white reference image. Important either is that the white reference image really is an illumination messurement, nor that an image region has been overexposed.</p>
+					<p>Thus, the white reference image describes the tolerance of the messured brightness of the ideal brightness (white). The white reference image can be gotten, if the whole image field will be covered with a white paper.</p>
+					<div align="center">
+						<p><img width=50% src="../../../images/shading/illu12.JPG"><br>
+							<i><b>Illustration 11:</b> White reference image gotten by covering the image field with a white paper.</i></p>
+						<p></p>
+					</div>
+					<p>How can the not perfect illumination be corrected with a white reference image? Therefore, the meaning of such an image has to be understood. The image contains the dynamical value of each pixel. Per definition, each pixel in a white reference image has namely the maximum brightness under given circumstances. At a real image scene with objects, under the same illumination circumstances, each pixel will only have a value between null and its value in the reference image. The pixel depending dynamic values which is caused by illumination circumstances have to be rescaled to get a corrected image.</p>
+					<p>The result of the shading correction of this example is shown in <i>illustration 12</i> on the left. On the right you will see the segmentation of the image with a global threshold. Obviously, in both images to a large extent the correction of the irregular illumination can be seen.</p>
+					<div align="center">
+						<p><img width=50% src="../../../images/shading/illu13.JPG"><br>
+							<i><b>Illustration 12<br>
+									On the left:</b> The shading corrected image of illustration 9.<br>
+								<b>On the right:</b> The segmented image by a global threshold.</i></p>
+					</div>
+					<p></p>
+					<p>Finally, we like to point to principal difficulties of the multiplicative shading correction:</p>
+					<ul>
+						<li type="disc">The coefficients of the multiplicative shading correction are static. Therefore, the white reference image has to be gotten under exactly the same illumination circumstances as during the later acquisition. Normally, it is given in controllable illumination circumstances (artificial illumination), only.
+						<li type="disc">Because the illumination usually doesn't change with the two-dimensional projection of the image field on the sensor, but with the three-dimensional position of the object to acquire, it has to be payed attention about taking the white reference image by covering the same three-dimensional structure.
+					</ul>
+					<p>Not affected of these difficulties are the illumination differences which have not been caused by external effects, but by internal noise. So, the reduced illumination in the edges of the camera images is defined by the not perfect objective of the camera and, therefore, it can be corrected for any acquisition conditions.</p>
+					<p></p>
+				</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white"  height="20">
+ 						<table>
+							<tr><br><br>
+								<td align="left" valign="middle" bgcolor="white" width="200"></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right">
+									<a title="Index" href="../../ind_addondocs.html">Back to ApplicationNotes Index <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								<td align="right" valign="middle" bgcolor="white"></td>
+							</tr>
+							<tr>
+								<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../overviews/applet_feature_overview.html">Back to Feature Overview <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								</td>
+								<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				<tr>
+					<td colspan="2" align="left" valign="top" width="740"><img src="../../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+			<p></p>
+		</body>
+</html>
+
+
+

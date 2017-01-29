@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<title>Silicon Software - microEnable IV - Runtime 5 - Line Trigger Line with Shaft Encoder</title>
+				<link href="../../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../../lib/siso.ico" rel="shortcut icon">
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2" align="left" valign="bottom" width="740"><img src="../../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="center">
+								<h2>Line Trigger/Exsync for Line-Scan Cameras</h2>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="right">
+								<div align="center">
+									<div align="center">
+										<p>Parameter Set</p>
+									</div>
+								</div>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2>
+							
+						Description<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">..</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p>For a general description of the Line Trigger system refer to the documents <a href="../../documents/TriggerSystem/TriggerSystem.html">The <i>microEnable IV</i> Trigger System</a> and <a href="../../documents/TriggerSystem/TriggerModesLine.html">Trigger Modes for Line Scan Cameras</a>.</p>
+							<p></p>
+							<p>The Line Trigger generates the Exsync and Exsync2 signals that are used to trigger the line acquisition of your camera. With the help of these signals it is possible to define the line frequency and Exposure Time. Since ExSync2 is just a copy of the Exsync with a user selectable delay, the following description will refer to 'ExSync' only.<br>
+							</p>
+							<p>To use the ExSync signals for your camera it is necessary to configure your camera accordingly. Furthermore your camera might expect the ExSync at a particular <a href="../PSCCSignals/PSCCSignalsLine.html">CC signal</a>. Please consult the manual of your camera for details.<br>
+							</p>
+							<p>Basically two different generation modes for the ExSync signals are available, a simple periodical and an externally triggered generation. Additionally, two variants are available, the first is independent from the <a href="PSLineTrigger_Image.html">Image Gate</a>, and the second is gated by the <a href="PSLineTrigger_Image.html">Image Gate</a>, which creates ExSync signals only during the actual acquisition.<br>
+							</p>
+							<h4>Image Gate independent ExSync modes:<br>
+							</h4>
+							<ul>
+								<li>Grabber Controlled<br>
+									
+									
+									
+									
+									
+									For the grabber controlled line trigger, the ExSync signal is a simple periodical signal. Its period defines the line frequency and its active time is used by many cameras to define the Exposure Time.<br>
+								<li>External Trigger<br>
+									
+									
+									
+									
+									
+									The External Trigger mode for ExSync generates a single ExSync pulse when the external trigger source becomes active. Again, the ExSync is active for Exposure Time to define the exposure time for the camera. During the exposure time is not possible to re-trigger the ExSync.<br>
+									
+									
+									
+									
+									If your camera needs an additional setup time, it is possible to extend the Deadtime of the trigger -- the time where no re-trigger is possible -- beyond the Exposure Time.<br>
+									
+									
+									
+									
+									
+									If you want to trigger fewer lines than pulses available at the Trigger Input, it is possible to downscale the Trigger Input, e.g. a Downscaler of 2 will generate an ExSync every 2nd input pulse, a Downscaler of 3 only every third of the input pulses, and so on and so forth.
+
+							</ul>
+							<h4>Image Gate dependent ExSync modes:<br>
+							</h4>
+							<ul>
+								<li>Grabber Controlled Gated<br>
+									
+									
+									
+									
+									For the Grabber Controlled Gated line trigger, the ExSync signal is generated the very same way as for the grabber controlled mode described above. However, the generator for the ExSync is starting the rising <a href="PSLineTrigger_Image.html">Image Gate</a> and stops with the <a href="PSLineTrigger_Image.html">Image Gate</a> becoming inactive. This gives a smaller jitter for the time from the start of the <a href="PSLineTrigger_Image.html">Image Gate</a> and the generation of the first ExSync, especially for very long ExSync periods.<br>
+								<li>External Trigger Gated<br>
+									
+									
+									
+									
+									For the External Trigger Gated controlled line trigger, the ExSync signal is generated the very same way as for the External Trigger mode described above. However, the generator for the ExSync is starting the rising <a href="PSLineTrigger_Image.html">Image Gate</a> and stops with the <a href="PSLineTrigger_Image.html">Image Gate</a> becoming inactive.<br>
+									
+									
+									
+									
+									For this mode two Downscalers are available. The first is the downscaler from the beginning of the <a href="PSLineTrigger_Image.html">Image Gate</a> to the first ExSync, it is called Phase. The second is downscaling all succeeding Input Triggers and is the same as the Downscaler used in External Trigger mode described above.<br>
+									
+									
+									
+									
+									
+									
+									
+									The options Downscale and Phase allow further adjustment of the camera trigger with respect to its external source, the trigger input. The value Downscale determines the divisor of the input frequency, e. g. a downscale of 16 will produce an ExSync every 16 * n of the input trigger. Furthermore, the phase gives the possibility to shift the camera trigger. A phase shift of 90&deg; is achieved when setting phase to 4, which produces a camera trigger at times 16 * n + 4 of the input trigger signal.
+
+							</ul>
+							<p>Please read the according chapter of the manual of your camera, which output format is used.</p>
+							<ul>
+								<p></p>
+							</ul>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							Parameters<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<h3><u>Main Section</u></h3>
+							<h3><a name="FG_LINETRIGGERMODE"></a>Mode</h3>
+							<p>You are able to choose the operation mode of your frame grabber. But please make sure that the operation mode of frame grabber and camera is the same.</p>
+							<p></p>
+							<h3><a name="FG_EXSYNCON"></a>ExSync Enable</h3>
+							<p>The ExSync can be set to on or off by right clicking onto the corresponding sub entry below the line trigger directory. This parameter lets an ExSync signal be sent.</p>
+							<p>Please note that you firstly start the acquisition before you set the ExSyncOn parameter to On (1). The signal will be sent as soon as the ExSync has been started. Please make sure that you set the ExSync parameter during the time that is set to the <a href="../PSMisc/FB_Miscellaneous.html">timeout</a> parameter.</p>
+							<h3><u>Section Line Trigger Input</u></h3>
+							<h3><a name="FG_LINETRIGGERINSRC"></a>Source A</h3>
+							<p>In external trigger mode you are able to choose the input source. If you use a ShaftEncoder select Source B and in the sub-section Shaft Encoder.</p>
+							<p></p>
+							<h3><a name="FG_LINETRIGGERINPOLARITY"></a>Input Polarity</h3>
+							<p>In external trigger mode the polarity for the input  Source A and B is selected.</p>
+							<h3><u>Section Downscale</u></h3>
+							<h3><a name="FG_LINEDOWNSCALE"></a>Downscale</h3>
+							<p>Sets the value of how often the frequency of the input trigger signal has to be devided. A value of 16 e. g. creates an ExSync at each 16<sup>th</sup> trigger signal.</p>
+							<p></p>
+							<h3><a name="FG_LINE_DOWNSCALEINIT"></a>Phase</h3>
+							<p>In addition to the downscale value the parameter phase sets the phase position. To turn the phase position about 90&deg;, a value of 4 has to be chosen. In this case (take a look at &quot;Downscale&quot;) the ExSync signals will be created at each 16 * n + 4 trigger signal.</p>
+							<h3><u>Section Shaft Encoder A/B Filter</u></h3>
+							<p>With the support of signal A/B for shaft encoders it is possible to detect the rotary direction of the encoder and filter the encoder signals accordingly. Also a compensation is performed for up to 16,777,216 reverse encoder signals. A brief description about this feature is found in the <a href="../../documents/TriggerSystem/ShaftEncoder.html">shaft encoder documentation</a>.</p>
+							<h3><a name="FG_SHAFTENCODERON"></a>Enable</h3>
+							<p>Switch the <a href="../../documents/TriggerSystem/ShaftEncoder.html">shaft encoder</a> filter on or off. By enabeling the shaft encoder also reset of the encoder compensation is performed. Therefore, disable and enable the the shaft encoder to reset the reverse compensation.</p>
+							<h3><a name="FG_SHAFTENCODERINSRC"></a>Source B</h3>
+							<p>Selects the input signal on the trigger board for Source B of the <a href="../../documents/TriggerSystem/ShaftEncoder.html">shaft encoder</a>.</p>
+							<h3><a name="FG_SHAFTENCODERLEADING"></a>Leading Signal</h3>
+							<p>Determines the leading signal (=direction) for the <a href="../../documents/TriggerSystem/ShaftEncoder.html">shaft encoder</a> filter.</p>
+							<h3><u>Section Exsync Output</u></h3>
+							<h3><a name="FG_LINEPERIODE"></a>Period</h3>
+							<p>The ExSync period parameter can be entered if grabber controlled or gated grabber controlled mode has been chosen. </p>
+							<p></p>
+							<h3><a name="FG_LINEEXPOSURE"></a>Exposure Time</h3>
+							<p>The exposure time in microseconds can be set.</p>
+							<p></p>
+							<h3><a name="FG_EXSYSNCPOLARITY"></a>Polarity</h3>
+							<p>The output polarity is able to set as high (1) or low (0).</p>
+							<p></p>
+							<h3><a name="FG_LINETRIGGERDELAY"></a>Delay -&gt; TrgIn</h3>
+							<p>You are able to set the delay for the output ExSync2 signal.</p>
+							<p></p>
+							<h3><a name="FG_DEADTIME_OFFSET"></a>Dead Time Offset</h3>
+							<p>The dead time offset parameter can be entered if external trigger or gated trigger mode has been chosen.</p>
+							<p></p>
+							<h3><a name="FG_DEADTIME"></a>Dead Time</h3>
+							<p>Dead time is the time in which no trigger signal will be accepted. This parameter can't be entered. The value which has been entered within the dead time offset will be added to the standard value.</p>
+							<p></p>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							References<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+					<p><a href="../../documents/TriggerSystem/TriggerSystem.html">Trigger System in General</a></p>
+					<p><a href="../../documents/TriggerSystem/TriggerModesLine.html" target="_blank">Trigger Modes for Line Scan Cameras</a></p>
+					<p><a href="../../documents/TriggerSystem/ShaftEncoder.html">Shaft Encoder</a></p>
+					<p><a href="../../documents/SDK/SDK.html">SDK Documentation</a></p>
+				</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+ 						<table>
+							<tr><br><br>
+								<td align="left" valign="middle" bgcolor="white" width="200"></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../index.html">Back to Documentation Index <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								<td align="right" valign="middle" bgcolor="white"></td>
+							</tr>
+							<tr>
+								<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../overviews/applet_feature_overview.html">Back to Feature Overview <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								</td>
+								<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				<tr>
+					<td colspan="2" align="left" valign="top" width="740"><img src="../../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+			<p></p>
+		</body>
+</html>
+
+
+

@@ -1,0 +1,2843 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<!-- #BeginTemplate "../../../../Runtime5.2.data/Musterseiten/MS_blank_SDK.html" -->
+
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<meta name="generator" content="Adobe GoLive 6">
+			<title>Silicon Software - Runtime 5 GigE</title>
+			<!-- #BeginHeadLocked "" -->
+				<link href="../../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../../lib/siso.ico" rel="shortcut icon">
+			<!-- #EndHeadLocked -->
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="4" align="left" valign="bottom" width="740"><img src="../../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"><img src="../../../images/pixel.png" alt="" height="20" width="60" border="0"></td>
+					<td align="left" valign="top" bgcolor="white" width="200" height="24"><img src="../../../images/pixel.png" alt="" height="20" width="200" border="0"></td>
+					<td width="20" height="24"><img src="../../../images/pixel.png" alt="" height="20" width="20" border="0"></td>
+					<td width="460" height="24"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="200"><!-- #BeginEditable "Bereich" -->
+							<table border="0" cellspacing="2" cellpadding="0" bgcolor="#e4e4e4">
+								<tr>
+									<td colspan="2" bgcolor="#e4e4e4">
+										<div align="center">
+											<h3><a id="_top" name="_top"></a>Table of Content</h3>
+										</div>
+									</td>
+								</tr>
+								<tr height="20">
+									<td width="40" height="20">
+										<h5>
+											
+										</h5>
+									</td>
+									<td height="20">
+										<h5>
+											
+										</h5>
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#e4e4e4" width="40">
+										<h5>1</h5>
+									</td>
+									<td bgcolor="#e4e4e4">
+										<h5><a href="SDK_GigE.html#_1">Introduction</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#e4e4e4" width="40">
+										<h5>2</h5>
+									</td>
+									<td bgcolor="#e4e4e4">
+										<h5><a href="SDK_GigE.html#_2">Interface Documentation</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>2.1</h5>
+									</td>
+									<td>
+										<h5><a href="SDK_GigE.html#_2.1">Initialization / Freeing</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.1.1</i></h5>
+									</td>
+									<td>
+										<h5><a href="SDK_GigE.html#_2.1.1"><i>Gbe_initBoard</i></a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.1.2</i></h5>
+									</td>
+									<td>
+										<h5><a href="SDK_GigE.html#_2.1.2"><i>Gbe_freeBoard</i></a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>2.2</h5>
+									</td>
+									<td>
+										<h5><a href="SDK_GigE.html#_2.2">Network Scan</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.2.1</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.2.1">Gbe_scanNetwork</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>2.3</h5>
+									</td>
+									<td>
+										<h5><a href="SDK_GigE.html#_2.3">Network Information</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.3.1</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.3.1">Gbe_getCameraCount</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.3.2</i></h5>
+									</td>
+									<td>
+										<h5><a href="SDK_GigE.html#_2.3.2"><i>Gbe_getFirstCamera</i></a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.3.3</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.3.3">Gbe_getCameraByMac</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.3.4</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.3.4">Gbe_getCameraByUserName</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.3.5</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.3.5">Gbe_freeCamera</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.3.6</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.3.6">Gbe_getCameraInfo</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.3.7</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.3.7">Gbe_freeCameraInfo</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>2.4</h5>
+									</td>
+									<td>
+										<h5><a href="SDK_GigE.html#_2.4">Camera Connection</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.4.1</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.4.1">Gbe_connectCamera</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.4.2</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.4.2">Gbe_disconnectCamera</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.4.3</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.4.3">Gbe_switchCameraConnection</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>2.5</h5>
+									</td>
+									<td>
+										<h5><a href="SDK_GigE.html#_2.5">Parameter Handling</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.5.1</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.5.1">Gbe_setIntegerValue</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.5.2</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.5.2">Gbe_getIntegerValue</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.5.3</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.5.3">Gbe_setBooleanValue</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.5.4</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.5.4">Gbe_getBooleanVaule</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.5.5</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.5.5">Gbe_setFloatValue</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.5.6</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.5.6">Gbe_getFloatValue</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.5.7</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.5.7">Gbe_setStringValue</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.5.8</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.5.8">Gbe_getStringValue</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.5.9</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.5.9">Gbe_setEnumerationValue</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.5.10</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.5.10">Gbe_getEnumerationValue</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.5.11</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.5.11">Gbe_executeCommand</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.5.12</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.5.12">Gbe_isCommandDone</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.5.13</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.5.13">Gbe_enableChecks</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.5.14</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.5.14">Gbe_lockTLParams</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.5.15</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.5.15">Gbe_unlockTLParams</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.5.16</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.5.16">Gbe_invalidateCache</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>2.6</h5>
+									</td>
+									<td>
+										<h5><a href="SDK_GigE.html#_2.6">Acquisition</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.6.1</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.6.1">Gbe_startAcquisition</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.6.2</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="SDK_GigE.html#_2.6.2">Gbe_stopAcquisition</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>2.7</h5>
+									</td>
+									<td>
+										<h5><a href="#_2.7">Event System</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>2.7.1</h5>
+									</td>
+									<td>
+										<h5><a href="#_2.7.1"><i>Event Notification</i></a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>2.7.2</h5>
+									</td>
+									<td>
+										<h5><a href="#_2.7.2"><i>GigE Vision Events</i></a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>2.7.3</h5>
+									</td>
+									<td>
+										<h5><a href="#_2.7.3"><i>Events generated by the SiliconSoftware Runtime</i></a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>2.8</h5>
+									</td>
+									<td>
+										<h5><a href="#_2.8">Helper Functions</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5><i>2.8.1</i></h5>
+									</td>
+									<td>
+										<h5><i><a href="#_2.8.1">Gbe_getErrorDescription</a></i></h5>
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#dcdcdc" width="40">
+										<h5>3</h5>
+									</td>
+									<td bgcolor="#dcdcdc">
+										<h5><a href="SDK_GigE.html#_3">Compiler Settings</a></h5>
+									</td>
+								</tr>
+								<tr>
+									<td width="40">
+										<h5>3.1</h5>
+									</td>
+									<td>
+										<h5><a href="SDK_GigE.html#_3.1">Windows</a></h5>
+									</td>
+								</tr>
+							</table>
+						<!-- #EndEditable --></td>
+					<td align="left" valign="top" bgcolor="white" width="20"><img src="../../../images/pixel.png" alt="" height="20" width="20" border="0"></td>
+					<td align="left" valign="top" bgcolor="white" width="460"><!-- #BeginEditable "Bereich3" -->
+							<h1>Software&nbsp;Development Kit (SDK) - GigE Extension</h1>
+							<p><br>
+								<br>
+							</p>
+							<h2>Runtime 5</h2>
+							<div class=Section1>
+								<div class=Section1>
+									<div class=Section1>
+										<div class=Section1>
+											<div class=Section1>
+												<div class=Section1>
+													<div class=Section1>
+														<div class=Section1>
+															<div class=Section1>
+																<div class=Section1>
+																	<div class=Section1>
+																		<div class=Section1>
+																			<div class=Section1>
+																				<div class=Section1>
+																					<div class=Section1>
+																						<div class=Section1>
+																							<div class=Section1>
+																								<div class=Section1>
+																									<div class=Section1>
+																										<div class=Section1>
+																											<div class=Section1>
+																												<div class=Section1>
+																													<div class=Section1>
+																														<div class=Section1>
+																															<div class=Section1>
+																																<div class=Section1>
+																																	<div class=Section1>
+																																		<div class=Section1>
+																																			<h2>microEnable IV AQ4-GE / VQ4-GE</h2>
+																																		</div>
+																																	</div>
+																																</div>
+																															</div>
+																														</div>
+																													</div>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<h2>microEnable IV-GigE</h2>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<h3>February 2013</h3>
+							<p><br>
+								<br>
+							</p>
+							<h3><br>
+							</h3>
+							<h1><a id="_1" name="_1"></a>1 Introduction</h1>
+							
+							
+							By the help of our new GigabitEthernet interface, cameras that have been connected to the <i>microEnable IV-AQ4-GE / </i>VQ4-GE / -<i>GigE</i> can be detected and it can be put into operation. The interface is GigE and GenAPI compatible. The GenAPI parameter can directly be accessed by our API which is described in the following.
+
+							<p>For basic functions that can be used both for our CL frame grabber and our GigE frame grabber please have a look at our global <a href="SDK.html">SDK Manual</a>.</p>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h1><a id="_2" name="_2"></a>2 Interface Documentation</h1>
+							<h2><a id="_2.1" name="_2.1"></a>2.1 Initialization / Freeing</h2>
+							<p><b>Functional Description</b></p>
+							<p><i><a href="SDK_GigE.html#_2.1.1">Gbe_initBoard()</a> </i>establishes a connection to a <i>microEnable IV </i><i>frame grabber</i> <i>.</i></p>
+							<p><i><a href="SDK_GigE.html#_2.1.2">Gbe_freeBoard()</a></i> closes the connection to a <i>microEnable IV frame grabber.</i></p>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.1.1" name="_2.1.1"></a>2.1.1 Gbe_initBoard</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b><font size="2" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">int Gbe_initBoard(int board, int init_flag, BoardHandle** board_handle_ptr)</font></b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">board</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">int</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">Logical board number.</font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">init_flag</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">int</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Should be 0.</font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">board_handle_ptr</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">BoardHandle**</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Pointer reference to BoardHandle.</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">Frame grabber has been initialized successfully. </font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Gbe error code</font></p>
+									</td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.1.2" name="_2.1.2"></a>2.1.2 Gbe_freeBoard</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>void Gbe_freeBoard(BoardHandle* board_handle)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">board_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">BoardHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">BoardHandle.</font></td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h2><a id="_2.2" name="_2.2"></a>2.2 Network Scan</h2>
+							<p><b>Functional Description</b></p>
+							<i><a href="SDK_GigE.html#_2.2.1">Gbe_scanNetwork()</a></i> accomplishes a network scan. Though, GigE Vision compatible cameras is searched for. This model either scans each port (-1) or a special port (0 - 3) which can be selected.
+
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.2.1" name="_2.2.1"></a>2.2.1 Gbe_scanNetwork</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_scanNetwork(BoardHandle* board_handle, int port, int discovery_timeout)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">board_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">BoardHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">BoardHandle.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">port</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">int</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">Port which shall be scanned:</font>
+										<p><font size="-2" color="black">-1 if all ports shall be scanned,<br>
+												
+												
+												0 - 3 for a special port to be scanned.</font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">discovery_timeout</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">int</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Timeout for camera detection. The value is in ms.</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">Network has been scanned successfully. </font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Gbe error code</font></p>
+									</td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h2><a id="_2.3" name="_2.3"></a>2.3 Network Information</h2>
+							<p><b>Functional Description</b></p>
+							<i><a href="SDK_GigE.html#_2.3.1">Gbe_getCameraCount()</a></i> determines the number of detected GigE cameras per port.
+
+							<p><i><a href="SDK_GigE.html#_2.3.2">Gbe_getFirstCamera()</a></i> fetches a handle to the first detected camera.</p>
+							<p><i><a href="SDK_GigE.html#_2.3.3">Gbe_getCameraByMac()</a></i> fetches a handle to a camera with a defenite MAC address.</p>
+							<p><i><a href="SDK_GigE.html#_2.3.3">Gbe_getCameraByUserName()</a></i> fetches a handle to a camera with a name given by the user.</p>
+							<p><i><a href="SDK_GigE.html#_2.3.5">Gbe_freeCamera()</a></i> is freeing a camera handle.</p>
+							<p><i><a href="SDK_GigE.html#_2.3.6">Gbe_getCameraInfo()</a></i> reads information about detected cameras.</p>
+							<p><i><a href="SDK_GigE.html#_2.3.7">Gbe_freeCameraInfo()</a></i> is freeing the information structure.</p>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.3.1" name="_2.3.1"></a>2.3.1 Gbe_getCameraCount</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_getCameraCount(BoardHandle* board_handle, int port)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">board_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">BoardHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">BoardHandle.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">port</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">int</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">Connected port (0 - 3).</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle><font size="-2" color="black">&gt; 0</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Number of camera(s) that have been detected.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Frame grabber has been initialized successfully. </font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">Gbe error code</font></p>
+									</td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.3.2" name="_2.3.2"></a>2.3.2 Gbe_getFirstCamera</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_getFirstCamera(BoardHandle* board_handle, int port, CameraHandle** camera_handle_ptr)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">board_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">BoardHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">BoardHandle.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">port</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">int</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">Connected port (0 - 3).</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle_ptr</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle**</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Pointer to camera handle.</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">The first camera has been fetched successfully. </font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Gbe error code</font></p>
+									</td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.3.3" name="_2.3.3"></a>2.3.3 Gbe_getCameraByMac</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_getCameraByMac(BoardHandle* board_handle, int port, uint8_t mac[6]</b><b>, CameraHandle** camera_handle_ptr)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">board_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">BoardHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">BoardHandle.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">port</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">int</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">Port which shall be scanned.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">mac</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">uint8_t*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">MAC address of the camera.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">camera_handle_ptr</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">CameraHandle**</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">Pointer to camera handle.</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">The camera has been fetched successfully. </font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Gbe error code</font></p>
+									</td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.3.4" name="_2.3.4"></a>2.3.4 Gbe_getCameraByUserName</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_getCameraByMac(BoardHandle* board_handle, int port, char* user_name, CameraHandle** camera_handle_ptr</b><b>)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">board_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">BoardHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">BoardHandle.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">port</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">int</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">Port which shall be scanned.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">user_name</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">char*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Name of the camera, settable by the user.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">camera_handle_ptr</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">CameraHandle**</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">Pointer to camera handle.</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">The camera has been fetched successfully. </font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Gbe error code</font></p>
+									</td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.3.5" name="_2.3.5"></a>2.3.5 Gbe_freeCamera</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_freeCamera(CameraHandle *camera_handle)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Camera handle.</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">Freeing the camera has been succeded. </font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Gbe error code</font></p>
+									</td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.3.6" name="_2.3.6"></a>2.3.6 Gbe_getCameraInfo</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>CameraInfo* Gbe_getCameraInfo(CameraHandle* camera_handle)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Camera handle.</font></td>
+								</tr>
+							</table>
+							<p></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>struct CameraInfo{<br>
+												
+												
+												char manufactor_name[32];<br>
+												
+												
+												char model_name[32];<br>
+												
+												
+												char device_version[32];<br>
+												
+												
+												char manufacturer_info[48];<br>
+												
+												
+												char serial_number[16];<br>
+												
+												
+												char user_name[16];<br>
+												
+												
+												uint8_t mac[6];<br>
+												
+												
+												};</b></p>
+									</td>
+								</tr>
+							</table>
+							<p>The camera information structure contains information that can be read out of a GigE Vision compatible camera:</p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">manufactor_name</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">char*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">The name of the camera manufacturer.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">model_name</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">char*</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">The name of the camera model.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">device_version</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">char*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Version number of the camera model.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">manufacturer_info</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">char*</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">Information of the manufacturer.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">serial_number</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">char*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Serial number of the camera.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">user_name</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">char*</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">Name of the camera, settable by the user.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">mac</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">uint8_t*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">MAC address of the camera.</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">Error getting camera info. </font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">!=0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Pointer to camera info structure</font></p>
+									</td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.3.7" name="_2.3.7"></a>2.3.7 Gbe_freeCameraInfo</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>void Gbe_freeCameraInfo(CameraInfo* camera_info)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_info</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraInfo*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Release of camera information structure.</font></td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h2><a id="_2.4" name="_2.4"></a>2.4 Camera Connection</h2>
+							<p><b>Functional Description</b></p>
+							<i><a href="SDK_GigE.html#_2.4.1">Gbe_connectCamera()</a></i> connects a camera that has been found within network with the port which it has been detected on. At the moment only one camera can be connected with a port. After establishing the connection, the data of the camera's XML file will be read and the user can access to the camera.
+
+							<p><i><a href="SDK_GigE.html#_2.4.2">Gbe_disconnectCamera()</a></i> closes the connection between camera and port.</p>
+							<p><i><a href="SDK_GigE.html#_2.4.3">Gbe_switchCameraConnection()</a></i> enables the correlation modification of a camera to a card or a port during an existing connection. Though, the camera can be assigned to a new card and / or to a new port.</p>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.4.1" name="_2.4.1"></a>2.4.1 Gbe_connectCamera</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_connectCamera(CameraHandle *camera_handle)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Camera handle.</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">The camera has been connected successfully.</font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Gbe error code</font></p>
+									</td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.4.2" name="_2.4.2"></a>2.4.2 Gbe_disconnectCamera</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_disconnectCamera(CameraHandle *camera_handle)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Camera handle.</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">The camera has been disconnected successfully.</font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Gbe error code</font></p>
+									</td>
+								</tr>
+							</table>
+							<h3><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+								<a id="_2.4.3" name="_2.4.3"></a>2.4.3 Gbe_switchCameraConnection</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_switchCameraConnection(CameraHandle *camera_handle, BoardHandle* board_handle, int port)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Camera handle.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">board_handle</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">BoardHandle*</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">BoardHandle.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">port</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">int</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Connected port (0 - 3).</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">The camera connection has been switched successfully.</font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Gbe error code</font></p>
+									</td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h2><a id="_2.5" name="_2.5"></a>2.5 Parameter Handling</h2>
+							<p><b>Functional Description</b></p>
+							<i><a href="SDK_GigE.html#_2.5.1">Gbe_setIntegerValue()</a></i> writes an integer value to the camera.
+
+							<p><i><a href="SDK_GigE.html#_2.5.2">Gbe_getIntegerValue()</a></i> reats an integer value from the camera.</p>
+							<p><i><a href="SDK_GigE.html#_2.5.3">Gbe_setBooleanValue()</a></i> writes a boolean value to the camera.</p>
+							<p><i><a href="SDK_GigE.html#_2.5.4">Gbe_getBooleanValue()</a></i> reats a boolean value from the camera.</p>
+							<p><i><a href="SDK_GigE.html#_2.5.5">Gbe_setFloatValue()</a></i> writes a floating value (double) to the camera.</p>
+							<p><i><a href="SDK_GigE.html#_2.5.6">Gbe_getFloatValue()</a></i> reats a floating value (double) from the camera.</p>
+							<p><i><a href="SDK_GigE.html#_2.5.7">Gbe_setStringValue()</a></i> writes a String to the camera.</p>
+							<p><i><a href="SDK_GigE.html#_2.5.8">Gbe_getStringValue()</a></i> reats a String from the camera.</p>
+							<p><i><a href="SDK_GigE.html#_2.5.9">Gbe_setEnumerationValue()</a></i> writes an enumeration value to the camera.</p>
+							<p><i><a href="SDK_GigE.html#_2.5.10">Gbe_getEnumerationValue()</a></i> reats an enumeration value from the camera.</p>
+							<p><i><a href="SDK_GigE.html#_2.5.11">Gbe_executeCommand()</a></i> executes a command directly on the camera.</p>
+							<p><i><a href="SDK_GigE.html#_2.5.12">Gbe_isCommandDone()</a></i> checks whether the command has been done.</p>
+							<p><i><a href="SDK_GigE.html#_2.5.13">Gbe_enableChecks()</a></i> is an <b>expert fuction!</b> It switches the Genicam Check on / off, if the function is available.</p>
+							<p><i><a href="SDK_GigE.html#_2.5.14">Gbe_lockTLParams()</a></i> is an <b>expert fuction!</b> Locks the transport layer parameters.</p>
+							<p><i><a href="SDK_GigE.html#_2.5.15">Gbe_unlockTLParams()</a></i> is an <b>expert fuction!</b> Unlocks the transport layer parameters.</p>
+							<p><i><a href="SDK_GigE.html#_2.5.16">Gbe_invalidateCache()</a></i> is an <b>expert fuction!</b></p>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.5.1" name="_2.5.1"></a>2.5.1 Gbe_setIntegerValue</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_setIntegerValue(CameraHandle *camera_handle, const char* name, int64_t value)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Pointer to camera handle.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">name</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">const char*</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">Name of the register.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">value</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">int64_t</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Integer value that shall be written.</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">The integer value has been set successfully.</font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Gbe error code</font></p>
+									</td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.5.2" name="_2.5.2"></a>2.5.2 Gbe_getIntegerValue</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_getIntegerValue(CameraHandle *camera_handle, const char* name, int64_t* value_ptr)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Pointer to camera handle.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">name</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">const char*</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">Name of the register.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">value_ptr</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">int64_t*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Integer value that shall be read.</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">The integer value has been gotten successfully.</font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Gbe error code</font></p>
+									</td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.5.3" name="_2.5.3"></a>2.5.3 Gbe_setBooleanValue</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_setBooleanValue(CameraHandle *camera_handle, const char* name, unsigned int value)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Pointer to camera handle.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">name</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">const char*</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">Name of the register.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">value</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">unsigned int</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Boolean value that has to be written.</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">The boolean value has been set successfully.</font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Gbe error code</font></p>
+									</td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.5.4" name="_2.5.4"></a>2.5.4 Gbe_getBooleanValue</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_getBooleanValue(CameraHandle *camera_handle, const char* name, unsigned int* value_ptr)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Pointer to camera handle.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">name</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">const char*</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">Name of the register.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">value_ptr</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">unsigned int*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Boolean value that has to be read.</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">The boolean value has been gotten successfully.</font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Gbe error code</font></p>
+									</td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.5.5" name="_2.5.5"></a>2.5.5 Gbe_setFloatValue</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_setFloatValue(CameraHandle *camera_handle, const har* name, double value)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Pointer to camera handle.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">name</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">const char*</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">Name of the register.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">value</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">double</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Double value that has to be written.</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">The double value has been set successfully.</font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Gbe error code</font></p>
+									</td>
+								</tr>
+							</table>
+							<h3><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</h3>
+							<h3><a id="_2.5.6" name="_2.5.6"></a>2.5.6 Gbe_getFloatValue</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_getFloatValue(CameraHandle *camera_handle, char* name, double* value_ptr)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Pointer to camera handle.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">name</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">const char*</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">Name of the register.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">value_ptr</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">double*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Double value that has to be read.</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">The double value has been gotten successfully.</font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Gbe error code</font></p>
+									</td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.5.7" name="_2.5.7"></a>2.5.7 Gbe_setStringValue</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_setStringValue(CameraHandle *camera_handle, const char* name, const char* value)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Pointer to camera handle.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">name</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">const char*</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">Name of the register.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">value</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">const char*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">String that has to be written.</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">The String has been set successfully.</font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Gbe error code</font></p>
+									</td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.5.8" name="_2.5.8"></a>2.5.8 Gbe_getStringValue</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_getStringValue(CameraHandle *camera_handle, char* name, const char** value_ptr)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Camera handle.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">name</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">const char*</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">Name of the register.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">value_ptr</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">const char**</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Reference to the pointer of the String that has to be read.</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">The String has been gotten successfully.</font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Gbe error code</font></p>
+									</td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.5.9" name="_2.5.9"></a>2.5.9 Gbe_setEnumerationValue</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_setEnumerationValue(CameraHandle *camera_handle, const char* name, const char* value)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Camera handle.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">name</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">const char*</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">Name of the register.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">value</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">const char*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Enumeration value that has to be written.</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">The enumeration value has been set successfully.</font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Gbe error code</font></p>
+									</td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.5.10" name="_2.5.10"></a>2.5.10 Gbe_getEnumerationValue</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_getEnumerationValue(CameraHandle *camera_handle, const char* name, const char** value_ptr)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Camera handle.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">name</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">const char*</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">Name of the register.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">value_ptr</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">const char*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Pointer to the enumeration value that has to be read.</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">The enumeration value has been gotten successfully.</font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Gbe error code</font></p>
+									</td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.5.11" name="_2.5.11"></a>2.5.11 Gbe_executeCommand</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_executeCommand(CameraHandle *camera_handle, const char* name)</b></p>
+									</td>
+								</tr>
+							</table>
+							<p><b>Parameters</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+										<p><b><font size="-2" color="white">Parameter</font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+									<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+									<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Camera handle.</font></td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">name</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">const char*</font></td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">Name of the register.</font></td>
+								</tr>
+							</table>
+							<p><b>Return Values</b></p>
+							<table border=0 cellspacing=2 cellpadding=2>
+								<tr>
+									<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+										<p><b><font size="-2" color="white">Return Value </font></b></p>
+									</td>
+									<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+										<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="white" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+									</td>
+									<td align="left" bgcolor="white" width=400 valign=middle>
+										<p><font size="-2" color="black">The command has successfully been sent directly to the camera.</font></p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+										<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+									</td>
+									<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+										<p><font size="-2" color="black">Gbe error code</font></p>
+									</td>
+								</tr>
+							</table>
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+								<br>
+								<br>
+							</p>
+							<h3><a id="_2.5.12" name="_2.5.12"></a>2.5.12 Gbe_isCommandDone</h3>
+							<p><b>Syntax</b></p>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_isCommandDone(CameraHandle *camera_handle, const char* name)</b></p>
+									</td>
+								</tr>
+							</table>
+							<div class=Section1>
+								<div class=Section1>
+									<p><b>Parameters</b></p>
+									<table border=0 cellspacing=2 cellpadding=2>
+										<tr>
+											<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+												<p><b><font size="-2" color="white">Parameter</font></b></p>
+											</td>
+											<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+											<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+											<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+											<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Camera handle.</font></td>
+										</tr>
+										<tr>
+											<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">name</font></td>
+											<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">const char*</font></td>
+											<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">Name of the register.</font></td>
+										</tr>
+									</table>
+									<div class=Section1>
+										<div class=Section1>
+											<p><b>Return Values</b></p>
+											<table border=0 cellspacing=2 cellpadding=2>
+												<tr>
+													<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+														<p><b><font size="-2" color="white">Return Value </font></b></p>
+													</td>
+													<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+														<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" bgcolor="white" width=200 valign=middle>
+														<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+													</td>
+													<td align="left" bgcolor="white" width=400 valign=middle>
+														<p><font size="-2" color="black">The command has successfully been done.</font></p>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+														<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">!=0</font></p>
+													</td>
+													<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+														<p><font size="-2" color="black">The command is still running</font></p>
+													</td>
+												</tr>
+											</table>
+											<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+												<br>
+												<br>
+											</p>
+											<h3><a id="_2.5.13" name="_2.5.13"></a>2.5.13 Gbe_enableChecks - EXPERT&nbsp;FUNCTION!</h3>
+											<p><b>Syntax</b></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_enableChecks(CameraHandle* camera_handle, unsigned int flag)</b></p>
+									</td>
+								</tr>
+							</table>
+							<div class=Section1>
+								<div class=Section1>
+									<p><b>Parameters</b></p>
+									<table border=0 cellspacing=2 cellpadding=2>
+										<tr>
+											<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+												<p><b><font size="-2" color="white">Parameter</font></b></p>
+											</td>
+											<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+											<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+											<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+											<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Camera handle.</font></td>
+										</tr>
+										<tr>
+											<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">flag</font></td>
+											<td align="left" bgcolor="#dfdfdf" width=100 valign=middle><font size="-2" color="black">unsigned int</font></td>
+											<td align="left" bgcolor="#dfdfdf" width=400 valign=middle><font size="-2" color="black">0: Disables all checks.<br>
+													
+													
+													1: Enables all checks.</font></td>
+										</tr>
+									</table>
+									<div class=Section1>
+										<div class=Section1>
+											<p><b>Return Values</b></p>
+											<table border=0 cellspacing=2 cellpadding=2>
+												<tr>
+													<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+														<p><b><font size="-2" color="white">Return Value </font></b></p>
+													</td>
+													<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+														<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" bgcolor="white" width=200 valign=middle>
+														<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+													</td>
+													<td align="left" bgcolor="white" width=400 valign=middle>
+														<p><font size="-2" color="black">The checks for parameter locking have been enabled / disabled successfully.</font></p>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+														<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+													</td>
+													<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+														<p><font size="-2" color="black">Gbe error code</font></p>
+													</td>
+												</tr>
+											</table>
+											<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+												<br>
+												<br>
+											</p>
+											<h3><a id="_2.5.14" name="_2.5.14"></a>2.5.14 Gbe_lockTLParams - EXPERT&nbsp;FUNCTION!</h3>
+											<p><b>Syntax</b></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_lockTLParams(CameraHandle *camera_handle)</b></p>
+									</td>
+								</tr>
+							</table>
+							<div class=Section1>
+								<div class=Section1>
+									<p><b>Parameters</b></p>
+									<table border=0 cellspacing=2 cellpadding=2>
+										<tr>
+											<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+												<p><b><font size="-2" color="white">Parameter</font></b></p>
+											</td>
+											<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+											<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+											<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+											<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Camera handle.</font></td>
+										</tr>
+									</table>
+									<div class=Section1>
+										<div class=Section1>
+											<p><b>Return Values</b></p>
+											<table border=0 cellspacing=2 cellpadding=2>
+												<tr>
+													<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+														<p><b><font size="-2" color="white">Return Value </font></b></p>
+													</td>
+													<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+														<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" bgcolor="white" width=200 valign=middle>
+														<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+													</td>
+													<td align="left" bgcolor="white" width=400 valign=middle>
+														<p><font size="-2" color="black">The transport layer parameters have been locked successfully.</font></p>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+														<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+													</td>
+													<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+														<p><font size="-2" color="black">Gbe error code</font></p>
+													</td>
+												</tr>
+											</table>
+											<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+												<br>
+												<br>
+											</p>
+											<h3><a id="_2.5.15" name="_2.5.15"></a>2.5.15 Gbe_unlockTLParams - EXPERT&nbsp;FUNCTION!</h3>
+											<p><b>Syntax</b></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<table border=0 cellspacing=0 cellpadding=3>
+								<tr>
+									<td bgcolor="#b0c4de" valign=top>
+										<p align=left><b>int Gbe_unlockTLParams(CameraHandle *camera_handle)</b></p>
+									</td>
+								</tr>
+							</table>
+							<div class=Section1>
+								<div class=Section1>
+									<p><b>Parameters</b></p>
+									<table border=0 cellspacing=2 cellpadding=2>
+										<tr>
+											<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+												<p><b><font size="-2" color="white">Parameter</font></b></p>
+											</td>
+											<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+											<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+												<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+											</td>
+										</tr>
+										<tr>
+											<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+											<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+											<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Pointer to camera handle.</font></td>
+										</tr>
+									</table>
+									<div class=Section1>
+										<div class=Section1>
+											<p><b>Return Values</b></p>
+											<table border=0 cellspacing=2 cellpadding=2>
+												<tr>
+													<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+														<p><b><font size="-2" color="white">Return Value </font></b></p>
+													</td>
+													<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+														<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" bgcolor="white" width=200 valign=middle>
+														<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+													</td>
+													<td align="left" bgcolor="white" width=400 valign=middle>
+														<p><font size="-2" color="black">The transport layer parameters have been unlocked successfully.</font></p>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+														<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+													</td>
+													<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+														<p><font size="-2" color="black">Gbe error code</font></p>
+													</td>
+												</tr>
+											</table>
+											<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+												<br>
+												<br>
+											</p>
+											<h3><a id="_2.5.16" name="_2.5.16"></a>2.5.16 Gbe_invalidateCache - EXPERT FUNCTION!</h3>
+											<p><b>Syntax</b></p>
+											<table border=0 cellspacing=0 cellpadding=3>
+												<tr>
+													<td bgcolor="#b0c4de" valign=top>
+														<p align=left><b>int Gbe_invalidateCache(CameraHandle *camera_handle)</b></p>
+													</td>
+												</tr>
+											</table>
+											<p><b>Parameters</b></p>
+											<table border=0 cellspacing=2 cellpadding=2>
+												<tr>
+													<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+														<p><b><font size="-2" color="white">Parameter</font></b></p>
+													</td>
+													<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+													<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+														<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+													<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+													<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Camera handle.</font></td>
+												</tr>
+											</table>
+											<p><b>Return Values</b></p>
+											<table border=0 cellspacing=2 cellpadding=2>
+												<tr>
+													<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+														<p><b><font size="-2" color="white">Return Value </font></b></p>
+													</td>
+													<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+														<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" bgcolor="white" width=200 valign=middle>
+														<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+													</td>
+													<td align="left" bgcolor="white" width=400 valign=middle>
+														<p><font size="-2" color="black">Cahe successfully invalidated.</font></p>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+														<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+													</td>
+													<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+														<p><font size="-2" color="black">Gbe error code</font></p>
+													</td>
+												</tr>
+											</table>
+											<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+												<br>
+												<br>
+											</p>
+											<h2><a id="_2.6" name="_2.6"></a>2.6 Acquisition</h2>
+											<p><b>Functional Description</b></p>
+											<i><a href="SDK_GigE.html#_2.6.1">Gbe_startAcquisition()</a></i> starts the grabbing within the camera.
+
+											<p><i><a href="SDK_GigE.html#_2.6.2">Gbe_stopAcquisition()</a></i> stops the grabbing of the camera.</p>
+											<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+												<br>
+												<br>
+											</p>
+											<h3><a id="_2.6.1" name="_2.6.1"></a>2.6.1 Gbe_startAcquisition</h3>
+											<p><b>Syntax</b></p>
+											<table border=0 cellspacing=0 cellpadding=3>
+												<tr>
+													<td bgcolor="#b0c4de" valign=top>
+														<p align=left><b>int Gbe_startAcquisition(CameraHandle *camera_handle)</b></p>
+													</td>
+												</tr>
+											</table>
+											<div class=Section1>
+												<div class=Section1>
+													<p><b>Parameters</b></p>
+													<table border=0 cellspacing=2 cellpadding=2>
+														<tr>
+															<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+																<p><b><font size="-2" color="white">Parameter</font></b></p>
+															</td>
+															<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+															<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+																<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+															</td>
+														</tr>
+														<tr>
+															<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+															<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+															<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Camera handle.</font></td>
+														</tr>
+													</table>
+													<div class=Section1>
+														<div class=Section1>
+															<p><b>Return Values</b></p>
+															<table border=0 cellspacing=2 cellpadding=2>
+																<tr>
+																	<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+																		<p><b><font size="-2" color="white">Return Value </font></b></p>
+																	</td>
+																	<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+																		<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="left" bgcolor="white" width=200 valign=middle>
+																		<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+																	</td>
+																	<td align="left" bgcolor="white" width=400 valign=middle>
+																		<p><font size="-2" color="black">The acquisition has been started successfully.</font></p>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+																		<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+																	</td>
+																	<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+																		<p><font size="-2" color="black">Gbe error code</font></p>
+																	</td>
+																</tr>
+															</table>
+															<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+																<br>
+																<br>
+															</p>
+															<h3><a id="_2.6.2" name="_2.6.2"></a>2.6.2 Gbe_stopAcquisition</h3>
+															<p><b>Syntax</b></p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<table border=0 cellspacing=0 cellpadding=3>
+												<tr>
+													<td bgcolor="#b0c4de" valign=top>
+														<p align=left><b>int Gbe_stopAcquisition(CameraHandle *camera_handle)</b></p>
+													</td>
+												</tr>
+											</table>
+											<div class=Section1>
+												<div class=Section1>
+													<p><b>Parameters</b></p>
+													<table border=0 cellspacing=2 cellpadding=2>
+														<tr>
+															<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+																<p><b><font size="-2" color="white">Parameter</font></b></p>
+															</td>
+															<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+															<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+																<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+															</td>
+														</tr>
+														<tr>
+															<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">camera_handle</font></td>
+															<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">CameraHandle*</font></td>
+															<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Camera handle.</font></td>
+														</tr>
+													</table>
+													<div class=Section1>
+														<div class=Section1>
+															<p><b>Return Values</b></p>
+															<table border=0 cellspacing=2 cellpadding=2>
+																<tr>
+																	<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+																		<p><b><font size="-2" color="white">Return Value </font></b></p>
+																	</td>
+																	<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+																		<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="left" bgcolor="white" width=200 valign=middle>
+																		<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+																	</td>
+																	<td align="left" bgcolor="white" width=400 valign=middle>
+																		<p><font size="-2" color="black">The acquisition has been stopped successfully.</font></p>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+																		<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;0</font></p>
+																	</td>
+																	<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+																		<p><font size="-2" color="black">Gbe error code</font></p>
+																	</td>
+																</tr>
+															</table>
+															<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+																<br>
+																<br>
+															</p>
+															<h2><a id="_2.7" name="_2.7"></a>2.7 Event System</h2>
+															<h2><a id="_2.7.1" name="_2.7.1"></a>2.7.1 Event Notification</h2>
+															<p>The SiliconSoftware frame grabber SDK extension for GigE Vision allows an application to react asynchronously on certain events created by the GigE Vision subsystem. These events are either</p>
+															<p>- created by GigE Vision cameras according to the GigE Vision protocol specification or</p>
+															<p>- created by the Silicon Software Runtime components itself.</p>
+															<p>Therefore a mechanism of callback functions is implemented. This mechanism works in addition to the callback / event mechanism defined at the general SiliconSoftware frame grabber SDK (&#x201C;fglib&#x201D;, for details see the frame grabber <a href="SDK.html">SDK manual</a>).</p>
+															<p>Event notification is available at 2 different levels:</p>
+															<p>- board events (camera events, related to the frame grabber),</p>
+															<p>- camera events (events related to an attached camera).</p>
+															<p>The following table shows the available event notifications:<br>
+																<br>
+															</p>
+															<table width="603" border="0" cellspacing="2" cellpadding="2">
+																<tr>
+																	<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+																	<b><font size="-2" color="white">Event Type</font></b></td>
+																	<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+																	<b><font size="-2" color="white">Level</font></b></td>
+																	<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+																	<b><font size="-2" color="white">Remarks</font></b></td>
+																</tr>
+																<tr>
+																	<td><font size="-2">GBE_EVENT_GEVEVENT</font></td>
+																	<td width="100"><font size="-2">Camera</font></td>
+																	<td><font size="-2">An event triggered by the camera and sent by using the GigE Vision protocol.</font></td>
+																</tr>
+																<tr>
+																	<td><font size="-2">GBE_EVENT_CAMERA_CONECTION_LOST</font></td>
+																	<td width="100"><font size="-2">Camera</font></td>
+																	<td><font size="-2">An already attached camera disappeared</font></td>
+																</tr>
+																<tr>
+																	<td><font size="-2">GBE_EVENT_DISCOVERY_CHANGE</font></td>
+																	<td width="100"><font size="-2">Board</font></td>
+																	<td><font size="-2">A camera has been detected by the discovery process, e.g. a camera is connected to a frame grabber port</font></td>
+																</tr>
+															</table>
+															<p><br>
+															</p>
+															<p>Depending of the type of the event, additional data is delivered, when the notification is done, e.g.</p>
+															<p> - the camera port, when a camera has been detected<br>
+																 - the camera handle, when a camera got lost<br>
+																 - payload data from camera, in case of GigE Vision events.<br>
+																<br>
+															</p>
+															<p>Therefore event subsystem of the GBE library consists of 2 functions</p>
+															<p> - Gbe_registerBoardEventCallback<br>- Gbe_registerCameraEventCallback,<br>
+																<br>
+															</p>
+															<p>including the corresponding declarations of callback functions types.</p>
+															<p>The callback handlers will be informed about the type of event and additional event data if available by declaring a data structure GbeEventInfo_Struct. The user&#x2019;s context out of the registration of callback handlers might be passed by additional user data pointer, which can be passed when calling the according Gbe_registerXXXXEventCallback functions.<br>
+																<br>
+															</p>
+															<p>Example:<br>
+																<br>
+															</p>
+															<p><samp>// callback handler for camera events</samp></p>
+															<p><samp>int CameraEventHandler)(struct BoardHandle *boardHandle, </samp></p>
+															<p><samp>const GbeEventInfo *const eventInfo, </samp></p>
+															<p><samp>const void *userData)</samp></p>
+															<p><samp>{</samp></p>
+															<p><samp> (myClass*) userData -&gt;data; // Access some data&#x2026;.</samp></p>
+															<p><samp>}</samp></p>
+															<p><samp>// method to register the event handler</samp></p>
+															<p><samp>// passes a pointer to the object towards the SDK, which can</samp></p>
+															<p><samp>// be accessed at the callback function</samp></p>
+															<p><samp>Void myClass::DoRegisterCallback()</samp></p>
+															<p><samp>{</samp></p>
+															<p><samp>// Pass the context to the callback handler (this-pointer)</samp></p>
+															<p><samp>Gbe_registerCameraEventCallback(&amp;CameraEventHandler, this); </samp></p>
+															<p>}</p>
+															<p><br>
+															</p>
+															<p>Remarks:</p>
+															<p>Details of the usage can be seen at a specific SDK example for GbE.<br>
+															</p>
+															<p><br>
+																<br>
+																<br>
+															</p>
+															<h3><a id="_2.7.2" name="_2.7.2"></a>2.7.2 GigE Vision Camera Events</h3>
+															<p>This chapter describes the usage and retrieval of events, sent by a GigE Vision camera according to the GigE Vision standard specification. For additional details see also the GigE Vision standard.</p>
+															<p>Which events of this type are available within the Silicon Software SDK correlates directly with the functionality of a specific, connected GigE Vision camera. In general, the GigE Vision events can be read by using the camera&#x2019;s GenICam files, for example by using the SiliconSoftware GenICam Explorer tool. Activation and deactivation of the events can be done by accessing the according GenICam parameters of the cameras. Therefore the parameter interface of the SiliconSoftware GigE SDK can be used:</p>
+															<p> - Gbe_setEnumerationValue()</p>
+															<p> - Gbe_setIntegerValue()</p>
+															<p> - &#x2026;</p>
+															<p>When an event occurs, the callback handler gets informed about details of the GigE Vision event by the GbeEventInfo structure indicated by type == GBE_EVENT_GEVEVENT. Additional data retrieved from the GigE Vision protocol is stored in form of the GigE Vision event structure. For further details please refer to the camera manufacturer&#x2019;s documentation.<br>
+																<br>
+																<br>
+																<br>
+															</p>
+															<p></p>
+															<h3><a id="_2.7.3" name="_2.7.3"></a>2.7.3 Events generated by the SiliconSoftware Runtime</h3>
+															<p>These events are indicated by different event types, which are passed by the GebEventInfo structure. </p>
+															<p>GebEventInfo.type :  GBE_EVENT_XXX, where XXX &lt;&gt; GEVEVENT</p>
+															<p>For further details, see the SDK function list documentation.<br>
+																<br>
+																<br>
+																<br>
+															</p>
+															<p></p>
+															<h2><a id="_2.8" name="_2.8"></a>2.8 Helper Functions</h2>
+															<p><b>Functional Description</b></p>
+															<i><a href="SDK_GigE.html#_2.7.1">Gbe_getErrorDescription()</a></i> Get error description.
+															<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+																<br>
+																<br>
+															</p>
+															<h3><a id="_2.8.1" name="_2.8.1"></a>2.8.1 Gbe_getErrorDescription</h3>
+															<p><b>Syntax</b></p>
+															<table border=0 cellspacing=0 cellpadding=3>
+																<tr>
+																	<td bgcolor="#b0c4de" valign=top>
+																		<p align=left><b>const char* Gbe_getErrorDescription(int errcode)</b></p>
+																	</td>
+																</tr>
+															</table>
+															<p><b>Parameters</b></p>
+															<table border=0 cellspacing=2 cellpadding=2>
+																<tr>
+																	<td align="left" bgcolor="#2e368f" width=100 valign=middle>
+																		<p><b><font size="-2" color="white">Parameter</font></b></p>
+																	</td>
+																	<td align="left" bgcolor="#2e368f" width=100 valign=middle><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Type</font></b></font></td>
+																	<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+																		<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">errcode</font></td>
+																	<td align="left" bgcolor="white" width=100 valign=middle><font size="-2" color="black">int</font></td>
+																	<td align="left" bgcolor="white" width=400 valign=middle><font size="-2" color="black">Gbe error code.</font></td>
+																</tr>
+															</table>
+															<p><b>Return Values</b></p>
+															<table border=0 cellspacing=2 cellpadding=2>
+																<tr>
+																	<td align="left" bgcolor="#2e368f" width=200 valign=middle>
+																		<p><b><font size="-2" color="white">Return Value </font></b></p>
+																	</td>
+																	<td align="left" bgcolor="#2e368f" width=400 valign=middle>
+																		<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Description </font></b></font></p>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="left" bgcolor="white" width=200 valign=middle>
+																		<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></p>
+																	</td>
+																	<td align="left" bgcolor="white" width=400 valign=middle>
+																		<p><font size="-2" color="black">error getting error string. </font></p>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="left" bgcolor="#dfdfdf" width=200 valign=middle>
+																		<p><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">!=0</font></p>
+																	</td>
+																	<td align="left" bgcolor="#dfdfdf" width=400 valign=middle>
+																		<p><font size="-2" color="black">error description as string</font></p>
+																	</td>
+																</tr>
+															</table>
+															<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+																<br>
+																<br>
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<h1><a id="_3" name="_3"></a>3 Compiler Settings</h1>
+							<h2><a id="_3.1" name="_3.1"></a>3.1 Windows&reg;</h2>
+							The include files &quot;gbe.h&quot; have to be included. The path of the include files have to be set. It is: &quot;&lt;SISODIR5&gt; \ include&quot;. The default installation folder for Silicon Software application is &quot;Program Files \ SiliconSoftware&quot;. Neccessary library to link to is &quot;gbe.lib&quot; in directory &lt;SISODIR5&gt; \ lib \ visualc.
+
+							<p><a href="SDK_GigE.html#_top"><img src="../../../images/up.jpg" alt="" height="16" width="16" align="right" border="0"></a><br>
+							</p>
+							<p><br>
+							</p>
+						<!-- #EndEditable --></td>
+				</tr>
+				<tr height="40">
+					<td bgcolor="white" width="60" height="40"></td>
+					<td colspan="3" align="left" valign="top" bgcolor="white" width="680" height="40">
+						<table>
+							<tr height="20">
+								<td align="left" valign="middle" bgcolor="white" width="200" height="20">
+
+									</td>
+								<td align="center" valign="middle" bgcolor="white" width="250" height="20">
+									<div align="right">
+										<a title="Index" href="../../index.html">Back to Documentation Index <img src="../../../images/top.gif" alt="" width="22" height="23" align="absbottom" border="0"></a></div>
+								<td align="right" valign="middle" bgcolor="white" width="200" height="20">
+									</td>
+							</tr>
+							<tr height="20">
+								<td align="left" valign="middle" bgcolor="white" width="200" height="20"><a href="javascript:history.back()"><img src="../../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250" height="20">
+									<div align="right">
+										<a title="Feature Overview" href="../../overviews/applet_feature_overview.html">Back to Feature Overview <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								</td>
+								<td align="right" valign="middle" bgcolor="white" width="200" height="20"><a href="javascript:history.forward()">Forward <img src="../../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4" align="left" valign="top" width="740"><img src="../../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+		</body>
+
+	<!-- #EndTemplate -->
+
+</html>
+
+
+

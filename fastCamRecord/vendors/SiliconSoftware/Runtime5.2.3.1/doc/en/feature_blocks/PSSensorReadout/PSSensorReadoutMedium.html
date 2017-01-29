@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<title>Silicon Software - microEnable IV - Runtime 5 - Sensor Readout Medium Configuration</title>
+				<link href="../../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../../lib/siso.ico" rel="shortcut icon">
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2" align="left" valign="bottom" width="740"><img src="../../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="center">
+								<h2>Sensor Readout Correction<br>
+									
+									(for Medium CameraLink)</h2>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="right">
+								<div align="center">
+									<p>Parameter Set</p>
+								</div>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2>
+							
+						Description<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">..</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p>Most camera sensors are read out sequentially in the so called raster scan format (line by line from top-left to bottom-right) However, to speed up the data transfer, some sensors can be configured to read out several pixels in parallel. As a result, pixels transferred succeeding over the CamerLink cable are not necessarily neighbouring pixels. The Sensor Readout Correction can reshuffle the pixels on-board of the frame grabber and transfer the grabbed image in the usual raster-scan fashion. All common readout strategies are supported to save computational power of the host system.</p>
+							<p></p>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							Parameters<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<h3></h3>
+							<h3><a name="FG_SENSORREADOUT"></a>Readout Mode</h3>
+							<p>The parameter Readout Mode selects the pixel reshuffeling scheme:</p>
+							<table width="357" border="1" cellspacing="0" cellpadding="2" bgcolor="white">
+								<tr>
+									<td align="center" nowrap bgcolor="#2e368f"><b><font size="-2" color="white">Sensor Mode</font></b></td>
+									<td colspan="2" align="center" nowrap bgcolor="#2e368f"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Function</font></b></font></td>
+									<td align="center" nowrap bgcolor="#2e368f"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b><font size="-2" color="white">Mode No.</font></b></font></td>
+								</tr>
+								<tr>
+									<td align="center" nowrap bgcolor="white"><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">SMODE_UNCHANGED</font></td>
+									<td align="center" nowrap bgcolor="white">
+										<div align="left">
+											<font size="-2" color="black">-&gt;</font></div>
+									</td>
+									<td align="center" nowrap bgcolor="white"></td>
+									<td align="center" nowrap bgcolor="white"><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">0</font></td>
+								</tr>
+								<tr>
+									<td align="center" nowrap bgcolor="#dfdfdf"><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">SMODE_REVERSE</font></td>
+									<td align="center" nowrap bgcolor="#dfdfdf">
+										<div align="right"></div>
+									</td>
+									<td align="center" nowrap bgcolor="#dfdfdf">
+										<div align="right">
+											<font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;-</font></div>
+									</td>
+									<td align="center" nowrap bgcolor="#dfdfdf"><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">3</font></td>
+								</tr>
+								<tr>
+									<td align="center" nowrap bgcolor="white"><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">SMODE_TAB4_0</font></td>
+									<td align="center" nowrap bgcolor="white">
+										<div align="right">
+											<font size="-2" color="black">1&gt; &nbsp;&nbsp;&nbsp;&nbsp;2&gt;&nbsp;&nbsp;&nbsp;&nbsp; </font></div>
+									</td>
+									<td align="center" nowrap bgcolor="white">
+										<div align="left">
+											<font size="-2" color="black">3&gt; &nbsp;&nbsp;&nbsp;&nbsp;4&gt;</font></div>
+									</td>
+									<td align="center" nowrap bgcolor="white"><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">2</font></td>
+								</tr>
+								<tr>
+									<td align="center" nowrap bgcolor="#dfdfdf"><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">SMODE_TAB4_1</font></td>
+									<td align="center" nowrap bgcolor="#dfdfdf">
+										<div align="right">
+											<font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;4 &nbsp;&nbsp;&nbsp;&nbsp;&lt;3&nbsp;&nbsp;&nbsp;&nbsp; </font></div>
+									</td>
+									<td align="center" nowrap bgcolor="#dfdfdf">
+										<div align="left">
+											<font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;2 &nbsp;&nbsp;&nbsp;&nbsp;&lt;1</font></div>
+									</td>
+									<td align="center" nowrap bgcolor="#dfdfdf"><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">5</font></td>
+								</tr>
+								<tr>
+									<td align="center" nowrap bgcolor="white"><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">SMODE_TAB4_2</font></td>
+									<td align="center" nowrap bgcolor="white">
+										<div align="left">
+											<font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">12&gt;</font></div>
+									</td>
+									<td align="center" nowrap bgcolor="white">
+										<div align="right">
+											<font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&lt;34</font></div>
+									</td>
+									<td align="center" nowrap bgcolor="white"><font size="-2" color="black" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">7</font></td>
+								</tr>
+							</table>
+							<h3><br>
+								<br>
+								<br>
+							</h3>
+							<div align="left">
+								<p>IHere you can see the SMODE_UNCHANGED mode for quad tap. Read out direction is forward. The pixel readout procedure is devided by four taps.</p>
+								<div align="left">
+									<div align="left">
+										<p><img width=720 height=540 src="SMODE_UNCHANGED4.GIF"></p>
+									</div>
+								</div>
+								<p>Here you can see the SMODE_REVERSE mode for quad tap. Readout direction is backward. The pixel readout procedure is devided by four taps.</p>
+								<div align="left">
+									<div align="left">
+										<div align="left">
+											<div align="left">
+												<div align="left">
+													<div align="left">
+														<p><img width=720 height=540 src="SMODE_REVERSE4.GIF"></p>
+													</div>
+												</div>
+												<p>The SMODE_TAB4_0 which is mode no. 2 reads out fourth the line in parallel and forward for quad tap cameras.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div align="left">
+									<div align="left">
+										<p><img width=720 height=540 src="SMODE_TAP4_0.GIF"></p>
+										<p>The SMODE_TAB4_1 which is mode no. 5 reads out fourth the line in parallel and backward for quad tap cameras.</p>
+										<div align="left">
+											<div align="left">
+												<div align="left">
+													
+												</div>
+											</div>
+										</div>
+										<div align="left">
+											<div align="left">
+												<div align="left">
+													<div align="left">
+														<div align="left">
+															<p><img width=720 height=540 src="SMODE_TAP4_1.GIF"></p>
+														</div>
+													</div>
+												</div>
+												<p>The sensor readout mode SMODE_TAB4_2 (mode 7) reads out half the line forward and half the line backward, but the number of pixels of one half are diveded by two taps.</p>
+												<p><img width=720 height=540 src="SMODE_TAP4_2.GIF"></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							References<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p></p>
+					<p><a href="../../documents/SDK/SDK.html">SDK Documentation</a></p>
+					<p></p>
+				</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+ 						<table>
+							<tr><br><br>
+								<td align="left" valign="middle" bgcolor="white" width="200"></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../index.html">Back to Documentation Index <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								<td align="right" valign="middle" bgcolor="white"></td>
+							</tr>
+							<tr>
+								<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../overviews/applet_feature_overview.html">Back to Feature Overview <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								</td>
+								<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				<tr>
+					<td colspan="2" align="left" valign="top" width="740"><img src="../../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+			<p></p>
+		</body>
+</html>
+
+
+

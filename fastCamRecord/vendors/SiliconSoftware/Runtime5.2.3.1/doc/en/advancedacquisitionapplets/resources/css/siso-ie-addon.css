@@ -1,0 +1,30 @@
+table.toc {
+	font-size: 9px;
+}
+
+p,table {
+	font-size: 12px;
+}
+
+p.title {
+	font-size: 9px;
+}
+h1 {
+	font-size:24px;
+	color:#7072be;
+}
+
+h2 {
+	font-size:20px;
+	color:#7072be;
+}
+
+h3,h4,h5,h6 {
+	font-size:16px;
+	color:#333333;
+}
+
+table.toc * {
+	white-space:nowrap;
+}
+

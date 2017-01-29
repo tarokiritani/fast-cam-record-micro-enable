@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+			<title>Silicon Software - microEnable IV - Runtime5 - Image Processing</title>
+				<link href="../../../lib/siso.css" rel="stylesheet" media="screen">
+				<link href="../../../lib/siso.ico" rel="shortcut icon">
+		</head>
+
+		<body bgcolor="#ffffff">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="2" align="left" valign="bottom" width="740"><img src="../../../images/head.jpg" alt="" width="740" height="120"></td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="center">
+								<h2>Image Processing</h2>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+							<div align="right">
+								<div align="center">
+									<div align="center">
+										<p>Parameter Set</p>
+									</div>
+								</div>
+							</div>
+						</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20"></td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							
+						Description<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">..</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p>A convienent way to exploit the KneeLut for basic image processing tasks is given by the parameter set for <i>Image Processing</i>. All transformations apply to the given configuration of the KneeLut in the following order:</p>
+							<ol>
+								<li><b>Offset Correction</b>, range [-1.0, +1.0], identity 0
+
+								<li><b>Gain Correction</b>, range ]-inf, +inf[, identity 1.0	
+								<li><b>Gamma Correction</b>, range ]0, +inf[, identity 1.0
+
+								<li><b>Invert</b>, identity 'off'
+
+							</ol>
+							<p>Mathematically, without invert:</p>
+							<div align="center">
+								<p>p' = ( gain * (p + offset) )<sup>1/gamma</sup></p>
+							</div>
+							<div align="left">
+								<p>with invert:</p>
+								<div align="center">
+									<p>p' = 1 - ( gain * (p + offset) )<sup>1/gamma</sup></p>
+								</div>
+								<div align="left">
+									<p></p>
+								</div>
+							</div>
+							<p>Since all these corrections can be configured to the identity, there is no explicit switch to turn the <i>Image Processing</i> on or off, they are always applied to the active configuration loaded into the KneeLut.</p>
+							<p></p>
+							<font size="-1"><u>Definitions:<br>
+								</u>max = 255 for 8bit/pixel, max = 1023 for 10 bit / pixel, max = 4095 for 12 bit per pixel<br>
+								
+								
+								P : pixel value<br>
+								p : normalized pixel value p = P / max<br>
+								
+								
+								p' : normalized pixel value after the image processing transformation<br>
+								
+								
+								P' : pixel value after image processing transformation P = p' * max<br>
+							</font>
+							<p></p>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60">
+						
+					</td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							Parameters<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p></p>
+							<h3><a name="FG_KNEE_LUT_OFFSET"></a>Offset</h3>
+							<p>Range [-1.0, +1.0], identity 0.</p>
+							<p>The <i>Offset</i> is a relative value added to each pixel, which leads to a behaviour similar to a brightness controller.</p>
+							<p>A relative <i>Offset</i> means, the e. g. 0.5 adds half of the total bightness to each pixel. In absolute numbers when using 8bit/pixel, 128 is added to each pixel (0.5 x 255 = 127.5), for 10bit/pixel 512 (0.5 x 1023 = 511.5). If you rather want to add an absulte value to each pixel do the following calculation: e. g. add -8 to 8bit/pixel offset = -8 / 255 = -0.031372549...</p>
+							<p></p>
+							<h3><a name="FG_KNEE_LUT_SCALE"></a>Gain (for gray feature)<br>
+								<a name="FG_SCALINGFACTOR_RED"></a><a name="FG_SCALINGFACTOR_GREEN"></a><a name="FG_SCALINGFACTOR_BLUE"></a>Red Gain, Green Gain, Blue Gain (for color feature only)</h3>
+							
+							
+							Range ]-inf, +inf[, identity 1.0.
+
+							<p>The <i>Gain</i> is multiplicatice coefficient applied to each pixel, which leads to a behavior similar to a contrast controller.</p>
+							<p>For the color feature a separate gain can be given for each color component, which can be used for whitebalancing.</p>
+							<p></p>
+							<h3><a name="FG_KNEE_LUT_GAMMA"></a>Gamma</h3>
+							<p>Range ]0, +inf[, identity 1.0.</p>
+							<p>The <i>Gamma</i> correction is a power-law transformation applied to each pixel, which tries to ballance the nonlinear response of a CRT monitor. Normalized pixel values p ranging [0, 1.0] transform like p' = p^(1/gamma).</p>
+							<p></p>
+							<h3><a name="FG_KNEE_LUT_INVERT"></a>Invert</h3>
+							<p>Identity 'off'.</p>
+							<p>When <i>Invert</i> is set to 'On', the output is the negative of the input. Normalized pixel values p ranging [0, 1.0] transftom to p' = 1 - p.</p>
+							<p></p>
+						</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+						<h2><br>
+							References<br>
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="white" width="60"><font color="white">.</font></td>
+					<td align="left" valign="top" bgcolor="white" width="680">
+							<p></p>
+					<p><a href="../../documents/SDK/SDK.html">SDK Documentation</a></p>
+					<p></p>
+				</td>
+				</tr>
+				<tr height="20">
+					<td bgcolor="white" width="60" height="20"></td>
+					<td align="left" valign="top" bgcolor="white" width="680" height="20">
+ 						<table>
+							<tr><br><br>
+								<td align="left" valign="middle" bgcolor="white" width="200"></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../index.html">Back to Documentation Index <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								<td align="right" valign="middle" bgcolor="white"></td>
+							</tr>
+							<tr>
+								<td align="left" valign="middle" bgcolor="white" width="200"><a href="javascript:history.back()"><img src="../../../images/back.jpg" alt="" height="16" width="16" align="absbottom" border="0"> Back</a></td>
+								<td align="center" valign="middle" bgcolor="white" width="250">
+									<div align="right"><a title="Index" href="../../overviews/applet_feature_overview.html">Back to Feature Overview <img src="../../../images/top.gif" alt="" width="22" height="22" align="absbottom" border="0"></a></div>
+								</td>
+								<td align="right" valign="middle" bgcolor="white" width="200"><a href="javascript:history.forward()">Forward <img src="../../../images/forward.jpg" alt="" height="16" width="16" align="absmiddle" border="0"></a></td>
+							</tr>
+						</table>
+					</td>
+				<tr>
+					<td colspan="2" align="left" valign="top" width="740"><img src="../../../images/bottom.jpg" alt="" width="740" height="21" border="0"></td>
+				</tr>
+			</table>
+			<p></p>
+		</body>
+</html>
+
+
+
