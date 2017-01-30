@@ -39,8 +39,7 @@ How to use the program
 
 2. Change the settings of the camera accoridngly.
 3. Open the command prompt, and go to the directory the program is installed (C:\Program Files\LSENS_EPFL\ if not changed during installation). Run the program with the arguments.
-
-	e.g., fastVideoRecord 1000 512 480 60 3 C:\Users\someone\Desktop\ sweep
+   e.g., fastVideoRecord 1000 512 480 60 3 C:\Users\someone\Desktop\ sweep
 
 4. If this software is useful to you, we'd appreciate it if you could acknowledge my work with
 the URL of this repo (https://github.com/tarokiritani/fast-cam-record-micro-enable)
