@@ -38,13 +38,16 @@ How to use the program
 	7. subfolderName: Subfolders are created in folderName.
 
 2. Change the settings of the camera accoridngly.
-3. Open the command prompt, and go to the directory the program is installed (C:\Program Files\LSENS_EPFL\ if not changed during installation)*. Run the program with the arguments**.
-	e.g., fastVideoRecord 1000 512 480 60 1 C:\Users\someone\Desktop\test\ sweep
+3. Open the command prompt, and go to the directory the program is installed (C:\Program Files\LSENS_EPFL\ if not changed during installation). Run the program with the arguments.
+	
+e.g., fastVideoRecord 1000 512 480 60 3 C:\Users\someone\Desktop\ sweep
+
 4. If this software is useful to you, we'd appreciate it if you could acknowledge my work with
 the URL of this repo (https://github.com/tarokiritani/fast-cam-record-micro-enable)
 
-* The installation does not touch the PATH environmental variable.
-** You could write a .bat file, or run this program from other programs ("dos" in matlab, or "subprocess.call" in python)
+Note1: The installation does not touch the PATH environmental variable. 
+
+Note2: You could write a .bat file, or run this program from other programs ("dos" in matlab, or "subprocess.call" in python)
 
 How to program
 ==============
