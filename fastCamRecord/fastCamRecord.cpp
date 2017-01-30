@@ -12,7 +12,6 @@
 #include <map>
 #include <algorithm>
 #include <time.h>
-/*#include "tiff.h"*/
 #include "tiffio.h"
 #include <mutex>
 #include <condition_variable>
