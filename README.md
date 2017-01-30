@@ -21,7 +21,9 @@ This is a program for 64-bit Windows (> 7).
 
 How to use the program
 ======================
-1. fastCamRecord.exe takes the following arguments.
+1. Change the settings of the camera accoridngly.
+2. Open the command prompt, and go to the directory the program is installed (C:\Program Files\LSENS_EPFL\ if not changed during installation).
+3. fastCamRecord.exe takes the following arguments.
 
 	1. nrOfPicturesToGrab: The number of frames in each movie.
 	
@@ -37,11 +39,9 @@ How to use the program
 	
 	7. subfolderName: Subfolders are created in folderName.
 
-2. Change the settings of the camera accoridngly.
-3. Open the command prompt, and go to the directory the program is installed (C:\Program Files\LSENS_EPFL\ if not changed during installation). Run the program with the arguments.
+4. Run the program with the arguments.
    e.g., fastVideoRecord 1000 512 480 60 3 C:\Users\someone\Desktop\ sweep
-
-4. If this software is useful to you, we'd appreciate it if you could acknowledge my work with
+5. If this software is useful to you, we'd appreciate it if you could acknowledge my work with
 the URL of this repo (https://github.com/tarokiritani/fast-cam-record-micro-enable)
 
 Note1: The installation does not touch the PATH environmental variable. 
