@@ -45,6 +45,7 @@ the URL of this repo (https://github.com/tarokiritani/fast-cam-record-micro-enab
 
 * The installation does not touch the PATH environmental variable.
 ** You could write a .bat file, or run this program from other programs ("dos" in matlab, or "subprocess.call" in python)
+
 How to program
 ==============
 This program is written, and built in Microsoft Visual Studio Enterprise 2015.
