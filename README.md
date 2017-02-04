@@ -18,6 +18,10 @@ OPTRONIS CL600X2-FULL-M (http://www.stemmer-imaging.co.uk/en/products/article/10
 
 This is a program for 64-bit Windows (> 7).
 
+How to install
+==============
+The Windows Installer is available from my website: http://www.brain-recording.science
+
 
 How to use the program
 ======================
