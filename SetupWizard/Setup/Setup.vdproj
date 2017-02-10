@@ -15,13 +15,43 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_93C4645451B74A1185218513F0EA26F3"
+        "MsmKey" = "8:_034C6DA3D7474AE8BA5B5232F5D2DC4F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_04E2205785B54811918F86AA02659AED"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6CEB1C9E10EE4F629A30118332707224"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7118AA374FD642BAB4B0E8153B148B47"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_A7ABF00E05FB4552B8529F6EB89F4D24"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B9E56833E74842DBA04E46867D8E4ABD"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C112FF45B757484F867C0B02B9E60AB8"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -43,6 +73,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -59,6 +105,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -80,10 +142,30 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_93C4645451B74A1185218513F0EA26F3"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_034C6DA3D7474AE8BA5B5232F5D2DC4F"
             {
-            "SourcePath" = "8:..\\..\\README.md"
-            "TargetName" = "8:README.md"
+            "SourcePath" = "8:..\\..\\fastCamRecord\\vendors\\SiliconSoftware\\Runtime5.2.3.1\\bin\\display_lib.dll"
+            "TargetName" = "8:display_lib.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_18E2FFDDDDB845F4827A56521FF9EB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:TRUE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_04E2205785B54811918F86AA02659AED"
+            {
+            "SourcePath" = "8:..\\..\\README.txt"
+            "TargetName" = "8:README.txt"
             "Tag" = "8:"
             "Folder" = "8:_18E2FFDDDDB845F4827A56521FF9EB83"
             "Condition" = "8:"
@@ -91,6 +173,86 @@
             "Vital" = "11:TRUE"
             "ReadOnly" = "11:FALSE"
             "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6CEB1C9E10EE4F629A30118332707224"
+            {
+            "SourcePath" = "8:..\\..\\fastCamRecord\\vendors\\SiliconSoftware\\Runtime5.2.3.1\\bin\\fglib5.dll"
+            "TargetName" = "8:fglib5.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_18E2FFDDDDB845F4827A56521FF9EB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:TRUE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7118AA374FD642BAB4B0E8153B148B47"
+            {
+            "SourcePath" = "8:..\\..\\fastCamRecord\\vendors\\SiliconSoftware\\Runtime5.2.3.1\\bin\\clsersis.dll"
+            "TargetName" = "8:clsersis.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_18E2FFDDDDB845F4827A56521FF9EB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:TRUE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B9E56833E74842DBA04E46867D8E4ABD"
+            {
+            "SourcePath" = "8:..\\..\\fastCamRecord\\vendors\\SiliconSoftware\\Runtime5.2.3.1\\bin\\iolibrt.dll"
+            "TargetName" = "8:iolibrt.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_18E2FFDDDDB845F4827A56521FF9EB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:TRUE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C112FF45B757484F867C0B02B9E60AB8"
+            {
+            "SourcePath" = "8:..\\..\\fastCamRecord\\vendors\\SiliconSoftware\\Runtime5.2.3.1\\bin\\gbelib.dll"
+            "TargetName" = "8:gbelib.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_18E2FFDDDDB845F4827A56521FF9EB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:TRUE"
             "System" = "11:FALSE"
             "Permanent" = "11:FALSE"
             "SharedLegacy" = "11:FALSE"
@@ -155,9 +317,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:Setup"
+        "ProductName" = "8:fastCamRecord"
         "ProductCode" = "8:{0DC3A603-5D0C-4F6A-9BBF-23C53F90848E}"
-        "PackageCode" = "8:{0096043E-3EE7-44C5-8322-4737432EF416}"
+        "PackageCode" = "8:{179273B4-39DA-4212-A65F-7015F24184BB}"
         "UpgradeCode" = "8:{37DC1CF1-7470-4E75-A302-D50EF6FC0240}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
