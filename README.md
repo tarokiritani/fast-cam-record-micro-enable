@@ -29,7 +29,7 @@ How to use the program
 ======================
 1. Change the settings of the camera accoridngly.
 2. Open the command prompt, and go to the directory the program is installed (C:\Program Files\LSENS_EPFL\ if not changed during installation)<sup>2</sup>.
-3. fastCamRecord.exe takes the following arguments.
+3. fastCamRecord.exe accepts the following arguments.
 
 	1. nrOfPicturesToGrab: The number of frames in each movie.
 	
@@ -46,9 +46,9 @@ How to use the program
 	7. subfolderName: Subfolders are created in folderName.
 
 4. Run the program with the arguments.
-   e.g., fastVideoRecord 1000 512 480 60 3 C:\Users\someone\Desktop\ sweep
+   e.g., fastCamRecord 1000 512 480 60 3 C:\Users\someone\Desktop\ sweep
 5. If this software is useful to you, we'd appreciate it if you could acknowledge my work with
-the URL of this repo (https://github.com/tarokiritani/fast-cam-record-micro-enable)
+the URL of this repo (https://github.com/tarokiritani/fast-cam-record-micro-enable).
 
 Note 1: You could write a .bat file, or run this program from another program ("dos" in matlab, or "subprocess.call()" in python).
 
